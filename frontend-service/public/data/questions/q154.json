@@ -1,0 +1,26 @@
+{
+  "id": 154,
+  "file": "q154.json",
+  "questionNumber": 154,
+  "question_number": "Câu 154",
+  "question": "Trường hợp nào là một trong những điều kiện để chủ đầu tư chấp thuận đề xuất của nhà thầu trong quá trình thực hiện hợp đồng về việc thay đổi các hàng hóa có phiên bản sản xuất, năm sản xuất mới hơn so với hàng hóa ghi trong hợp đồng?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Xác định các điều kiện để chủ đầu tư chấp thuận đề xuất của nhà thầu thay đổi hàng hóa có phiên bản sản xuất, năm sản xuất mới hơn so với hợp đồng.",
+    "rule": "Khoản 27 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 27 Điều 140 Nghị định số 214/2025/NĐ-CP, chủ đầu tư chấp thuận đề xuất thay đổi hàng hóa có phiên bản, năm sản xuất mới hơn khi đáp ứng đủ các điều kiện: (1) Có thông báo bằng văn bản của nhà thầu; (2) Hàng hóa thay thế cùng hãng sản xuất và cùng xuất xứ với hàng hóa ghi trong hợp đồng; (3) Có tính năng kỹ thuật, cấu hình, thông số tương đương hoặc tốt hơn; (4) Phù hợp với nhu cầu sử dụng; (5) Đơn giá không vượt đơn giá của hàng hóa ghi trong hợp đồng.",
+    "conclusion": "Điều kiện gồm: hàng hóa thay thế có cùng hãng sản xuất, cùng xuất xứ; tính năng kỹ thuật, cấu hình, thông số tương đương hoặc tốt hơn; phù hợp nhu cầu sử dụng và đơn giá không vượt đơn giá trong hợp đồng."
+  },
+  "keywords": [
+    "Khoản 27 Điều 140",
+    "phiên bản sản xuất mới hơn",
+    "năm sản xuất mới hơn",
+    "cùng hãng sản xuất",
+    "cùng xuất xứ",
+    "không vượt đơn giá"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 34,
+  "file": "q034.json",
+  "questionNumber": 34,
+  "question_number": "Câu 34",
+  "question": "Đối với các gói thầu đã thanh lý hợp đồng, khi lập tờ trình Kế hoạch lựa chọn nhà thầu, giá trị phần công việc đã thực hiện của các gói thầu này được tính như thế nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Kế hoạch lựa chọn nhà thầu",
+  "irac": {
+    "issue": "Xác định cách tính giá trị phần công việc đã thực hiện đối với các gói thầu đã thanh lý hợp đồng khi lập tờ trình Kế hoạch lựa chọn nhà thầu.",
+    "rule": "Điểm a Khoản 1 Điều 40 Luật Đấu thầu số 22/2023/QH15; Điều 19 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm a Khoản 1 Điều 40 Luật Đấu thầu và quy định về lập tờ trình kế hoạch lựa chọn nhà thầu tại Nghị định số 214/2025/NĐ-CP, phần công việc đã thực hiện bao gồm nội dung và giá trị của các gói thầu đã thực hiện trước đó (như chuẩn bị dự án). Đối với các gói thầu đã hoàn thành và thanh lý hợp đồng trước thời điểm lập tờ trình kế hoạch lựa chọn nhà thầu, giá trị của các gói thầu này được ghi nhận vào mục 'Phần công việc đã thực hiện' và được tính theo giá trị thực tế ghi trong biên bản thanh lý hợp đồng (giá trị thanh lý hợp đồng).",
+    "conclusion": "Đối với các gói thầu đã thanh lý hợp đồng, khi lập tờ trình kế hoạch lựa chọn nhà thầu, giá trị phần công việc đã thực hiện của các gói thầu này được tính theo giá trị thanh lý hợp đồng."
+  },
+  "keywords": [
+    "Điểm a Khoản 1 Điều 40",
+    "gói thầu đã thanh lý hợp đồng",
+    "phần công việc đã thực hiện",
+    "giá trị thanh lý hợp đồng"
+  ]
+}

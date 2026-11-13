@@ -1,0 +1,26 @@
+{
+  "id": 225,
+  "file": "q225.json",
+  "questionNumber": 225,
+  "question_number": "Câu 225",
+  "question": "Đối với gói thầu có tính chất quan trọng, trọng điểm áp dụng hình thức chỉ định thầu, lựa chọn nhà thầu trong trường hợp đặc biệt hoặc đặt hàng, nội dung giám sát bao gồm những gì?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Quản lý nhà nước & Giám sát hoạt động đấu thầu",
+  "irac": {
+    "issue": "Xác định các nội dung giám sát hoạt động đấu thầu đối với gói thầu có tính chất quan trọng, trọng điểm áp dụng hình thức chỉ định thầu, lựa chọn nhà thầu trong trường hợp đặc biệt hoặc đặt hàng.",
+    "rule": "Khoản 3 Điều 86 Luật Đấu thầu số 22/2023/QH15 (sửa đổi bởi Luật số 90/2025/QH15); Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định về giám sát hoạt động đấu thầu tại Luật Đấu thầu và Nghị định số 214/2025/NĐ-CP, đối với gói thầu có tính chất quan trọng, trọng điểm áp dụng hình thức chỉ định thầu, lựa chọn nhà thầu trong trường hợp đặc biệt hoặc đặt hàng, nội dung giám sát bao gồm: việc tuân thủ quy định pháp luật về điều kiện áp dụng hình thức lựa chọn nhà thầu; việc lập, phê duyệt hồ sơ yêu cầu; quá trình đánh giá hồ sơ đề xuất, xác định nhà thầu có đủ năng lực, kinh nghiệm; quá trình thương thảo, hoàn thiện và ký kết hợp đồng.",
+    "conclusion": "Nội dung giám sát bao gồm: việc đáp ứng điều kiện áp dụng hình thức lựa chọn nhà thầu, lập và phê duyệt hồ sơ yêu cầu, đánh giá năng lực kinh nghiệm nhà thầu, thương thảo, hoàn thiện và ký kết hợp đồng."
+  },
+  "keywords": [
+    "Điều 86",
+    "giám sát hoạt động đấu thầu",
+    "gói thầu quan trọng trọng điểm",
+    "chỉ định thầu",
+    "trường hợp đặc biệt",
+    "đặt hàng"
+  ]
+}

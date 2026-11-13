@@ -1,0 +1,25 @@
+{
+  "id": 142,
+  "file": "q142.json",
+  "questionNumber": 142,
+  "question_number": "Câu 142",
+  "question": "Trung tâm X là đơn vị sự nghiệp công lập tự chủ chi thường xuyên thuộc tỉnh A tổ chức lựa chọn nhà thầu đối với gói thầu mua sắm hàng hóa sử dụng nguồn thu hợp pháp (không sử dụng ngân sách nhà nước), trường hợp nhà thầu có kiến nghị về hồ sơ mời thầu gửi cả người có thẩm quyền và chủ đầu tư của gói thầu thì việc giải quyết kiến nghị được thực hiện theo quy trình nào?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Xác định quy trình giải quyết kiến nghị đối với gói thầu mua sắm hàng hóa sử dụng nguồn thu hợp pháp (không dùng NSNN) của đơn vị sự nghiệp công lập tự chủ chi thường xuyên.",
+    "rule": "Điểm d Khoản 7 Điều 3 Luật Đấu thầu số 22/2023/QH15 (sửa đổi, bổ sung bởi Luật số 90/2025/QH15); Khoản 7 Điều 138 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Điểm d Khoản 7 Điều 3 Luật Đấu thầu (sửa đổi bởi Luật số 90/2025/QH15) và Khoản 7 Điều 138 Nghị định số 214/2025/NĐ-CP, gói thầu mua sắm hàng hóa sử dụng nguồn thu hợp pháp (không sử dụng ngân sách nhà nước) của đơn vị sự nghiệp công lập tự chủ chi thường xuyên thuộc diện tự quyết định mua sắm. Do đó, người đứng đầu Trung tâm X tự ban hành điều kiện, quy trình giải quyết kiến nghị trong đơn vị mình và thực hiện giải quyết theo quy trình đó.",
+    "conclusion": "Việc giải quyết kiến nghị được thực hiện theo điều kiện, quy trình giải quyết kiến nghị do người đứng đầu Trung tâm X tự ban hành trong đơn vị mình."
+  },
+  "keywords": [
+    "Điểm d Khoản 7 Điều 3",
+    "Khoản 7 Điều 138",
+    "đơn vị sự nghiệp công lập tự chủ chi thường xuyên",
+    "nguồn thu hợp pháp",
+    "tự ban hành quy trình"
+  ]
+}

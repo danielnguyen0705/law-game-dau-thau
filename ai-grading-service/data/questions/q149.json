@@ -1,0 +1,23 @@
+{
+  "id": 149,
+  "file": "q149.json",
+  "questionNumber": 149,
+  "question_number": "Câu 149",
+  "question": "Đối với gói thầu chia phần, trường hợp một phần của gói thầu không có nhà thầu tham dự thầu thì chủ đầu tư xử lý thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Xử lý tình huống trong đấu thầu",
+  "irac": {
+    "issue": "Xác định cách xử lý khi một phần của gói thầu chia phần không có nhà thầu tham dự thầu.",
+    "rule": "Điểm a Khoản 10 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm a Khoản 10 Điều 140 Nghị định số 214/2025/NĐ-CP, đối với gói thầu chia phần, trường hợp một phần không có nhà thầu tham dự thầu hoặc không có nhà thầu đáp ứng yêu cầu về kỹ thuật thì chủ đầu tư tách phần đó ra thành gói thầu riêng biệt để tổ chức lựa chọn nhà thầu theo quy định.",
+    "conclusion": "Chủ đầu tư tách phần không có nhà thầu tham dự thầu đó ra thành gói thầu riêng biệt để tổ chức lựa chọn nhà thầu theo quy định."
+  },
+  "keywords": [
+    "Điểm a Khoản 10 Điều 140",
+    "gói thầu chia phần",
+    "tách phần đó ra thành gói thầu riêng biệt"
+  ]
+}

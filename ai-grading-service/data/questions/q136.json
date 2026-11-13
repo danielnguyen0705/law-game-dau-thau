@@ -1,0 +1,24 @@
+{
+  "id": 136,
+  "file": "q136.json",
+  "questionNumber": 136,
+  "question_number": "Câu 136",
+  "question": "Đối với kiến nghị về các vấn đề trước khi có thông báo kết quả lựa chọn nhà thầu, trường hợp nhà thầu gửi đơn kiến nghị đồng thời đến người có thẩm quyền và chủ đầu tư thì chủ thể nào có trách nhiệm giải quyết kiến nghị?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Xác định chủ thể có trách nhiệm giải quyết kiến nghị khi nhà thầu gửi đơn kiến nghị về các vấn đề trước khi có thông báo kết quả lựa chọn nhà thầu đồng thời đến người có thẩm quyền và chủ đầu tư.",
+    "rule": "Khoản 1 Điều 91 Luật Đấu thầu số 22/2023/QH15; Điểm b Khoản 1 Điều 138 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm b Khoản 1 Điều 138 Nghị định số 214/2025/NĐ-CP, đối với kiến nghị về các vấn đề trước khi có thông báo kết quả lựa chọn nhà thầu, trường hợp nhà thầu gửi đơn kiến nghị đồng thời đến người có thẩm quyền và chủ đầu tư thì Chủ đầu tư có trách nhiệm giải quyết kiến nghị.",
+    "conclusion": "Chủ đầu tư có trách nhiệm giải quyết kiến nghị khi nhà thầu gửi đơn kiến nghị trước khi có thông báo kết quả lựa chọn nhà thầu đồng thời đến người có thẩm quyền và chủ đầu tư."
+  },
+  "keywords": [
+    "Điểm b Khoản 1 Điều 138",
+    "trước khi có thông báo kết quả",
+    "gửi đồng thời",
+    "chủ đầu tư"
+  ]
+}

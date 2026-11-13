@@ -1,0 +1,27 @@
+{
+  "id": 18,
+  "file": "q018.json",
+  "questionNumber": 18,
+  "question_number": "Câu 18",
+  "question": "Đối với gói thầu cung cấp dịch vụ tư vấn không qua mạng, trường hợp hồ sơ đề xuất về tài chính của nhà thầu không vượt qua bước đánh giá về kỹ thuật sẽ được xử lý như thế nào theo quy định của pháp luật về đấu thầu?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Lưu trữ & Quản lý hồ sơ đấu thầu",
+  "irac": {
+    "issue": "Xác định thời hạn và cách thức xử lý hồ sơ đề xuất về tài chính của nhà thầu không vượt qua bước đánh giá kỹ thuật đối với gói thầu dịch vụ tư vấn đấu thầu không qua mạng.",
+    "rule": "Điểm a Khoản 1 và Khoản 3 Điều 9 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Căn cứ Điểm a Khoản 1 Điều 9 Luật Đấu thầu số 22/2023/QH15, đối với gói thầu cung cấp dịch vụ tư vấn không qua mạng, hồ sơ đề xuất về tài chính của nhà thầu không vượt qua bước đánh giá về kỹ thuật được trả lại nguyên trạng cho nhà thầu trong thời hạn 10 ngày kể từ ngày ký hợp đồng với nhà thầu được lựa chọn. Tiếp theo, căn cứ Khoản 3 Điều 9, trường hợp hết thời hạn 10 ngày nêu trên mà nhà thầu không nhận lại hồ sơ đề xuất về tài chính của mình thì chủ đầu tư/bên mời thầu xem xét, quyết định việc hủy hồ sơ nhưng phải bảo đảm thông tin trong hồ sơ không bị tiết lộ.",
+    "conclusion": "Hồ sơ đề xuất về tài chính được trả lại nguyên trạng cho nhà thầu trong vòng 10 ngày kể từ ngày ký hợp đồng với nhà thầu trúng thầu; quá thời hạn này nếu nhà thầu không nhận lại thì bên mời thầu/chủ đầu tư quyết định hủy hồ sơ nhưng phải bảo đảm không làm lộ thông tin (Điểm a Khoản 1 và Khoản 3 Điều 9)."
+  },
+  "keywords": [
+    "Điểm a Khoản 1 Điều 9",
+    "Khoản 3 Điều 9",
+    "gói thầu cung cấp dịch vụ tư vấn",
+    "trả lại nguyên trạng",
+    "10 ngày kể từ ngày ký hợp đồng",
+    "hủy hồ sơ",
+    "bảo đảm thông tin không bị tiết lộ"
+  ]
+}

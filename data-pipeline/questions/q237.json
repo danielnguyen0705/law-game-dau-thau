@@ -1,0 +1,25 @@
+{
+  "id": 237,
+  "file": "q237.json",
+  "questionNumber": 237,
+  "question_number": "Câu 237",
+  "question": "Đối với đấu thầu lựa chọn nhà thầu, trường hợp một hoặc một số thành viên liên danh vi phạm hợp đồng, không còn năng lực để tiếp tục thực hiện hợp đồng, làm ảnh hưởng nghiêm trọng đến tiến độ, chất lượng, hiệu quả của gói thầu thì việc đánh giá uy tín của nhà thầu trong việc thực hiện hợp đồng được xử lý như thế nào?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Uy tín nhà thầu & Xử lý vi phạm hợp đồng",
+  "irac": {
+    "issue": "Xác định cách xử lý đánh giá uy tín của nhà thầu trong việc thực hiện hợp đồng khi một hoặc một số thành viên liên danh vi phạm hợp đồng, không còn năng lực tiếp tục thực hiện làm ảnh hưởng nghiêm trọng đến tiến độ, chất lượng, hiệu quả gói thầu.",
+    "rule": "Khoản 2 Điều 20 và Điểm c Khoản 22 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Điểm c Khoản 22 Điều 140 Nghị định số 214/2025/NĐ-CP, trường hợp một hoặc một số thành viên liên danh vi phạm hợp đồng, không còn năng lực để tiếp tục thực hiện hợp đồng làm ảnh hưởng nghiêm trọng đến tiến độ, chất lượng, hiệu quả của gói thầu: (1) Nếu phần công việc của thành viên vi phạm được giao cho các thành viên còn lại trong liên danh thực hiện tiếp thì chỉ thành viên liên danh vi phạm bị đánh giá không bảo đảm uy tín khi thực hiện hợp đồng (và bị đăng tải thông tin vi phạm); (2) Nếu các thành viên còn lại không đủ năng lực hoặc từ chối thực hiện phần việc của thành viên vi phạm dẫn đến phải chấm dứt hợp đồng hoặc tách phần việc đó thành gói thầu riêng thì tất cả các thành viên trong liên danh đều bị coi là không hoàn thành hợp đồng và bị đánh giá về uy tín.",
+    "conclusion": "Nếu các thành viên còn lại đảm nhận tiếp phần công việc của thành viên vi phạm thì chỉ thành viên vi phạm bị đánh giá về uy tín; nếu phải tách thành gói thầu riêng hoặc chấm dứt hợp đồng thì tất cả các thành viên trong liên danh đều bị đánh giá về uy tín."
+  },
+  "keywords": [
+    "Khoản 22 Điều 140",
+    "Điều 20",
+    "Nghị định 214/2025/NĐ-CP",
+    "thành viên liên danh vi phạm hợp đồng",
+    "đánh giá uy tín của nhà thầu"
+  ]
+}

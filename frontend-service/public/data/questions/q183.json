@@ -1,0 +1,24 @@
+{
+  "id": 183,
+  "file": "q183.json",
+  "questionNumber": 183,
+  "question_number": "Câu 183",
+  "question": "Đối với nhà thầu liên danh, việc ký kết văn bản hợp đồng được thực hiện như thế nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Xác định quy định về việc ký kết văn bản hợp đồng đối với nhà thầu liên danh.",
+    "rule": "Khoản 3 Điều 67 Luật Đấu thầu số 22/2023/QH15; Khoản 1 Điều 113 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 3 Điều 67 Luật Đấu thầu số 22/2023/QH15, đối với nhà thầu liên danh, tất cả các thành viên tham gia liên danh phải trực tiếp ký, đóng dấu (nếu có) vào văn bản hợp đồng (trừ trường hợp mua sắm tập trung áp dụng thỏa thuận khung thì các thành viên liên danh trực tiếp ký hoặc thành viên đứng đầu liên danh ký hợp đồng với đơn vị có nhu cầu mua sắm theo phân công tại thỏa thuận liên danh).",
+    "conclusion": "Tất cả các thành viên tham gia liên danh phải trực tiếp ký, đóng dấu (nếu có) vào văn bản hợp đồng (trừ trường hợp mua sắm tập trung theo thỏa thuận khung)."
+  },
+  "keywords": [
+    "Khoản 3 Điều 67",
+    "nhà thầu liên danh",
+    "tất cả các thành viên tham gia liên danh",
+    "trực tiếp ký đóng dấu"
+  ]
+}

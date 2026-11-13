@@ -1,0 +1,26 @@
+{
+  "id": 157,
+  "file": "q157.json",
+  "questionNumber": 157,
+  "question_number": "Câu 157",
+  "question": "Đối với gói thầu xây lắp, dịch vụ phi tư vấn, dịch vụ tư vấn áp dụng đấu thầu trước quy định tại Điều 42 của Luật Đấu thầu, trường hợp dự án được phê duyệt có các nội dung dẫn đến tăng giá gói thầu (hoặc tăng dự toán nếu dự toán được phê duyệt sau khi phê duyệt kế hoạch lựa chọn nhà thầu) từ 30% trở lên hoặc thay đổi tiêu chuẩn đánh giá quan trọng về kỹ thuật hoặc thay đổi cấp công trình quy định trong hồ sơ mời thầu đã phát hành thì chủ đầu tư xử lý như thế nào?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Xử lý tình huống trong đấu thầu",
+  "irac": {
+    "issue": "Xác định cách xử lý đối với gói thầu đấu thầu trước (Điều 42) khi dự án được duyệt dẫn đến tăng giá gói thầu/dự toán từ 30% trở lên hoặc thay đổi tiêu chuẩn kỹ thuật quan trọng hoặc cấp công trình.",
+    "rule": "Điều 42, Điểm b Khoản 1 Điều 17 Luật Đấu thầu số 22/2023/QH15; Khoản 29 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 29 Điều 140 Nghị định số 214/2025/NĐ-CP, đối với gói thầu xây lắp, phi tư vấn, tư vấn áp dụng đấu thầu trước theo Điều 42 Luật Đấu thầu, trường hợp dự án được phê duyệt dẫn đến tăng giá gói thầu (hoặc dự toán) từ 30% trở lên hoặc thay đổi tiêu chuẩn đánh giá quan trọng về kỹ thuật hoặc thay đổi cấp công trình quy định trong HSMT đã phát hành thì chủ đầu tư phải hủy thầu theo Điểm b Khoản 1 Điều 17 Luật Đấu thầu.",
+    "conclusion": "Chủ đầu tư phải thực hiện hủy thầu theo quy định tại Điểm b Khoản 1 Điều 17 của Luật Đấu thầu."
+  },
+  "keywords": [
+    "Khoản 29 Điều 140",
+    "Điều 42",
+    "Điểm b Khoản 1 Điều 17",
+    "đấu thầu trước",
+    "tăng từ 30% trở lên",
+    "hủy thầu"
+  ]
+}

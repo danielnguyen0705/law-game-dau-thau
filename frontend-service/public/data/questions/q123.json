@@ -1,0 +1,29 @@
+{
+  "id": 123,
+  "file": "q123.json",
+  "questionNumber": 123,
+  "question_number": "Câu 123",
+  "question": "Nêu các biện pháp xử lý vi phạm có thể áp dụng trong giai đoạn thực hiện hợp đồng và điều kiện áp dụng.",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Quản lý nhà nước & Xử lý vi phạm",
+  "irac": {
+    "issue": "Nêu các biện pháp xử lý vi phạm có thể áp dụng đối với nhà thầu trong giai đoạn thực hiện hợp đồng và điều kiện áp dụng từng biện pháp.",
+    "rule": "Khoản 6 Điều 68, Điều 70, Điều 87 Luật Đấu thầu số 22/2023/QH15; Điều 19, Điều 133 và các Khoản 20, 22, 23 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Trong giai đoạn thực hiện hợp đồng, khi nhà thầu vi phạm hợp đồng hoặc vi phạm pháp luật đấu thầu, chủ đầu tư và người có thẩm quyền có thể áp dụng các biện pháp xử lý sau đây kèm điều kiện tương ứng: (1) Phạt vi phạm hợp đồng và yêu cầu bồi thường thiệt hại: Áp dụng khi nhà thầu vi phạm các nghĩa vụ về tiến độ, chất lượng, khối lượng đã thỏa thuận trong hợp đồng và gây thiệt hại thực tế; (2) Không hoàn trả (tịch thu) bảo đảm thực hiện hợp đồng (Khoản 6 Điều 68 Luật Đấu thầu): Áp dụng khi nhà thầu từ chối thực hiện hợp đồng đã có hiệu lực, vi phạm thỏa thuận trong hợp đồng hoặc thực hiện chậm tiến độ do lỗi của mình nhưng từ chối gia hạn hiệu lực bảo đảm thực hiện hợp đồng; (3) Chấm dứt hợp đồng để thay thế nhà thầu khác (Khoản 20, 22, 23 Điều 140 Nghị định 214/2025/NĐ-CP): Áp dụng khi nhà thầu không còn năng lực tiếp tục thực hiện hợp đồng làm ảnh hưởng nghiêm trọng đến tiến độ, chất lượng, hiệu quả gói thầu, hoặc nhân sự của nhà thầu bị Tòa án kết án về hành vi vi phạm quy định đấu thầu gây hậu quả nghiêm trọng để nhà thầu trúng thầu; (4) Công khai thông tin nhà thầu vi phạm trên Hệ thống mạng đấu thầu quốc gia và đánh giá giảm uy tín (Điều 19 Nghị định 214/2025/NĐ-CP): Áp dụng khi nhà thầu vi phạm hợp đồng dẫn đến phải chấm dứt hợp đồng hoặc cung cấp hàng hóa không bảo đảm chất lượng; (5) Cấm tham gia hoạt động đấu thầu (Điều 87 Luật Đấu thầu, Điều 133 Nghị định 214/2025/NĐ-CP): Áp dụng khi nhà thầu có hành vi chuyển nhượng thầu trái phép (Khoản 8 Điều 16) hoặc hành vi bị cấm khác tại Điều 16.",
+    "conclusion": "Các biện pháp xử lý vi phạm trong giai đoạn thực hiện hợp đồng gồm: phạt vi phạm hợp đồng và buộc bồi thường thiệt hại; không hoàn trả bảo đảm thực hiện hợp đồng (Khoản 6 Điều 68); chấm dứt hợp đồng để chỉ định nhà thầu khác thực hiện phần việc còn lại (Điều 140 NĐ 214/2025); đăng tải công khai nhà thầu vi phạm và trừ uy tín (Điều 19 NĐ 214/2025); và cấm tham gia hoạt động đấu thầu nếu vi phạm Điều 16 Luật Đấu thầu."
+  },
+  "keywords": [
+    "Khoản 6 Điều 68",
+    "Điều 87",
+    "Điều 19 Nghị định 214/2025/NĐ-CP",
+    "Điều 133 Nghị định 214/2025/NĐ-CP",
+    "Điều 140 Nghị định 214/2025/NĐ-CP",
+    "xử lý vi phạm giai đoạn thực hiện hợp đồng",
+    "tịch thu bảo đảm thực hiện hợp đồng",
+    "chấm dứt hợp đồng",
+    "công khai nhà thầu vi phạm"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 74,
+  "file": "q074.json",
+  "questionNumber": 74,
+  "question_number": "Câu 74",
+  "question": "Hợp đồng nào được phép sử dụng để chứng minh hợp đồng tương tự khi tham dự gói thầu cung cấp thuốc có sử dụng ngân sách nhà nước của Bệnh viện?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định loại hợp đồng được phép sử dụng để chứng minh hợp đồng tương tự khi nhà thầu tham dự gói thầu cung cấp thuốc có sử dụng ngân sách nhà nước của Bệnh viện.",
+    "rule": "Điểm a Khoản 4 Điều 26 và Điều 95 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định về tiêu chuẩn đánh giá kinh nghiệm thực hiện hợp đồng cung cấp hàng hóa tương tự tại Điểm a Khoản 4 Điều 26 Nghị định số 214/2025/NĐ-CP và quy định mua sắm thuốc, khi tham dự gói thầu cung cấp thuốc có sử dụng ngân sách nhà nước của Bệnh viện, nhà thầu được phép sử dụng các hợp đồng cung cấp thuốc (hoặc dược liệu, vị thuốc cổ truyền tương ứng với tính chất gói thầu) đã thực hiện hoàn thành (hoặc hoàn thành phần lớn) với tư cách là nhà thầu chính (độc lập hoặc thành viên liên danh) hoặc nhà thầu phụ, không phân biệt hợp đồng đó được ký kết với cơ sở y tế công lập (sử dụng vốn ngân sách nhà nước) hay ký kết với các cơ sở y tế tư nhân, doanh nghiệp kinh doanh dược phẩm ngoài nhà nước, miễn là đáp ứng yêu cầu về tính chất hàng hóa (thuốc) và quy mô giá trị theo quy định của HSMT.",
+    "conclusion": "Nhà thầu được phép sử dụng bất kỳ hợp đồng cung cấp thuốc hợp pháp nào đã thực hiện (bao gồm cả hợp đồng ký với bệnh viện/cơ sở y tế công lập và hợp đồng ký với cơ sở y tế tư nhân, doanh nghiệp dược ngoài khu vực nhà nước) đáp ứng yêu cầu về tính chất và quy mô giá trị của HSMT để chứng minh hợp đồng tương tự."
+  },
+  "keywords": [
+    "Điểm a Khoản 4 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "Điều 95 Nghị định 214/2025/NĐ-CP",
+    "hợp đồng tương tự",
+    "gói thầu cung cấp thuốc",
+    "cơ sở y tế công lập hoặc tư nhân"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 81,
+  "file": "q081.json",
+  "questionNumber": 81,
+  "question_number": "Câu 81",
+  "question": "Cơ sở để thanh toán hợp đồng cho nhà thầu là gì?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Xác định cơ sở pháp lý để thanh toán hợp đồng cho nhà thầu.",
+    "rule": "Điều 64 Luật Đấu thầu số 22/2023/QH15; Điều 119 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Điều 119 Nghị định số 214/2025/NĐ-CP, giá hợp đồng và các điều khoản cụ thể về thanh toán được ghi trong hợp đồng là cơ sở để chủ đầu tư (hoặc cơ quan thanh toán, Kho bạc Nhà nước) thanh toán cho nhà thầu. Việc thanh toán không căn cứ theo dự toán cũng như các quy định, hướng dẫn hiện hành của Nhà nước về định mức, đơn giá và không căn cứ vào đơn giá trong hóa đơn tài chính đối với các yếu tố đầu vào của nhà thầu như vật tư, máy móc, thiết bị và các yếu tố đầu vào khác.",
+    "conclusion": "Cơ sở để thanh toán hợp đồng cho nhà thầu là giá hợp đồng và các điều khoản cụ thể về thanh toán được ghi trong hợp đồng đã ký kết giữa chủ đầu tư và nhà thầu."
+  },
+  "keywords": [
+    "Điều 119 Nghị định 214/2025/NĐ-CP",
+    "cơ sở thanh toán hợp đồng",
+    "giá hợp đồng",
+    "điều khoản cụ thể về thanh toán trong hợp đồng"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 13,
+  "file": "q013.json",
+  "questionNumber": 13,
+  "question_number": "Câu 13",
+  "question": "Đối với gói thầu xây lắp đấu thầu không qua mạng, hồ sơ đề xuất tài chính của nhà thầu không vượt qua bước đánh giá về kỹ thuật sẽ được trả lại khi nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Lưu trữ & Quản lý hồ sơ đấu thầu",
+  "irac": {
+    "issue": "Xác định thời điểm trả lại hồ sơ đề xuất tài chính nguyên trạng cho nhà thầu không vượt qua bước đánh giá kỹ thuật đối với gói thầu xây lắp đấu thầu không qua mạng.",
+    "rule": "Điểm b Khoản 1 Điều 9 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Căn cứ Điểm b Khoản 1 Điều 9 Luật Đấu thầu số 22/2023/QH15, đối với gói thầu xây lắp (cũng như gói thầu dịch vụ phi tư vấn, mua sắm hàng hóa, hỗn hợp áp dụng phương thức một giai đoạn hai túi hồ sơ) tổ chức đấu thầu không qua mạng, hồ sơ đề xuất về tài chính của nhà thầu không vượt qua bước đánh giá về kỹ thuật sẽ được trả lại nguyên trạng cho nhà thầu khi hoàn trả hoặc giải tỏa bảo đảm dự thầu của nhà thầu không được lựa chọn hoặc khi đăng tải kết quả lựa chọn nhà thầu.",
+    "conclusion": "Hồ sơ đề xuất về tài chính được trả lại nguyên trạng cho nhà thầu khi hoàn trả hoặc giải tỏa bảo đảm dự thầu của nhà thầu không được lựa chọn, hoặc khi đăng tải kết quả lựa chọn nhà thầu (Điểm b Khoản 1 Điều 9 Luật Đấu thầu)."
+  },
+  "keywords": [
+    "Điểm b Khoản 1 Điều 9",
+    "hồ sơ đề xuất về tài chính",
+    "không vượt qua bước đánh giá về kỹ thuật",
+    "trả lại nguyên trạng",
+    "hoàn trả hoặc giải tỏa bảo đảm dự thầu",
+    "đăng tải kết quả lựa chọn nhà thầu"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": 37,
+  "file": "q037.json",
+  "questionNumber": 37,
+  "question_number": "Câu 37",
+  "question": "Phân tích yêu cầu bảo đảm cạnh tranh trong đấu thầu và nêu hai ví dụ về quan hệ giữa các chủ thể làm phát sinh vi phạm.",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Bảo đảm cạnh tranh & Tư cách hợp lệ",
+  "irac": {
+    "issue": "Phân tích yêu cầu bảo đảm cạnh tranh trong đấu thầu theo Luật Đấu thầu và nêu hai ví dụ cụ thể về mối quan hệ giữa các chủ thể làm phát sinh vi phạm.",
+    "rule": "Điều 6 Luật Đấu thầu số 22/2023/QH15; Điều 4 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Về bản chất pháp lý, Điều 6 Luật Đấu thầu thiết lập cơ chế tiền kiểm cấu trúc nhằm ngăn ngừa xung đột lợi ích và nguy cơ thông đồng bằng cách yêu cầu nhà thầu phải độc lập về pháp lý và tài chính với chủ đầu tư, bên mời thầu, các nhà thầu tư vấn của gói thầu và các nhà thầu cùng dự đấu thầu hạn chế. Cụ thể theo Khoản 4 Điều 6, nhà thầu được đánh giá là độc lập về pháp lý và tài chính khi đáp ứng đủ các điều kiện: (a) Không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý đối với đơn vị sự nghiệp công lập; (b) Nhà thầu với chủ đầu tư, bên mời thầu không có cổ phần hoặc phần vốn góp trên 30% của nhau; (c) Nhà thầu không có cổ phần hoặc phần vốn góp trên 20% của nhau khi cùng tham dự thầu trong một gói thầu đối với đấu thầu hạn chế; (d) Nhà thầu tham dự thầu với nhà thầu tư vấn cho gói thầu đó không có cổ phần hoặc phần vốn góp của nhau; không cùng có cổ phần hoặc phần vốn góp trên 20% của một tổ chức, cá nhân khác với từng bên (trừ ngoại lệ tại Khoản 4a đối với tập đoàn, tổng công ty nhà nước). Hai ví dụ vi phạm: Ví dụ 1 (Vi phạm quan hệ vốn với chủ đầu tư): Công ty A tham dự gói thầu xây lắp do Công ty cổ phần X làm chủ đầu tư, trong đó Công ty X đang nắm giữ 35% vốn điều lệ của Công ty A (vượt ngưỡng 30% tại Điểm b Khoản 4 Điều 6). Ví dụ 2 (Vi phạm quan hệ với tư vấn): Công ty B tham dự gói thầu mua sắm hàng hóa mà Công ty C là đơn vị tư vấn lập HSMT và đánh giá HSDT; Công ty B sở hữu 5% cổ phần của Công ty C (vi phạm Điểm d Khoản 4 Điều 6 vì giữa nhà thầu dự thầu và tư vấn gói thầu không được có bất kỳ cổ phần/vốn góp nào của nhau).",
+    "conclusion": "Bảo đảm cạnh tranh đòi hỏi sự độc lập về quản lý hành chính (đối với ĐVSNCL) và độc lập về tỷ lệ sở hữu vốn (≤30% với chủ đầu tư; ≤20% giữa các nhà thầu đấu thầu hạn chế; 0% trực tiếp và ≤20% qua bên thứ ba đối với nhà thầu tư vấn). Hai ví dụ vi phạm: chủ đầu tư sở hữu 35% vốn của nhà thầu dự thầu; hoặc nhà thầu dự thầu sở hữu 5% cổ phần của công ty tư vấn lập HSMT gói thầu đó."
+  },
+  "keywords": [
+    "Điều 6",
+    "Khoản 4 Điều 6",
+    "Điều 4 Nghị định 214/2025/NĐ-CP",
+    "bảo đảm cạnh tranh",
+    "độc lập về pháp lý và tài chính",
+    "trên 30%",
+    "trên 20%",
+    "nhà thầu tư vấn"
+  ]
+}

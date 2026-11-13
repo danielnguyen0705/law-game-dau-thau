@@ -1,0 +1,26 @@
+{
+  "id": 15,
+  "file": "q015.json",
+  "questionNumber": 15,
+  "question_number": "Câu 15",
+  "question": "Thành viên tổ chuyên gia thuộc tổ chức tư vấn đấu thầu cần có tối thiểu bao nhiêu năm kinh nghiệm trong lĩnh vực liên quan?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Chủ thể tham gia đấu thầu",
+  "irac": {
+    "issue": "Xác định số năm kinh nghiệm tối thiểu bắt buộc đối với thành viên tổ chuyên gia thuộc tổ chức tư vấn đấu thầu.",
+    "rule": "Khoản 3 Điều 19 Luật Đấu thầu số 22/2023/QH15 và Điểm d Khoản 1 Điều 21 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 3 Điều 19 Luật Đấu thầu số 22/2023/QH15 và Điểm d Khoản 1 Điều 21 Nghị định số 214/2025/NĐ-CP, thành viên tổ chuyên gia phải có tối thiểu 03 năm công tác thuộc một trong các lĩnh vực liên quan đến nội dung pháp lý, kỹ thuật, tài chính của gói thầu.",
+    "conclusion": "Thành viên tổ chuyên gia cần có tối thiểu 03 năm kinh nghiệm công tác trong lĩnh vực liên quan đến nội dung pháp lý, kỹ thuật, tài chính của gói thầu."
+  },
+  "keywords": [
+    "Khoản 3 Điều 19 Luật Đấu thầu",
+    "Điểm d Khoản 1 Điều 21 Nghị định 214/2025/NĐ-CP",
+    "tổ chuyên gia",
+    "tối thiểu 03 năm",
+    "3 năm kinh nghiệm",
+    "pháp lý kỹ thuật tài chính"
+  ]
+}

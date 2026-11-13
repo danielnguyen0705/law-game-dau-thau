@@ -1,0 +1,25 @@
+{
+  "id": 151,
+  "file": "q151.json",
+  "questionNumber": 151,
+  "question_number": "Câu 151",
+  "question": "Trường hợp phải chấm dứt hợp đồng với nhà thầu vi phạm hợp đồng để thay thế nhà thầu mới thì phần công việc chưa thực hiện được áp dụng hình thức chỉ định thầu cho nhà thầu khác với giá trị được tính như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Xử lý tình huống trong đấu thầu",
+  "irac": {
+    "issue": "Xác định cách tính giá trị phần công việc chưa thực hiện khi chấm dứt hợp đồng với nhà thầu vi phạm để chỉ định thầu cho nhà thầu mới.",
+    "rule": "Điểm đ Khoản 20 và Khoản 23 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm đ Khoản 20 và Khoản 23 Điều 140 Nghị định số 214/2025/NĐ-CP, khi chấm dứt hợp đồng với nhà thầu vi phạm để thay thế nhà thầu mới, phần công việc chưa thực hiện được áp dụng hình thức chỉ định thầu cho nhà thầu khác với giá trị được tính bằng giá trị ghi trong hợp đồng trừ đi giá trị của phần công việc đã thực hiện trước đó.",
+    "conclusion": "Giá trị phần công việc chưa thực hiện được tính bằng giá trị ghi trong hợp đồng trừ đi giá trị của phần công việc đã thực hiện trước đó."
+  },
+  "keywords": [
+    "Khoản 20 Điều 140",
+    "Khoản 23 Điều 140",
+    "chấm dứt hợp đồng",
+    "chỉ định thầu",
+    "giá trị ghi trong hợp đồng trừ đi giá trị của phần công việc đã thực hiện"
+  ]
+}

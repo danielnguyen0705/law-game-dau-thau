@@ -1,0 +1,28 @@
+{
+  "id": 48,
+  "file": "q048.json",
+  "questionNumber": 48,
+  "question_number": "Câu 48",
+  "question": "Đối với gói thầu cung cấp dịch vụ tư vấn, phương pháp đánh giá nào không được áp dụng?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định phương pháp đánh giá hồ sơ dự thầu không được áp dụng đối với gói thầu cung cấp dịch vụ tư vấn.",
+    "rule": "Điều 58 và Điều 59 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 1 Điều 59 Luật Đấu thầu số 22/2023/QH15, đối với gói thầu cung cấp dịch vụ tư vấn, việc đánh giá hồ sơ dự thầu chỉ áp dụng 04 phương pháp: (1) Phương pháp giá thấp nhất; (2) Phương pháp giá cố định; (3) Phương pháp kết hợp giữa kỹ thuật và giá; (4) Phương pháp dựa trên kỹ thuật. Trong khi đó, 'Phương pháp giá đánh giá' (quy định tại Khoản 2 Điều 58 Luật Đấu thầu để quy đổi các chi phí vận hành, bảo dưỡng, vòng đời sử dụng về cùng một mặt bằng) chỉ áp dụng cho gói thầu dịch vụ phi tư vấn, mua sắm hàng hóa, xây lắp và hỗn hợp, hoàn toàn không được áp dụng đối với gói thầu cung cấp dịch vụ tư vấn.",
+    "conclusion": "Đối với gói thầu cung cấp dịch vụ tư vấn, 'Phương pháp giá đánh giá' không được áp dụng."
+  },
+  "keywords": [
+    "Điều 58",
+    "Điều 59",
+    "gói thầu cung cấp dịch vụ tư vấn",
+    "phương pháp giá đánh giá",
+    "giá thấp nhất",
+    "giá cố định",
+    "kết hợp kỹ thuật và giá",
+    "dựa trên kỹ thuật"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 188,
+  "file": "q188.json",
+  "questionNumber": 188,
+  "question_number": "Câu 188",
+  "question": "Đối với gói thầu bảo hiểm, nhà thầu tham dự thầu có được xuất trình giấy chứng nhận bảo hiểm bảo lãnh do chính mình phát hành không?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Bảo đảm dự thầu",
+  "irac": {
+    "issue": "Xác định đối với gói thầu bảo hiểm, nhà thầu tham dự thầu có được xuất trình giấy chứng nhận bảo hiểm bảo lãnh do chính mình phát hành hay không.",
+    "rule": "Điểm d Khoản 3 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm d Khoản 3 Điều 26 Nghị định số 214/2025/NĐ-CP, đối với gói thầu bảo hiểm, nhà thầu tham dự thầu không được xuất trình giấy chứng nhận bảo hiểm bảo lãnh do chính mình phát hành nhằm bảo đảm tính độc lập và hiệu lực bảo đảm dự thầu.",
+    "conclusion": "Không. Đối với gói thầu bảo hiểm, nhà thầu tham dự thầu không được xuất trình giấy chứng nhận bảo hiểm bảo lãnh do chính mình phát hành."
+  },
+  "keywords": [
+    "Điểm d Khoản 3 Điều 26",
+    "Nghị định 214/2025/NĐ-CP",
+    "gói thầu bảo hiểm",
+    "giấy chứng nhận bảo hiểm bảo lãnh do chính mình phát hành"
+  ]
+}

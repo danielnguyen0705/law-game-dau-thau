@@ -1,0 +1,28 @@
+{
+  "id": 75,
+  "file": "q075.json",
+  "questionNumber": 75,
+  "question_number": "Câu 75",
+  "question": "Nêu các trường hợp thư bảo lãnh hoặc giấy chứng nhận bảo hiểm bảo lãnh dự thầu bị đánh giá không hợp lệ đối với gói thầu hàng hóa đấu thầu rộng rãi không qua mạng.",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Bảo đảm dự thầu & Bảo đảm thực hiện hợp đồng",
+  "irac": {
+    "issue": "Liệt kê các trường hợp thư bảo lãnh dự thầu hoặc giấy chứng nhận bảo hiểm bảo lãnh dự thầu bị đánh giá là không hợp lệ đối với gói thầu hàng hóa đấu thầu rộng rãi không qua mạng.",
+    "rule": "Khoản 1, Khoản 4, Khoản 5 Điều 14 Luật Đấu thầu số 22/2023/QH15; Điểm d Khoản 3 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Điều 14 Luật Đấu thầu và Điểm d Khoản 3 Điều 26 Nghị định số 214/2025/NĐ-CP, đối với đấu thầu không qua mạng, thư bảo lãnh dự thầu hoặc giấy chứng nhận bảo hiểm bảo lãnh dự thầu bị đánh giá là không hợp lệ khi thuộc một trong các trường hợp sau đây: (1) Có giá trị thấp hơn giá trị yêu cầu trong HSMT; (2) Thời gian có hiệu lực ngắn hơn thời gian yêu cầu trong HSMT; (3) Không đúng tên đơn vị thụ hưởng (chủ đầu tư/bên mời thầu) theo quy định trong HSMT; (4) Không có chữ ký hợp lệ của người đại diện theo pháp luật (hoặc người được ủy quyền hợp pháp) của tổ chức phát hành; (5) Ký trước khi chủ đầu tư phát hành HSMT; (6) Có kèm theo các điều kiện gây bất lợi cho chủ đầu tư; (7) Không phải là bản gốc; (8) Được phát hành bởi chủ thể không hợp pháp (không phải là tổ chức tín dụng trong nước, chi nhánh ngân hàng nước ngoài được thành lập theo pháp luật Việt Nam hoặc doanh nghiệp bảo hiểm phi nhân thọ trong nước, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài được thành lập theo pháp luật Việt Nam). (Riêng đối với gói thầu bảo hiểm, nhà thầu không được xuất trình giấy chứng nhận bảo hiểm bảo lãnh do chính mình phát hành).",
+    "conclusion": "Thư bảo lãnh hoặc giấy chứng nhận bảo hiểm bảo lãnh dự thầu bị đánh giá không hợp lệ khi: không phải bản gốc; giá trị thấp hơn yêu cầu; hiệu lực ngắn hơn yêu cầu; sai tên đơn vị thụ hưởng; không có chữ ký hợp lệ; ký trước khi phát hành HSMT; kèm điều kiện gây bất lợi cho chủ đầu tư; hoặc do tổ chức không đúng thẩm quyền phát hành."
+  },
+  "keywords": [
+    "Điều 14",
+    "Điểm d Khoản 3 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "thư bảo lãnh dự thầu không hợp lệ",
+    "giá trị thấp hơn",
+    "hiệu lực ngắn hơn",
+    "sai tên đơn vị thụ hưởng",
+    "ký trước khi phát hành HSMT",
+    "điều kiện gây bất lợi"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 101,
+  "file": "q101.json",
+  "questionNumber": 101,
+  "question_number": "Câu 101",
+  "question": "Đối với các gói thầu mua sắm tập trung, trách nhiệm cung cấp thông tin về kết quả thực hiện hợp đồng của nhà thầu do ai thực hiện?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Mua sắm tập trung",
+  "irac": {
+    "issue": "Xác định chủ thể có trách nhiệm cung cấp và đăng tải thông tin về kết quả thực hiện hợp đồng của nhà thầu đối với gói thầu mua sắm tập trung.",
+    "rule": "Khoản 4 Điều 19 và Điều 92 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 4 Điều 19 và Điều 92 Nghị định số 214/2025/NĐ-CP, đối với gói thầu mua sắm tập trung áp dụng thỏa thuận khung, đơn vị có nhu cầu mua sắm là chủ thể trực tiếp ký kết hợp đồng, nghiệm thu, thanh toán và thanh lý hợp đồng với nhà thầu. Do đó, trách nhiệm cung cấp thông tin về kết quả thực hiện hợp đồng của nhà thầu trên Hệ thống mạng đấu thầu quốc gia thuộc về đơn vị có nhu cầu mua sắm (trường hợp đơn vị mua sắm tập trung trực tiếp ký hợp đồng trọn gói theo cách thức tổng hợp thì do đơn vị mua sắm tập trung thực hiện).",
+    "conclusion": "Đối với các gói thầu mua sắm tập trung, trách nhiệm cung cấp thông tin về kết quả thực hiện hợp đồng của nhà thầu do đơn vị có nhu cầu mua sắm (đơn vị trực tiếp ký kết và quản lý hợp đồng) thực hiện."
+  },
+  "keywords": [
+    "Khoản 4 Điều 19 Nghị định 214/2025/NĐ-CP",
+    "Điều 92 Nghị định 214/2025/NĐ-CP",
+    "kết quả thực hiện hợp đồng",
+    "mua sắm tập trung",
+    "đơn vị có nhu cầu mua sắm"
+  ]
+}

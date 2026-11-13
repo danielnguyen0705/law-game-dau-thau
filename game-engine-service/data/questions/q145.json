@@ -1,0 +1,26 @@
+{
+  "id": 145,
+  "file": "q145.json",
+  "questionNumber": 145,
+  "question_number": "Câu 145",
+  "question": "Gói thầu mua thuốc áp dụng phương thức một giai đoạn hai túi hồ sơ có giá gói thầu 100 tỷ đồng. Trong quá trình tham dự thầu, nhà thầu X không đạt về kỹ thuật có kiến nghị về kết quả lựa chọn nhà thầu của gói thầu gửi Hội đồng giải quyết kiến nghị (trong đơn kiến nghị nhà thầu nêu giá dự thầu của mình là 90 tỷ đồng). Chi phí giải quyết kiến nghị nhà thầu X phải nộp là bao nhiêu?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Tính toán mức chi phí giải quyết kiến nghị mà nhà thầu X phải nộp khi không đạt bước kỹ thuật ở gói thầu một giai đoạn hai túi hồ sơ có giá gói thầu 100 tỷ đồng.",
+    "rule": "Điểm c và đoạn cuối Khoản 8 Điều 14 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 8 Điều 14 Nghị định số 214/2025/NĐ-CP: Do gói thầu áp dụng phương thức 1 giai đoạn 2 túi hồ sơ và nhà thầu X không đạt về kỹ thuật (không được mở HSĐXTC), chi phí giải quyết kiến nghị phải tính trên cơ sở giá gói thầu (100 tỷ đồng), không tính theo giá dự thầu 90 tỷ đồng. Theo Điểm c Khoản 8 Điều 14, đối với gói thầu có giá từ 100 tỷ đồng đến dưới 200 tỷ đồng, mức chi phí bằng 0,02% nhưng tối thiểu là 25.000.000 đồng. Ta có: 100 tỷ đồng × 0,02% = 20.000.000 đồng < 25.000.000 đồng, nên áp dụng mức tối thiểu 25.000.000 đồng.",
+    "conclusion": "Chi phí giải quyết kiến nghị nhà thầu X phải nộp là 25.000.000 đồng (Hai mươi lăm triệu đồng)."
+  },
+  "keywords": [
+    "Khoản 8 Điều 14",
+    "Nghị định 214/2025/NĐ-CP",
+    "một giai đoạn hai túi hồ sơ",
+    "giá gói thầu",
+    "0,02%",
+    "25.000.000 đồng"
+  ]
+}

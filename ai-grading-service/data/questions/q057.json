@@ -1,0 +1,25 @@
+{
+  "id": 57,
+  "file": "q057.json",
+  "questionNumber": 57,
+  "question_number": "Câu 57",
+  "question": "Việc đánh giá nhà thầu đang trong thời gian bị cấm tham dự thầu thuộc nội dung đánh giá về tiêu chí nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định việc đánh giá nhà thầu đang trong thời gian bị cấm tham dự thầu thuộc nội dung đánh giá về tiêu chí nào.",
+    "rule": "Điểm e Khoản 1 Điều 5 Luật Đấu thầu số 22/2023/QH15; Điểm g Khoản 3 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm e Khoản 1 Điều 5 Luật Đấu thầu số 22/2023/QH15, một trong các điều kiện để nhà thầu có tư cách hợp lệ là 'Không đang trong thời gian bị cấm tham dự thầu theo quyết định của người có thẩm quyền, Bộ trưởng, Thủ trưởng cơ quan ngang Bộ, cơ quan thuộc Chính phủ, cơ quan khác ở Trung ương, Chủ tịch Ủy ban nhân dân cấp tỉnh'. Theo Khoản 3 Điều 26 Nghị định số 214/2025/NĐ-CP, việc xem xét tư cách hợp lệ của nhà thầu theo Điều 5 Luật Đấu thầu thuộc nội dung đánh giá về Tính hợp lệ của hồ sơ dự thầu.",
+    "conclusion": "Việc đánh giá nhà thầu đang trong thời gian bị cấm tham dự thầu thuộc nội dung đánh giá về Tư cách hợp lệ của nhà thầu, nằm trong tiêu chí đánh giá Tính hợp lệ của hồ sơ dự thầu."
+  },
+  "keywords": [
+    "Điểm e Khoản 1 Điều 5",
+    "Điểm g Khoản 3 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "bị cấm tham dự thầu",
+    "tư cách hợp lệ",
+    "tính hợp lệ của hồ sơ dự thầu"
+  ]
+}

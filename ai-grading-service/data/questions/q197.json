@@ -1,0 +1,25 @@
+{
+  "id": 197,
+  "file": "q197.json",
+  "questionNumber": 197,
+  "question_number": "Câu 197",
+  "question": "Khi xây dựng hồ sơ yêu cầu đối với hình thức chỉ định thầu, chủ đầu tư quy định nhà thầu chuẩn bị 01 bản gốc và tối đa bao nhiêu bản chụp hồ sơ đề xuất?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Chỉ định thầu & Hồ sơ yêu cầu",
+  "irac": {
+    "issue": "Xác định số lượng bản chụp hồ sơ đề xuất tối đa mà chủ đầu tư được quy định nhà thầu chuẩn bị ngoài 01 bản gốc khi xây dựng hồ sơ yêu cầu chỉ định thầu.",
+    "rule": "Khoản 2 Điều 79 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định về lập hồ sơ yêu cầu đối với chỉ định thầu tại Nghị định số 214/2025/NĐ-CP, chủ đầu tư quy định nhà thầu chuẩn bị 01 bản gốc và số lượng bản chụp hồ sơ đề xuất nhưng tối đa không quá 03 bản chụp.",
+    "conclusion": "Chủ đầu tư quy định nhà thầu chuẩn bị 01 bản gốc và tối đa không quá 03 bản chụp hồ sơ đề xuất."
+  },
+  "keywords": [
+    "01 bản gốc",
+    "tối đa 03 bản chụp",
+    "hồ sơ yêu cầu",
+    "chỉ định thầu",
+    "Nghị định 214/2025/NĐ-CP"
+  ]
+}

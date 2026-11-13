@@ -1,0 +1,23 @@
+{
+  "id": 166,
+  "file": "q166.json",
+  "questionNumber": 166,
+  "question_number": "Câu 166",
+  "question": "Phương pháp kết hợp giữa kỹ thuật và giá phù hợp với những đặc điểm nào của gói thầu tư vấn?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Phương pháp đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định đặc điểm của gói thầu tư vấn phù hợp để áp dụng phương pháp kết hợp giữa kỹ thuật và giá.",
+    "rule": "Điểm a Khoản 3 Điều 59 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Điểm a Khoản 3 Điều 59 Luật Đấu thầu số 22/2023/QH15, phương pháp kết hợp giữa kỹ thuật và giá được áp dụng đối với gói thầu tư vấn chú trọng tới cả chất lượng và chi phí thực hiện gói thầu (trong đó tỷ trọng điểm kỹ thuật từ 70% - 80%, điểm giá từ 20% - 30%).",
+    "conclusion": "Phương pháp kết hợp giữa kỹ thuật và giá phù hợp với gói thầu tư vấn chú trọng tới cả chất lượng và chi phí thực hiện gói thầu."
+  },
+  "keywords": [
+    "Khoản 3 Điều 59",
+    "kết hợp giữa kỹ thuật và giá",
+    "chú trọng tới cả chất lượng và chi phí"
+  ]
+}

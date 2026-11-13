@@ -1,0 +1,25 @@
+{
+  "id": 176,
+  "file": "q176.json",
+  "questionNumber": 176,
+  "question_number": "Câu 176",
+  "question": "Đâu là điểm khác biệt chính giữa hợp đồng theo đơn giá cố định và hợp đồng theo đơn giá điều chỉnh?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Phân biệt điểm khác biệt chính giữa hợp đồng theo đơn giá cố định và hợp đồng theo đơn giá điều chỉnh.",
+    "rule": "Khoản 2 và Khoản 3 Điều 64 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 2 và Khoản 3 Điều 64 Luật Đấu thầu số 22/2023/QH15: Hợp đồng theo đơn giá cố định có đơn giá không thay đổi trong suốt thời gian thực hiện đối với toàn bộ nội dung công việc trong hợp đồng; trong khi đó, hợp đồng theo đơn giá điều chỉnh có đơn giá và giá hợp đồng có thể được điều chỉnh căn cứ vào các thỏa thuận trong hợp đồng (khi có biến động giá yếu tố đầu vào).",
+    "conclusion": "Điểm khác biệt chính là hợp đồng theo đơn giá cố định có đơn giá không thay đổi trong suốt thời gian thực hiện hợp đồng, còn hợp đồng theo đơn giá điều chỉnh thì đơn giá có thể được điều chỉnh theo thỏa thuận trong hợp đồng."
+  },
+  "keywords": [
+    "Khoản 2 Điều 64",
+    "Khoản 3 Điều 64",
+    "đơn giá cố định",
+    "đơn giá điều chỉnh",
+    "không thay đổi"
+  ]
+}

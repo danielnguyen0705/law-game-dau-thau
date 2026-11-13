@@ -1,0 +1,25 @@
+{
+  "id": 171,
+  "file": "q171.json",
+  "questionNumber": 171,
+  "question_number": "Câu 171",
+  "question": "Thời gian có hiệu lực của bảo đảm thực hiện hợp đồng được tính từ khi nào đến khi nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Xác định mốc thời gian có hiệu lực của bảo đảm thực hiện hợp đồng.",
+    "rule": "Khoản 5 Điều 68 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 5 Điều 68 Luật Đấu thầu số 22/2023/QH15, thời gian có hiệu lực của bảo đảm thực hiện hợp đồng được tính từ ngày hợp đồng có hiệu lực cho đến ngày các bên hoàn thành nghĩa vụ theo hợp đồng hoặc ngày chuyển sang thực hiện nghĩa vụ bảo hành đối với trường hợp có quy định về bảo hành.",
+    "conclusion": "Tính từ ngày hợp đồng có hiệu lực cho đến ngày các bên hoàn thành nghĩa vụ theo hợp đồng hoặc ngày chuyển sang thực hiện nghĩa vụ bảo hành."
+  },
+  "keywords": [
+    "Khoản 5 Điều 68",
+    "bảo đảm thực hiện hợp đồng",
+    "ngày hợp đồng có hiệu lực",
+    "hoàn thành nghĩa vụ",
+    "nghĩa vụ bảo hành"
+  ]
+}

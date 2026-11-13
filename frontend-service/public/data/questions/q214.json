@@ -1,0 +1,25 @@
+{
+  "id": 214,
+  "file": "q214.json",
+  "questionNumber": 214,
+  "question_number": "Câu 214",
+  "question": "Báo giá hoặc hạng mục báo giá dịch vụ cao hơn hoặc thấp hơn 30% giá trung bình các báo giá được chủ đầu tư xử lý như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Giá gói thầu & Báo giá",
+  "irac": {
+    "issue": "Xác định cách xử lý của chủ đầu tư khi có báo giá hoặc hạng mục báo giá dịch vụ cao hơn hoặc thấp hơn 30% giá trung bình các báo giá.",
+    "rule": "Điều 18 và Điều 19 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định về xác định giá gói thầu dựa trên báo giá tại Nghị định số 214/2025/NĐ-CP, trường hợp có báo giá hoặc hạng mục báo giá dịch vụ cao hơn hoặc thấp hơn 30% so với giá trung bình của các báo giá đã thu thập, chủ đầu tư yêu cầu đơn vị cung cấp báo giá đó làm rõ, giải trình các yếu tố cấu thành giá (hoặc loại bỏ báo giá bất thường nếu đơn vị không giải trình được hợp lý) trước khi tính giá trung bình làm cơ sở xác định giá gói thầu.",
+    "conclusion": "Chủ đầu tư yêu cầu đơn vị cung cấp báo giá làm rõ, giải trình sự chênh lệch (hoặc xem xét loại bỏ báo giá bất thường nếu không giải trình hợp lý) khi xác định giá gói thầu."
+  },
+  "keywords": [
+    "Nghị định 214/2025/NĐ-CP",
+    "báo giá",
+    "cao hơn hoặc thấp hơn 30%",
+    "giá trung bình",
+    "làm rõ"
+  ]
+}

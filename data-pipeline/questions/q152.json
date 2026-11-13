@@ -1,0 +1,26 @@
+{
+  "id": 152,
+  "file": "q152.json",
+  "questionNumber": 152,
+  "question_number": "Câu 152",
+  "question": "Đối với nhà thầu liên danh, trường hợp trong quá trình thực hiện hợp đồng cần đẩy nhanh tiến độ thực hiện so với hợp đồng đã ký (cần sửa đổi hợp đồng) thì cần thực hiện như thế nào?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Xác định thủ tục thực hiện khi nhà thầu liên danh cần đẩy nhanh tiến độ thực hiện hợp đồng dẫn đến phải sửa đổi hợp đồng.",
+    "rule": "Khoản 3 Điều 67, Khoản 3 và Khoản 4 Điều 70 Luật Đấu thầu số 22/2023/QH15; Khoản 22 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 3 Điều 67, Điều 70 Luật Đấu thầu số 22/2023/QH15 và Điểm d Khoản 22 Điều 140 Nghị định số 214/2025/NĐ-CP, khi nhà thầu liên danh cần đẩy nhanh tiến độ thực hiện so với hợp đồng đã ký (cần sửa đổi hợp đồng hoặc điều chỉnh phân công công việc giữa các thành viên liên danh), chủ đầu tư và nhà thầu liên danh phải thỏa thuận, báo cáo người có thẩm quyền xem xét, quyết định cho phép (nếu điều chỉnh phân công công việc giữa các thành viên hoặc thay đổi thời gian thực hiện hợp đồng), và văn bản sửa đổi hợp đồng phải có chữ ký của tất cả các thành viên tham gia liên danh.",
+    "conclusion": "Chủ đầu tư và nhà thầu liên danh thỏa thuận sửa đổi hợp đồng (trình người có thẩm quyền cho phép nếu điều chỉnh phạm vi công việc giữa các thành viên hoặc thay đổi thời gian thực hiện hợp đồng) và tất cả các thành viên liên danh phải ký vào văn bản sửa đổi hợp đồng."
+  },
+  "keywords": [
+    "Khoản 3 Điều 67",
+    "Điều 70",
+    "Khoản 22 Điều 140",
+    "nhà thầu liên danh",
+    "đẩy nhanh tiến độ",
+    "sửa đổi hợp đồng"
+  ]
+}

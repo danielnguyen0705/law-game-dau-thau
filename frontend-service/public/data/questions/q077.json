@@ -1,0 +1,27 @@
+{
+  "id": 77,
+  "file": "q077.json",
+  "questionNumber": 77,
+  "question_number": "Câu 77",
+  "question": "Gói thầu mua sắm trang thiết bị do Sở Tư pháp tỉnh X làm chủ đầu tư có giá gói thầu 03 tỷ đồng, thời gian thực hiện là 12 tháng, trong đó có 02 hạng mục: máy điều hòa (mã HS 8415) giá dự toán 01 tỷ đồng, máy tính xách tay (mã HS 8507) giá dự toán 02 tỷ đồng, hợp đồng tương tự yêu cầu 50% giá gói thầu. Trường hợp nào nhà thầu được coi là không đáp ứng về giá trị của hợp đồng tương tự?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định trường hợp nhà thầu bị coi là không đáp ứng về giá trị của hợp đồng tương tự đối với gói thầu mua sắm trang thiết bị 03 tỷ đồng gồm 02 hạng mục (máy điều hòa mã HS 8415 dự toán 01 tỷ; máy tính xách tay mã HS 8507 dự toán 02 tỷ) với yêu cầu hợp đồng tương tự 50%.",
+    "rule": "Điểm a Khoản 4 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định đánh giá hợp đồng cung cấp hàng hóa tương tự (Điểm a Khoản 4 Điều 26 Nghị định số 214/2025/NĐ-CP và Mẫu HSMT mua sắm hàng hóa): Khi gói thầu bao gồm nhiều hạng mục hàng hóa có tính chất/mã HS khác nhau gồm Hạng mục 1: máy điều hòa (mã HS 8415, dự toán 01 tỷ đồng -> 50% là 0,5 tỷ đồng) và Hạng mục 2: máy tính xách tay (mã HS 8507, dự toán 02 tỷ đồng -> 50% là 01 tỷ đồng), tổng giá trị yêu cầu là 50% x 3 tỷ = 1,5 tỷ đồng. Theo quy tắc đánh giá quy mô hợp đồng tương tự đối với gói thầu có nhiều hạng mục hàng hóa: Nhà thầu phải đáp ứng đồng thời cả về tính chất tương tự (cùng mã chương/nhóm HS) của từng hạng mục và quy mô giá trị. Cụ thể, nhà thầu sẽ bị coi là KHÔNG đáp ứng về giá trị của hợp đồng tương tự trong các trường hợp: (1) Không có hợp đồng cung cấp hàng hóa tương tự với máy điều hòa đạt giá trị tối thiểu 0,5 tỷ đồng (500 triệu đồng) hoặc không có hợp đồng tương tự với máy tính xách tay đạt giá trị tối thiểu 01 tỷ đồng; hoặc (2) Cung cấp nhiều hợp đồng riêng rẽ cho từng hạng mục nhưng không có ít nhất 01 hợp đồng đạt ngưỡng giá trị tối thiểu 1,5 tỷ đồng (hoặc không đáp ứng quy tắc kết hợp tối đa số lượng hợp đồng của HSMT).",
+    "conclusion": "Nhà thầu bị coi là không đáp ứng về giá trị hợp đồng tương tự khi không chứng minh được hợp đồng cung cấp hàng hóa cùng chủng loại/mã HS đạt mức tối thiểu 500 triệu đồng đối với hạng mục máy điều hòa (mã HS 8415) và 01 tỷ đồng đối với hạng mục máy tính xách tay (mã HS 8507), hoặc tổng quy mô hợp đồng không đạt yêu cầu 50% (1,5 tỷ đồng) theo quy tắc của HSMT."
+  },
+  "keywords": [
+    "Điểm a Khoản 4 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "hợp đồng tương tự",
+    "mã HS 8415",
+    "mã HS 8507",
+    "50% giá gói thầu",
+    "500 triệu đồng",
+    "01 tỷ đồng"
+  ]
+}

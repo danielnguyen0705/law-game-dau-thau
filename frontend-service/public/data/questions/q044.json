@@ -1,0 +1,28 @@
+{
+  "id": 44,
+  "file": "q044.json",
+  "questionNumber": 44,
+  "question_number": "Câu 44",
+  "question": "Nội dung nào là tiêu chuẩn đánh giá về năng lực và kinh nghiệm bắt buộc đối với gói thầu xây lắp tổ chức đấu thầu rộng rãi không qua mạng?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định các nội dung là tiêu chuẩn đánh giá về năng lực và kinh nghiệm bắt buộc đối với gói thầu xây lắp tổ chức đấu thầu rộng rãi không qua mạng.",
+    "rule": "Điểm a Khoản 5 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Điểm a Khoản 5 Điều 26 Nghị định số 214/2025/NĐ-CP, đối với gói thầu xây lắp tổ chức đấu thầu rộng rãi, tiêu chuẩn đánh giá về năng lực và kinh nghiệm sử dụng tiêu chí đạt, không đạt và bắt buộc bao gồm các nội dung: (1) Kinh nghiệm thực hiện hợp đồng xây lắp tương tự; (2) Năng lực kỹ thuật: số lượng, trình độ cán bộ chuyên môn chủ chốt (nhân sự chủ chốt), số lượng thiết bị thi công chủ yếu có khả năng huy động để thực hiện gói thầu; (3) Năng lực tài chính: giá trị tài sản ròng, doanh thu, nguồn lực tài chính, việc thực hiện nghĩa vụ kê khai thuế, nộp thuế và các chỉ tiêu cần thiết khác để đánh giá năng lực tài chính của nhà thầu (lưu ý: không yêu cầu hộ kinh doanh nộp báo cáo tài chính và không đánh giá giá trị tài sản ròng đối với hộ kinh doanh).",
+    "conclusion": "Tiêu chuẩn đánh giá về năng lực và kinh nghiệm bắt buộc đối với gói thầu xây lắp đấu thầu rộng rãi không qua mạng gồm: (1) Kinh nghiệm thực hiện hợp đồng xây lắp tương tự; (2) Năng lực kỹ thuật (nhân sự chủ chốt và thiết bị thi công chủ yếu); và (3) Năng lực tài chính (giá trị tài sản ròng, doanh thu, nguồn lực tài chính, thực hiện nghĩa vụ thuế)."
+  },
+  "keywords": [
+    "Điểm a Khoản 5 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "tiêu chuẩn bắt buộc",
+    "gói thầu xây lắp",
+    "hợp đồng xây lắp tương tự",
+    "nhân sự chủ chốt",
+    "thiết bị thi công chủ yếu",
+    "năng lực tài chính",
+    "nguồn lực tài chính"
+  ]
+}

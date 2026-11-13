@@ -1,0 +1,26 @@
+{
+  "id": 230,
+  "file": "q230.json",
+  "questionNumber": 230,
+  "question_number": "Câu 230",
+  "question": "Đối với gói thầu mua sắm hàng hóa thông dụng, sẵn có trên thị trường có giá gói thầu 07 tỷ đồng thì kế hoạch lựa chọn nhà thầu phê duyệt áp dụng hình thức lựa chọn nhà thầu nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hình thức lựa chọn nhà thầu & Chào hàng cạnh tranh",
+  "irac": {
+    "issue": "Xác định hình thức lựa chọn nhà thầu được phê duyệt trong KHLCNT đối với gói thầu mua sắm hàng hóa thông dụng, sẵn có trên thị trường có giá gói thầu 07 tỷ đồng.",
+    "rule": "Điều 21 và Khoản 1 Điều 24 Luật Đấu thầu số 22/2023/QH15 (sửa đổi bởi Luật số 90/2025/QH15); Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 1 Điều 24 Luật Đấu thầu số 22/2023/QH15 (và Nghị định 214/2025/NĐ-CP), hình thức chào hàng cạnh tranh được áp dụng đối với gói thầu mua sắm hàng hóa thông dụng, sẵn có trên thị trường có đặc tính kỹ thuật được tiêu chuẩn hóa và tương đương nhau về chất lượng có giá gói thầu không quá hạn mức quy định (không quá 05 tỷ đồng theo Luật 22/2023 hoặc không quá 10 tỷ đồng theo Nghị định 214/2025/NĐ-CP hướng dẫn Luật 90/2025/QH15), hoặc áp dụng hình thức đấu thầu rộng rãi (không hạn chế giá gói thầu theo Điều 21). Với giá gói thầu 07 tỷ đồng, gói thầu được áp dụng hình thức chào hàng cạnh tranh (theo hạn mức ≤ 10 tỷ đồng mới) hoặc đấu thầu rộng rãi.",
+    "conclusion": "Kế hoạch lựa chọn nhà thầu phê duyệt áp dụng hình thức chào hàng cạnh tranh (theo hạn mức không quá 10 tỷ đồng tại Nghị định 214/2025/NĐ-CP) hoặc đấu thầu rộng rãi (nếu áp dụng ngưỡng 05 tỷ đồng của Điều 24 Luật 22/2023)."
+  },
+  "keywords": [
+    "Điều 21",
+    "Điều 24",
+    "hàng hóa thông dụng sẵn có",
+    "07 tỷ đồng",
+    "chào hàng cạnh tranh",
+    "đấu thầu rộng rãi"
+  ]
+}

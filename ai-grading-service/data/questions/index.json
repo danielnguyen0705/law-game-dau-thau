@@ -1,0 +1,2155 @@
+{
+  "metadata": {
+    "title": "Ngân hàng 237 câu hỏi & đáp án chuẩn IRAC môn Pháp luật Đấu thầu",
+    "sourceFile": "Bo_cau_hoi_on_thi_Luat_Dau_thau.pdf",
+    "legalSources": [
+      "Luật Đấu thầu số 22/2023/QH15",
+      "Luật sửa đổi, bổ sung số 57/2024/QH15 và Luật số 90/2025/QH15",
+      "Luật Đầu tư số 143/2025/QH15",
+      "Nghị định số 214/2025/NĐ-CP",
+      "Nghị định số 60/2021/NĐ-CP",
+      "Handout_Luat_Dau_thau.pdf"
+    ],
+    "totalQuestions": 237,
+    "distribution": {
+      "Dễ": 100,
+      "Trung bình": 107,
+      "Khó": 30
+    }
+  },
+  "index": [
+    {
+      "id": 1,
+      "file": "q001.json",
+      "questionNumber": 1,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu"
+    },
+    {
+      "id": 2,
+      "file": "q002.json",
+      "questionNumber": 2,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu"
+    },
+    {
+      "id": 3,
+      "file": "q003.json",
+      "questionNumber": 3,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu"
+    },
+    {
+      "id": 4,
+      "file": "q004.json",
+      "questionNumber": 4,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Khái niệm cơ bản & Phân loại gói thầu"
+    },
+    {
+      "id": 5,
+      "file": "q005.json",
+      "questionNumber": 5,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Khái niệm cơ bản & Phân loại gói thầu"
+    },
+    {
+      "id": 6,
+      "file": "q006.json",
+      "questionNumber": 6,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Khái niệm cơ bản & Phân loại gói thầu"
+    },
+    {
+      "id": 7,
+      "file": "q007.json",
+      "questionNumber": 7,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Khái niệm cơ bản & Phân loại gói thầu"
+    },
+    {
+      "id": 8,
+      "file": "q008.json",
+      "questionNumber": 8,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Khái niệm cơ bản & Phân loại gói thầu"
+    },
+    {
+      "id": 9,
+      "file": "q009.json",
+      "questionNumber": 9,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Ưu đãi trong đấu thầu"
+    },
+    {
+      "id": 10,
+      "file": "q010.json",
+      "questionNumber": 10,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Ưu đãi trong đấu thầu"
+    },
+    {
+      "id": 11,
+      "file": "q011.json",
+      "questionNumber": 11,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu"
+    },
+    {
+      "id": 12,
+      "file": "q012.json",
+      "questionNumber": 12,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Lưu trữ & Quản lý hồ sơ đấu thầu"
+    },
+    {
+      "id": 13,
+      "file": "q013.json",
+      "questionNumber": 13,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Lưu trữ & Quản lý hồ sơ đấu thầu"
+    },
+    {
+      "id": 14,
+      "file": "q014.json",
+      "questionNumber": 14,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chi phí trong đấu thầu"
+    },
+    {
+      "id": 15,
+      "file": "q015.json",
+      "questionNumber": 15,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chủ thể tham gia đấu thầu"
+    },
+    {
+      "id": 16,
+      "file": "q016.json",
+      "questionNumber": 16,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu"
+    },
+    {
+      "id": 17,
+      "file": "q017.json",
+      "questionNumber": 17,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu"
+    },
+    {
+      "id": 18,
+      "file": "q018.json",
+      "questionNumber": 18,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Lưu trữ & Quản lý hồ sơ đấu thầu"
+    },
+    {
+      "id": 19,
+      "file": "q019.json",
+      "questionNumber": 19,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Lưu trữ & Quản lý hồ sơ đấu thầu"
+    },
+    {
+      "id": 20,
+      "file": "q020.json",
+      "questionNumber": 20,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Bảo đảm cạnh tranh trong đấu thầu"
+    },
+    {
+      "id": 21,
+      "file": "q021.json",
+      "questionNumber": 21,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Chủ thể tham gia đấu thầu"
+    },
+    {
+      "id": 22,
+      "file": "q022.json",
+      "questionNumber": 22,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 23,
+      "file": "q023.json",
+      "questionNumber": 23,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 24,
+      "file": "q024.json",
+      "questionNumber": 24,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 25,
+      "file": "q025.json",
+      "questionNumber": 25,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 26,
+      "file": "q026.json",
+      "questionNumber": 26,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 27,
+      "file": "q027.json",
+      "questionNumber": 27,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 28,
+      "file": "q028.json",
+      "questionNumber": 28,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 29,
+      "file": "q029.json",
+      "questionNumber": 29,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 30,
+      "file": "q030.json",
+      "questionNumber": 30,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 31,
+      "file": "q031.json",
+      "questionNumber": 31,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Kế hoạch lựa chọn nhà thầu"
+    },
+    {
+      "id": 32,
+      "file": "q032.json",
+      "questionNumber": 32,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Kế hoạch lựa chọn nhà thầu"
+    },
+    {
+      "id": 33,
+      "file": "q033.json",
+      "questionNumber": 33,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Kế hoạch lựa chọn nhà thầu"
+    },
+    {
+      "id": 34,
+      "file": "q034.json",
+      "questionNumber": 34,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Kế hoạch lựa chọn nhà thầu"
+    },
+    {
+      "id": 35,
+      "file": "q035.json",
+      "questionNumber": 35,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Bảo đảm cạnh tranh & Tư cách hợp lệ"
+    },
+    {
+      "id": 36,
+      "file": "q036.json",
+      "questionNumber": 36,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm cạnh tranh & Tư cách hợp lệ"
+    },
+    {
+      "id": 37,
+      "file": "q037.json",
+      "questionNumber": 37,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Bảo đảm cạnh tranh & Tư cách hợp lệ"
+    },
+    {
+      "id": 38,
+      "file": "q038.json",
+      "questionNumber": 38,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Bảo đảm cạnh tranh & Tư cách hợp lệ"
+    },
+    {
+      "id": 39,
+      "file": "q039.json",
+      "questionNumber": 39,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 40,
+      "file": "q040.json",
+      "questionNumber": 40,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 41,
+      "file": "q041.json",
+      "questionNumber": 41,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 42,
+      "file": "q042.json",
+      "questionNumber": 42,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 43,
+      "file": "q043.json",
+      "questionNumber": 43,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 44,
+      "file": "q044.json",
+      "questionNumber": 44,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 45,
+      "file": "q045.json",
+      "questionNumber": 45,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 46,
+      "file": "q046.json",
+      "questionNumber": 46,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 47,
+      "file": "q047.json",
+      "questionNumber": 47,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 48,
+      "file": "q048.json",
+      "questionNumber": 48,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 49,
+      "file": "q049.json",
+      "questionNumber": 49,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 50,
+      "file": "q050.json",
+      "questionNumber": 50,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 51,
+      "file": "q051.json",
+      "questionNumber": 51,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 52,
+      "file": "q052.json",
+      "questionNumber": 52,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 53,
+      "file": "q053.json",
+      "questionNumber": 53,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 54,
+      "file": "q054.json",
+      "questionNumber": 54,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 55,
+      "file": "q055.json",
+      "questionNumber": 55,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Chủ thể tham gia đấu thầu"
+    },
+    {
+      "id": 56,
+      "file": "q056.json",
+      "questionNumber": 56,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm cạnh tranh & Tư cách hợp lệ"
+    },
+    {
+      "id": 57,
+      "file": "q057.json",
+      "questionNumber": 57,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 58,
+      "file": "q058.json",
+      "questionNumber": 58,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 59,
+      "file": "q059.json",
+      "questionNumber": 59,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 60,
+      "file": "q060.json",
+      "questionNumber": 60,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 61,
+      "file": "q061.json",
+      "questionNumber": 61,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 62,
+      "file": "q062.json",
+      "questionNumber": 62,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 63,
+      "file": "q063.json",
+      "questionNumber": 63,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 64,
+      "file": "q064.json",
+      "questionNumber": 64,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 65,
+      "file": "q065.json",
+      "questionNumber": 65,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 66,
+      "file": "q066.json",
+      "questionNumber": 66,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 67,
+      "file": "q067.json",
+      "questionNumber": 67,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 68,
+      "file": "q068.json",
+      "questionNumber": 68,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 69,
+      "file": "q069.json",
+      "questionNumber": 69,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 70,
+      "file": "q070.json",
+      "questionNumber": 70,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Chủ thể tham gia đấu thầu"
+    },
+    {
+      "id": 71,
+      "file": "q071.json",
+      "questionNumber": 71,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Bảo đảm cạnh tranh & Tư cách hợp lệ"
+    },
+    {
+      "id": 72,
+      "file": "q072.json",
+      "questionNumber": 72,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Ưu đãi trong đấu thầu"
+    },
+    {
+      "id": 73,
+      "file": "q073.json",
+      "questionNumber": 73,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 74,
+      "file": "q074.json",
+      "questionNumber": 74,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 75,
+      "file": "q075.json",
+      "questionNumber": 75,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm dự thầu & Bảo đảm thực hiện hợp đồng"
+    },
+    {
+      "id": 76,
+      "file": "q076.json",
+      "questionNumber": 76,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 77,
+      "file": "q077.json",
+      "questionNumber": 77,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 78,
+      "file": "q078.json",
+      "questionNumber": 78,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm dự thầu & Bảo đảm thực hiện hợp đồng"
+    },
+    {
+      "id": 79,
+      "file": "q079.json",
+      "questionNumber": 79,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 80,
+      "file": "q080.json",
+      "questionNumber": 80,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 81,
+      "file": "q081.json",
+      "questionNumber": 81,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 82,
+      "file": "q082.json",
+      "questionNumber": 82,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm dự thầu & Bảo đảm thực hiện hợp đồng"
+    },
+    {
+      "id": 83,
+      "file": "q083.json",
+      "questionNumber": 83,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm dự thầu & Bảo đảm thực hiện hợp đồng"
+    },
+    {
+      "id": 84,
+      "file": "q084.json",
+      "questionNumber": 84,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 85,
+      "file": "q085.json",
+      "questionNumber": 85,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 86,
+      "file": "q086.json",
+      "questionNumber": 86,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 87,
+      "file": "q087.json",
+      "questionNumber": 87,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 88,
+      "file": "q088.json",
+      "questionNumber": 88,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Kế hoạch lựa chọn nhà thầu"
+    },
+    {
+      "id": 89,
+      "file": "q089.json",
+      "questionNumber": 89,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 90,
+      "file": "q090.json",
+      "questionNumber": 90,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 91,
+      "file": "q091.json",
+      "questionNumber": 91,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 92,
+      "file": "q092.json",
+      "questionNumber": 92,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 93,
+      "file": "q093.json",
+      "questionNumber": 93,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 94,
+      "file": "q094.json",
+      "questionNumber": 94,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 95,
+      "file": "q095.json",
+      "questionNumber": 95,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quy trình đấu thầu & Thương thảo hợp đồng"
+    },
+    {
+      "id": 96,
+      "file": "q096.json",
+      "questionNumber": 96,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 97,
+      "file": "q097.json",
+      "questionNumber": 97,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 98,
+      "file": "q098.json",
+      "questionNumber": 98,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 99,
+      "file": "q099.json",
+      "questionNumber": 99,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 100,
+      "file": "q100.json",
+      "questionNumber": 100,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 101,
+      "file": "q101.json",
+      "questionNumber": 101,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 102,
+      "file": "q102.json",
+      "questionNumber": 102,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 103,
+      "file": "q103.json",
+      "questionNumber": 103,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 104,
+      "file": "q104.json",
+      "questionNumber": 104,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 105,
+      "file": "q105.json",
+      "questionNumber": 105,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 106,
+      "file": "q106.json",
+      "questionNumber": 106,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 107,
+      "file": "q107.json",
+      "questionNumber": 107,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 108,
+      "file": "q108.json",
+      "questionNumber": 108,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 109,
+      "file": "q109.json",
+      "questionNumber": 109,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chủ thể tham gia đấu thầu"
+    },
+    {
+      "id": 110,
+      "file": "q110.json",
+      "questionNumber": 110,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chủ thể tham gia đấu thầu"
+    },
+    {
+      "id": 111,
+      "file": "q111.json",
+      "questionNumber": 111,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Chủ thể tham gia đấu thầu"
+    },
+    {
+      "id": 112,
+      "file": "q112.json",
+      "questionNumber": 112,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Kế hoạch lựa chọn nhà thầu"
+    },
+    {
+      "id": 113,
+      "file": "q113.json",
+      "questionNumber": 113,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chủ thể tham gia đấu thầu"
+    },
+    {
+      "id": 114,
+      "file": "q114.json",
+      "questionNumber": 114,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 115,
+      "file": "q115.json",
+      "questionNumber": 115,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 116,
+      "file": "q116.json",
+      "questionNumber": 116,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 117,
+      "file": "q117.json",
+      "questionNumber": 117,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 118,
+      "file": "q118.json",
+      "questionNumber": 118,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 119,
+      "file": "q119.json",
+      "questionNumber": 119,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 120,
+      "file": "q120.json",
+      "questionNumber": 120,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 121,
+      "file": "q121.json",
+      "questionNumber": 121,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 122,
+      "file": "q122.json",
+      "questionNumber": 122,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 123,
+      "file": "q123.json",
+      "questionNumber": 123,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 124,
+      "file": "q124.json",
+      "questionNumber": 124,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 125,
+      "file": "q125.json",
+      "questionNumber": 125,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 126,
+      "file": "q126.json",
+      "questionNumber": 126,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 127,
+      "file": "q127.json",
+      "questionNumber": 127,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 128,
+      "file": "q128.json",
+      "questionNumber": 128,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quản lý nhà nước & Xử lý vi phạm"
+    },
+    {
+      "id": 129,
+      "file": "q129.json",
+      "questionNumber": 129,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 130,
+      "file": "q130.json",
+      "questionNumber": 130,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị & Tranh chấp"
+    },
+    {
+      "id": 131,
+      "file": "q131.json",
+      "questionNumber": 131,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 132,
+      "file": "q132.json",
+      "questionNumber": 132,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 133,
+      "file": "q133.json",
+      "questionNumber": 133,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 134,
+      "file": "q134.json",
+      "questionNumber": 134,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 135,
+      "file": "q135.json",
+      "questionNumber": 135,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 136,
+      "file": "q136.json",
+      "questionNumber": 136,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 137,
+      "file": "q137.json",
+      "questionNumber": 137,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 138,
+      "file": "q138.json",
+      "questionNumber": 138,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 139,
+      "file": "q139.json",
+      "questionNumber": 139,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 140,
+      "file": "q140.json",
+      "questionNumber": 140,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 141,
+      "file": "q141.json",
+      "questionNumber": 141,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 142,
+      "file": "q142.json",
+      "questionNumber": 142,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 143,
+      "file": "q143.json",
+      "questionNumber": 143,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 144,
+      "file": "q144.json",
+      "questionNumber": 144,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 145,
+      "file": "q145.json",
+      "questionNumber": 145,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 146,
+      "file": "q146.json",
+      "questionNumber": 146,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 147,
+      "file": "q147.json",
+      "questionNumber": 147,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 148,
+      "file": "q148.json",
+      "questionNumber": 148,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 149,
+      "file": "q149.json",
+      "questionNumber": 149,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 150,
+      "file": "q150.json",
+      "questionNumber": 150,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 151,
+      "file": "q151.json",
+      "questionNumber": 151,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 152,
+      "file": "q152.json",
+      "questionNumber": 152,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 153,
+      "file": "q153.json",
+      "questionNumber": 153,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Tư cách hợp lệ & Đánh giá HSDT"
+    },
+    {
+      "id": 154,
+      "file": "q154.json",
+      "questionNumber": 154,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 155,
+      "file": "q155.json",
+      "questionNumber": 155,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hủy thầu & Trách nhiệm các bên"
+    },
+    {
+      "id": 156,
+      "file": "q156.json",
+      "questionNumber": 156,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hủy thầu & Trách nhiệm các bên"
+    },
+    {
+      "id": 157,
+      "file": "q157.json",
+      "questionNumber": 157,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 158,
+      "file": "q158.json",
+      "questionNumber": 158,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 159,
+      "file": "q159.json",
+      "questionNumber": 159,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 160,
+      "file": "q160.json",
+      "questionNumber": 160,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 161,
+      "file": "q161.json",
+      "questionNumber": 161,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Thương thảo hợp đồng & Xử lý tình huống"
+    },
+    {
+      "id": 162,
+      "file": "q162.json",
+      "questionNumber": 162,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Tư cách hợp lệ & Đánh giá HSDT"
+    },
+    {
+      "id": 163,
+      "file": "q163.json",
+      "questionNumber": 163,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Hợp đồng đấu thầu & Xử lý tình huống"
+    },
+    {
+      "id": 164,
+      "file": "q164.json",
+      "questionNumber": 164,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm dự thầu"
+    },
+    {
+      "id": 165,
+      "file": "q165.json",
+      "questionNumber": 165,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Phương pháp đánh giá HSDT"
+    },
+    {
+      "id": 166,
+      "file": "q166.json",
+      "questionNumber": 166,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Phương pháp đánh giá HSDT"
+    },
+    {
+      "id": 167,
+      "file": "q167.json",
+      "questionNumber": 167,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 168,
+      "file": "q168.json",
+      "questionNumber": 168,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Phương pháp đánh giá HSDT"
+    },
+    {
+      "id": 169,
+      "file": "q169.json",
+      "questionNumber": 169,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xét duyệt trúng thầu"
+    },
+    {
+      "id": 170,
+      "file": "q170.json",
+      "questionNumber": 170,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 171,
+      "file": "q171.json",
+      "questionNumber": 171,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 172,
+      "file": "q172.json",
+      "questionNumber": 172,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 173,
+      "file": "q173.json",
+      "questionNumber": 173,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 174,
+      "file": "q174.json",
+      "questionNumber": 174,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 175,
+      "file": "q175.json",
+      "questionNumber": 175,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 176,
+      "file": "q176.json",
+      "questionNumber": 176,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 177,
+      "file": "q177.json",
+      "questionNumber": 177,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 178,
+      "file": "q178.json",
+      "questionNumber": 178,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 179,
+      "file": "q179.json",
+      "questionNumber": 179,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Kế hoạch lựa chọn nhà thầu & Hợp đồng"
+    },
+    {
+      "id": 180,
+      "file": "q180.json",
+      "questionNumber": 180,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Tư cách hợp lệ của nhà thầu"
+    },
+    {
+      "id": 181,
+      "file": "q181.json",
+      "questionNumber": 181,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Tư cách hợp lệ của nhà thầu"
+    },
+    {
+      "id": 182,
+      "file": "q182.json",
+      "questionNumber": 182,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mở thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 183,
+      "file": "q183.json",
+      "questionNumber": 183,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 184,
+      "file": "q184.json",
+      "questionNumber": 184,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hợp đồng đấu thầu"
+    },
+    {
+      "id": 185,
+      "file": "q185.json",
+      "questionNumber": 185,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Làm rõ & Đánh giá HSDT"
+    },
+    {
+      "id": 186,
+      "file": "q186.json",
+      "questionNumber": 186,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hoàn thiện hợp đồng & Uy tín nhà thầu"
+    },
+    {
+      "id": 187,
+      "file": "q187.json",
+      "questionNumber": 187,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Đánh giá HSDT & Hiệu chỉnh sai lệch"
+    },
+    {
+      "id": 188,
+      "file": "q188.json",
+      "questionNumber": 188,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Bảo đảm dự thầu"
+    },
+    {
+      "id": 189,
+      "file": "q189.json",
+      "questionNumber": 189,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Công khai kết quả lựa chọn nhà thầu"
+    },
+    {
+      "id": 190,
+      "file": "q190.json",
+      "questionNumber": 190,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Đấu thầu trước & Bảo đảm dự thầu"
+    },
+    {
+      "id": 191,
+      "file": "q191.json",
+      "questionNumber": 191,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Ưu đãi trong lựa chọn nhà thầu"
+    },
+    {
+      "id": 192,
+      "file": "q192.json",
+      "questionNumber": 192,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Phân loại gói thầu"
+    },
+    {
+      "id": 193,
+      "file": "q193.json",
+      "questionNumber": 193,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 194,
+      "file": "q194.json",
+      "questionNumber": 194,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hiệu lực văn bản pháp luật"
+    },
+    {
+      "id": 195,
+      "file": "q195.json",
+      "questionNumber": 195,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Công khai kết quả lựa chọn nhà thầu"
+    },
+    {
+      "id": 196,
+      "file": "q196.json",
+      "questionNumber": 196,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 197,
+      "file": "q197.json",
+      "questionNumber": 197,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chỉ định thầu & Hồ sơ yêu cầu"
+    },
+    {
+      "id": 198,
+      "file": "q198.json",
+      "questionNumber": 198,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Thời gian trong đấu thầu"
+    },
+    {
+      "id": 199,
+      "file": "q199.json",
+      "questionNumber": 199,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Đánh giá HSDT & Hiệu chỉnh sai lệch"
+    },
+    {
+      "id": 200,
+      "file": "q200.json",
+      "questionNumber": 200,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hồ sơ mời thầu & Đánh giá HSDT"
+    },
+    {
+      "id": 201,
+      "file": "q201.json",
+      "questionNumber": 201,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Kế hoạch lựa chọn nhà thầu"
+    },
+    {
+      "id": 202,
+      "file": "q202.json",
+      "questionNumber": 202,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Tùy chọn mua thêm & Dự toán"
+    },
+    {
+      "id": 203,
+      "file": "q203.json",
+      "questionNumber": 203,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm cạnh tranh trong đấu thầu"
+    },
+    {
+      "id": 204,
+      "file": "q204.json",
+      "questionNumber": 204,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Trách nhiệm của các bên trong đấu thầu"
+    },
+    {
+      "id": 205,
+      "file": "q205.json",
+      "questionNumber": 205,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Bảo đảm cạnh tranh trong đấu thầu"
+    },
+    {
+      "id": 206,
+      "file": "q206.json",
+      "questionNumber": 206,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Đánh giá HSDT & Sửa lỗi, hiệu chỉnh sai lệch"
+    },
+    {
+      "id": 207,
+      "file": "q207.json",
+      "questionNumber": 207,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Tiêu chuẩn đánh giá năng lực, kinh nghiệm"
+    },
+    {
+      "id": 208,
+      "file": "q208.json",
+      "questionNumber": 208,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hiệu lực HSDT & Bảo đảm dự thầu"
+    },
+    {
+      "id": 209,
+      "file": "q209.json",
+      "questionNumber": 209,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chỉ định thầu & Tư cách hợp lệ"
+    },
+    {
+      "id": 210,
+      "file": "q210.json",
+      "questionNumber": 210,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu"
+    },
+    {
+      "id": 211,
+      "file": "q211.json",
+      "questionNumber": 211,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu"
+    },
+    {
+      "id": 212,
+      "file": "q212.json",
+      "questionNumber": 212,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Kế hoạch lựa chọn nhà thầu & Giá gói thầu"
+    },
+    {
+      "id": 213,
+      "file": "q213.json",
+      "questionNumber": 213,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Thời gian trong đấu thầu & Sơ tuyển"
+    },
+    {
+      "id": 214,
+      "file": "q214.json",
+      "questionNumber": 214,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Giá gói thầu & Báo giá"
+    },
+    {
+      "id": 215,
+      "file": "q215.json",
+      "questionNumber": 215,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Mua sắm thuốc, thiết bị y tế & Giá gói thầu"
+    },
+    {
+      "id": 216,
+      "file": "q216.json",
+      "questionNumber": 216,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Tổ chuyên gia & Tổ thẩm định"
+    },
+    {
+      "id": 217,
+      "file": "q217.json",
+      "questionNumber": 217,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Tổ chuyên gia & Tổ thẩm định"
+    },
+    {
+      "id": 218,
+      "file": "q218.json",
+      "questionNumber": 218,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hình thức lựa chọn nhà thầu & Chỉ định thầu"
+    },
+    {
+      "id": 219,
+      "file": "q219.json",
+      "questionNumber": 219,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 220,
+      "file": "q220.json",
+      "questionNumber": 220,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 221,
+      "file": "q221.json",
+      "questionNumber": 221,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 222,
+      "file": "q222.json",
+      "questionNumber": 222,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chỉ định thầu & Thẩm định"
+    },
+    {
+      "id": 223,
+      "file": "q223.json",
+      "questionNumber": 223,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mua sắm trong trường hợp đặc biệt"
+    },
+    {
+      "id": 224,
+      "file": "q224.json",
+      "questionNumber": 224,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hình thức lựa chọn nhà thầu"
+    },
+    {
+      "id": 225,
+      "file": "q225.json",
+      "questionNumber": 225,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Quản lý nhà nước & Giám sát hoạt động đấu thầu"
+    },
+    {
+      "id": 226,
+      "file": "q226.json",
+      "questionNumber": 226,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Xử lý tình huống trong đấu thầu"
+    },
+    {
+      "id": 227,
+      "file": "q227.json",
+      "questionNumber": 227,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 228,
+      "file": "q228.json",
+      "questionNumber": 228,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 229,
+      "file": "q229.json",
+      "questionNumber": 229,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Nhà thầu phụ & Thương thảo hợp đồng"
+    },
+    {
+      "id": 230,
+      "file": "q230.json",
+      "questionNumber": 230,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hình thức lựa chọn nhà thầu & Chào hàng cạnh tranh"
+    },
+    {
+      "id": 231,
+      "file": "q231.json",
+      "questionNumber": 231,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Hình thức lựa chọn nhà thầu & Chỉ định thầu"
+    },
+    {
+      "id": 232,
+      "file": "q232.json",
+      "questionNumber": 232,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Chỉ định thầu rút gọn & Mua sắm quy mô nhỏ"
+    },
+    {
+      "id": 233,
+      "file": "q233.json",
+      "questionNumber": 233,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Mua sắm tập trung"
+    },
+    {
+      "id": 234,
+      "file": "q234.json",
+      "questionNumber": 234,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Chỉ định thầu"
+    },
+    {
+      "id": 235,
+      "file": "q235.json",
+      "questionNumber": 235,
+      "difficulty": "EASY",
+      "difficultyLabel": "Dễ",
+      "points": 20,
+      "topic": "Giải quyết kiến nghị"
+    },
+    {
+      "id": 236,
+      "file": "q236.json",
+      "questionNumber": 236,
+      "difficulty": "MEDIUM",
+      "difficultyLabel": "Trung bình",
+      "points": 30,
+      "topic": "Hiệu lực HSDT & Xử lý tình huống"
+    },
+    {
+      "id": 237,
+      "file": "q237.json",
+      "questionNumber": 237,
+      "difficulty": "HARD",
+      "difficultyLabel": "Khó",
+      "points": 50,
+      "topic": "Uy tín nhà thầu & Xử lý vi phạm hợp đồng"
+    }
+  ]
+}

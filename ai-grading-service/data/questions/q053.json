@@ -1,0 +1,26 @@
+{
+  "id": 53,
+  "file": "q053.json",
+  "questionNumber": 53,
+  "question_number": "Câu 53",
+  "question": "Gói thầu xây dựng Trường THPT A gồm nhà A1 cấp II, 10 tầng, diện tích 8.000 m², giá trị dự toán 2X; nhà A2 cấp III, 6 tầng, diện tích 1.000 m², giá trị dự toán Y; cùng hàng rào và nhà bảo vệ. Hãy xác định cách quy định kinh nghiệm thi công công trình tương tự trong HSMT và giải thích.",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định cách quy định kinh nghiệm thi công công trình tương tự trong HSMT đối với gói thầu xây dựng gồm nhiều hạng mục công trình có cấp khác nhau (Nhà A1 cấp II, Nhà A2 cấp III, hàng rào và nhà bảo vệ).",
+    "rule": "Khoản 3 Điều 44 Luật Đấu thầu số 22/2023/QH15; Điểm a Khoản 5 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm a Khoản 5 Điều 26 Nghị định số 214/2025/NĐ-CP và quy định lập HSMT xây lắp đối với gói thầu bao gồm tổ hợp nhiều công trình/hạng mục công trình (nhà A1 cấp II diện tích 8.000 m² dự toán 2X; nhà A2 cấp III diện tích 1.000 m² dự toán Y; hàng rào và nhà bảo vệ), HSMT chỉ được quy định yêu cầu kinh nghiệm thực hiện hợp đồng xây lắp tương tự theo công trình chính có cấp cao nhất là Nhà A1 (công trình dân dụng, cấp II trở lên, với quy mô giá trị hợp đồng tương tự thường bằng 50% giá trị công việc xây lắp của công trình chính hoặc gói thầu). Giải thích: Nhà thầu đã có đủ năng lực, kinh nghiệm thi công công trình dân dụng cấp II (cấp kỹ thuật cao hơn, quy mô lớn hơn) thì đương nhiên đủ năng lực kỹ thuật để thi công công trình cùng loại cấp III (nhà A2) và các hạng mục phụ trợ (hàng rào, nhà bảo vệ). Việc yêu cầu nhà thầu phải chứng minh thêm hợp đồng thi công nhà cấp III, hàng rào, nhà bảo vệ sẽ làm hạn chế sự tham gia của nhà thầu, vi phạm Khoản 3 Điều 44 Luật Đấu thầu.",
+    "conclusion": "HSMT chỉ quy định kinh nghiệm thi công công trình tương tự theo hạng mục công trình chính có cấp cao nhất là công trình dân dụng cấp II trở lên (tương ứng với Nhà A1), không yêu cầu riêng đối với Nhà A2 cấp III hay hàng rào, nhà bảo vệ để tránh hạn chế cạnh tranh."
+  },
+  "keywords": [
+    "Khoản 3 Điều 44",
+    "Điểm a Khoản 5 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "công trình tương tự",
+    "công trình chính",
+    "cấp II",
+    "hạn chế sự tham gia của nhà thầu"
+  ]
+}

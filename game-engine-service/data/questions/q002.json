@@ -1,0 +1,27 @@
+{
+  "id": 2,
+  "file": "q002.json",
+  "questionNumber": 2,
+  "question_number": "Câu 2",
+  "question": "Trình bày phạm vi điều chỉnh của Luật Đấu thầu đối với hoạt động lựa chọn nhà thầu, lựa chọn nhà đầu tư, quản lý nhà nước và trách nhiệm của các chủ thể liên quan.",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Phạm vi điều chỉnh & Áp dụng Luật Đấu thầu",
+  "irac": {
+    "issue": "Xác định phạm vi điều chỉnh của Luật Đấu thầu đối với 04 nhóm nội dung: quản lý nhà nước, trách nhiệm chủ thể, lựa chọn nhà thầu và lựa chọn nhà đầu tư.",
+    "rule": "Điều 1 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Căn cứ Điều 1 Luật Đấu thầu số 22/2023/QH15, phạm vi điều chỉnh của Luật Đấu thầu bao quát toàn diện 04 nhóm quan hệ pháp luật cốt lõi: (1) Quản lý nhà nước đối với hoạt động đấu thầu; (2) Thẩm quyền và trách nhiệm của các cơ quan, tổ chức, cá nhân trong hoạt động đấu thầu; (3) Hoạt động lựa chọn nhà thầu thực hiện gói thầu cung cấp dịch vụ tư vấn, dịch vụ phi tư vấn, mua sắm hàng hóa, xây lắp, hỗn hợp; (4) Hoạt động lựa chọn nhà đầu tư thực hiện dự án đầu tư kinh doanh.",
+    "conclusion": "Luật Đấu thầu quy định về quản lý nhà nước đối với hoạt động đấu thầu; thẩm quyền và trách nhiệm của các cơ quan, tổ chức, cá nhân trong hoạt động đấu thầu; hoạt động lựa chọn nhà thầu thực hiện gói thầu và hoạt động lựa chọn nhà đầu tư thực hiện dự án đầu tư kinh doanh."
+  },
+  "keywords": [
+    "Điều 1",
+    "Luật Đấu thầu 22/2023/QH15",
+    "quản lý nhà nước",
+    "thẩm quyền và trách nhiệm",
+    "lựa chọn nhà thầu",
+    "lựa chọn nhà đầu tư",
+    "dự án đầu tư kinh doanh"
+  ]
+}

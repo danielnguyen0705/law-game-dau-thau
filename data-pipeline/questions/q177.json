@@ -1,0 +1,24 @@
+{
+  "id": 177,
+  "file": "q177.json",
+  "questionNumber": 177,
+  "question_number": "Câu 177",
+  "question": "So sánh hai tình huống sửa đổi hợp đồng: (1) Vượt giá gói thầu 10% nhưng không vượt tổng mức đầu tư; (2) Vượt giá gói thầu 2% và làm tổng mức đầu tư tăng 1%, thẩm quyền phê duyệt có gì khác nhau?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "So sánh thẩm quyền phê duyệt sửa đổi hợp đồng giữa tình huống (1) vượt giá gói thầu 10% nhưng không vượt tổng mức đầu tư và tình huống (2) vượt giá gói thầu 2% và làm tổng mức đầu tư tăng 1%.",
+    "rule": "Khoản 4 Điều 70 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 4 Điều 70 Luật Đấu thầu số 22/2023/QH15: Ở tình huống (1), sửa đổi hợp đồng làm vượt giá gói thầu 10% nhưng không làm vượt tổng mức đầu tư của dự án thì thuộc thẩm quyền xem xét, cho phép của Người có thẩm quyền (hoặc Chủ đầu tư theo phân cấp tại Luật sửa đổi) mà không phải điều chỉnh chủ trương/tổng mức đầu tư dự án. Ở tình huống (2), do làm tổng mức đầu tư dự án tăng thêm 1% (vượt tổng mức đầu tư đã duyệt), phải trình cấp có thẩm quyền quyết định đầu tư phê duyệt điều chỉnh dự án/tổng mức đầu tư trước khi thực hiện sửa đổi hợp đồng.",
+    "conclusion": "Tình huống (1) chỉ cần quyết định cho phép sửa đổi hợp đồng/điều chỉnh giá gói thầu trong phạm vi TMĐT; Tình huống (2) bắt buộc phải trình cấp có thẩm quyền phê duyệt điều chỉnh Tổng mức đầu tư dự án trước khi sửa đổi hợp đồng."
+  },
+  "keywords": [
+    "Khoản 4 Điều 70",
+    "vượt giá gói thầu",
+    "vượt tổng mức đầu tư",
+    "thẩm quyền phê duyệt"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 153,
+  "file": "q153.json",
+  "questionNumber": 153,
+  "question_number": "Câu 153",
+  "question": "Trường hợp nhà thầu có nhân sự (ký kết hợp đồng lao động với nhà thầu tại thời điểm nhân sự thực hiện hành vi vi phạm) bị cơ quan điều tra kết luận có hành vi vi phạm quy định về đấu thầu gây hậu quả nghiêm trọng theo quy định pháp luật về hình sự nhằm mục đích cho nhà thầu trúng thầu nhưng nhân sự của nhà thầu chưa bị Tòa án kết án hoặc nhà thầu chưa bị người có thẩm quyền ra quyết định cấm tham gia hoạt động đấu thầu thì tại thời điểm này nhà thầu có được tham dự thầu hay không?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Tư cách hợp lệ & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định nhà thầu có được tham dự thầu hay không khi nhân sự mới bị cơ quan điều tra kết luận vi phạm đấu thầu nhưng chưa bị Tòa án kết án và nhà thầu chưa có quyết định cấm tham gia hoạt động đấu thầu.",
+    "rule": "Điểm e, Điểm g Khoản 1 Điều 5 Luật Đấu thầu số 22/2023/QH15; Điểm a Khoản 4 Điều 37 và Điểm a Khoản 3 Điều 63 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 1 Điều 5 Luật Đấu thầu và Điểm a Khoản 4 Điều 37 Nghị định số 214/2025/NĐ-CP, nhà thầu chỉ không được tham dự thầu khi nhân sự đã bị Tòa án kết án bằng bản án có hiệu lực pháp luật hoặc nhà thầu đã bị người có thẩm quyền ra quyết định cấm tham gia hoạt động đấu thầu. Do mới có kết luận của cơ quan điều tra mà chưa bị Tòa án kết án và chưa có quyết định cấm thầu, nhà thầu vẫn được phép tham dự thầu.",
+    "conclusion": "Có. Tại thời điểm này nhà thầu vẫn được phép tham dự thầu."
+  },
+  "keywords": [
+    "Khoản 1 Điều 5",
+    "Khoản 4 Điều 37",
+    "cơ quan điều tra kết luận",
+    "chưa bị Tòa án kết án",
+    "được tham dự thầu"
+  ]
+}

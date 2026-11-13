@@ -1,0 +1,28 @@
+{
+  "id": 7,
+  "file": "q007.json",
+  "questionNumber": 7,
+  "question_number": "Câu 7",
+  "question": "Giá đề nghị trúng thầu là gì?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Khái niệm cơ bản & Phân loại gói thầu",
+  "irac": {
+    "issue": "Xác định khái niệm pháp lý của 'Giá đề nghị trúng thầu'.",
+    "rule": "Khoản 13 Điều 4 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Căn cứ Khoản 13 Điều 4 Luật Đấu thầu số 22/2023/QH15, giá đề nghị trúng thầu là giá dự thầu của nhà thầu được đề nghị trúng thầu sau khi đã được sửa lỗi, hiệu chỉnh sai lệch theo yêu cầu của hồ sơ mời thầu, hồ sơ yêu cầu, trừ đi giá trị giảm giá (nếu có).",
+    "conclusion": "Giá đề nghị trúng thầu là giá dự thầu của nhà thầu được đề nghị trúng thầu sau sửa lỗi, hiệu chỉnh sai lệch theo yêu cầu của HSMT/HSYC và trừ đi giá trị giảm giá (nếu có)."
+  },
+  "keywords": [
+    "Khoản 13 Điều 4",
+    "giá đề nghị trúng thầu",
+    "giá dự thầu",
+    "sửa lỗi",
+    "hiệu chỉnh sai lệch",
+    "trừ đi giá trị giảm giá",
+    "HSMT",
+    "HSYC"
+  ]
+}

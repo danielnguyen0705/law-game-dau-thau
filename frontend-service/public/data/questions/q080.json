@@ -1,0 +1,24 @@
+{
+  "id": 80,
+  "file": "q080.json",
+  "questionNumber": 80,
+  "question_number": "Câu 80",
+  "question": "Hợp đồng theo tỷ lệ phần trăm có thể được áp dụng đối với gói thầu nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Xác định loại gói thầu được phép áp dụng hình thức hợp đồng theo tỷ lệ phần trăm.",
+    "rule": "Khoản 7 Điều 64 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Căn cứ Khoản 7 Điều 64 Luật Đấu thầu số 22/2023/QH15: 'Hợp đồng theo tỷ lệ phần trăm được áp dụng cho gói thầu bảo hiểm công trình mà giá trị hợp đồng được xác định chính xác trên cơ sở giá trị công trình thực tế được nghiệm thu'. Như vậy, hợp đồng theo tỷ lệ phần trăm chỉ được áp dụng duy nhất cho gói thầu bảo hiểm công trình.",
+    "conclusion": "Hợp đồng theo tỷ lệ phần trăm được áp dụng đối với gói thầu bảo hiểm công trình mà giá trị hợp đồng được xác định chính xác trên cơ sở giá trị công trình thực tế được nghiệm thu (Khoản 7 Điều 64 Luật Đấu thầu)."
+  },
+  "keywords": [
+    "Khoản 7 Điều 64",
+    "hợp đồng theo tỷ lệ phần trăm",
+    "gói thầu bảo hiểm công trình",
+    "giá trị công trình thực tế được nghiệm thu"
+  ]
+}

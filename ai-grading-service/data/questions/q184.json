@@ -1,0 +1,25 @@
+{
+  "id": 184,
+  "file": "q184.json",
+  "questionNumber": 184,
+  "question_number": "Câu 184",
+  "question": "Nhà thầu thực hiện gói thầu xây lắp theo hình thức lựa chọn nhà thầu nào thì không phải thực hiện bảo đảm thực hiện hợp đồng?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Xác định hình thức lựa chọn nhà thầu đối với gói thầu xây lắp mà nhà thầu không phải thực hiện bảo đảm thực hiện hợp đồng.",
+    "rule": "Khoản 2 Điều 68 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Điểm b và Điểm c Khoản 2 Điều 68 Luật Đấu thầu số 22/2023/QH15, nhà thầu thực hiện gói thầu xây lắp không phải thực hiện biện pháp bảo đảm thực hiện hợp đồng khi được lựa chọn theo hình thức tự thực hiện, hình thức tham gia thực hiện của cộng đồng, hoặc gói thầu có giá gói thầu thuộc hạn mức chỉ định thầu theo quy định tại Điểm m Khoản 1 Điều 23 của Luật này.",
+    "conclusion": "Nhà thầu thực hiện gói thầu xây lắp theo hình thức tự thực hiện, tham gia thực hiện của cộng đồng (hoặc gói thầu trong hạn mức chỉ định thầu) thì không phải thực hiện bảo đảm thực hiện hợp đồng."
+  },
+  "keywords": [
+    "Khoản 2 Điều 68",
+    "không phải thực hiện bảo đảm thực hiện hợp đồng",
+    "tự thực hiện",
+    "tham gia thực hiện của cộng đồng",
+    "hạn mức chỉ định thầu"
+  ]
+}

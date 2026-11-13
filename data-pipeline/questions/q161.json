@@ -1,0 +1,24 @@
+{
+  "id": 161,
+  "file": "q161.json",
+  "questionNumber": 161,
+  "question_number": "Câu 161",
+  "question": "Đối với gói thầu hỗn hợp có yêu cầu đặc thù về kỹ thuật chỉ có một số nhà thầu đáp ứng yêu cầu của gói thầu áp dụng bước thương thảo hợp đồng, trường hợp nhà thầu xếp hạng thứ nhất (danh sách xếp hạng có 03 nhà thầu) không tiến hành thương thảo, không ký biên bản thương thảo, thương thảo không thành công thì chủ đầu tư thực hiện bước tiếp theo như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Thương thảo hợp đồng & Xử lý tình huống",
+  "irac": {
+    "issue": "Xác định bước tiếp theo của chủ đầu tư khi nhà thầu xếp hạng thứ nhất của gói thầu hỗn hợp đặc thù kỹ thuật không tiến hành thương thảo, không ký biên bản thương thảo hoặc thương thảo không thành công.",
+    "rule": "Khoản 16 Điều 140, Khoản 6 Điều 45 Nghị định số 214/2025/NĐ-CP; Điểm d Khoản 9 Điều 14 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 6 Điều 45 và Khoản 16 Điều 140 Nghị định số 214/2025/NĐ-CP, trường hợp nhà thầu xếp hạng thứ nhất không tiến hành thương thảo, không ký biên bản thương thảo hoặc thương thảo không thành công thì nhà thầu xếp hạng thứ nhất bị loại (và không được hoàn trả bảo đảm dự thầu nếu từ chối thương thảo theo Điểm d Khoản 9 Điều 14 Luật Đấu thầu), đồng thời chủ đầu tư mời nhà thầu xếp hạng tiếp theo (xếp hạng thứ hai) vào thương thảo hợp đồng.",
+    "conclusion": "Chủ đầu tư mời nhà thầu xếp hạng tiếp theo (xếp hạng thứ hai) vào thương thảo hợp đồng."
+  },
+  "keywords": [
+    "Khoản 16 Điều 140",
+    "Khoản 6 Điều 45",
+    "thương thảo không thành công",
+    "mời nhà thầu xếp hạng tiếp theo"
+  ]
+}

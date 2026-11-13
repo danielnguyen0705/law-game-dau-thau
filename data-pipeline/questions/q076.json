@@ -1,0 +1,25 @@
+{
+  "id": 76,
+  "file": "q076.json",
+  "questionNumber": 76,
+  "question_number": "Câu 76",
+  "question": "Gói thầu cung cấp dịch vụ vệ sinh tòa nhà do Sở Tài chính tỉnh X làm chủ đầu tư có giá gói thầu 01 tỷ đồng, thời gian thực hiện là 12 tháng, hợp đồng tương tự yêu cầu 30% giá gói thầu. Trường hợp nào nhà thầu được coi là đáp ứng về giá trị của hợp đồng tương tự?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định trường hợp nhà thầu được coi là đáp ứng về giá trị của hợp đồng tương tự đối với gói thầu dịch vụ vệ sinh tòa nhà giá 01 tỷ đồng (thời gian 12 tháng, yêu cầu hợp đồng tương tự 30% giá gói thầu).",
+    "rule": "Điểm a Khoản 4 và Điểm a Khoản 5 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Với gói thầu cung cấp dịch vụ vệ sinh tòa nhà (dịch vụ phi tư vấn) có giá gói thầu là 01 tỷ đồng, thời gian thực hiện 12 tháng và HSMT yêu cầu quy mô hợp đồng tương tự bằng 30% giá gói thầu, mức giá trị tối thiểu của hợp đồng tương tự được xác định là: 30% x 1 tỷ đồng = 300 triệu đồng. Theo quy định của Mẫu HSMT dịch vụ phi tư vấn ban hành kèm theo hướng dẫn Nghị định số 214/2025/NĐ-CP, nhà thầu được coi là đáp ứng về giá trị của hợp đồng tương tự khi cung cấp được: (1) Tối thiểu 01 hợp đồng cung cấp dịch vụ vệ sinh đã hoàn thành có giá trị >= 300 triệu đồng; hoặc (2) Các hợp đồng cung cấp dịch vụ vệ sinh có quy mô nhỏ hơn 300 triệu đồng nhưng được thực hiện đồng thời trong cùng một khoảng thời gian (không quá 12 tháng) mà tổng giá trị của các hợp đồng thực hiện đồng thời đó đạt từ 300 triệu đồng trở lên (tùy theo quy định cụ thể trong HSMT).",
+    "conclusion": "Nhà thầu được coi là đáp ứng về giá trị của hợp đồng tương tự khi có tối thiểu 01 hợp đồng dịch vụ tương tự đã hoàn thành có giá trị từ 300 triệu đồng trở lên (30% x 01 tỷ đồng), hoặc nhiều hợp đồng tương tự thực hiện đồng thời trong cùng khoảng thời gian 12 tháng có tổng giá trị từ 300 triệu đồng trở lên theo quy định của HSMT."
+  },
+  "keywords": [
+    "Điều 26 Nghị định 214/2025/NĐ-CP",
+    "dịch vụ vệ sinh tòa nhà",
+    "30% giá gói thầu",
+    "300 triệu đồng",
+    "giá trị hợp đồng tương tự"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": 19,
+  "file": "q019.json",
+  "questionNumber": 19,
+  "question_number": "Câu 19",
+  "question": "Phân tích hệ quả của việc giữ hồ sơ đề xuất tài chính của nhà thầu không đạt yêu cầu kỹ thuật quá thời hạn quy định.",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Lưu trữ & Quản lý hồ sơ đấu thầu",
+  "irac": {
+    "issue": "Phân tích các hệ quả pháp lý và thực tiễn khi bên mời thầu/chủ đầu tư giữ hồ sơ đề xuất về tài chính của nhà thầu không đạt yêu cầu kỹ thuật quá thời hạn quy định.",
+    "rule": "Khoản 1, Khoản 3 Điều 9; Khoản 7 Điều 16; Điều 87 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 1 và Khoản 3 Điều 9 Luật Đấu thầu, hồ sơ đề xuất về tài chính (HSĐXTC) của nhà thầu không đạt kỹ thuật phải được trả lại nguyên trạng đúng thời hạn (10 ngày kể từ ngày ký hợp đồng với gói tư vấn; hoặc khi hoàn trả/giải tỏa bảo đảm dự thầu hoặc khi đăng tải kết quả lựa chọn nhà thầu với gói phi tư vấn, hàng hóa, xây lắp, hỗn hợp), nếu nhà thầu không nhận thì xem xét hủy nhưng phải bảo đảm bảo mật. Việc giữ HSĐXTC quá thời hạn quy định mà không trả lại hoặc xử lý theo đúng quy trình dẫn đến các hệ quả: (1) Vi phạm nghĩa vụ quản lý, hoàn trả hồ sơ theo Điều 9 Luật Đấu thầu; (2) Làm phát sinh nguy cơ rò rỉ, làm lộ bí mật thông tin tài chính, đơn giá, chiến lược chào giá của nhà thầu (nếu tiết lộ trái phép sẽ vi phạm hành vi bị cấm tại Khoản 7 Điều 16 Luật Đấu thầu); (3) Làm phát sinh quyền kiến nghị, khiếu nại, tố cáo của nhà thầu đối với hành vi vi phạm thủ tục của chủ đầu tư/bên mời thầu. (Không có quy định cụ thể về vấn đề này trong tài liệu đối với mức xử phạt hành chính riêng biệt cho hành vi chậm trả lại HSĐXTC).",
+    "conclusion": "Việc giữ HSĐX tài chính quá thời hạn quy định là hành vi vi phạm Điều 9 Luật Đấu thầu, gây rủi ro lộ thông tin mật của nhà thầu (Khoản 7 Điều 16) và dẫn đến kiến nghị, khiếu nại trong đấu thầu. (Không có quy định cụ thể về vấn đề này trong tài liệu đối với chế tài phạt tiền riêng cho hành vi chậm trả HSĐXTC)."
+  },
+  "keywords": [
+    "Điều 9",
+    "Khoản 7 Điều 16",
+    "trả lại nguyên trạng",
+    "quá thời hạn quy định",
+    "tiết lộ thông tin mật",
+    "kiến nghị khiếu nại",
+    "(Không có quy định cụ thể về vấn đề này trong tài liệu)"
+  ]
+}

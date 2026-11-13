@@ -1,0 +1,27 @@
+{
+  "id": 103,
+  "file": "q103.json",
+  "questionNumber": 103,
+  "question_number": "Câu 103",
+  "question": "Nhà thầu đã ký thỏa thuận khung và được đơn vị có nhu cầu mua sắm yêu cầu ký hợp đồng nhưng không ký hợp đồng, không thực hiện biện pháp bảo đảm thực hiện hợp đồng sẽ bị xử lý như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Mua sắm tập trung",
+  "irac": {
+    "issue": "Xác định chế tài và cách xử lý đối với nhà thầu đã ký thỏa thuận khung nhưng không ký hợp đồng hoặc không thực hiện biện pháp bảo đảm thực hiện hợp đồng khi đơn vị có nhu cầu mua sắm yêu cầu.",
+    "rule": "Điểm c, Điểm e Khoản 9 Điều 14 Luật Đấu thầu số 22/2023/QH15; Khoản 1 Điều 19, Điều 91 và Điều 92 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Điều 19, Điều 91 và Điều 92 Nghị định số 214/2025/NĐ-CP, trường hợp nhà thầu đã ký thỏa thuận khung và được đơn vị có nhu cầu mua sắm yêu cầu ký hợp đồng nhưng không tiến hành hoặc từ chối ký hợp đồng, hoặc không thực hiện biện pháp bảo đảm thực hiện hợp đồng (không có lý do bất khả kháng) thì sẽ bị xử lý như sau: (1) Đơn vị có nhu cầu mua sắm báo cáo đơn vị mua sắm tập trung để hủy bỏ quyền thực hiện phần công việc đó của nhà thầu trong thỏa thuận khung và liên hệ với nhà thầu trúng thầu xếp hạng tiếp theo trong thỏa thuận khung (hoặc nhà thầu dự phòng) để ký hợp đồng; (2) Nhà thầu vi phạm không được hoàn trả bảo đảm dự thầu (nếu chưa giải tỏa) hoặc phải nộp một khoản tiền phạt vi phạm theo quy định trong thỏa thuận khung; (3) Đơn vị có nhu cầu mua sắm và đơn vị mua sắm tập trung công khai tên nhà thầu vi phạm trên Hệ thống mạng đấu thầu quốc gia; nhà thầu bị đánh giá giảm uy tín khi tham dự các gói thầu khác (bị trừ điểm uy tín hoặc phải nộp bảo đảm dự thầu gấp 03 lần giá trị quy định trong thời hạn 02 năm kể từ lần cuối thực hiện hành vi vi phạm theo Khoản 1 Điều 19 Nghị định 214/2025/NĐ-CP).",
+    "conclusion": "Nhà thầu vi phạm sẽ bị chấm dứt thỏa thuận khung đối với phần việc đó (nhường quyền ký hợp đồng cho nhà thầu xếp hạng tiếp theo), bị xử phạt theo điều khoản thỏa thuận khung, bị đăng tải công khai thông tin vi phạm trên Hệ thống mạng đấu thầu quốc gia và bị đánh giá giảm uy tín (phải nộp bảo đảm dự thầu gấp 03 lần trong 02 năm khi dự thầu gói khác)."
+  },
+  "keywords": [
+    "Điều 19 Nghị định 214/2025/NĐ-CP",
+    "Điều 92 Nghị định 214/2025/NĐ-CP",
+    "ký thỏa thuận khung nhưng không ký hợp đồng",
+    "không thực hiện bảo đảm thực hiện hợp đồng",
+    "công khai trên Hệ thống",
+    "đánh giá uy tín nhà thầu",
+    "bảo đảm dự thầu gấp 03 lần"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 182,
+  "file": "q182.json",
+  "questionNumber": 182,
+  "question_number": "Câu 182",
+  "question": "Đối với đấu thầu không qua mạng, biên bản mở thầu bắt buộc phải có chữ ký của các chủ thể nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Mở thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định các chủ thể bắt buộc phải ký vào biên bản mở thầu đối với đấu thầu không qua mạng.",
+    "rule": "Điểm c Khoản 4 Điều 28 và Điểm c Khoản 4 Điều 40 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm c Khoản 4 Điều 28 Nghị định số 214/2025/NĐ-CP, đối với đấu thầu không qua mạng, biên bản mở thầu phải được đại diện của chủ đầu tư và đại diện của các nhà thầu tham dự lễ mở thầu ký xác nhận.",
+    "conclusion": "Biên bản mở thầu bắt buộc phải có chữ ký của đại diện chủ đầu tư và đại diện các nhà thầu tham dự lễ mở thầu."
+  },
+  "keywords": [
+    "Khoản 4 Điều 28",
+    "Nghị định 214/2025/NĐ-CP",
+    "biên bản mở thầu",
+    "đại diện chủ đầu tư",
+    "đại diện nhà thầu tham dự lễ mở thầu"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 68,
+  "file": "q068.json",
+  "questionNumber": 68,
+  "question_number": "Câu 68",
+  "question": "Gói thầu mua sắm hàng hóa chia thành nhiều phần thì việc đánh giá về quy mô hợp đồng tương tự đối với nhà thầu tham dự nhiều phần được thực hiện như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định cách đánh giá về quy mô hợp đồng tương tự đối với nhà thầu tham dự nhiều phần trong gói thầu mua sắm hàng hóa chia thành nhiều phần.",
+    "rule": "Khoản 8 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 8 Điều 26 Nghị định số 214/2025/NĐ-CP, đối với gói thầu mua sắm hàng hóa được chia thành nhiều phần độc lập, yêu cầu về kinh nghiệm thực hiện hợp đồng tương tự được quy định riêng cho từng phần. Khi nhà thầu tham dự nhiều phần, việc đánh giá về quy mô hợp đồng tương tự được thực hiện riêng rẽ tương ứng với từng phần mà nhà thầu tham dự (không cộng gộp yêu cầu quy mô hợp đồng tương tự của tất cả các phần lại như chỉ tiêu doanh thu/nguồn lực tài chính, trừ trường hợp nhà thầu sử dụng cùng một hợp đồng tương tự để chứng minh cho nhiều phần có cùng tính chất hàng hóa thì giá trị của hợp đồng đó phải đáp ứng tổng giá trị yêu cầu của các phần đó).",
+    "conclusion": "Đối với gói thầu mua sắm hàng hóa chia thành nhiều phần, việc đánh giá về quy mô hợp đồng tương tự đối với nhà thầu tham dự nhiều phần được thực hiện tương ứng với từng phần mà nhà thầu tham dự (nếu dùng chung 01 hợp đồng cho nhiều phần cùng tính chất thì hợp đồng đó phải đáp ứng tổng yêu cầu của các phần đó)."
+  },
+  "keywords": [
+    "Khoản 8 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "gói thầu mua sắm hàng hóa chia phần",
+    "quy mô hợp đồng tương tự",
+    "đánh giá theo từng phần"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 148,
+  "file": "q148.json",
+  "questionNumber": 148,
+  "question_number": "Câu 148",
+  "question": "Đối với gói thầu chia phần, chủ đầu tư có thể phê duyệt kết quả lựa chọn nhà thầu cho từng phần hay không?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Xử lý tình huống trong đấu thầu",
+  "irac": {
+    "issue": "Xác định chủ đầu tư có thể phê duyệt kết quả lựa chọn nhà thầu cho từng phần đối với gói thầu chia phần hay không.",
+    "rule": "Điểm d Khoản 10 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm d Khoản 10 Điều 140 Nghị định số 214/2025/NĐ-CP, đối với gói thầu chia phần, trong trường hợp cần thiết, chủ đầu tư có thể phê duyệt kết quả lựa chọn nhà thầu cho từng phần nhưng phải bảo đảm giá đề nghị trúng thầu của phần đó không vượt giá của phần đó trong giá gói thầu.",
+    "conclusion": "Có. Chủ đầu tư có thể phê duyệt kết quả lựa chọn nhà thầu cho từng phần nhưng phải bảo đảm giá đề nghị trúng thầu không vượt giá của phần đó trong giá gói thầu."
+  },
+  "keywords": [
+    "Điểm d Khoản 10 Điều 140",
+    "gói thầu chia phần",
+    "phê duyệt kết quả lựa chọn nhà thầu cho từng phần"
+  ]
+}

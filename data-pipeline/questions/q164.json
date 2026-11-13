@@ -1,0 +1,25 @@
+{
+  "id": 164,
+  "file": "q164.json",
+  "questionNumber": 164,
+  "question_number": "Câu 164",
+  "question": "Nhà thầu không phải đính kèm thư bảo lãnh (hoặc giấy chứng nhận bảo hiểm bảo lãnh) mà chỉ phải cam kết trong đơn dự thầu đối với gói thầu xây lắp khi nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Bảo đảm dự thầu",
+  "irac": {
+    "issue": "Xác định trường hợp nhà thầu tham dự gói thầu xây lắp không phải đính kèm thư bảo lãnh (hoặc giấy chứng nhận bảo hiểm bảo lãnh) mà chỉ phải cam kết trong đơn dự thầu.",
+    "rule": "Khoản 3 và Khoản 4 Điều 14, Điều 42 Luật Đấu thầu số 22/2023/QH15; Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định của Luật Đấu thầu số 22/2023/QH15 và Nghị định số 214/2025/NĐ-CP, đối với gói thầu xây lắp, nhà thầu không phải đính kèm thư bảo lãnh hoặc giấy chứng nhận bảo hiểm bảo lãnh mà chỉ cần cam kết trong đơn dự thầu trong các trường hợp: (1) Gói thầu có giá trị bảo đảm dự thầu nhỏ hơn 50 triệu đồng (áp dụng trên Hệ thống mạng đấu thầu quốc gia); hoặc (2) Gói thầu áp dụng đấu thầu trước quy định tại Điều 42 Luật Đấu thầu.",
+    "conclusion": "Nhà thầu chỉ phải cam kết trong đơn dự thầu khi gói thầu áp dụng đấu thầu trước (Điều 42 Luật Đấu thầu) hoặc khi giá trị bảo đảm dự thầu nhỏ hơn 50 triệu đồng."
+  },
+  "keywords": [
+    "Điều 14",
+    "Điều 42",
+    "đấu thầu trước",
+    "nhỏ hơn 50 triệu đồng",
+    "cam kết trong đơn dự thầu"
+  ]
+}

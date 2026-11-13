@@ -1,0 +1,27 @@
+{
+  "id": 46,
+  "file": "q046.json",
+  "questionNumber": 46,
+  "question_number": "Câu 46",
+  "question": "Nội dung nào không phải là tiêu chuẩn đánh giá về kỹ thuật của gói thầu tư vấn?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định các nội dung không thuộc tiêu chuẩn đánh giá về kỹ thuật của gói thầu cung cấp dịch vụ tư vấn.",
+    "rule": "Khoản 5 Điều 63 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 5 Điều 63 Nghị định số 214/2025/NĐ-CP, tiêu chuẩn đánh giá về kỹ thuật đối với gói thầu dịch vụ tư vấn là tổ chức sử dụng phương pháp chấm điểm (thang điểm 100 hoặc 1.000) và chỉ bao gồm các nội dung: (1) Kinh nghiệm và năng lực của nhà thầu (tỷ trọng từ 0% đến 15%); (2) Uy tín của nhà thầu thông qua kết quả thực hiện các hợp đồng tương tự trước đó và lịch sử vi phạm (tỷ trọng 5%); (3) Giải pháp và phương pháp luận thực hiện gói thầu (tỷ trọng từ 30% đến 40%); (4) Nhân sự thực hiện gói thầu (tỷ trọng từ 50% đến 60%); (5) Chuyển giao công nghệ, đào tạo (nếu có, không quá 10%). Do đó, các nội dung như năng lực tài chính (doanh thu, tài sản ròng, nguồn lực tài chính), thiết bị thi công chủ yếu hoặc giá dự thầu không phải là tiêu chuẩn đánh giá về kỹ thuật của gói thầu tư vấn.",
+    "conclusion": "Nội dung không phải là tiêu chuẩn đánh giá về kỹ thuật của gói thầu tư vấn là các chỉ tiêu về năng lực tài chính (doanh thu, giá trị tài sản ròng, nguồn lực tài chính) hoặc giá dự thầu."
+  },
+  "keywords": [
+    "Khoản 5 Điều 63 Nghị định 214/2025/NĐ-CP",
+    "tiêu chuẩn đánh giá kỹ thuật",
+    "gói thầu tư vấn",
+    "giải pháp và phương pháp luận",
+    "nhân sự",
+    "uy tín nhà thầu",
+    "năng lực tài chính"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 100,
+  "file": "q100.json",
+  "questionNumber": 100,
+  "question_number": "Câu 100",
+  "question": "Trong mua sắm tập trung, nhà thầu đã ký thỏa thuận khung phải thực hiện bảo đảm thực hiện hợp đồng vào thời điểm nào và cho chủ thể nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Mua sắm tập trung",
+  "irac": {
+    "issue": "Xác định thời điểm thực hiện bảo đảm thực hiện hợp đồng và chủ thể thụ hưởng đối với nhà thầu đã ký thỏa thuận khung trong mua sắm tập trung.",
+    "rule": "Khoản 1 Điều 68 Luật Đấu thầu số 22/2023/QH15; Điểm e Khoản 2 Điều 92 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Khoản 1 Điều 68 Luật Đấu thầu và Điều 92 Nghị định số 214/2025/NĐ-CP, khi ký kết thỏa thuận khung với đơn vị mua sắm tập trung, nhà thầu chưa phải thực hiện bảo đảm thực hiện hợp đồng. Nhà thầu đã ký thỏa thuận khung phải thực hiện biện pháp bảo đảm thực hiện hợp đồng trước hoặc cùng thời điểm hợp đồng mua sắm hàng hóa, dịch vụ cụ thể có hiệu lực, và nộp bảo đảm thực hiện hợp đồng đó cho chính đơn vị trực tiếp ký kết hợp đồng (tức là đơn vị có nhu cầu mua sắm hàng hóa, dịch vụ).",
+    "conclusion": "Trong mua sắm tập trung, nhà thầu đã ký thỏa thuận khung phải thực hiện bảo đảm thực hiện hợp đồng trước hoặc cùng thời điểm hợp đồng có hiệu lực và thực hiện cho đơn vị có nhu cầu mua sắm (đơn vị trực tiếp ký hợp đồng với nhà thầu)."
+  },
+  "keywords": [
+    "Khoản 1 Điều 68",
+    "Điều 92 Nghị định 214/2025/NĐ-CP",
+    "thỏa thuận khung",
+    "bảo đảm thực hiện hợp đồng",
+    "trước hoặc cùng thời điểm hợp đồng có hiệu lực",
+    "đơn vị có nhu cầu mua sắm"
+  ]
+}

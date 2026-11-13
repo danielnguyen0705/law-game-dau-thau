@@ -1,0 +1,25 @@
+{
+  "id": 124,
+  "file": "q124.json",
+  "questionNumber": 124,
+  "question_number": "Câu 124",
+  "question": "Nhà thầu tư vấn giám sát đồng thời thực hiện tư vấn kiểm định đối với gói thầu do nhà thầu đó giám sát thì nhà thầu đó sẽ bị xử lý như thế nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Quản lý nhà nước & Xử lý vi phạm",
+  "irac": {
+    "issue": "Xác định biện pháp và thời gian xử lý đối với nhà thầu tư vấn giám sát đồng thời thực hiện tư vấn kiểm định đối với gói thầu do chính nhà thầu đó giám sát.",
+    "rule": "Điểm g Khoản 6 Điều 16 Luật Đấu thầu số 22/2023/QH15; Điểm b Khoản 1 Điều 133 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm g Khoản 6 Điều 16 Luật Đấu thầu số 22/2023/QH15, hành vi 'Nhà thầu tư vấn giám sát đồng thời thực hiện tư vấn kiểm định đối với gói thầu do nhà thầu đó giám sát' là một trong các hành vi bị cấm thuộc nhóm không bảo đảm công bằng, minh bạch trong hoạt động đấu thầu. Theo Điểm b Khoản 1 Điều 133 Nghị định số 214/2025/NĐ-CP, tổ chức, cá nhân vi phạm Khoản 6 Điều 16 Luật Đấu thầu (trừ điểm b, c khoản 6) sẽ bị cấm tham gia hoạt động đấu thầu từ 01 năm đến 03 năm (ngoài ra còn bị xử phạt vi phạm hành chính và hủy kết quả nếu làm sai lệch kết quả lựa chọn nhà thầu).",
+    "conclusion": "Nhà thầu tư vấn giám sát đồng thời thực hiện tư vấn kiểm định đối với gói thầu do mình giám sát là vi phạm điều cấm tại Điểm g Khoản 6 Điều 16 Luật Đấu thầu và sẽ bị cấm tham gia hoạt động đấu thầu từ 01 năm đến 03 năm (theo Điểm b Khoản 1 Điều 133 Nghị định số 214/2025/NĐ-CP)."
+  },
+  "keywords": [
+    "Điểm g Khoản 6 Điều 16",
+    "Điểm b Khoản 1 Điều 133 Nghị định 214/2025/NĐ-CP",
+    "tư vấn giám sát đồng thời thực hiện tư vấn kiểm định",
+    "không bảo đảm công bằng minh bạch",
+    "cấm từ 01 năm đến 03 năm"
+  ]
+}

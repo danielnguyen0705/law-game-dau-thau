@@ -1,0 +1,25 @@
+{
+  "id": 43,
+  "file": "q043.json",
+  "questionNumber": 43,
+  "question_number": "Câu 43",
+  "question": "Nội dung nào là tiêu chuẩn đánh giá về năng lực và kinh nghiệm không bắt buộc đối với gói thầu mua sắm hàng hóa áp dụng đấu thầu rộng rãi?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định nội dung thuộc tiêu chuẩn đánh giá về năng lực và kinh nghiệm không bắt buộc đối với gói thầu mua sắm hàng hóa áp dụng đấu thầu rộng rãi.",
+    "rule": "Điểm a Khoản 4 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm a Khoản 4 Điều 26 Nghị định số 214/2025/NĐ-CP, trong các tiêu chuẩn đánh giá về năng lực và kinh nghiệm của gói thầu mua sắm hàng hóa, các nội dung được quy định kèm theo cụm từ '(nếu có)' - tức là không bắt buộc phải quy định trong mọi HSMT - bao gồm: (1) Kinh nghiệm thực hiện hợp đồng cung cấp hàng hóa tương tự (nếu có); (2) Năng lực sản xuất hàng hóa (nếu có); và (3) Cơ sở vật chất kỹ thuật, trình độ cán bộ chuyên môn thực hiện dịch vụ liên quan (nếu có). Trong khi đó, năng lực tài chính (doanh thu, nghĩa vụ thuế, tài sản ròng đối với tổ chức) là nội dung bắt buộc.",
+    "conclusion": "Đối với gói thầu mua sắm hàng hóa áp dụng đấu thầu rộng rãi, các tiêu chuẩn đánh giá về năng lực và kinh nghiệm không bắt buộc bao gồm: Kinh nghiệm thực hiện hợp đồng cung cấp hàng hóa tương tự; Năng lực sản xuất hàng hóa; và Cơ sở vật chất kỹ thuật, trình độ cán bộ chuyên môn thực hiện dịch vụ liên quan."
+  },
+  "keywords": [
+    "Điểm a Khoản 4 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "tiêu chuẩn không bắt buộc",
+    "mua sắm hàng hóa",
+    "kinh nghiệm hợp đồng tương tự",
+    "năng lực sản xuất hàng hóa"
+  ]
+}

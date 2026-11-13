@@ -1,0 +1,23 @@
+{
+  "id": 180,
+  "file": "q180.json",
+  "questionNumber": 180,
+  "question_number": "Câu 180",
+  "question": "Trường hợp gói thầu có giá gói thầu dưới 500 triệu đồng đối với dự toán mua sắm thì chủ đầu tư được quyết định cho phép nhà thầu nào được tham dự thầu?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Tư cách hợp lệ của nhà thầu",
+  "irac": {
+    "issue": "Xác định đối tượng nhà thầu mà chủ đầu tư được quyết định cho phép tham dự thầu đối với gói thầu có giá dưới 500 triệu đồng thuộc dự toán mua sắm.",
+    "rule": "Khoản 2 Điều 5 Luật Đấu thầu số 22/2023/QH15; Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 2 Điều 5 Luật Đấu thầu số 22/2023/QH15 và hướng dẫn tại Nghị định số 214/2025/NĐ-CP, đối với gói thầu có giá gói thầu dưới 500 triệu đồng thuộc dự toán mua sắm, chủ đầu tư được quyết định cho phép nhà thầu là hộ kinh doanh tham dự thầu.",
+    "conclusion": "Chủ đầu tư được quyết định cho phép nhà thầu là hộ kinh doanh tham dự thầu."
+  },
+  "keywords": [
+    "Khoản 2 Điều 5",
+    "dưới 500 triệu đồng",
+    "hộ kinh doanh"
+  ]
+}

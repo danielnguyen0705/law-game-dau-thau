@@ -1,0 +1,24 @@
+{
+  "id": 137,
+  "file": "q137.json",
+  "questionNumber": 137,
+  "question_number": "Câu 137",
+  "question": "Đối với kiến nghị về kết quả lựa chọn nhà thầu, trường hợp nhà thầu gửi đơn kiến nghị đồng thời đến bộ phận thường trực giúp việc Hội đồng giải quyết kiến nghị và chủ đầu tư thì chủ thể nào có trách nhiệm giải quyết kiến nghị?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Xác định chủ thể có trách nhiệm giải quyết khi nhà thầu gửi đơn kiến nghị về kết quả lựa chọn nhà thầu đồng thời đến bộ phận thường trực giúp việc Hội đồng giải quyết kiến nghị và chủ đầu tư.",
+    "rule": "Khoản 2 Điều 91 Luật Đấu thầu số 22/2023/QH15; Điểm b Khoản 2 Điều 138 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm b Khoản 2 Điều 138 Nghị định số 214/2025/NĐ-CP, đối với kiến nghị về kết quả lựa chọn nhà thầu, trường hợp nhà thầu gửi đơn kiến nghị đồng thời đến bộ phận thường trực giúp việc Hội đồng giải quyết kiến nghị và chủ đầu tư thì Hội đồng giải quyết kiến nghị có trách nhiệm giải quyết kiến nghị.",
+    "conclusion": "Hội đồng giải quyết kiến nghị có trách nhiệm giải quyết kiến nghị trong trường hợp nhà thầu gửi đơn kiến nghị về kết quả lựa chọn nhà thầu đồng thời đến bộ phận thường trực và chủ đầu tư."
+  },
+  "keywords": [
+    "Điểm b Khoản 2 Điều 138",
+    "kết quả lựa chọn nhà thầu",
+    "gửi đồng thời",
+    "Hội đồng giải quyết kiến nghị"
+  ]
+}

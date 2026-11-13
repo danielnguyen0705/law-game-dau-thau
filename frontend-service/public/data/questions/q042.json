@@ -1,0 +1,29 @@
+{
+  "id": 42,
+  "file": "q042.json",
+  "questionNumber": 42,
+  "question_number": "Câu 42",
+  "question": "Tiêu chuẩn đánh giá năng lực kinh nghiệm đối với gói thầu mua sắm hàng hóa bao gồm những gì?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định các nội dung trong tiêu chuẩn đánh giá năng lực và kinh nghiệm đối với gói thầu mua sắm hàng hóa.",
+    "rule": "Điểm a Khoản 4 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm a Khoản 4 Điều 26 Nghị định số 214/2025/NĐ-CP, tiêu chuẩn đánh giá về năng lực và kinh nghiệm đối với gói thầu mua sắm hàng hóa sử dụng tiêu chí đạt, không đạt và bao gồm các nội dung sau: (1) Kinh nghiệm thực hiện hợp đồng cung cấp hàng hóa tương tự (nếu có); (2) Năng lực sản xuất hàng hóa (nếu có); (3) Năng lực tài chính bao gồm giá trị tài sản ròng, doanh thu, việc thực hiện nghĩa vụ kê khai thuế, nộp thuế và các chỉ tiêu cần thiết khác để đánh giá năng lực tài chính của nhà thầu; cơ sở vật chất kỹ thuật, trình độ cán bộ chuyên môn thực hiện dịch vụ liên quan (nếu có). Lưu ý: Không yêu cầu nhà thầu là hộ kinh doanh phải nộp báo cáo tài chính và không đánh giá tiêu chí giá trị tài sản ròng đối với hộ kinh doanh.",
+    "conclusion": "Tiêu chuẩn đánh giá năng lực, kinh nghiệm đối với gói thầu mua sắm hàng hóa bao gồm: kinh nghiệm thực hiện hợp đồng cung cấp hàng hóa tương tự (nếu có); năng lực sản xuất hàng hóa (nếu có); năng lực tài chính (giá trị tài sản ròng, doanh thu, thực hiện nghĩa vụ thuế...) và cơ sở vật chất, cán bộ chuyên môn thực hiện dịch vụ liên quan (nếu có)."
+  },
+  "keywords": [
+    "Điểm a Khoản 4 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "tiêu chuẩn năng lực kinh nghiệm",
+    "mua sắm hàng hóa",
+    "hợp đồng tương tự",
+    "năng lực sản xuất",
+    "năng lực tài chính",
+    "tài sản ròng",
+    "doanh thu",
+    "nghĩa vụ thuế"
+  ]
+}

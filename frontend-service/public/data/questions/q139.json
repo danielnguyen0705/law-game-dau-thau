@@ -1,0 +1,24 @@
+{
+  "id": 139,
+  "file": "q139.json",
+  "questionNumber": 139,
+  "question_number": "Câu 139",
+  "question": "Hội đồng giải quyết kiến nghị có quyền thực hiện việc nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Xác định quyền hạn của Hội đồng giải quyết kiến nghị trong quá trình xem xét, giải quyết kiến nghị.",
+    "rule": "Điểm b Khoản 4 Điều 93 Luật Đấu thầu số 22/2023/QH15; Khoản 3 Điều 138 và Điểm c Khoản 3 Điều 139 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm b Khoản 4 Điều 93 Luật Đấu thầu và Điểm c Khoản 3 Điều 139 Nghị định số 214/2025/NĐ-CP, Hội đồng giải quyết kiến nghị có quyền yêu cầu nhà thầu, chủ đầu tư và các cơ quan, tổ chức liên quan cung cấp thông tin, hồ sơ, tài liệu của gói thầu, dự án và các thông tin liên quan để thực hiện nhiệm vụ, đồng thời có quyền đề nghị người có thẩm quyền tạm dừng việc ký kết, thực hiện hợp đồng.",
+    "conclusion": "Hội đồng giải quyết kiến nghị có quyền yêu cầu nhà thầu, chủ đầu tư và các cơ quan liên quan cung cấp thông tin, tài liệu của gói thầu, dự án để thực hiện nhiệm vụ và đề nghị tạm dừng ký kết, thực hiện hợp đồng."
+  },
+  "keywords": [
+    "Điểm b Khoản 4 Điều 93",
+    "Điểm c Khoản 3 Điều 139",
+    "Hội đồng giải quyết kiến nghị",
+    "yêu cầu cung cấp thông tin"
+  ]
+}

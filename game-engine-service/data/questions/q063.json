@@ -1,0 +1,25 @@
+{
+  "id": 63,
+  "file": "q063.json",
+  "questionNumber": 63,
+  "question_number": "Câu 63",
+  "question": "Danh sách xếp hạng nhà thầu có phải thẩm định trước khi phê duyệt hay không?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định danh sách xếp hạng nhà thầu có bắt buộc phải thẩm định trước khi phê duyệt hay không.",
+    "rule": "Điều 78, Điều 81 Luật Đấu thầu số 22/2023/QH15; Khoản 4 Điều 32 và Khoản 3 Điều 70 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 4 Điều 32 và Khoản 3 Điều 70 Nghị định số 214/2025/NĐ-CP, danh sách xếp hạng nhà thầu do tổ chuyên gia lập trực tiếp trong báo cáo đánh giá HSDT để làm cơ sở mời nhà thầu xếp hạng thứ nhất vào thương thảo hợp đồng (nếu có) hoặc hoàn thiện hợp đồng. Pháp luật quy định danh sách xếp hạng nhà thầu không phải trình phê duyệt và do đó cũng không phải tổ chức thẩm định trước khi thực hiện bước tiếp theo.",
+    "conclusion": "Danh sách xếp hạng nhà thầu không phải thẩm định và không phải phê duyệt."
+  },
+  "keywords": [
+    "Khoản 4 Điều 32 Nghị định 214/2025/NĐ-CP",
+    "Khoản 3 Điều 70 Nghị định 214/2025/NĐ-CP",
+    "danh sách xếp hạng nhà thầu",
+    "không phải thẩm định",
+    "không phải phê duyệt"
+  ]
+}

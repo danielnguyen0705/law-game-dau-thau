@@ -1,0 +1,26 @@
+{
+  "id": 79,
+  "file": "q079.json",
+  "questionNumber": 79,
+  "question_number": "Câu 79",
+  "question": "Gói thầu đang xét là gói thầu giặt là cho bệnh viện công lập (có tính chất công việc lặp lại theo chu kỳ qua các năm), có thời gian thực hiện gói thầu trong 3 năm với giá gói thầu là 12 tỷ đồng. Nhà thầu nào được xác định đáp ứng yêu cầu về giá trị hợp đồng tương tự khi tham dự gói thầu này?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định tiêu chí giá trị hợp đồng tương tự đối với gói thầu dịch vụ giặt là cho bệnh viện công lập có tính chất lặp lại theo chu kỳ qua các năm (thời gian thực hiện 3 năm, giá gói thầu 12 tỷ đồng).",
+    "rule": "Khoản 2 Điều 37 Luật Đấu thầu số 22/2023/QH15; Điểm a Khoản 4 và Điểm a Khoản 5 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định về lập HSMT đối với gói thầu dịch vụ phi tư vấn có tính chất công việc lặp lại theo chu kỳ qua các năm (như dịch vụ giặt là, vệ sinh, bảo vệ thực hiện trong nhiều năm), quy mô giá trị hợp đồng tương tự không tính trên tổng giá trị của cả 3 năm (12 tỷ đồng) mà được xác định dựa trên giá trị công việc của 01 chu kỳ (01 năm). Cụ thể: Giá trị 01 năm của gói thầu là 12 tỷ đồng / 3 năm = 4 tỷ đồng/năm. Thông thường HSMT quy định giá trị hợp đồng tương tự tối thiểu bằng 50% (hoặc từ 30% - 50% tùy quy mô) giá trị 01 chu kỳ năm của gói thầu (tức khoảng 50% x 4 tỷ đồng = 2 tỷ đồng, hoặc tính theo tỷ lệ % HSMT quy định nhân với giá trị trung bình 01 năm là 4 tỷ đồng). Do đó, nhà thầu có hợp đồng dịch vụ giặt là hoàn thành đáp ứng tỷ lệ phần trăm yêu cầu tính trên giá trị 01 năm (4 tỷ đồng) của gói thầu thì được xác định là đáp ứng yêu cầu về giá trị hợp đồng tương tự.",
+    "conclusion": "Đối với gói thầu giặt là có tính chất lặp lại theo chu kỳ trong 3 năm với tổng giá gói thầu 12 tỷ đồng, giá trị hợp đồng tương tự được xác định dựa trên giá trị của 01 chu kỳ năm (4 tỷ đồng/năm); nhà thầu có hợp đồng tương tự đạt tỷ lệ % yêu cầu của HSMT tính trên mức 4 tỷ đồng/năm (ví dụ 50% tương ứng 2 tỷ đồng) thì được xác định là đáp ứng."
+  },
+  "keywords": [
+    "Khoản 2 Điều 37",
+    "Điều 26 Nghị định 214/2025/NĐ-CP",
+    "lặp lại theo chu kỳ qua các năm",
+    "dịch vụ giặt là",
+    "3 năm 12 tỷ đồng",
+    "tính theo 01 năm (4 tỷ đồng)"
+  ]
+}

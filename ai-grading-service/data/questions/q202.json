@@ -1,0 +1,24 @@
+{
+  "id": 202,
+  "file": "q202.json",
+  "questionNumber": 202,
+  "question_number": "Câu 202",
+  "question": "Việc phê duyệt dự toán đối với phần công việc tùy chọn mua thêm được áp dụng tại thời điểm nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Tùy chọn mua thêm & Dự toán",
+  "irac": {
+    "issue": "Xác định thời điểm phê duyệt dự toán đối với phần công việc tùy chọn mua thêm.",
+    "rule": "Khoản 8 Điều 39 Luật Đấu thầu số 22/2023/QH15; Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Khoản 8 Điều 39 Luật Đấu thầu số 22/2023/QH15 và Nghị định số 214/2025/NĐ-CP, đối với phần công việc áp dụng tùy chọn mua thêm, việc phê duyệt dự toán mua thêm được thực hiện trước khi ký kết văn bản sửa đổi, bổ sung hợp đồng để thực hiện tùy chọn mua thêm (trên cơ sở nhu cầu phát sinh thực tế và nguồn kinh phí được bố trí).",
+    "conclusion": "Dự toán đối với phần công việc tùy chọn mua thêm được phê duyệt trước khi thực hiện mua thêm (trước khi ký phụ lục/văn bản sửa đổi hợp đồng mua thêm)."
+  },
+  "keywords": [
+    "Khoản 8 Điều 39",
+    "tùy chọn mua thêm",
+    "phê duyệt dự toán",
+    "trước khi thực hiện mua thêm"
+  ]
+}

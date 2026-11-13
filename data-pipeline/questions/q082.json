@@ -1,0 +1,25 @@
+{
+  "id": 82,
+  "file": "q082.json",
+  "questionNumber": 82,
+  "question_number": "Câu 82",
+  "question": "Nhà thầu không được hoàn trả bảo đảm thực hiện hợp đồng trong trường hợp nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Bảo đảm dự thầu & Bảo đảm thực hiện hợp đồng",
+  "irac": {
+    "issue": "Xác định các trường hợp nhà thầu không được hoàn trả bảo đảm thực hiện hợp đồng.",
+    "rule": "Khoản 6 Điều 68 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo quy định tại Khoản 6 Điều 68 Luật Đấu thầu số 22/2023/QH15, nhà thầu không được hoàn trả bảo đảm thực hiện hợp đồng trong 03 trường hợp sau đây: (a) Từ chối thực hiện hợp đồng khi hợp đồng đã có hiệu lực; (b) Vi phạm thỏa thuận trong hợp đồng; (c) Thực hiện hợp đồng chậm tiến độ do lỗi của nhà thầu nhưng từ chối gia hạn hiệu lực của bảo đảm thực hiện hợp đồng.",
+    "conclusion": "Nhà thầu không được hoàn trả bảo đảm thực hiện hợp đồng trong 03 trường hợp: (1) Từ chối thực hiện hợp đồng khi hợp đồng đã có hiệu lực; (2) Vi phạm thỏa thuận trong hợp đồng; (3) Thực hiện hợp đồng chậm tiến độ do lỗi của mình nhưng từ chối gia hạn hiệu lực của bảo đảm thực hiện hợp đồng (Khoản 6 Điều 68 Luật Đấu thầu)."
+  },
+  "keywords": [
+    "Khoản 6 Điều 68",
+    "không được hoàn trả bảo đảm thực hiện hợp đồng",
+    "từ chối thực hiện hợp đồng",
+    "vi phạm thỏa thuận trong hợp đồng",
+    "từ chối gia hạn hiệu lực"
+  ]
+}

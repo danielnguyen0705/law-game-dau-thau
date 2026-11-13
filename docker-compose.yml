@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  ai-grading-service:
+    build:
+      context: ./ai-grading-service
+      dockerfile: Dockerfile
+    container_name: lawgame-ai-grading
+    ports:
+      - "4002:4002"
+    environment:
+      - PORT=4002
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  game-engine-service:
+    build:
+      context: ./game-engine-service
+      dockerfile: Dockerfile
+    container_name: lawgame-game-engine
+    ports:
+      - "4001:4001"
+    environment:
+      - PORT=4001
+      - AI_GRADING_URL=http://ai-grading-service:4002
+      - NODE_ENV=production
+    depends_on:
+      - ai-grading-service
+    restart: unless-stopped
+
+  frontend-service:
+    build:
+      context: ./frontend-service
+      dockerfile: Dockerfile
+    container_name: lawgame-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_GAME_ENGINE_URL=http://localhost:4001
+      - VITE_AI_GRADING_URL=http://localhost:4002
+    depends_on:
+      - game-engine-service
+      - ai-grading-service
+    restart: unless-stopped
+

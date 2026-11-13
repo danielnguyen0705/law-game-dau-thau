@@ -1,0 +1,26 @@
+{
+  "id": 110,
+  "file": "q110.json",
+  "questionNumber": 110,
+  "question_number": "Câu 110",
+  "question": "Trường hợp thuê đơn vị tư vấn lập hồ sơ mời quan tâm, hồ sơ mời sơ tuyển, hồ sơ mời thầu, hồ sơ yêu cầu; đánh giá hồ sơ quan tâm, hồ sơ dự sơ tuyển, hồ sơ dự thầu, hồ sơ đề xuất, tổ chuyên gia được thành lập bởi?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Chủ thể tham gia đấu thầu",
+  "irac": {
+    "issue": "Xác định chủ thể có trách nhiệm thành lập tổ chuyên gia trong trường hợp thuê đơn vị tư vấn lập HSMQT, HSMST, HSMT, HSYC; đánh giá HSQT, HSDST, HSDT, HSĐX.",
+    "rule": "Khoản 1 Điều 19 và Điều 80 Luật Đấu thầu số 22/2023/QH15; Điều 21 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 1 Điều 19 Luật Đấu thầu số 22/2023/QH15 và Điều 21 Nghị định số 214/2025/NĐ-CP: Trường hợp chủ đầu tư tự thực hiện thì tổ chuyên gia do chủ đầu tư quyết định thành lập; còn trường hợp chủ đầu tư thuê đơn vị tư vấn đấu thầu để lập hồ sơ mời quan tâm, hồ sơ mời sơ tuyển, hồ sơ mời thầu, hồ sơ yêu cầu; đánh giá hồ sơ quan tâm, hồ sơ dự sơ tuyển, hồ sơ dự thầu, hồ sơ đề xuất thì tổ chuyên gia được thành lập bởi chính đơn vị tư vấn đấu thầu được thuê đó.",
+    "conclusion": "Trong trường hợp thuê đơn vị tư vấn thực hiện lập HSMQT, HSMST, HSMT, HSYC và đánh giá HSQT, HSDST, HSDT, HSĐX, tổ chuyên gia được thành lập bởi đơn vị tư vấn đấu thầu (Khoản 1 Điều 19 Luật Đấu thầu)."
+  },
+  "keywords": [
+    "Khoản 1 Điều 19",
+    "Điều 80",
+    "Điều 21 Nghị định 214/2025/NĐ-CP",
+    "thuê đơn vị tư vấn",
+    "thành lập tổ chuyên gia",
+    "đơn vị tư vấn đấu thầu"
+  ]
+}

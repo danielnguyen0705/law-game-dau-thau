@@ -1,0 +1,29 @@
+{
+  "id": 6,
+  "file": "q006.json",
+  "questionNumber": 6,
+  "question_number": "Câu 6",
+  "question": "Theo quy định pháp luật về đấu thầu, đấu thầu là gì?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Khái niệm cơ bản & Phân loại gói thầu",
+  "irac": {
+    "issue": "Giải thích khái niệm pháp lý 'đấu thầu' theo Luật Đấu thầu.",
+    "rule": "Khoản 8 Điều 4 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 8 Điều 4 Luật Đấu thầu số 22/2023/QH15, đấu thầu được định nghĩa là quá trình lựa chọn nhà thầu để ký kết, thực hiện hợp đồng cung cấp dịch vụ tư vấn, dịch vụ phi tư vấn, mua sắm hàng hóa, xây lắp, hoặc lựa chọn nhà đầu tư để ký kết, thực hiện hợp đồng dự án đầu tư kinh doanh trên cơ sở bảo đảm cạnh tranh, công bằng, minh bạch, hiệu quả kinh tế và trách nhiệm giải trình.",
+    "conclusion": "Đấu thầu là quá trình lựa chọn nhà thầu hoặc nhà đầu tư để ký kết và thực hiện hợp đồng trên cơ sở bảo đảm 05 nguyên tắc: cạnh tranh, công bằng, minh bạch, hiệu quả kinh tế và trách nhiệm giải trình (Khoản 8 Điều 4 Luật Đấu thầu 2023)."
+  },
+  "keywords": [
+    "Khoản 8 Điều 4",
+    "quá trình lựa chọn nhà thầu",
+    "lựa chọn nhà đầu tư",
+    "ký kết thực hiện hợp đồng",
+    "cạnh tranh",
+    "công bằng",
+    "minh bạch",
+    "hiệu quả kinh tế",
+    "trách nhiệm giải trình"
+  ]
+}

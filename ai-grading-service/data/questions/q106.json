@@ -1,0 +1,25 @@
+{
+  "id": 106,
+  "file": "q106.json",
+  "questionNumber": 106,
+  "question_number": "Câu 106",
+  "question": "Đối với hàng hóa, dịch vụ không thuộc danh mục mua sắm tập trung do Chủ tịch UBND tỉnh X ban hành nhưng nhiều cơ quan, tổ chức, đơn vị trong tỉnh X có nhu cầu mua sắm hàng hóa, dịch vụ cùng loại thì thực hiện như thế nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Mua sắm tập trung",
+  "irac": {
+    "issue": "Xác định cách thức thực hiện khi nhiều cơ quan, tổ chức, đơn vị trong tỉnh X có nhu cầu mua sắm hàng hóa, dịch vụ cùng loại nhưng hàng hóa, dịch vụ đó không thuộc danh mục mua sắm tập trung do Chủ tịch UBND tỉnh X ban hành.",
+    "rule": "Khoản 5 Điều 53 Luật Đấu thầu số 22/2023/QH15; Khoản 2 Điều 89 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 5 Điều 53 Luật Đấu thầu số 22/2023/QH15: 'Đối với hàng hóa, dịch vụ không thuộc danh mục mua sắm tập trung nhưng nhiều cơ quan, tổ chức, đơn vị có nhu cầu mua sắm hàng hóa, dịch vụ cùng loại thì có thể gộp thành một gói thầu để một trong các cơ quan, tổ chức, đơn vị mua sắm hoặc để đơn vị có chức năng mua sắm tập trung thực hiện việc mua sắm'. Ngoài ra, các đơn vị cũng có thể tự tổ chức lựa chọn nhà thầu riêng rẽ theo dự toán của đơn vị mình.",
+    "conclusion": "Các cơ quan, tổ chức, đơn vị trong tỉnh X có thể thỏa thuận gộp nhu cầu thành một gói thầu để giao cho một trong các cơ quan, tổ chức, đơn vị đó trực tiếp tổ chức mua sắm, hoặc giao cho đơn vị có chức năng mua sắm tập trung của tỉnh thực hiện việc mua sắm (Khoản 5 Điều 53 Luật Đấu thầu)."
+  },
+  "keywords": [
+    "Khoản 5 Điều 53",
+    "Khoản 2 Điều 89 Nghị định 214/2025/NĐ-CP",
+    "không thuộc danh mục mua sắm tập trung",
+    "gộp thành một gói thầu",
+    "đơn vị có chức năng mua sắm tập trung"
+  ]
+}

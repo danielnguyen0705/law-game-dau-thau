@@ -1,0 +1,29 @@
+{
+  "id": 39,
+  "file": "q039.json",
+  "questionNumber": 39,
+  "question_number": "Câu 39",
+  "question": "Nội dung nào là nội dung đánh giá tính hợp lệ của hồ sơ dự thầu?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định các nội dung thuộc tiêu chuẩn đánh giá tính hợp lệ của hồ sơ dự thầu (HSDT).",
+    "rule": "Khoản 3 Điều 26, Khoản 2 Điều 32 và Khoản 3 Điều 63 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Khoản 3 Điều 26 Nghị định số 214/2025/NĐ-CP (áp dụng cho gói thầu mua sắm hàng hóa, xây lắp, phi tư vấn), hồ sơ dự thầu của nhà thầu được đánh giá là hợp lệ khi đáp ứng đầy đủ 08 nội dung sau đây: (a) Có bản gốc hồ sơ dự thầu; (b) Có đơn dự thầu được đại diện hợp pháp của nhà thầu ký tên, đóng dấu (nếu có) theo yêu cầu của HSMT; thời điểm ký đơn dự thầu phải sau thời điểm phát hành HSMT; không đề xuất các giá dự thầu khác nhau hoặc có kèm theo điều kiện gây bất lợi cho chủ đầu tư; đối với nhà thầu liên danh, đơn dự thầu phải do đại diện hợp pháp của từng thành viên liên danh ký tên, đóng dấu (nếu có) hoặc thành viên được phân công trong thỏa thuận liên danh ký thay; (c) Thời gian có hiệu lực của HSDT đáp ứng yêu cầu của HSMT; (d) Có bảo đảm dự thầu hợp lệ (không áp dụng đối với gói thầu tư vấn và đấu thầu trước); (đ) Nhà thầu không có tên trong hai hoặc nhiều HSDT với tư cách là nhà thầu chính (nhà thầu độc lập hoặc thành viên trong liên danh) đối với cùng một gói thầu; (e) Có thỏa thuận liên danh hợp lệ (đối với trường hợp liên danh); (g) Nhà thầu có tư cách hợp lệ theo quy định tại Điều 5 của Luật Đấu thầu; (h) Trong thời hạn 03 năm trước thời điểm đóng thầu, nhà thầu không có nhân sự (ký kết hợp đồng lao động với nhà thầu tại thời điểm nhân sự thực hiện hành vi vi phạm) bị Tòa án kết án có hành vi vi phạm quy định về đấu thầu gây hậu quả nghiêm trọng theo quy định của pháp luật về hình sự nhằm mục đích cho nhà thầu trúng thầu.",
+    "conclusion": "Nội dung đánh giá tính hợp lệ của HSDT bao gồm 08 tiêu chí: bản gốc HSDT; đơn dự thầu hợp lệ; hiệu lực HSDT; bảo đảm dự thầu hợp lệ (trừ gói tư vấn/đấu thầu trước); không đứng tên trong 2 HSDT trở lên; thỏa thuận liên danh (nếu liên danh); tư cách hợp lệ theo Điều 5 Luật Đấu thầu; và không có nhân sự bị Tòa án kết án hình sự về đấu thầu trong 03 năm trước thời điểm đóng thầu."
+  },
+  "keywords": [
+    "Khoản 3 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "tính hợp lệ của HSDT",
+    "bản gốc HSDT",
+    "đơn dự thầu",
+    "hiệu lực HSDT",
+    "bảo đảm dự thầu",
+    "thỏa thuận liên danh",
+    "tư cách hợp lệ",
+    "03 năm trước thời điểm đóng thầu"
+  ]
+}

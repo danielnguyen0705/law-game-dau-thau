@@ -1,0 +1,27 @@
+{
+  "id": 130,
+  "file": "q130.json",
+  "questionNumber": 130,
+  "question_number": "Câu 130",
+  "question": "Đối với việc giải quyết kiến nghị về các vấn đề trước khi có thông báo kết quả lựa chọn nhà thầu, cá nhân, đơn vị nào có trách nhiệm giải quyết kiến nghị?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Giải quyết kiến nghị & Tranh chấp",
+  "irac": {
+    "issue": "Xác định cá nhân, đơn vị có trách nhiệm giải quyết kiến nghị đối với các vấn đề trước khi có thông báo kết quả lựa chọn nhà thầu.",
+    "rule": "Khoản 1 Điều 90 và Khoản 1 Điều 91 Luật Đấu thầu số 22/2023/QH15; Khoản 1 Điều 138 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Khoản 1 Điều 90 và Khoản 1 Điều 91 Luật Đấu thầu số 22/2023/QH15, đối với việc giải quyết kiến nghị về các vấn đề trước khi có thông báo kết quả lựa chọn nhà thầu (như nội dung HSMT, quá trình tổ chức lựa chọn nhà thầu), cá nhân, đơn vị có trách nhiệm giải quyết kiến nghị là Chủ đầu tư và Người có thẩm quyền. Cụ thể: Nhà thầu, cơ quan, tổ chức gửi đơn kiến nghị đến Chủ đầu tư (chủ đầu tư giải quyết trong 07 ngày làm việc); trường hợp không đồng ý với kết quả giải quyết của chủ đầu tư hoặc hết thời hạn mà chủ đầu tư không có văn bản giải quyết thì nhà thầu, cơ quan, tổ chức có quyền gửi đơn kiến nghị đến Người có thẩm quyền (hoặc gửi trực tiếp đến Người có thẩm quyền) để Người có thẩm quyền giải quyết trong thời hạn quy định.",
+    "conclusion": "Đối với việc giải quyết kiến nghị về các vấn đề trước khi có thông báo kết quả lựa chọn nhà thầu, cá nhân, đơn vị có trách nhiệm giải quyết kiến nghị là Chủ đầu tư và Người có thẩm quyền (Khoản 1 Điều 91 Luật Đấu thầu)."
+  },
+  "keywords": [
+    "Khoản 1 Điều 90",
+    "Khoản 1 Điều 91",
+    "Khoản 1 Điều 138 Nghị định 214/2025/NĐ-CP",
+    "giải quyết kiến nghị",
+    "trước khi có thông báo kết quả lựa chọn nhà thầu",
+    "Chủ đầu tư",
+    "Người có thẩm quyền"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 91,
+  "file": "q091.json",
+  "questionNumber": 91,
+  "question_number": "Câu 91",
+  "question": "Thời gian phê duyệt hồ sơ mời thầu được quy định như thế nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Quy trình đấu thầu & Thương thảo hợp đồng",
+  "irac": {
+    "issue": "Xác định quy định về thời gian phê duyệt hồ sơ mời thầu.",
+    "rule": "Khoản 2 Điều 45 Luật Đấu thầu số 22/2023/QH15 (sửa đổi, bổ sung bởi Luật số 90/2025/QH15); Điều 24 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 2 Điều 45 Luật Đấu thầu (đã được sửa đổi, bổ sung) và Điều 24 Nghị định số 214/2025/NĐ-CP, đối với các công việc như thẩm định, phê duyệt hồ sơ mời thầu, người có thẩm quyền, chủ đầu tư quyết định thời gian thực hiện trên cơ sở bảo đảm tiến độ của dự án, gói thầu (hoặc theo mốc quy định trong văn bản hướng dẫn nội bộ, tối đa 10 ngày kể từ ngày nhận được đầy đủ tờ trình đề nghị phê duyệt và báo cáo thẩm định nếu có yêu cầu thẩm định) nhằm đẩy nhanh thủ tục và gắn trách nhiệm trực tiếp của chủ đầu tư.",
+    "conclusion": "Thời gian phê duyệt hồ sơ mời thầu do chủ đầu tư quyết định trên cơ sở bảo đảm tiến độ của dự án, gói thầu (theo quy định chung không quá 10 ngày kể từ ngày nhận được tờ trình đề nghị phê duyệt HSMT hoặc báo cáo thẩm định HSMT trong trường hợp có yêu cầu thẩm định)."
+  },
+  "keywords": [
+    "Điều 45",
+    "Điều 24 Nghị định 214/2025/NĐ-CP",
+    "thời gian phê duyệt hồ sơ mời thầu",
+    "bảo đảm tiến độ dự án gói thầu",
+    "10 ngày"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 158,
+  "file": "q158.json",
+  "questionNumber": 158,
+  "question_number": "Câu 158",
+  "question": "Trường hợp nhà thầu trúng thầu không tiến hành hoàn thiện, ký kết hợp đồng hoặc tại thời điểm ký kết hợp đồng, nhà thầu trúng thầu không đáp ứng yêu cầu về năng lực kỹ thuật, tài chính quy định tại khoản 2 Điều 66 của Luật Đấu thầu thì chủ đầu tư xử lý như thế nào trong trường hợp này?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Xử lý tình huống trong đấu thầu",
+  "irac": {
+    "issue": "Xác định cách xử lý khi nhà thầu trúng thầu không tiến hành hoàn thiện, ký kết hợp đồng hoặc tại thời điểm ký kết hợp đồng không đáp ứng năng lực kỹ thuật, tài chính.",
+    "rule": "Khoản 2 Điều 66, Điểm đ và Điểm e Khoản 9 Điều 14 Luật Đấu thầu số 22/2023/QH15; Khoản 19 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 19 Điều 140 Nghị định số 214/2025/NĐ-CP, chủ đầu tư hủy quyết định phê duyệt kết quả lựa chọn nhà thầu trước đó và mời nhà thầu xếp hạng tiếp theo vào hoàn thiện hợp đồng; nhà thầu được mời phải khôi phục lại hiệu lực của HSDT và bảo đảm dự thầu (tối thiểu 30 ngày) nếu đã hết hiệu lực.",
+    "conclusion": "Chủ đầu tư hủy quyết định phê duyệt kết quả lựa chọn nhà thầu trước đó và mời nhà thầu xếp hạng tiếp theo vào hoàn thiện hợp đồng."
+  },
+  "keywords": [
+    "Khoản 19 Điều 140",
+    "Khoản 2 Điều 66",
+    "hủy quyết định phê duyệt kết quả",
+    "mời nhà thầu xếp hạng tiếp theo"
+  ]
+}

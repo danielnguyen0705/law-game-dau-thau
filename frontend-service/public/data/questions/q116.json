@@ -1,0 +1,23 @@
+{
+  "id": 116,
+  "file": "q116.json",
+  "questionNumber": 116,
+  "question_number": "Câu 116",
+  "question": "Thời hiệu áp dụng biện pháp cấm tham gia hoạt động đấu thầu là bao lâu?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Quản lý nhà nước & Xử lý vi phạm",
+  "irac": {
+    "issue": "Xác định thời hiệu áp dụng biện pháp cấm tham gia hoạt động đấu thầu.",
+    "rule": "Khoản 3 Điều 133 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Khoản 3 Điều 133 Nghị định số 214/2025/NĐ-CP, thời hiệu áp dụng biện pháp cấm tham gia hoạt động đấu thầu là 10 năm tính từ ngày xảy ra hành vi vi phạm (hết thời hạn 10 năm kể từ ngày xảy ra hành vi vi phạm thì người có thẩm quyền không ban hành quyết định cấm tham gia hoạt động đấu thầu đối với tổ chức, cá nhân có hành vi vi phạm đó).",
+    "conclusion": "Thời hiệu áp dụng biện pháp cấm tham gia hoạt động đấu thầu là 10 năm kể từ ngày xảy ra hành vi vi phạm (Khoản 3 Điều 133 Nghị định số 214/2025/NĐ-CP)."
+  },
+  "keywords": [
+    "Khoản 3 Điều 133 Nghị định 214/2025/NĐ-CP",
+    "thời hiệu áp dụng biện pháp cấm tham gia hoạt động đấu thầu",
+    "10 năm"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": 20,
+  "file": "q020.json",
+  "questionNumber": 20,
+  "question_number": "Câu 20",
+  "question": "Phân tích các tiêu chí bảo đảm cạnh tranh khi Công ty B tham dự gói thầu xây lắp X thuộc dự án Y; nêu một trường hợp đáp ứng và một trường hợp không đáp ứng.",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Bảo đảm cạnh tranh trong đấu thầu",
+  "irac": {
+    "issue": "Phân tích các điều kiện bảo đảm cạnh tranh về pháp lý và tài chính khi Công ty B tham dự gói thầu xây lắp X thuộc dự án Y, kèm ví dụ đáp ứng và không đáp ứng.",
+    "rule": "Điểm d Khoản 1, Khoản 2, Khoản 4 Điều 6 Luật Đấu thầu số 22/2023/QH15 và Điều 4 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Khi Công ty B tham dự gói thầu xây lắp X thuộc dự án Y, Công ty B phải độc lập về pháp lý và độc lập về tài chính với các chủ thể sau (Khoản 2, Khoản 4 Điều 6 Luật Đấu thầu): (1) Với Chủ đầu tư, bên mời thầu của dự án Y: Công ty B và chủ đầu tư/bên mời thầu không có cổ phần hoặc phần vốn góp trên 30% của nhau (Điểm b Khoản 4 Điều 6); không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý nếu là đơn vị sự nghiệp công lập; (2) Với các nhà thầu tư vấn cho dự án Y/gói thầu X (lập, thẩm tra thiết kế, dự toán; lập, thẩm định HSMT/HSYC; đánh giá HSDT/HSĐX; thẩm định kết quả lựa chọn nhà thầu; quản lý dự án, giám sát thực hiện hợp đồng): Công ty B không được là chính các nhà thầu tư vấn này; không có cổ phần hoặc phần vốn góp của nhau; không cùng có cổ phần hoặc phần vốn góp trên 20% của một tổ chức, cá nhân khác với từng bên (Điểm c Khoản 4 Điều 6); (3) Với các nhà thầu khác cùng tham dự gói thầu X nếu áp dụng đấu thầu hạn chế: không có cổ phần hoặc phần vốn góp trên 20% của nhau. Ví dụ đáp ứng: Công ty B là doanh nghiệp tư nhân độc lập, có 0% vốn góp với chủ đầu tư dự án Y và không có bất kỳ phần vốn góp hay quan hệ sở hữu chéo nào với đơn vị tư vấn lập HSMT, tư vấn thiết kế gói thầu X. Ví dụ không đáp ứng: Công ty B sở hữu 35% vốn điều lệ của Chủ đầu tư dự án Y (vượt ngưỡng 30%), hoặc Công ty B chính là đơn vị tư vấn đã lập thiết kế bản vẽ thi công/lập HSMT cho gói thầu xây lắp X.",
+    "conclusion": "Công ty B phải độc lập về pháp lý và tài chính với chủ đầu tư/bên mời thầu (không góp vốn >30% của nhau) và với các nhà thầu tư vấn của gói thầu X (không có vốn góp của nhau, không cùng có >20% vốn góp của bên thứ ba). Đáp ứng khi hoàn toàn không có vốn góp/quan hệ phụ thuộc; không đáp ứng khi sở hữu >30% vốn của chủ đầu tư hoặc trùng với đơn vị tư vấn của gói thầu."
+  },
+  "keywords": [
+    "Điều 6 Luật Đấu thầu",
+    "Điều 4 Nghị định 214/2025/NĐ-CP",
+    "độc lập về pháp lý và độc lập về tài chính",
+    "trên 30%",
+    "trên 20%",
+    "chủ đầu tư bên mời thầu",
+    "nhà thầu tư vấn",
+    "cổ phần hoặc phần vốn góp"
+  ]
+}

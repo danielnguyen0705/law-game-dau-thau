@@ -1,0 +1,26 @@
+{
+  "id": 181,
+  "file": "q181.json",
+  "questionNumber": 181,
+  "question_number": "Câu 181",
+  "question": "Trường hợp nào nhà thầu bị coi là không đáp ứng tư cách hợp lệ khi tham dự thầu theo quy định tại khoản 1 Điều 5 của Luật Đấu thầu?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Tư cách hợp lệ của nhà thầu",
+  "irac": {
+    "issue": "Xác định các trường hợp nhà thầu là tổ chức bị coi là không đáp ứng tư cách hợp lệ khi tham dự thầu theo Khoản 1 Điều 5 Luật Đấu thầu.",
+    "rule": "Khoản 1 Điều 5 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 1 Điều 5 Luật Đấu thầu số 22/2023/QH15, nhà thầu là tổ chức bị coi là không đáp ứng tư cách hợp lệ khi vi phạm một trong các điều kiện: (a) Không được thành lập, hoạt động hợp pháp; (b) Không hạch toán tài chính độc lập; (c) Đang trong quá trình thực hiện thủ tục giải thể hoặc bị thu hồi giấy chứng nhận đăng ký doanh nghiệp, mất khả năng thanh toán; (d) Không có tên trên Hệ thống mạng đấu thầu quốc gia trước khi phê duyệt KQLCNT; (đ) Không bảo đảm cạnh tranh trong đấu thầu theo Điều 6; (e) Đang trong thời gian bị cấm tham dự thầu; (g) Đang bị truy cứu trách nhiệm hình sự; (h) Không có tên trong danh sách ngắn (nếu đã chọn danh sách ngắn); (i) Nhà thầu nước ngoài không liên danh hoặc không sử dụng nhà thầu phụ trong nước khi tham dự đấu thầu quốc tế tại Việt Nam.",
+    "conclusion": "Nhà thầu không đáp ứng tư cách hợp lệ khi không hạch toán tài chính độc lập, đang giải thể/mất khả năng thanh toán, không có tên trên Hệ thống mạng đấu thầu quốc gia, vi phạm bảo đảm cạnh tranh, đang bị cấm tham dự thầu hoặc đang bị truy cứu trách nhiệm hình sự."
+  },
+  "keywords": [
+    "Khoản 1 Điều 5",
+    "hạch toán tài chính độc lập",
+    "Hệ thống mạng đấu thầu quốc gia",
+    "bảo đảm cạnh tranh",
+    "bị cấm tham dự thầu",
+    "truy cứu trách nhiệm hình sự"
+  ]
+}

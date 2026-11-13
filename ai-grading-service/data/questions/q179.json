@@ -1,0 +1,24 @@
+{
+  "id": 179,
+  "file": "q179.json",
+  "questionNumber": 179,
+  "question_number": "Câu 179",
+  "question": "Gói thầu xây lắp A được phê duyệt KHLCNT với thời gian thực hiện gói thầu là 120 ngày. Trong quá trình thực hiện Hợp đồng, do có phát sinh dẫn tới thời gian thực hiện gói thầu bị kéo dài thành 180 ngày. Trong trường hợp này, chủ đầu tư có phải điều chỉnh kế hoạch lựa chọn nhà thầu đã phê duyệt không?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Kế hoạch lựa chọn nhà thầu & Hợp đồng",
+  "irac": {
+    "issue": "Xác định chủ đầu tư có phải điều chỉnh kế hoạch lựa chọn nhà thầu đã phê duyệt hay không khi trong quá trình thực hiện hợp đồng, thời gian thực hiện gói thầu kéo dài từ 120 ngày lên 180 ngày.",
+    "rule": "Khoản 7 Điều 39 và Điều 70 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Điều 39 và Điều 70 Luật Đấu thầu số 22/2023/QH15, kế hoạch lựa chọn nhà thầu là căn cứ để tổ chức lựa chọn nhà thầu. Khi gói thầu đã ký kết hợp đồng và đang trong giai đoạn thực hiện hợp đồng mà phát sinh kéo dài thời gian từ 120 ngày lên 180 ngày, chủ đầu tư chỉ thực hiện thủ tục sửa đổi hợp đồng theo Điều 70 mà không phải thực hiện điều chỉnh lại kế hoạch lựa chọn nhà thầu đã phê duyệt.",
+    "conclusion": "Không. Chủ đầu tư không phải điều chỉnh kế hoạch lựa chọn nhà thầu đã phê duyệt mà thực hiện thủ tục sửa đổi hợp đồng theo quy định tại Điều 70 Luật Đấu thầu."
+  },
+  "keywords": [
+    "Điều 39",
+    "Điều 70",
+    "không phải điều chỉnh kế hoạch lựa chọn nhà thầu",
+    "sửa đổi hợp đồng"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 87,
+  "file": "q087.json",
+  "questionNumber": 87,
+  "question_number": "Câu 87",
+  "question": "Phát hành hồ sơ mời quan tâm, hồ sơ mời sơ tuyển, hồ sơ mời thầu được thực hiện như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Quy trình đấu thầu & Thương thảo hợp đồng",
+  "irac": {
+    "issue": "Trình bày cách thức phát hành hồ sơ mời quan tâm (HSMQT), hồ sơ mời sơ tuyển (HSMST) và hồ sơ mời thầu (HSMT).",
+    "rule": "Điểm b Khoản 1 Điều 45 Luật Đấu thầu số 22/2023/QH15; Khoản 2 Điều 24 và Khoản 2 Điều 28 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm b Khoản 1 Điều 45 Luật Đấu thầu và Điều 24, Điều 28 Nghị định số 214/2025/NĐ-CP, việc phát hành HSMQT, HSMST, HSMT được thực hiện như sau: (1) Hồ sơ mời quan tâm, hồ sơ mời sơ tuyển, hồ sơ mời thầu được phát hành đồng thời với thông báo mời quan tâm, thông báo mời sơ tuyển, thông báo mời thầu rộng rãi trên Hệ thống mạng đấu thầu quốc gia (hoặc gửi kèm theo thư mời thầu cho các nhà thầu có tên trong danh sách ngắn đối với trường hợp đã lựa chọn danh sách ngắn hoặc đấu thầu hạn chế); (2) Đối với đấu thầu trong nước, HSMQT, HSMST, HSMT được phát hành miễn phí trên Hệ thống mạng đấu thầu quốc gia; đối với đấu thầu quốc tế, chủ đầu tư có thể phát hành miễn phí trên Hệ thống hoặc bán bản điện tử (mức giá bán theo quy định tại Nghị định 214/2025/NĐ-CP); (3) Riêng đối với gói thầu có nội dung thuộc danh mục bí mật nhà nước thì không đăng tải trên Hệ thống mà phát hành trực tiếp theo quy định của pháp luật về bảo vệ bí mật nhà nước.",
+    "conclusion": "HSMQT, HSMST và HSMT được phát hành miễn phí trên Hệ thống mạng đấu thầu quốc gia đồng thời với thông báo mời quan tâm, thông báo mời sơ tuyển, thông báo mời thầu; đối với gói thầu đã chọn danh sách ngắn hoặc đấu thầu hạn chế thì HSMT được phát hành cho các nhà thầu có tên trong danh sách ngắn."
+  },
+  "keywords": [
+    "Điểm b Khoản 1 Điều 45",
+    "Điều 24 Nghị định 214/2025/NĐ-CP",
+    "Điều 28 Nghị định 214/2025/NĐ-CP",
+    "phát hành HSMQT HSMST HSMT",
+    "đồng thời với thông báo mời thầu",
+    "miễn phí trên Hệ thống mạng đấu thầu quốc gia"
+  ]
+}

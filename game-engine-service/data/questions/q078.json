@@ -1,0 +1,27 @@
+{
+  "id": 78,
+  "file": "q078.json",
+  "questionNumber": 78,
+  "question_number": "Câu 78",
+  "question": "Nhà thầu liên danh A-B tham dự thầu và nộp bảo đảm dự thầu riêng rẽ, trong quá trình đánh giá hồ sơ dự thầu tổ chuyên gia có bằng chứng cho thấy nhà thầu A có hành vi gian lận, thuộc hành vi bị cấm trong đấu thầu, trong trường hợp này bảo đảm dự thầu của nhà thầu liên danh xử lý như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Bảo đảm dự thầu & Bảo đảm thực hiện hợp đồng",
+  "irac": {
+    "issue": "Xác định cách xử lý đối với bảo đảm dự thầu của nhà thầu liên danh A-B (nộp bảo đảm dự thầu riêng rẽ) khi phát hiện thành viên A có hành vi gian lận thuộc điều cấm trong đấu thầu.",
+    "rule": "Khoản 7 và Điểm b Khoản 9 Điều 14, Khoản 4 Điều 16 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Căn cứ Khoản 7 Điều 14 Luật Đấu thầu số 22/2023/QH15: 'Đối với nhà thầu liên danh, từng thành viên trong liên danh có thể thực hiện bảo đảm dự thầu riêng rẽ hoặc thỏa thuận để một thành viên chịu trách nhiệm thực hiện bảo đảm dự thầu cho thành viên đó và cho thành viên khác trong liên danh... Trường hợp có thành viên trong liên danh vi phạm quy định tại khoản 9 Điều này thì bảo đảm dự thầu của tất cả thành viên trong liên danh không được hoàn trả'. Theo Điểm b Khoản 9 Điều 14, nhà thầu vi phạm quy định tại Điều 16 của Luật này (bao gồm hành vi gian lận tại Khoản 4 Điều 16) thuộc trường hợp không được hoàn trả bảo đảm dự thầu. Do đó, mặc dù A và B nộp bảo đảm dự thầu riêng rẽ và chỉ có thành viên A thực hiện hành vi gian lận, nhưng bảo đảm dự thầu của cả thành viên A và thành viên B (tức toàn bộ bảo đảm dự thầu của nhà thầu liên danh A-B) đều không được hoàn trả.",
+    "conclusion": "Bảo đảm dự thầu của tất cả các thành viên trong liên danh A-B (cả phần của nhà thầu A và phần của nhà thầu B) đều không được hoàn trả (bị tịch thu nộp ngân sách/chủ đầu tư theo quy định), căn cứ theo Khoản 7 và Điểm b Khoản 9 Điều 14 Luật Đấu thầu số 22/2023/QH15."
+  },
+  "keywords": [
+    "Khoản 7 Điều 14",
+    "Điểm b Khoản 9 Điều 14",
+    "Khoản 4 Điều 16",
+    "nhà thầu liên danh",
+    "bảo đảm dự thầu riêng rẽ",
+    "hành vi gian lận",
+    "tất cả thành viên trong liên danh không được hoàn trả"
+  ]
+}

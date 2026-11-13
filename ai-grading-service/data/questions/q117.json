@@ -1,0 +1,27 @@
+{
+  "id": 117,
+  "file": "q117.json",
+  "questionNumber": 117,
+  "question_number": "Câu 117",
+  "question": "Xác định chủ thể có thẩm quyền ban hành quyết định cấm tham gia hoạt động đấu thầu và chủ thể không có thẩm quyền này.",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Quản lý nhà nước & Xử lý vi phạm",
+  "irac": {
+    "issue": "Xác định các chủ thể có thẩm quyền ban hành quyết định cấm tham gia hoạt động đấu thầu và các chủ thể không có thẩm quyền này.",
+    "rule": "Khoản 3 Điều 87 Luật Đấu thầu số 22/2023/QH15 (sửa đổi, bổ sung bởi Luật số 90/2025/QH15); Khoản 4, Khoản 5, Khoản 6 Điều 133 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 3 Điều 87 Luật Đấu thầu và Điều 133 Nghị định số 214/2025/NĐ-CP: (1) Các chủ thể CÓ thẩm quyền ban hành quyết định cấm tham gia hoạt động đấu thầu bao gồm: (a) Người có thẩm quyền ban hành quyết định cấm tham gia hoạt động đấu thầu đối với các dự án, dự toán mua sắm trong phạm vi quản lý của mình; (b) Bộ trưởng, Thủ trưởng cơ quan ngang Bộ, cơ quan thuộc Chính phủ, cơ quan khác ở Trung ương, Chủ tịch Ủy ban nhân dân cấp tỉnh ban hành quyết định cấm tham gia hoạt động đấu thầu trong phạm vi quản lý của bộ, ngành, địa phương đối với trường hợp tổ chức, cá nhân bị người có thẩm quyền ban hành từ 03 quyết định cấm trở lên còn hiệu lực hoặc vi phạm nghiêm trọng; (c) Bộ trưởng Bộ Kế hoạch và Đầu tư / Bộ trưởng Bộ Tài chính (cơ quan quản lý nhà nước về đấu thầu ở trung ương) ban hành quyết định cấm tham gia hoạt động đấu thầu trên phạm vi toàn quốc. (2) Các chủ thể KHÔNG có thẩm quyền ban hành quyết định cấm tham gia hoạt động đấu thầu: Chủ đầu tư (trừ khi đồng thời là người có thẩm quyền), Bên mời thầu, Tổ chuyên gia, Tổ thẩm định (các chủ thể này chỉ có trách nhiệm phát hiện, báo cáo và kiến nghị Người có thẩm quyền ban hành quyết định cấm).",
+    "conclusion": "Chủ thể có thẩm quyền ban hành quyết định cấm tham gia hoạt động đấu thầu là: Người có thẩm quyền; Bộ trưởng, Thủ trưởng cơ quan ngang bộ, cơ quan thuộc Chính phủ, cơ quan khác ở Trung ương, Chủ tịch UBND cấp tỉnh; và Bộ trưởng Bộ Tài chính (Bộ KH&ĐT). Chủ thể không có thẩm quyền này là: Chủ đầu tư (khi không phải là người có thẩm quyền), Bên mời thầu, Tổ chuyên gia và Tổ thẩm định."
+  },
+  "keywords": [
+    "Khoản 3 Điều 87",
+    "Điều 133 Nghị định 214/2025/NĐ-CP",
+    "thẩm quyền cấm tham gia hoạt động đấu thầu",
+    "Người có thẩm quyền",
+    "Bộ trưởng Chủ tịch UBND cấp tỉnh",
+    "Bộ trưởng Bộ Tài chính",
+    "Chủ đầu tư không có thẩm quyền"
+  ]
+}

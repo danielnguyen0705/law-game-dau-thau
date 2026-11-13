@@ -1,0 +1,25 @@
+{
+  "id": 163,
+  "file": "q163.json",
+  "questionNumber": 163,
+  "question_number": "Câu 163",
+  "question": "Trong quá trình thực hiện hợp đồng của nhà thầu liên danh A-B, nhà thầu B không còn năng lực để tiếp tục thực hiện hợp đồng, làm ảnh hưởng nghiêm trọng đến tiến độ, chất lượng, hiệu quả của gói thầu. Trong trường hợp này, bảo đảm thực hiện hợp đồng của nhà thầu bị xử lý như thế nào?",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Hợp đồng đấu thầu & Xử lý tình huống",
+  "irac": {
+    "issue": "Xác định cách xử lý bảo đảm thực hiện hợp đồng của liên danh A-B khi thành viên B không còn năng lực thực hiện hợp đồng làm ảnh hưởng nghiêm trọng đến tiến độ, chất lượng, hiệu quả gói thầu.",
+    "rule": "Điểm b Khoản 22 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm b Khoản 22 Điều 140 Nghị định số 214/2025/NĐ-CP: (1) Trường hợp phần công việc của thành viên vi phạm (nhà thầu B) được chuyển giao cho thành viên còn lại (nhà thầu A) đủ năng lực, kinh nghiệm tiếp tục thực hiện thì chỉ tịch thu giá trị bảo đảm thực hiện hợp đồng của thành viên vi phạm (nhà thầu B); (2) Trường hợp phần công việc của thành viên B phải tách ra thành gói thầu riêng để lựa chọn nhà thầu khác thì tịch thu giá trị bảo đảm thực hiện hợp đồng của tất cả các thành viên trong liên danh (cả A và B).",
+    "conclusion": "Nếu thành viên A đảm nhận tiếp công việc của B thì chỉ tịch thu bảo đảm thực hiện hợp đồng của nhà thầu B; nếu phải tách phần việc của B thành gói thầu riêng thì tịch thu bảo đảm thực hiện hợp đồng của cả liên danh A-B."
+  },
+  "keywords": [
+    "Điểm b Khoản 22 Điều 140",
+    "Nghị định 214/2025/NĐ-CP",
+    "liên danh A-B",
+    "bảo đảm thực hiện hợp đồng",
+    "tịch thu"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 28,
+  "file": "q028.json",
+  "questionNumber": 28,
+  "question_number": "Câu 28",
+  "question": "Mua sắm trực tiếp được áp dụng cho loại gói thầu nào? Nêu căn cứ pháp lý.",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hình thức lựa chọn nhà thầu",
+  "irac": {
+    "issue": "Xác định loại gói thầu được phép áp dụng hình thức mua sắm trực tiếp và căn cứ pháp lý điều chỉnh.",
+    "rule": "Khoản 1 Điều 25 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo quy định trực tiếp tại Khoản 1 Điều 25 Luật Đấu thầu số 22/2023/QH15: 'Mua sắm trực tiếp được áp dụng đối với gói thầu mua sắm hàng hóa tương tự thuộc dự án, dự toán mua sắm của cùng một chủ đầu tư hoặc chủ đầu tư khác'. Như vậy, hình thức mua sắm trực tiếp chỉ được áp dụng duy nhất cho loại gói thầu mua sắm hàng hóa (hàng hóa tương tự), không được áp dụng cho gói thầu xây lắp, dịch vụ tư vấn hay dịch vụ phi tư vấn.",
+    "conclusion": "Mua sắm trực tiếp chỉ được áp dụng đối với gói thầu mua sắm hàng hóa tương tự thuộc dự án, dự toán mua sắm của cùng một chủ đầu tư hoặc chủ đầu tư khác, căn cứ theo Khoản 1 Điều 25 Luật Đấu thầu số 22/2023/QH15."
+  },
+  "keywords": [
+    "Khoản 1 Điều 25",
+    "Luật Đấu thầu 22/2023/QH15",
+    "mua sắm trực tiếp",
+    "gói thầu mua sắm hàng hóa tương tự"
+  ]
+}

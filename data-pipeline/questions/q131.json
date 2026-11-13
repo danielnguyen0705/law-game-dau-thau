@@ -1,0 +1,26 @@
+{
+  "id": 131,
+  "file": "q131.json",
+  "questionNumber": 131,
+  "question_number": "Câu 131",
+  "question": "Đối với việc giải quyết kiến nghị về kết quả lựa chọn nhà thầu, cá nhân, đơn vị nào có trách nhiệm giải quyết kiến nghị?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Xác định cá nhân, đơn vị có trách nhiệm giải quyết kiến nghị về kết quả lựa chọn nhà thầu.",
+    "rule": "Khoản 2 Điều 91 Luật Đấu thầu số 22/2023/QH15 (được sửa đổi, bổ sung bởi Luật số 57/2024/QH15, Luật số 90/2025/QH15); Khoản 2 Điều 138 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Khoản 2 Điều 91 Luật Đấu thầu số 22/2023/QH15 và Khoản 2 Điều 138 Nghị định số 214/2025/NĐ-CP, đối với kiến nghị về kết quả lựa chọn nhà thầu: (1) Trường hợp nhà thầu gửi đơn kiến nghị đến Chủ đầu tư thì Chủ đầu tư có trách nhiệm ban hành văn bản giải quyết kiến nghị trong thời hạn 07 ngày làm việc kể từ ngày nhận được đơn kiến nghị; (2) Trường hợp nhà thầu không đồng ý với kết quả giải quyết của Chủ đầu tư hoặc hết thời hạn mà Chủ đầu tư không có văn bản giải quyết, hoặc nhà thầu gửi thẳng đơn kiến nghị đến Hội đồng giải quyết kiến nghị (thông qua bộ phận thường trực giúp việc), thì Hội đồng giải quyết kiến nghị (và Người có thẩm quyền trên cơ sở văn bản giải quyết của Hội đồng) có trách nhiệm giải quyết kiến nghị trong thời hạn 30 ngày kể từ ngày Hội đồng được thành lập.",
+    "conclusion": "Chủ đầu tư và Hội đồng giải quyết kiến nghị (cùng Người có thẩm quyền) là các chủ thể có trách nhiệm giải quyết kiến nghị về kết quả lựa chọn nhà thầu."
+  },
+  "keywords": [
+    "Khoản 2 Điều 91",
+    "Khoản 2 Điều 138",
+    "Nghị định 214/2025/NĐ-CP",
+    "chủ đầu tư",
+    "Hội đồng giải quyết kiến nghị",
+    "người có thẩm quyền"
+  ]
+}

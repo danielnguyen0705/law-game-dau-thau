@@ -1,0 +1,26 @@
+{
+  "id": 186,
+  "file": "q186.json",
+  "questionNumber": 186,
+  "question_number": "Câu 186",
+  "question": "Trường hợp nào nhà thầu được quyền từ chối hoàn thiện hợp đồng mà không bị đánh giá về uy tín khi tham dự thầu, không bị tịch thu bảo đảm dự thầu?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hoàn thiện hợp đồng & Uy tín nhà thầu",
+  "irac": {
+    "issue": "Xác định trường hợp nhà thầu được quyền từ chối hoàn thiện hợp đồng mà không bị đánh giá về uy tín và không bị tịch thu bảo đảm dự thầu.",
+    "rule": "Khoản 9 Điều 14 Luật Đấu thầu số 22/2023/QH15; Khoản 1 Điều 20 và Khoản 19 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 9 Điều 14 Luật Đấu thầu và Khoản 1 Điều 20, Khoản 19 Điều 140 Nghị định số 214/2025/NĐ-CP, nhà thầu được quyền từ chối hoàn thiện, ký kết hợp đồng mà không bị tịch thu bảo đảm dự thầu và không bị đánh giá giảm uy tín trong trường hợp bất khả kháng hoặc trường hợp chủ đầu tư không tuân thủ các quy định, nguyên tắc về hoàn thiện, ký kết hợp đồng (hoặc trường hợp nhà thầu xếp hạng thứ nhất ở nhiều gói thầu đồng thời vượt quá năng lực thực hiện theo quy định).",
+    "conclusion": "Nhà thầu được quyền từ chối trong trường hợp bất khả kháng hoặc khi chủ đầu tư không tuân thủ nguyên tắc, quy định về hoàn thiện hợp đồng (hoặc trường hợp trúng nhiều gói thầu vượt khả năng đáp ứng theo quy định)."
+  },
+  "keywords": [
+    "Khoản 9 Điều 14",
+    "Khoản 1 Điều 20",
+    "Khoản 19 Điều 140",
+    "bất khả kháng",
+    "từ chối hoàn thiện hợp đồng",
+    "không bị tịch thu bảo đảm dự thầu"
+  ]
+}

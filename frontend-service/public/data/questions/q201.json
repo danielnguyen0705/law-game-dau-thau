@@ -1,0 +1,26 @@
+{
+  "id": 201,
+  "file": "q201.json",
+  "questionNumber": 201,
+  "question_number": "Câu 201",
+  "question": "Quy định nào không đúng về kế hoạch lựa chọn nhà thầu?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Kế hoạch lựa chọn nhà thầu",
+  "irac": {
+    "issue": "Xác định các quy định về lập, nội dung và phê duyệt kế hoạch lựa chọn nhà thầu để nhận diện nội dung không đúng theo Luật Đấu thầu.",
+    "rule": "Điều 37, Điều 38, Điều 39 và Điều 40 Luật Đấu thầu số 22/2023/QH15 (sửa đổi bởi Luật số 90/2025/QH15).",
+    "application": "Theo Điều 37 đến Điều 40 Luật Đấu thầu: (1) Kế hoạch lựa chọn nhà thầu được lập cho toàn bộ dự án, dự toán mua sắm (trường hợp chưa đủ điều kiện thì lập cho một hoặc một số gói thầu thực hiện trước); (2) Chủ đầu tư tổ chức lập và phê duyệt kế hoạch lựa chọn nhà thầu (theo Luật sửa đổi 90/2025/QH15); (3) Tổng giá trị các phần công việc không được vượt tổng mức đầu tư của dự án hoặc dự toán mua sắm; (4) Thời gian thực hiện gói thầu không bao gồm thời gian thực hiện nghĩa vụ bảo hành. Bất kỳ quy định nào trái với các nguyên tắc trên (như gộp thời gian bảo hành vào thời gian thực hiện gói thầu, hoặc tổng giá trị vượt tổng mức đầu tư) là không đúng quy định.",
+    "conclusion": "Quy định không đúng về kế hoạch lựa chọn nhà thầu là các nội dung vi phạm Điều 37–40 Luật Đấu thầu (ví dụ: tính thời gian bảo hành vào thời gian thực hiện gói thầu hoặc tổng giá trị các gói thầu vượt tổng mức đầu tư/dự toán mua sắm)."
+  },
+  "keywords": [
+    "Điều 37",
+    "Điều 39",
+    "Điều 40",
+    "kế hoạch lựa chọn nhà thầu",
+    "không vượt tổng mức đầu tư",
+    "không bao gồm thời gian bảo hành"
+  ]
+}

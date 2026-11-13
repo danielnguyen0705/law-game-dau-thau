@@ -1,0 +1,24 @@
+{
+  "id": 122,
+  "file": "q122.json",
+  "questionNumber": 122,
+  "question_number": "Câu 122",
+  "question": "Đình chỉ cuộc thầu được thực hiện trong thời gian nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Quản lý nhà nước & Xử lý vi phạm",
+  "irac": {
+    "issue": "Xác định khoảng thời gian được phép thực hiện biện pháp đình chỉ cuộc thầu.",
+    "rule": "Điểm a Khoản 1 Điều 18 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Căn cứ Điểm a Khoản 1 Điều 18 Luật Đấu thầu số 22/2023/QH15: 'Đình chỉ cuộc thầu được thực hiện trong quá trình tổ chức lựa chọn nhà thầu, nhà đầu tư cho đến trước khi phê duyệt kết quả lựa chọn nhà thầu, nhà đầu tư' khi có bằng chứng cho thấy tổ chức, cá nhân tham gia hoạt động đấu thầu có hành vi vi phạm Điều 16 của Luật Đấu thầu hoặc quy định khác của pháp luật có liên quan dẫn đến không bảo đảm cạnh tranh, công bằng, minh bạch và hiệu quả kinh tế hoặc làm sai lệch kết quả lựa chọn nhà thầu.",
+    "conclusion": "Đình chỉ cuộc thầu được thực hiện trong quá trình tổ chức lựa chọn nhà thầu, nhà đầu tư cho đến trước khi phê duyệt kết quả lựa chọn nhà thầu, nhà đầu tư (Điểm a Khoản 1 Điều 18 Luật Đấu thầu)."
+  },
+  "keywords": [
+    "Điểm a Khoản 1 Điều 18",
+    "đình chỉ cuộc thầu",
+    "trong quá trình tổ chức lựa chọn nhà thầu",
+    "trước khi phê duyệt kết quả lựa chọn nhà thầu"
+  ]
+}

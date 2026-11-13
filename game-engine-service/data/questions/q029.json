@@ -1,0 +1,27 @@
+{
+  "id": 29,
+  "file": "q029.json",
+  "questionNumber": 29,
+  "question_number": "Câu 29",
+  "question": "Trình bày đầy đủ điều kiện áp dụng hình thức mua sắm trực tiếp và nêu một tình huống không đủ điều kiện.",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Hình thức lựa chọn nhà thầu",
+  "irac": {
+    "issue": "Trình bày đầy đủ các điều kiện áp dụng hình thức mua sắm trực tiếp và xây dựng một tình huống thực tế không đủ điều kiện áp dụng.",
+    "rule": "Khoản 1, Khoản 2 và Khoản 3 Điều 25 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 1 và Khoản 2 Điều 25 Luật Đấu thầu, mua sắm trực tiếp chỉ áp dụng đối với gói thầu mua sắm hàng hóa tương tự khi đáp ứng đủ 04 điều kiện đồng thời: (a) Nhà thầu đã trúng thầu thông qua đấu thầu rộng rãi hoặc đấu thầu hạn chế và đã ký hợp đồng thực hiện gói thầu trước đó; (b) Chủ đầu tư chỉ được áp dụng mua sắm trực tiếp một lần đối với các loại hàng hóa thuộc gói thầu và khối lượng từng hạng mục công việc thuộc gói thầu áp dụng mua sắm trực tiếp phải nhỏ hơn 130% so với khối lượng của hạng mục tương ứng thuộc gói thầu đã ký hợp đồng trước đó (không bao gồm khối lượng của phần tùy chọn mua thêm nếu có); (c) Đơn giá của các phần việc thuộc gói thầu áp dụng mua sắm trực tiếp không được vượt đơn giá của các phần việc tương ứng thuộc gói thầu tương tự đã ký hợp đồng trước đó, đồng thời phù hợp với giá thị trường tại thời điểm hoàn thiện hợp đồng; (d) Thời hạn từ khi ký hợp đồng của gói thầu trước đó đến ngày phê duyệt kết quả mua sắm trực tiếp không quá 12 tháng. (Khoản 3 cho phép nếu nhà thầu trước đó không có khả năng tiếp tục thực hiện thì được áp dụng mua sắm trực tiếp với nhà thầu khác đáp ứng năng lực, kinh nghiệm, kỹ thuật, giá). Tình huống không đủ điều kiện: Sở Y tế tỉnh A muốn mua sắm trực tiếp 150 máy thở tương tự gói thầu trước đó đã ký hợp đồng mua 100 máy thở (vượt ngưỡng nhỏ hơn 130%), hoặc gói thầu trước đó được lựa chọn bằng hình thức chào hàng cạnh tranh/chỉ định thầu (không phải đấu thầu rộng rãi/hạn chế), hoặc hợp đồng gói trước đã ký cách thời điểm phê duyệt kết quả mua sắm trực tiếp 14 tháng (quá 12 tháng).",
+    "conclusion": "Mua sắm trực tiếp phải thỏa mãn đồng thời 04 điều kiện tại Khoản 2 Điều 25 Luật Đấu thầu (gói trước đấu thầu rộng rãi/hạn chế; chỉ áp dụng 1 lần với khối lượng <130%; đơn giá không vượt gói trước và phù hợp giá thị trường; thời gian từ khi ký hợp đồng trước đến khi duyệt kết quả ≤12 tháng). Bất kỳ tình huống nào vi phạm 1 trong 4 điều kiện trên (hoặc không phải gói thầu hàng hóa) đều không đủ điều kiện áp dụng."
+  },
+  "keywords": [
+    "Điều 25",
+    "mua sắm trực tiếp",
+    "4 điều kiện",
+    "đấu thầu rộng rãi hoặc hạn chế",
+    "nhỏ hơn 130%",
+    "không quá 12 tháng",
+    "đơn giá không vượt"
+  ]
+}

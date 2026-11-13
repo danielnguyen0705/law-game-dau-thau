@@ -1,0 +1,25 @@
+{
+  "id": 169,
+  "file": "q169.json",
+  "questionNumber": 169,
+  "question_number": "Câu 169",
+  "question": "So sánh điều kiện xét duyệt trúng thầu của nhà thầu xây lắp với nhà thầu tư vấn là tổ chức; xác định yêu cầu riêng đối với nhà thầu xây lắp.",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Xét duyệt trúng thầu",
+  "irac": {
+    "issue": "So sánh điều kiện xét duyệt trúng thầu của nhà thầu xây lắp (Điều 61) với nhà thầu tư vấn là tổ chức (Điều 60) và xác định yêu cầu riêng đối với nhà thầu xây lắp.",
+    "rule": "Khoản 1 Điều 60 và Khoản 1 Điều 61 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Điều 60 và Điều 61 Luật Đấu thầu số 22/2023/QH15: Điểm giống nhau là cả hai đều phải có HSDT/HSĐX hợp lệ, có đề xuất kỹ thuật đáp ứng yêu cầu, đáp ứng điều kiện xếp hạng thứ nhất theo phương pháp đánh giá tương ứng và có giá đề nghị trúng thầu không vượt giá gói thầu được duyệt. Điểm khác biệt (yêu cầu riêng đối với nhà thầu xây lắp tại Khoản 1 Điều 61): (1) Phải có năng lực, kinh nghiệm đáp ứng yêu cầu của HSMT/HSYC (tách thành điều kiện riêng); và (2) Có giá trị phần sai lệch thiếu không quá 10% giá dự thầu.",
+    "conclusion": "Yêu cầu riêng đối với nhà thầu xây lắp so với nhà thầu tư vấn là phải có năng lực, kinh nghiệm đáp ứng yêu cầu và có giá trị phần sai lệch thiếu không quá 10% giá dự thầu."
+  },
+  "keywords": [
+    "Điều 60",
+    "Điều 61",
+    "xét duyệt trúng thầu",
+    "năng lực kinh nghiệm",
+    "sai lệch thiếu không quá 10%"
+  ]
+}

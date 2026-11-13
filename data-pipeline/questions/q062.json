@@ -1,0 +1,26 @@
+{
+  "id": 62,
+  "file": "q062.json",
+  "questionNumber": 62,
+  "question_number": "Câu 62",
+  "question": "Đối với gói thầu chia thành 2 phần (phần 1: mua sắm máy tính; phần 2: mua sắm bàn ghế cho cán bộ công chức), áp dụng phương pháp giá thấp nhất (máy tính và bàn ghế là hàng hóa thuộc danh mục do Chính phủ, Thủ tướng Chính phủ quy định tiêu chuẩn, định mức), việc xét duyệt trúng thầu trong trường hợp này được thực hiện như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định cách thức xét duyệt trúng thầu đối với gói thầu mua sắm hàng hóa chia thành 02 phần (máy tính và bàn ghế thuộc danh mục quy định tiêu chuẩn, định mức) áp dụng phương pháp giá thấp nhất.",
+    "rule": "Khoản 1 Điều 58, Điều 61 Luật Đấu thầu số 22/2023/QH15; Khoản 8 Điều 26, Khoản 4 Điều 32 và Khoản 30 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Điều 61 Luật Đấu thầu và Khoản 8 Điều 26, Khoản 4 Điều 32, Khoản 30 Điều 140 Nghị định số 214/2025/NĐ-CP: (1) Đối với gói thầu chia thành nhiều phần (Phần 1: máy tính; Phần 2: bàn ghế), việc đánh giá HSDT và xét duyệt trúng thầu được thực hiện độc lập đối với từng phần trên cơ sở bảo đảm tổng giá đề nghị trúng thầu của gói thầu là thấp nhất (sau khi tính cả giảm giá nếu nhà thầu chào cho nhiều phần) và giá đề nghị trúng thầu của từng phần không vượt giá của phần đó trong giá gói thầu đã duyệt; (2) Đặc biệt, vì máy tính và bàn ghế cho cán bộ, công chức là hàng hóa thuộc danh mục do Chính phủ, Thủ tướng Chính phủ quy định tiêu chuẩn, định mức sử dụng tài sản công, nên ngoài điều kiện có giá dự thầu sau sửa lỗi, hiệu chỉnh sai lệch, trừ đi giá trị giảm giá thấp nhất và không vượt giá phần trong gói thầu, đơn giá đề nghị trúng thầu của từng hàng hóa (máy tính, bàn ghế) bắt buộc không được vượt mức giá tối đa theo tiêu chuẩn, định mức do cơ quan có thẩm quyền quy định.",
+    "conclusion": "Việc xét duyệt trúng thầu được thực hiện độc lập cho từng phần (hoặc theo phương án có tổng giá đề nghị trúng thầu thấp nhất của gói thầu), với điều kiện nhà thầu có giá dự thầu sau sửa lỗi, hiệu chỉnh sai lệch, trừ giảm giá thấp nhất, giá đề nghị trúng thầu của từng phần không vượt giá phần đó trong giá gói thầu và đơn giá của từng thiết bị (máy tính, bàn ghế) không vượt tiêu chuẩn, định mức do Chính phủ, Thủ tướng Chính phủ quy định."
+  },
+  "keywords": [
+    "Điều 61",
+    "Khoản 8 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "Khoản 30 Điều 140 Nghị định 214/2025/NĐ-CP",
+    "gói thầu chia phần",
+    "tiêu chuẩn định mức",
+    "phương pháp giá thấp nhất"
+  ]
+}

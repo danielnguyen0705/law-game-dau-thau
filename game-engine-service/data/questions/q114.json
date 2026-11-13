@@ -1,0 +1,27 @@
+{
+  "id": 114,
+  "file": "q114.json",
+  "questionNumber": 114,
+  "question_number": "Câu 114",
+  "question": "Trình bày nội dung quản lý nhà nước đối với hoạt động đấu thầu; phân biệt với nhiệm vụ tổ chức một cuộc thầu cụ thể.",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Quản lý nhà nước & Xử lý vi phạm",
+  "irac": {
+    "issue": "Trình bày các nội dung quản lý nhà nước đối với hoạt động đấu thầu và phân biệt với nhiệm vụ tổ chức một cuộc thầu cụ thể.",
+    "rule": "Điều 78, Điều 83 và Điều 84 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Thứ nhất, theo Điều 83 Luật Đấu thầu số 22/2023/QH15, nội dung quản lý nhà nước đối với hoạt động đấu thầu bao gồm 06 nhóm công việc: (1) Ban hành và tổ chức thực hiện văn bản quy phạm pháp luật về đấu thầu; (2) Tổng kết, đánh giá, báo cáo tình hình thực hiện hoạt động đấu thầu; (3) Quản lý hệ thống thông tin và cơ sở dữ liệu quốc gia về đấu thầu (Hệ thống mạng đấu thầu quốc gia); (4) Theo dõi, giám sát, kiểm tra, thanh tra, giải quyết kiến nghị, khiếu nại, tố cáo trong đấu thầu và xử lý vi phạm pháp luật về đấu thầu; (5) Đào tạo, bồi dưỡng kiến thức, nghiệp vụ chuyên môn về đấu thầu; (6) Hợp tác quốc tế về đấu thầu. Thứ hai, phân biệt với nhiệm vụ tổ chức một cuộc thầu cụ thể (Điều 78): Quản lý nhà nước do Chính phủ, Bộ Kế hoạch và Đầu tư / Bộ Tài chính, các Bộ, cơ quan ngang Bộ và UBND các cấp thực hiện ở tầm vĩ mô nhằm thiết lập hành lang pháp lý, vận hành hạ tầng số và thanh kiểm tra toàn thị trường mua sắm công; ngược lại, nhiệm vụ tổ chức một cuộc thầu cụ thể do Chủ đầu tư (cùng Tổ chuyên gia, Tổ thẩm định) thực hiện ở tầm vi mô đối với từng gói thầu cụ thể (từ lập HSMT, phát hành hồ sơ, đánh giá HSDT, phê duyệt kết quả đến ký kết và quản lý hợp đồng) nhằm lựa chọn được nhà thầu cung cấp hàng hóa, dịch vụ cho dự án/dự toán của đơn vị mình.",
+    "conclusion": "Nội dung quản lý nhà nước về đấu thầu gồm 06 nội dung tại Điều 83 Luật Đấu thầu (ban hành VBQPPL; tổng kết báo cáo; quản lý Hệ thống mạng đấu thầu quốc gia; thanh tra, kiểm tra, giải quyết kiến nghị/khiếu nại/tố cáo và xử lý vi phạm; đào tạo bồi dưỡng; hợp tác quốc tế) mang tính quản lý vĩ mô của cơ quan công quyền, khác với việc tổ chức một cuộc thầu cụ thể mang tính tác nghiệp chuyên môn vi mô của Chủ đầu tư để mua sắm cho một gói thầu."
+  },
+  "keywords": [
+    "Điều 83",
+    "Điều 84",
+    "nội dung quản lý nhà nước",
+    "ban hành văn bản quy phạm pháp luật",
+    "Hệ thống mạng đấu thầu quốc gia",
+    "thanh tra kiểm tra",
+    "phân biệt với tổ chức cuộc thầu"
+  ]
+}

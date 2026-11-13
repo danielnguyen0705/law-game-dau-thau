@@ -1,0 +1,26 @@
+{
+  "id": 222,
+  "file": "q222.json",
+  "questionNumber": 222,
+  "question_number": "Câu 222",
+  "question": "Đối với chỉ định thầu theo quy trình thông thường, chủ đầu tư phải thẩm định những nội dung nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Chỉ định thầu & Thẩm định",
+  "irac": {
+    "issue": "Xác định các nội dung chủ đầu tư phải tổ chức thẩm định đối với quy trình chỉ định thầu thông thường.",
+    "rule": "Điều 79 và Điều 135 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Nghị định số 214/2025/NĐ-CP về quy trình chỉ định thầu thông thường, việc thẩm định hồ sơ yêu cầu và thẩm định kết quả chỉ định thầu là không bắt buộc (hoặc chủ đầu tư quyết định việc thẩm định HSYC và kết quả chỉ định thầu khi cần thiết theo phân cấp).",
+    "conclusion": "Đối với chỉ định thầu theo quy trình thông thường, việc thẩm định hồ sơ yêu cầu và kết quả chỉ định thầu được thực hiện theo quy định tại Điều 79 và Điều 135 Nghị định số 214/2025/NĐ-CP (chủ đầu tư quyết định tổ chức thẩm định khi cần thiết hoặc thẩm định HSYC và kết quả chỉ định thầu)."
+  },
+  "keywords": [
+    "Điều 79",
+    "Điều 135",
+    "Nghị định 214/2025/NĐ-CP",
+    "chỉ định thầu thông thường",
+    "thẩm định hồ sơ yêu cầu",
+    "thẩm định kết quả chỉ định thầu"
+  ]
+}

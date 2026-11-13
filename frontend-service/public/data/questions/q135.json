@@ -1,0 +1,26 @@
+{
+  "id": 135,
+  "file": "q135.json",
+  "questionNumber": 135,
+  "question_number": "Câu 135",
+  "question": "Xác định nội dung thuộc đúng trong việc giải quyết kiến nghị đối với gói thầu sử dụng vốn sản xuất kinh doanh của doanh nghiệp nhà nước?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Xác định quy định đúng về thẩm quyền và quy trình giải quyết kiến nghị đối với gói thầu sử dụng vốn sản xuất kinh doanh của doanh nghiệp nhà nước.",
+    "rule": "Điểm d Khoản 7 Điều 3 Luật Đấu thầu số 22/2023/QH15 (sửa đổi, bổ sung bởi Luật số 90/2025/QH15); Khoản 7 Điều 138 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Điểm d Khoản 7 Điều 3 Luật Đấu thầu (sửa đổi bởi Luật số 90/2025/QH15) và Khoản 7 Điều 138 Nghị định số 214/2025/NĐ-CP, đối với gói thầu sử dụng vốn sản xuất kinh doanh của doanh nghiệp nhà nước, người đứng đầu doanh nghiệp nhà nước tự ban hành điều kiện, quy trình giải quyết kiến nghị trong đơn vị mình và trực tiếp có thẩm quyền giải quyết kiến nghị đối với các gói thầu này.",
+    "conclusion": "Người đứng đầu doanh nghiệp nhà nước tự ban hành điều kiện, quy trình giải quyết kiến nghị trong đơn vị mình và có trách nhiệm giải quyết kiến nghị đối với gói thầu sử dụng vốn sản xuất kinh doanh của doanh nghiệp nhà nước."
+  },
+  "keywords": [
+    "Điểm d Khoản 7 Điều 3",
+    "Khoản 7 Điều 138",
+    "vốn sản xuất kinh doanh",
+    "doanh nghiệp nhà nước",
+    "người đứng đầu",
+    "tự ban hành quy trình"
+  ]
+}

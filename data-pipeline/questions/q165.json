@@ -1,0 +1,25 @@
+{
+  "id": 165,
+  "file": "q165.json",
+  "questionNumber": 165,
+  "question_number": "Câu 165",
+  "question": "So sánh phương pháp giá cố định với phương pháp dựa trên kỹ thuật đối với gói dịch vụ tư vấn. Điều kiện xếp hạng thứ nhất giống nhau ở điểm nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Phương pháp đánh giá HSDT",
+  "irac": {
+    "issue": "So sánh phương pháp giá cố định với phương pháp dựa trên kỹ thuật đối với gói dịch vụ tư vấn và chỉ ra điểm giống nhau về điều kiện xếp hạng thứ nhất.",
+    "rule": "Khoản 2 và Khoản 4 Điều 59 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Điều 59 Luật Đấu thầu số 22/2023/QH15: (1) Phương pháp giá cố định (Khoản 2): áp dụng cho gói thầu tư vấn đơn giản, phạm vi công việc được xác định chính xác, chi phí thực hiện hợp lý, cố định và được nêu rõ trong HSMT; nhà thầu có đề xuất kỹ thuật đáp ứng, giá dự thầu sau sửa lỗi, hiệu chỉnh, trừ giảm giá không vượt giá gói thầu và có điểm kỹ thuật cao nhất được xếp hạng thứ nhất. (2) Phương pháp dựa trên kỹ thuật (Khoản 4): áp dụng cho gói thầu tư vấn có yêu cầu kỹ thuật cao, đặc thù; nhà thầu có đề xuất kỹ thuật đáp ứng và đạt điểm kỹ thuật cao nhất được xếp hạng thứ nhất và được mời mở HSĐXTC để thương thảo. Điểm giống nhau: cả hai phương pháp đều lấy tiêu chí 'có điểm kỹ thuật cao nhất' làm điều kiện để xếp hạng thứ nhất.",
+    "conclusion": "Phương pháp giá cố định áp dụng cho tư vấn đơn giản có chi phí cố định (giá không vượt giá gói thầu), còn phương pháp dựa trên kỹ thuật áp dụng cho tư vấn yêu cầu kỹ thuật cao, đặc thù; cả hai giống nhau ở điều kiện nhà thầu có điểm kỹ thuật cao nhất được xếp hạng thứ nhất."
+  },
+  "keywords": [
+    "Khoản 2 Điều 59",
+    "Khoản 4 Điều 59",
+    "phương pháp giá cố định",
+    "phương pháp dựa trên kỹ thuật",
+    "điểm kỹ thuật cao nhất"
+  ]
+}

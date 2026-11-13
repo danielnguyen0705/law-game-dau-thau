@@ -1,0 +1,25 @@
+{
+  "id": 185,
+  "file": "q185.json",
+  "questionNumber": 185,
+  "question_number": "Câu 185",
+  "question": "Đối với đấu thầu rộng rãi không qua mạng, nếu sau khi đóng thầu, nhà thầu tự phát hiện hồ sơ dự thầu thiếu tài liệu chứng minh năng lực, kinh nghiệm thì nhà thầu nên làm gì?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Làm rõ & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định việc nhà thầu nên làm khi sau thời điểm đóng thầu tự phát hiện hồ sơ dự thầu thiếu tài liệu chứng minh năng lực, kinh nghiệm trong đấu thầu rộng rãi không qua mạng.",
+    "rule": "Khoản 2 Điều 30 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 2 Điều 30 Nghị định số 214/2025/NĐ-CP, sau thời điểm đóng thầu, trường hợp nhà thầu phát hiện HSDT thiếu các tài liệu chứng minh về tư cách hợp lệ, hợp đồng tương tự, năng lực sản xuất, báo cáo tài chính, nghĩa vụ kê khai nộp thuế, nhân sự chủ chốt, thiết bị đã có trước thời điểm đóng thầu thì nhà thầu được phép tự gửi tài liệu đến chủ đầu tư để làm rõ, bổ sung trong thời gian quy định trong HSMT. Chủ đầu tư có trách nhiệm tiếp nhận để xem xét, đánh giá.",
+    "conclusion": "Nhà thầu được phép chủ động gửi tài liệu bổ sung, làm rõ về năng lực, kinh nghiệm đến chủ đầu tư trong thời hạn quy định tại HSMT để được xem xét, đánh giá."
+  },
+  "keywords": [
+    "Khoản 2 Điều 30",
+    "Nghị định 214/2025/NĐ-CP",
+    "sau khi đóng thầu",
+    "tự gửi tài liệu",
+    "làm rõ bổ sung"
+  ]
+}

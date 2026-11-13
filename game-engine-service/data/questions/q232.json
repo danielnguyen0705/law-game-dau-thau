@@ -1,0 +1,25 @@
+{
+  "id": 232,
+  "file": "q232.json",
+  "questionNumber": 232,
+  "question_number": "Câu 232",
+  "question": "Đối với nội dung mua sắm hàng hóa có giá không quá 100 triệu đồng thì được thực hiện như thế nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Chỉ định thầu rút gọn & Mua sắm quy mô nhỏ",
+  "irac": {
+    "issue": "Xác định cách thức thực hiện đối với nội dung mua sắm hàng hóa có giá không quá 100 triệu đồng.",
+    "rule": "Khoản 3 và Khoản 4 Điều 78 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Điều 78 Nghị định số 214/2025/NĐ-CP, đối với gói thầu hoặc nội dung mua sắm có giá không quá 100 triệu đồng (hoặc trong hạn mức mua sắm nhỏ thuộc dự toán mua sắm), thủ trưởng cơ quan, đơn vị sử dụng ngân sách tự quyết định việc mua sắm bảo đảm tiết kiệm, hiệu quả, tự chịu trách nhiệm về quyết định của mình, không bắt buộc phải lập kế hoạch lựa chọn nhà thầu và không phải ký hợp đồng nhưng phải bảo đảm chế độ hóa đơn, chứng từ đầy đủ theo quy định của pháp luật về tài chính, kế toán.",
+    "conclusion": "Đối với nội dung mua sắm không quá 100 triệu đồng, đơn vị sử dụng ngân sách được tự quyết định mua sắm (không phải lập kế hoạch lựa chọn nhà thầu, không bắt buộc ký hợp đồng) nhưng phải có đầy đủ hóa đơn, chứng từ theo quy định pháp luật."
+  },
+  "keywords": [
+    "Điều 78",
+    "Nghị định 214/2025/NĐ-CP",
+    "không quá 100 triệu đồng",
+    "hóa đơn chứng từ",
+    "không phải lập kế hoạch lựa chọn nhà thầu"
+  ]
+}

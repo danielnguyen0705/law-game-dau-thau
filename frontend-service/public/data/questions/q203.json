@@ -1,0 +1,24 @@
+{
+  "id": 203,
+  "file": "q203.json",
+  "questionNumber": 203,
+  "question_number": "Câu 203",
+  "question": "Nhà thầu đã thực hiện công tác lập hồ sơ thiết kế kỹ thuật cho dự án đầu tư xây dựng công trình được phép thực hiện công việc nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Bảo đảm cạnh tranh trong đấu thầu",
+  "irac": {
+    "issue": "Xác định công việc mà nhà thầu đã lập hồ sơ thiết kế kỹ thuật cho dự án đầu tư xây dựng công trình được phép thực hiện theo quy định về bảo đảm cạnh tranh.",
+    "rule": "Khoản 2 Điều 6 Luật Đấu thầu số 22/2023/QH15; Điều 4 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 2 Điều 6 Luật Đấu thầu số 22/2023/QH15, nhà thầu tư vấn đã lập hồ sơ thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán cho gói thầu thì không được tham dự thầu gói thầu thi công xây lắp, cung cấp hàng hóa, giám sát của chính gói thầu đó; tuy nhiên, nhà thầu này vẫn được phép thực hiện quyền giám sát tác giả theo quy định của pháp luật về xây dựng hoặc tham dự các gói thầu tư vấn bước tiếp theo không mâu thuẫn lợi ích theo luật định.",
+    "conclusion": "Nhà thầu đã lập hồ sơ thiết kế kỹ thuật không được tham dự thầu gói thầu xây lắp, hàng hóa, hỗn hợp thuộc dự án đó nhưng được phép thực hiện giám sát tác giả (hoặc lập thiết kế bước tiếp theo theo pháp luật xây dựng)."
+  },
+  "keywords": [
+    "Khoản 2 Điều 6",
+    "bảo đảm cạnh tranh",
+    "thiết kế kỹ thuật",
+    "giám sát tác giả"
+  ]
+}
