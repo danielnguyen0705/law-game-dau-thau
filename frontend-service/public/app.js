@@ -140,6 +140,7 @@ const state = {
   isRecording: false,
   voiceError: '',
   timeLeft: 30,
+  totalTime: 30,
   currentGrade: null
 };
 
@@ -204,18 +205,21 @@ function stopVoiceRecognition() {
 
 function startAnsweringTimer(seconds) {
   clearTimers();
-  state.timeLeft = seconds;
+  const total = seconds > 0 ? seconds : 0;
+  state.timeLeft = total;
+  state.totalTime = total > 0 ? total : 1;
   updateTimerDOM();
-  if (seconds <= 0) return; // Unlimited
+  if (total <= 0) return; // Unlimited
 
   timerInterval = setInterval(() => {
-    if (state.phase !== 'ANSWERING') {
+    if (state.phase !== 'ANSWERING' && state.phase !== 'BUZZER_OPEN') {
       clearTimers();
       return;
     }
     if (state.timeLeft <= 1) {
       clearTimers();
       state.timeLeft = 0;
+      updateTimerDOM();
       soundFX.playTimeUp();
       handleTimeExpired();
       return;
@@ -228,15 +232,62 @@ function startAnsweringTimer(seconds) {
   }, 1000);
 }
 
+function renderTimerMarkup() {
+  const isUnlimited = state.phase === 'ANSWERING' && state.answerMode === 'TEXT' && state.settings.textTimeLimit === 0;
+  const isCritical = !isUnlimited && state.timeLeft <= 5 && state.timeLeft > 0 && (state.phase === 'ANSWERING' || state.phase === 'BUZZER_OPEN');
+  const pct = isUnlimited ? 100 : Math.max(0, Math.min(100, Math.round((state.timeLeft / Math.max(1, state.totalTime)) * 100)));
+  const radius = 24;
+  const circumference = 2 * Math.PI * radius;
+  const dashOffset = circumference - (pct / 100) * circumference;
+  const phaseLabel = state.phase === 'BUZZER_OPEN'
+    ? '⏳ Đếm ngược bấm chuông'
+    : state.phase === 'ANSWERING'
+      ? (state.answerMode === 'VOICE' ? '🎙️ Đếm ngược trả lời (Voice)' : '⌨️ Đếm ngược trả lời (Phím)')
+      : '⏱️ Đồng hồ trận đấu';
+
+  return `
+    <div class="countdown-widget ${isCritical ? 'timer-critical' : ''}">
+      <div class="countdown-ring-wrap">
+        <svg class="countdown-svg" width="60" height="60" viewBox="0 0 60 60">
+          <circle class="countdown-track" cx="30" cy="30" r="${radius}" fill="none" stroke-width="5"></circle>
+          <circle
+            class="countdown-progress"
+            cx="30"
+            cy="30"
+            r="${radius}"
+            fill="none"
+            stroke-width="5"
+            stroke-dasharray="${circumference.toFixed(1)}"
+            stroke-dashoffset="${dashOffset.toFixed(1)}"
+          ></circle>
+        </svg>
+        <div class="countdown-center-text">
+          ${isUnlimited ? '∞' : `${state.timeLeft}s`}
+        </div>
+      </div>
+      <div class="countdown-meta">
+        <div class="countdown-phase-label">${phaseLabel}</div>
+        <div class="countdown-bar-outer">
+          <div class="countdown-bar-inner" style="width:${pct}%"></div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 function updateTimerDOM() {
   const timerEl = document.getElementById('live-timer-box');
-  if (!timerEl) return;
-  if (state.timeLeft === 0 && state.answerMode === 'TEXT' && state.settings.textTimeLimit === 0) {
-    timerEl.className = 'timer-box';
-    timerEl.innerHTML = `<span class="timer-infinity">∞ Không giới hạn</span>`;
-  } else {
-    timerEl.className = `timer-box ${state.timeLeft <= 5 && state.timeLeft > 0 ? 'timer-critical' : ''}`;
-    timerEl.innerHTML = `<span class="timer-number">${state.timeLeft}s</span>`;
+  if (timerEl) {
+    timerEl.innerHTML = renderTimerMarkup();
+  }
+  const inlineTimerEl = document.getElementById('inline-stage-timer');
+  if (inlineTimerEl) {
+    const isUnlimited = state.phase === 'ANSWERING' && state.answerMode === 'TEXT' && state.settings.textTimeLimit === 0;
+    const isCritical = !isUnlimited && state.timeLeft <= 5 && state.timeLeft > 0;
+    inlineTimerEl.className = `inline-stage-timer ${isCritical ? 'timer-critical' : ''}`;
+    inlineTimerEl.innerHTML = isUnlimited
+      ? `⏱️ Thời gian: <strong>∞ Không giới hạn</strong>`
+      : `⏱️ Đồng hồ đếm ngược: <strong>${state.timeLeft} giây</strong>`;
   }
 }
 
@@ -300,6 +351,7 @@ async function startMatch() {
   transitionTimeout = setTimeout(() => {
     state.phase = 'BUZZER_OPEN';
     render();
+    startAnsweringTimer(state.settings.voiceTimeLimit || 30);
   }, 1300);
 }
 
@@ -411,18 +463,19 @@ function handleTimeExpired() {
   }
 
   const currentQuestion = getCurrentQuestion();
-  if (state.stealAvailable && !state.failedTeamInRound) {
+  if (state.phase === 'ANSWERING' && state.stealAvailable && !state.failedTeamInRound) {
     state.failedTeamInRound = state.buzzedTeam;
     state.stealAvailable = false;
     state.buzzedTeam = null;
     state.phase = 'BUZZER_OPEN';
     render();
+    startAnsweringTimer(state.settings.voiceTimeLimit || 30);
   } else {
     state.currentGrade = {
       accuracyPercent: 0,
       earnedPoints: 0,
       maxPoints: currentQuestion.points,
-      feedback: 'Hết thời gian trả lời! Không đội nào ghi được điểm ở câu hỏi này.',
+      feedback: 'Hết thời gian đếm ngược! Không đội nào ghi được điểm ở câu hỏi này.',
       breakdown: { issueScore: 0, ruleScore: 0, applicationScore: 0, conclusionScore: 0 },
       canonicalIRAC: currentQuestion.irac,
       playerAnswer: '(Hết thời gian - Không có câu trả lời)',
@@ -490,6 +543,7 @@ function nextQuestionOrFinish() {
     transitionTimeout = setTimeout(() => {
       state.phase = 'BUZZER_OPEN';
       render();
+      startAnsweringTimer(state.settings.voiceTimeLimit || 30);
     }, 1250);
   }
 }
@@ -795,20 +849,16 @@ function renderArenaHTML() {
           <div class="round-pill">
             CÂU HỎI ${state.currentIndex + 1} / ${state.matchQuestions.length}
           </div>
-          ${state.phase === 'ANSWERING' ? `
-            <div id="live-timer-box" class="timer-box ${state.timeLeft <= 5 && state.timeLeft > 0 ? 'timer-critical' : ''}">
-              ${state.timeLeft === 0 && state.answerMode === 'TEXT' && s.textTimeLimit === 0
-                ? `<span class="timer-infinity">∞ Không giới hạn</span>`
-                : `<span class="timer-number">${state.timeLeft}s</span>`}
-            </div>
-          ` : `
-            <div class="arena-status-pill">
-              ${state.phase === 'BUZZER_OPEN' ? '⚡ Đang mở chuông giành quyền' : ''}
-              ${state.phase === 'TRANSITION' ? '🌀 Đang chuyển chặng...' : ''}
-              ${state.phase === 'GRADING' ? '🤖 AI đang chấm IRAC...' : ''}
-              ${state.phase === 'ROUND_RESULT' ? '📊 Kết quả đối chiếu IRAC' : ''}
-            </div>
-          `}
+          <div id="live-timer-box" class="timer-box">
+            ${renderTimerMarkup()}
+          </div>
+          <div class="arena-status-pill">
+            ${state.phase === 'BUZZER_OPEN' ? '⚡ Nhấn phím F (Đội A) hoặc J (Đội B) giành quyền!' : ''}
+            ${state.phase === 'ANSWERING' ? '🎙️ Đang trong thời gian trả lời' : ''}
+            ${state.phase === 'TRANSITION' ? '🌀 Đang chuyển chặng...' : ''}
+            ${state.phase === 'GRADING' ? '🤖 AI đang chấm IRAC...' : ''}
+            ${state.phase === 'ROUND_RESULT' ? '📊 Kết quả đối chiếu IRAC' : ''}
+          </div>
           <button type="button" class="btn-quit-match" id="btn-quit-match">✕ Kết thúc sớm</button>
         </div>
 
@@ -836,6 +886,11 @@ function renderArenaHTML() {
         <section class="question-arena-card">
           <div class="question-card-header">
             <span class="q-number-badge">Câu số ${currentQuestion.questionNumber} (Bộ đề gốc)</span>
+            <div id="inline-stage-timer" class="inline-stage-timer ${state.timeLeft <= 5 && state.timeLeft > 0 ? 'timer-critical' : ''}">
+              ${state.phase === 'ANSWERING' && state.answerMode === 'TEXT' && s.textTimeLimit === 0
+                ? '⏱️ Thời gian: <strong>∞ Không giới hạn</strong>'
+                : `⏱️ Đồng hồ đếm ngược: <strong>${state.timeLeft} giây</strong>`}
+            </div>
             <span class="q-diff-badge diff-${currentQuestion.difficulty.toLowerCase()}">
               ${escapeHtml(currentQuestion.difficultyLabel)} • ${currentQuestion.points} điểm
             </span>

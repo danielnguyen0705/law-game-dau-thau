@@ -756,26 +756,110 @@ code {
 }
 
 .timer-box {
-  padding: 0.25rem 0.9rem;
-  border-radius: 10px;
-  background: rgba(28, 37, 65, 0.9);
+  width: 100%;
+  padding: 0.45rem 0.85rem;
+  border-radius: 14px;
+  background: rgba(28, 37, 65, 0.92);
+  border: 1px solid rgba(244, 211, 94, 0.35);
 }
 
-.timer-number {
-  font-size: 2rem;
+.countdown-widget {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.countdown-ring-wrap {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.countdown-svg {
+  transform: rotate(-90deg);
+}
+
+.countdown-track {
+  stroke: rgba(58, 80, 107, 0.75);
+}
+
+.countdown-progress {
+  stroke: var(--star-yellow);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.35s linear, stroke 0.25s ease;
+}
+
+.countdown-center-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.08rem;
   font-weight: 800;
   color: var(--star-yellow);
   font-variant-numeric: tabular-nums;
 }
 
-.timer-infinity {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #6EE7B7;
+.countdown-meta {
+  flex: 1;
+  min-width: 140px;
+  text-align: left;
 }
 
-.timer-critical .timer-number {
+.countdown-phase-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.35rem;
+}
+
+.countdown-bar-outer {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(11, 19, 43, 0.9);
+  overflow: hidden;
+  border: 1px solid rgba(58, 80, 107, 0.8);
+}
+
+.countdown-bar-inner {
+  height: 100%;
+  background: linear-gradient(90deg, var(--star-yellow), var(--star-amber));
+  border-radius: 999px;
+  transition: width 0.35s linear;
+}
+
+.countdown-widget.timer-critical .countdown-progress {
+  stroke: #F87171;
+}
+
+.countdown-widget.timer-critical .countdown-center-text {
   color: #F87171;
+  animation: criticalPulse 0.45s ease-in-out infinite alternate;
+}
+
+.countdown-widget.timer-critical .countdown-bar-inner {
+  background: linear-gradient(90deg, #EF4444, #F87171);
+}
+
+.inline-stage-timer {
+  padding: 0.4rem 1.05rem;
+  border-radius: 999px;
+  background: rgba(244, 211, 94, 0.16);
+  border: 1.5px solid rgba(244, 211, 94, 0.65);
+  color: var(--star-yellow);
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 0 18px rgba(244, 211, 94, 0.25);
+}
+
+.inline-stage-timer.timer-critical {
+  background: rgba(239, 68, 68, 0.24);
+  border-color: #F87171;
+  color: #FCA5A5;
   animation: criticalPulse 0.45s ease-in-out infinite alternate;
 }
 
