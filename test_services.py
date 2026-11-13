@@ -162,6 +162,8 @@ def test_frontend_service():
     assert "Một sản phẩm của Nguyễn Quốc Đạt, Đỗ Hoàng Gia Bảo, Trần Võ Đăng Khoa" in app_text
     assert "VÀO CHƠI NGAY" in app_text
     assert "Sàn Đấu Tranh Biện" in app_text
+    assert "btn-voice-preset-default" in app_text and "btn-voice-preset-custom" in app_text
+    assert "btn-text-preset-default" in app_text and "btn-text-preset-custom" in app_text
     assert "#0B132B" in app_text and "#F4D35E" in app_text
 
     sfx_text = (public_dir / "soundEffects.js").read_text(encoding="utf-8")

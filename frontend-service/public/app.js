@@ -13,8 +13,11 @@ const DEFAULT_SETTINGS = {
   teamAKey: 'F',
   teamBKey: 'J',
   questionCount: 10,
-  defaultAnswerMode: 'VOICE', // 'VOICE' (cố định 30s) | 'TEXT' (mặc định 120s hoặc tùy chọn)
-  voiceTimeLimit: 30,
+  defaultAnswerMode: 'VOICE', // 'VOICE' (mặc định 30s hoặc tùy chọn) | 'TEXT' (mặc định 120s hoặc tùy chọn)
+  voiceTimePreset: 'DEFAULT', // 'DEFAULT' (30s) | 'CUSTOM' (tùy chọn giây/phút)
+  voiceCustomValue: 30,
+  voiceCustomUnit: 'SECONDS', // 'SECONDS' | 'MINUTES'
+  voiceTimeLimit: 30, // Mặc định 30s khi chọn Voice (0 = Không giới hạn)
   textTimePreset: 'DEFAULT', // 'DEFAULT' (120s) | 'CUSTOM' (tùy chọn giây/phút)
   textCustomValue: 2,
   textCustomUnit: 'MINUTES', // 'SECONDS' | 'MINUTES'
@@ -238,12 +241,17 @@ function startAnsweringTimer(seconds) {
 
 function getActiveModeTimeLimit(mode) {
   const m = mode || state.settings.defaultAnswerMode || 'VOICE';
-  if (m === 'VOICE') return 30;
+  if (m === 'VOICE') {
+    return state.settings.voiceTimeLimit !== undefined ? Number(state.settings.voiceTimeLimit) : 30;
+  }
   return state.settings.textTimeLimit !== undefined ? Number(state.settings.textTimeLimit) : 120;
 }
 
 function renderTimerMarkup() {
-  const isUnlimited = state.phase === 'ANSWERING' && state.answerMode === 'TEXT' && Number(state.settings.textTimeLimit) === 0;
+  const isUnlimited = state.phase === 'ANSWERING' && (
+    (state.answerMode === 'VOICE' && Number(state.settings.voiceTimeLimit) === 0) ||
+    (state.answerMode === 'TEXT' && Number(state.settings.textTimeLimit) === 0)
+  );
   const isCritical = !isUnlimited && state.timeLeft <= 5 && state.timeLeft > 0 && (state.phase === 'ANSWERING' || state.phase === 'BUZZER_OPEN');
   const pct = isUnlimited ? 100 : Math.max(0, Math.min(100, Math.round((state.timeLeft / Math.max(1, state.totalTime)) * 100)));
   const radius = 36;
@@ -252,7 +260,9 @@ function renderTimerMarkup() {
   const phaseLabel = state.phase === 'BUZZER_OPEN'
     ? '⏳ Đếm ngược bấm chuông'
     : state.phase === 'ANSWERING'
-      ? (state.answerMode === 'VOICE' ? '🎙️ Trả lời Voice (30s)' : `⌨️ Nhập văn bản (${isUnlimited ? '∞' : state.totalTime + 's'})`)
+      ? (state.answerMode === 'VOICE'
+          ? `🎙️ Trả lời Voice (${isUnlimited ? '∞' : state.totalTime + 's'})`
+          : `⌨️ Nhập văn bản (${isUnlimited ? '∞' : state.totalTime + 's'})`)
       : '⏱️ Đồng hồ trận đấu';
 
   return `
@@ -777,8 +787,8 @@ function renderLandingHTML() {
           <div class="quick-option">
             <span>Hình thức trả lời:</span>
             <div class="segmented-control">
-              <button type="button" class="seg-btn ${(s.defaultAnswerMode || 'VOICE') === 'VOICE' ? 'seg-active' : ''}" data-ansmode="VOICE">🎙️ Voice (Mặc định 30s)</button>
-              <button type="button" class="seg-btn ${s.defaultAnswerMode === 'TEXT' ? 'seg-active' : ''}" data-ansmode="TEXT">⌨️ Nhập văn bản (${s.textTimeLimit === 0 ? '∞' : `${s.textTimeLimit || 120}s`})</button>
+              <button type="button" class="seg-btn ${(s.defaultAnswerMode || 'VOICE') === 'VOICE' ? 'seg-active' : ''}" data-ansmode="VOICE">🎙️ Voice (${Number(s.voiceTimeLimit) === 0 ? '∞' : `${s.voiceTimeLimit ?? 30}s`})</button>
+              <button type="button" class="seg-btn ${s.defaultAnswerMode === 'TEXT' ? 'seg-active' : ''}" data-ansmode="TEXT">⌨️ Nhập văn bản (${Number(s.textTimeLimit) === 0 ? '∞' : `${s.textTimeLimit ?? 120}s`})</button>
             </div>
           </div>
         </div>
@@ -796,7 +806,7 @@ function renderLandingHTML() {
           </div>
           <div class="rule-mini-card">
             <h4>🎙️ 2. Trả lời Voice &amp; Bàn phím</h4>
-            <p>Hỗ trợ nhận diện giọng nói tiếng Việt (30s) hoặc nhập văn bản từ bàn phím (120s / Không giới hạn thời gian).</p>
+            <p>Hỗ trợ nhận diện giọng nói tiếng Việt (Mặc định 30s hoặc Tùy chọn) và nhập văn bản từ bàn phím (Mặc định 120s hoặc Tùy chọn).</p>
           </div>
           <div class="rule-mini-card">
             <h4>🧠 3. Chấm điểm AI theo IRAC</h4>
@@ -830,10 +840,10 @@ function renderAnsweringBoxHTML() {
 
         <div class="mode-switcher">
           <button type="button" class="mode-btn ${state.answerMode === 'VOICE' ? 'mode-active' : ''}" id="btn-mode-voice">
-            🎙️ Giọng nói (30s)
+            🎙️ Giọng nói (${Number(s.voiceTimeLimit) === 0 ? '∞' : `${s.voiceTimeLimit ?? 30}s`})
           </button>
           <button type="button" class="mode-btn ${state.answerMode === 'TEXT' ? 'mode-active' : ''}" id="btn-mode-text">
-            ⌨️ Nhập văn bản (${s.textTimeLimit === 0 ? '∞' : `${s.textTimeLimit || 120}s`})
+            ⌨️ Nhập văn bản (${Number(s.textTimeLimit) === 0 ? '∞' : `${s.textTimeLimit ?? 120}s`})
           </button>
         </div>
       </div>
@@ -1148,8 +1158,51 @@ function renderSettingsModalHTML() {
           ${(s.defaultAnswerMode || 'VOICE') === 'VOICE' ? `
             <div class="settings-row">
               <label>Thời gian trả lời Giọng nói (Voice)</label>
-              <span class="config-summary-pill">🎙️ Mặc định cố định: <strong>30 giây (30s)</strong></span>
+              <div class="segmented-control">
+                <button
+                  type="button"
+                  class="seg-btn ${(s.voiceTimePreset || 'DEFAULT') === 'DEFAULT' ? 'seg-active' : ''}"
+                  id="btn-voice-preset-default"
+                >
+                  Mặc định (30s)
+                </button>
+                <button
+                  type="button"
+                  class="seg-btn ${s.voiceTimePreset === 'CUSTOM' ? 'seg-active' : ''}"
+                  id="btn-voice-preset-custom"
+                >
+                  Tùy chọn
+                </button>
+              </div>
             </div>
+
+            ${s.voiceTimePreset === 'CUSTOM' ? `
+              <div class="settings-row settings-subrow">
+                <label>Nhập thời gian Voice tùy chọn (0 = Không giới hạn)</label>
+                <div class="text-time-customizer">
+                  <input
+                    type="number"
+                    id="input-voice-custom-val"
+                    class="key-input"
+                    style="width:90px"
+                    min="0"
+                    max="600"
+                    step="1"
+                    autocomplete="off"
+                    value="${Number(s.voiceCustomValue ?? (s.voiceCustomUnit === 'MINUTES' ? 1 : (s.voiceTimeLimit ?? 30)))}"
+                  />
+                  <select id="select-voice-custom-unit">
+                    <option value="SECONDS" ${(s.voiceCustomUnit || 'SECONDS') === 'SECONDS' ? 'selected' : ''}>giây</option>
+                    <option value="MINUTES" ${s.voiceCustomUnit === 'MINUTES' ? 'selected' : ''}>phút</option>
+                  </select>
+                  <span class="config-summary-pill" id="custom-voice-time-computed-pill">
+                    ${Number(s.voiceTimeLimit) === 0
+                      ? '∞ Không giới hạn'
+                      : `= <strong>${Number(s.voiceTimeLimit ?? 30)} giây</strong>`}
+                  </span>
+                </div>
+              </div>
+            ` : ''}
           ` : `
             <div class="settings-row">
               <label>Thời gian Nhập văn bản</label>
@@ -1402,14 +1455,14 @@ function bindEvents() {
       btn.addEventListener('click', () => {
         const mode = btn.getAttribute('data-ansmode');
         state.settings.defaultAnswerMode = mode;
-        state.settings.voiceTimeLimit = 30;
+        if (mode === 'VOICE' && state.settings.voiceTimeLimit === undefined) {
+          state.settings.voiceTimeLimit = 30;
+        }
         if (mode === 'TEXT' && state.settings.textTimeLimit === undefined) {
           state.settings.textTimeLimit = 120;
         }
         saveSettings();
-        if (mode === 'TEXT') {
-          state.showSettingsModal = true;
-        }
+        state.showSettingsModal = true;
         render();
       });
     });
@@ -1469,7 +1522,12 @@ function bindEvents() {
     });
     document.getElementById('btn-setting-mode-voice')?.addEventListener('click', () => {
       state.settings.defaultAnswerMode = 'VOICE';
-      state.settings.voiceTimeLimit = 30;
+      if (!state.settings.voiceTimePreset) {
+        state.settings.voiceTimePreset = 'DEFAULT';
+      }
+      if (state.settings.voiceTimePreset === 'DEFAULT') {
+        state.settings.voiceTimeLimit = 30;
+      }
       saveSettings();
       render();
     });
@@ -1484,6 +1542,40 @@ function bindEvents() {
       saveSettings();
       render();
     });
+    document.getElementById('btn-voice-preset-default')?.addEventListener('click', () => {
+      state.settings.voiceTimePreset = 'DEFAULT';
+      state.settings.voiceTimeLimit = 30;
+      saveSettings();
+      render();
+    });
+    document.getElementById('btn-voice-preset-custom')?.addEventListener('click', () => {
+      state.settings.voiceTimePreset = 'CUSTOM';
+      const unit = state.settings.voiceCustomUnit || 'SECONDS';
+      const val = state.settings.voiceCustomValue !== undefined ? Number(state.settings.voiceCustomValue) : 30;
+      state.settings.voiceCustomUnit = unit;
+      state.settings.voiceCustomValue = val;
+      state.settings.voiceTimeLimit = unit === 'MINUTES' ? Math.round(val * 60) : Math.round(val);
+      saveSettings();
+      render();
+    });
+    const recomputeVoiceCustomTime = () => {
+      const valInp = document.getElementById('input-voice-custom-val');
+      const unitSel = document.getElementById('select-voice-custom-unit');
+      const rawVal = Math.max(0, Math.min(600, Number(valInp?.value ?? state.settings.voiceCustomValue ?? 30)));
+      const unit = unitSel?.value || state.settings.voiceCustomUnit || 'SECONDS';
+      state.settings.voiceCustomValue = rawVal;
+      state.settings.voiceCustomUnit = unit;
+      state.settings.voiceTimeLimit = unit === 'MINUTES' ? Math.round(rawVal * 60) : Math.round(rawVal);
+      saveSettings();
+      const pill = document.getElementById('custom-voice-time-computed-pill');
+      if (pill) {
+        pill.innerHTML = state.settings.voiceTimeLimit === 0
+          ? '∞ Không giới hạn'
+          : `= <strong>${state.settings.voiceTimeLimit} giây</strong>`;
+      }
+    };
+    document.getElementById('input-voice-custom-val')?.addEventListener('input', recomputeVoiceCustomTime);
+    document.getElementById('select-voice-custom-unit')?.addEventListener('change', recomputeVoiceCustomTime);
     document.getElementById('btn-text-preset-default')?.addEventListener('click', () => {
       state.settings.textTimePreset = 'DEFAULT';
       state.settings.textTimeLimit = 120;
