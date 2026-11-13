@@ -13,8 +13,11 @@ const DEFAULT_SETTINGS = {
   teamAKey: 'F',
   teamBKey: 'J',
   questionCount: 10,
-  defaultAnswerMode: 'VOICE', // 'VOICE' (cố định 30s) | 'TEXT' (tùy chỉnh, mặc định 120s)
+  defaultAnswerMode: 'VOICE', // 'VOICE' (cố định 30s) | 'TEXT' (mặc định 120s hoặc tùy chọn)
   voiceTimeLimit: 30,
+  textTimePreset: 'DEFAULT', // 'DEFAULT' (120s) | 'CUSTOM' (tùy chọn giây/phút)
+  textCustomValue: 2,
+  textCustomUnit: 'MINUTES', // 'SECONDS' | 'MINUTES'
   textTimeLimit: 120, // Mặc định 120s khi chọn nhập văn bản (0 = Không giới hạn)
   soundEnabled: true,
   difficultyFilter: 'ALL'
@@ -682,7 +685,7 @@ function renderLandingHTML() {
               <div class="buzzer-badge">Phím chuông: <kbd>${escapeHtml(s.teamAKey)}</kbd></div>
             </div>
             <label class="field-label">Tên Đội A</label>
-            <input class="text-input" id="input-team-a-name" value="${escapeHtml(s.teamAName)}" placeholder="Nhập tên Đội A..." />
+            <input type="text" autocomplete="off" data-lpignore="true" data-form-type="other" class="text-input" id="input-team-a-name" value="${escapeHtml(s.teamAName)}" placeholder="Nhập tên Đội A..." />
             <label class="field-label">Chọn Biểu Tượng</label>
             <div class="avatar-picker">${avatarButtonsA}</div>
           </div>
@@ -702,7 +705,7 @@ function renderLandingHTML() {
               <div class="buzzer-badge">Phím chuông: <kbd>${escapeHtml(s.teamBKey)}</kbd></div>
             </div>
             <label class="field-label">Tên Đội B</label>
-            <input class="text-input" id="input-team-b-name" value="${escapeHtml(s.teamBName)}" placeholder="Nhập tên Đội B..." />
+            <input type="text" autocomplete="off" data-lpignore="true" data-form-type="other" class="text-input" id="input-team-b-name" value="${escapeHtml(s.teamBName)}" placeholder="Nhập tên Đội B..." />
             <label class="field-label">Chọn Biểu Tượng</label>
             <div class="avatar-picker">${avatarButtonsB}</div>
           </div>
@@ -1110,31 +1113,52 @@ function renderSettingsModalHTML() {
             </div>
           ` : `
             <div class="settings-row">
-              <label>Thời gian Nhập văn bản (Mặc định: 120s)</label>
-              <div class="text-time-customizer">
-                <select id="select-text-time">
-                  <option value="60" ${Number(s.textTimeLimit) === 60 ? 'selected' : ''}>60 giây (1 phút)</option>
-                  <option value="90" ${Number(s.textTimeLimit) === 90 ? 'selected' : ''}>90 giây (1.5 phút)</option>
-                  <option value="120" ${Number(s.textTimeLimit) === 120 ? 'selected' : ''}>120 giây (2 phút - Mặc định)</option>
-                  <option value="180" ${Number(s.textTimeLimit) === 180 ? 'selected' : ''}>180 giây (3 phút)</option>
-                  <option value="240" ${Number(s.textTimeLimit) === 240 ? 'selected' : ''}>240 giây (4 phút)</option>
-                  <option value="0" ${Number(s.textTimeLimit) === 0 ? 'selected' : ''}>Không giới hạn thời gian (∞)</option>
-                </select>
-                <div class="custom-seconds-wrap" title="Hoặc tự nhập số giây tùy ý (0 = Không giới hạn)">
-                  <input
-                    type="number"
-                    id="input-custom-text-seconds"
-                    class="key-input"
-                    style="width:82px"
-                    min="0"
-                    max="600"
-                    step="5"
-                    value="${Number(s.textTimeLimit ?? 120)}"
-                  />
-                  <small>giây</small>
-                </div>
+              <label>Thời gian Nhập văn bản</label>
+              <div class="segmented-control">
+                <button
+                  type="button"
+                  class="seg-btn ${(s.textTimePreset || 'DEFAULT') === 'DEFAULT' ? 'seg-active' : ''}"
+                  id="btn-text-preset-default"
+                >
+                  Mặc định (120s)
+                </button>
+                <button
+                  type="button"
+                  class="seg-btn ${s.textTimePreset === 'CUSTOM' ? 'seg-active' : ''}"
+                  id="btn-text-preset-custom"
+                >
+                  Tùy chọn
+                </button>
               </div>
             </div>
+
+            ${s.textTimePreset === 'CUSTOM' ? `
+              <div class="settings-row settings-subrow">
+                <label>Nhập thời gian tùy chọn (0 = Không giới hạn)</label>
+                <div class="text-time-customizer">
+                  <input
+                    type="number"
+                    id="input-text-custom-val"
+                    class="key-input"
+                    style="width:90px"
+                    min="0"
+                    max="600"
+                    step="1"
+                    autocomplete="off"
+                    value="${Number(s.textCustomValue ?? (s.textCustomUnit === 'SECONDS' ? (s.textTimeLimit || 120) : 2))}"
+                  />
+                  <select id="select-text-custom-unit">
+                    <option value="MINUTES" ${(s.textCustomUnit || 'MINUTES') === 'MINUTES' ? 'selected' : ''}>phút</option>
+                    <option value="SECONDS" ${s.textCustomUnit === 'SECONDS' ? 'selected' : ''}>giây</option>
+                  </select>
+                  <span class="config-summary-pill" id="custom-time-computed-pill">
+                    ${Number(s.textTimeLimit) === 0
+                      ? '∞ Không giới hạn'
+                      : `= <strong>${Number(s.textTimeLimit || 120)} giây</strong>`}
+                  </span>
+                </div>
+              </div>
+            ` : ''}
           `}
 
           <div class="settings-row">
@@ -1384,23 +1408,49 @@ function bindEvents() {
     });
     document.getElementById('btn-setting-mode-text')?.addEventListener('click', () => {
       state.settings.defaultAnswerMode = 'TEXT';
-      if (state.settings.textTimeLimit === undefined) {
+      if (!state.settings.textTimePreset) {
+        state.settings.textTimePreset = 'DEFAULT';
+      }
+      if (state.settings.textTimePreset === 'DEFAULT') {
         state.settings.textTimeLimit = 120;
       }
       saveSettings();
       render();
     });
-    document.getElementById('select-text-time')?.addEventListener('change', (e) => {
-      state.settings.textTimeLimit = Number(e.target.value);
+    document.getElementById('btn-text-preset-default')?.addEventListener('click', () => {
+      state.settings.textTimePreset = 'DEFAULT';
+      state.settings.textTimeLimit = 120;
       saveSettings();
-      const customInp = document.getElementById('input-custom-text-seconds');
-      if (customInp) customInp.value = String(state.settings.textTimeLimit);
+      render();
     });
-    document.getElementById('input-custom-text-seconds')?.addEventListener('input', (e) => {
-      const val = Math.max(0, Math.min(600, Number(e.target.value) || 0));
-      state.settings.textTimeLimit = val;
+    document.getElementById('btn-text-preset-custom')?.addEventListener('click', () => {
+      state.settings.textTimePreset = 'CUSTOM';
+      const unit = state.settings.textCustomUnit || 'MINUTES';
+      const val = state.settings.textCustomValue !== undefined ? Number(state.settings.textCustomValue) : 2;
+      state.settings.textCustomUnit = unit;
+      state.settings.textCustomValue = val;
+      state.settings.textTimeLimit = unit === 'MINUTES' ? Math.round(val * 60) : Math.round(val);
       saveSettings();
+      render();
     });
+    const recomputeCustomTime = () => {
+      const valInp = document.getElementById('input-text-custom-val');
+      const unitSel = document.getElementById('select-text-custom-unit');
+      const rawVal = Math.max(0, Math.min(600, Number(valInp?.value ?? state.settings.textCustomValue ?? 2)));
+      const unit = unitSel?.value || state.settings.textCustomUnit || 'MINUTES';
+      state.settings.textCustomValue = rawVal;
+      state.settings.textCustomUnit = unit;
+      state.settings.textTimeLimit = unit === 'MINUTES' ? Math.round(rawVal * 60) : Math.round(rawVal);
+      saveSettings();
+      const pill = document.getElementById('custom-time-computed-pill');
+      if (pill) {
+        pill.innerHTML = state.settings.textTimeLimit === 0
+          ? '∞ Không giới hạn'
+          : `= <strong>${state.settings.textTimeLimit} giây</strong>`;
+      }
+    };
+    document.getElementById('input-text-custom-val')?.addEventListener('input', recomputeCustomTime);
+    document.getElementById('select-text-custom-unit')?.addEventListener('change', recomputeCustomTime);
     document.getElementById('check-sound')?.addEventListener('change', (e) => {
       state.settings.soundEnabled = e.target.checked;
       saveSettings();
