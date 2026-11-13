@@ -287,18 +287,148 @@ code {
 }
 
 /* =========================================================
-   4. LANDING PAGE & TEAM SETUP
+   4. GAME WELCOME SCREEN & TEAM SETUP LOBBY
    ========================================================= */
+.welcome-screen {
+  flex: 1;
+  width: 100%;
+  max-width: 1120px;
+  min-height: calc(100dvh - 78px);
+  margin: 0 auto;
+  padding: clamp(1rem, 3vh, 2.5rem) clamp(1rem, 3vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.welcome-hero-box {
+  margin: auto 0;
+  width: 100%;
+  max-width: 780px;
+  background: radial-gradient(circle at 50% 0%, rgba(58, 80, 107, 0.52), rgba(17, 25, 48, 0.88) 72%);
+  backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(244, 211, 94, 0.42);
+  border-radius: 28px;
+  padding: clamp(1.8rem, 4.5vh, 3.4rem) clamp(1.25rem, 4vw, 3rem);
+  text-align: center;
+  box-shadow: 0 28px 75px rgba(3, 6, 16, 0.82), 0 0 48px rgba(244, 211, 94, 0.14);
+  animation: floatCardIn 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes floatCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.welcome-crest-ring {
+  width: clamp(78px, 11vh, 104px);
+  height: clamp(78px, 11vh, 104px);
+  margin: 0 auto 1.15rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244, 211, 94, 0.28) 0%, rgba(11, 19, 43, 0.92) 75%);
+  border: 2.5px solid var(--star-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 36px rgba(244, 211, 94, 0.5);
+  animation: crestPulse 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes crestPulse {
+  from {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 26px rgba(244, 211, 94, 0.42);
+  }
+  to {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 46px rgba(244, 211, 94, 0.72);
+  }
+}
+
+.welcome-crest-icon {
+  font-size: clamp(2.4rem, 4.5vh, 3.2rem);
+}
+
+.welcome-game-title {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  color: var(--star-yellow);
+  letter-spacing: 0.8px;
+  text-shadow: 0 4px 28px rgba(244, 211, 94, 0.45);
+  margin-bottom: 0.65rem;
+  line-height: 1.15;
+}
+
+.welcome-game-tagline {
+  font-size: clamp(0.92rem, 1.5vw, 1.12rem);
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 2rem;
+}
+
+.welcome-cta-group {
+  margin-bottom: 1.5rem;
+}
+
+.btn-enter-game {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: clamp(0.95rem, 2vh, 1.25rem) clamp(2.2rem, 5vw, 3.6rem);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #F4D35E 0%, #EE964B 100%);
+  color: #0B132B;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 2px solid #FFF8D6;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 12px 38px rgba(244, 211, 94, 0.55), inset 0 2px 0 rgba(255, 255, 255, 0.65);
+  transition: all 0.22s ease;
+}
+
+.btn-enter-game:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 16px 48px rgba(244, 211, 94, 0.8);
+}
+
+.welcome-quick-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.setup-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
 .landing-container {
   flex: 1;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1.75rem 1.5rem 2rem;
+  padding: clamp(1rem, 2.2vh, 1.75rem) clamp(0.85rem, 2.5vw, 1.5rem) 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .hero-card {

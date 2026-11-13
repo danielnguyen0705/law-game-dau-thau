@@ -127,7 +127,7 @@ const state = {
   bankDiffFilter: 'ALL',
 
   // Match state
-  phase: 'LANDING', // LANDING | TRANSITION | BUZZER_OPEN | ANSWERING | GRADING | ROUND_RESULT | VICTORY
+  phase: 'WELCOME', // WELCOME | SETUP | TRANSITION | BUZZER_OPEN | ANSWERING | GRADING | ROUND_RESULT | VICTORY
   matchQuestions: [],
   currentIndex: 0,
   teamAScore: 0,
@@ -635,20 +635,56 @@ function renderHeaderHTML() {
       <div class="brand-logo" id="btn-home-logo" role="button" tabindex="0">
         <span class="brand-emblem">⚖️</span>
         <div>
-          <h1 class="brand-title">ĐẤU TRƯỜNG PHÁP LUẬT ĐẤU THẦU</h1>
-          <p class="brand-subtitle">The Starry Night Debate Quiz • Chuẩn hóa IRAC</p>
+          <h1 class="brand-title">SÀN ĐẤU TRANH BIỆN</h1>
+          <p class="brand-subtitle">Pháp Luật Đấu Thầu • The Starry Night Edition</p>
         </div>
       </div>
 
       <div class="nav-actions">
         <div class="history-pill" title="Số câu hỏi chưa xuất hiện trong các ván trước">
-          <span>📚 Kho câu hỏi chưa hỏi: <strong>${remaining}/${totalPool}</strong></span>
+          <span>📚 Kho đề: <strong>${remaining}/${totalPool}</strong></span>
           ${state.askedHistory.length > 0 ? `<button class="btn-mini-reset" id="btn-nav-reset-history" title="Reset lịch sử câu hỏi đã hỏi">↺ Reset (${state.askedHistory.length})</button>` : ''}
         </div>
-        <button class="btn-secondary" id="btn-open-bank">📖 Ngân hàng 237 câu IRAC</button>
+        <button class="btn-secondary" id="btn-toggle-bgm" title="Bật/Tắt nhạc nền và âm thanh">
+          ${state.settings.soundEnabled ? '🎵 Nhạc: Bật' : '🔇 Nhạc: Tắt'}
+        </button>
+        <button class="btn-secondary" id="btn-open-bank">📖 Ngân hàng 237 câu</button>
         <button class="btn-secondary" id="btn-open-settings">⚙️ Cài đặt</button>
       </div>
     </header>
+  `;
+}
+
+function renderWelcomeHTML() {
+  const { remaining, totalPool } = getUnaskedCount();
+  return `
+    <main class="welcome-screen">
+      <section class="welcome-hero-box">
+        <div class="welcome-crest-ring">
+          <span class="welcome-crest-icon">⚖️</span>
+        </div>
+        <div class="hero-badge">✨ TRÒ CHƠI ĐỐI KHÁNG PHÁP LUẬT ĐẤU THẦU • THE STARRY NIGHT EDITION ✨</div>
+        <h2 class="welcome-game-title">Sàn Đấu Tranh Biện</h2>
+        <p class="welcome-game-tagline">
+          2 Đội Đối Kháng • Bấm Chuông Giành Quyền • Chấm Điểm AI Theo Chuẩn IRAC (${remaining}/${totalPool} câu sẵn sàng)
+        </p>
+
+        <div class="welcome-cta-group">
+          <button type="button" class="btn-enter-game" id="btn-enter-setup" ${state.loading ? 'disabled' : ''}>
+            ${state.loading ? '⏳ ĐANG TẢI DỮ LIỆU...' : '🎮 VÀO CHƠI NGAY'}
+          </button>
+        </div>
+
+        <div class="welcome-quick-links">
+          <button type="button" class="btn-secondary" id="btn-welcome-settings">⚙️ Thiết lập &amp; Cài đặt</button>
+          <button type="button" class="btn-secondary" id="btn-welcome-bank">📖 Xem 237 Câu Hỏi IRAC</button>
+        </div>
+      </section>
+
+      <footer class="landing-credits">
+        Một sản phẩm của Nguyễn Quốc Đạt, Đỗ Hoàng Gia Bảo, Trần Võ Đăng Khoa
+      </footer>
+    </main>
   `;
 }
 
@@ -667,11 +703,14 @@ function renderLandingHTML() {
   return `
     <main class="landing-container">
       <section class="hero-card">
-        <div class="hero-badge">✨ TRÒ CHƠI ĐỐI KHÁNG PHÁP LUẬT ĐẤU THẦU • VAN GOGH STARRY NIGHT EDITION ✨</div>
-        <h2 class="hero-heading">Sàn Đấu Tranh Biện &amp; Chấm Điểm AI Theo Cấu Trúc IRAC</h2>
+        <div class="setup-top-bar">
+          <button type="button" class="btn-secondary" id="btn-back-welcome">← Màn hình chính</button>
+          <div class="hero-badge" style="margin-bottom:0">⚔️ PHÒNG CHUẨN BỊ TRẬN ĐẤU (${remaining}/${totalPool} câu chưa hỏi)</div>
+          <div style="width:110px"></div>
+        </div>
+        <h2 class="hero-heading">Sàn Đấu Tranh Biện</h2>
         <p class="hero-desc">
-          Hệ thống trích xuất nguyên bản <strong>100% (237 câu hỏi)</strong> từ <em>Bộ câu hỏi ôn thi Luật Đấu thầu</em>,
-          đối chiếu văn bản pháp luật (Luật Đấu thầu 22/2023/QH15, Luật sửa đổi 2025, NĐ 214/2025/NĐ-CP) và chấm điểm ngữ nghĩa tự động theo 4 trụ cột <strong>Issue – Rule – Application – Conclusion</strong>.
+          Thiết lập tên 2 đội, chọn biểu tượng và cấu hình ván đấu trước khi bước vào sàn đấu.
         </p>
 
         <div class="teams-setup-grid">
@@ -1279,8 +1318,14 @@ function bindEvents() {
       confettiCleanup();
       confettiCleanup = null;
     }
-    state.phase = 'LANDING';
+    state.phase = 'WELCOME';
     state.buzzedTeam = null;
+    render();
+  });
+
+  document.getElementById('btn-toggle-bgm')?.addEventListener('click', () => {
+    state.settings.soundEnabled = !state.settings.soundEnabled;
+    saveSettings();
     render();
   });
 
@@ -1294,7 +1339,29 @@ function bindEvents() {
     render();
   });
 
-  if (state.phase === 'LANDING') {
+  if (state.phase === 'WELCOME') {
+    document.getElementById('btn-enter-setup')?.addEventListener('click', () => {
+      soundFX.playEnterGame();
+      state.phase = 'SETUP';
+      render();
+    });
+    document.getElementById('btn-welcome-settings')?.addEventListener('click', () => {
+      soundFX.startBGM();
+      state.showSettingsModal = true;
+      render();
+    });
+    document.getElementById('btn-welcome-bank')?.addEventListener('click', () => {
+      soundFX.startBGM();
+      state.showBankModal = true;
+      render();
+    });
+  }
+
+  if (state.phase === 'SETUP' || state.phase === 'LANDING') {
+    document.getElementById('btn-back-welcome')?.addEventListener('click', () => {
+      state.phase = 'WELCOME';
+      render();
+    });
     document.getElementById('input-team-a-name')?.addEventListener('input', (e) => {
       state.settings.teamAName = e.target.value;
       saveSettings();
@@ -1350,11 +1417,11 @@ function bindEvents() {
     document.getElementById('btn-start-match')?.addEventListener('click', startMatch);
   }
 
-  if (state.phase !== 'LANDING' && state.phase !== 'VICTORY') {
+  if (state.phase !== 'WELCOME' && state.phase !== 'SETUP' && state.phase !== 'LANDING' && state.phase !== 'VICTORY') {
     document.getElementById('btn-quit-match')?.addEventListener('click', () => {
       clearTimers();
       stopVoiceRecognition();
-      state.phase = 'LANDING';
+      state.phase = 'SETUP';
       state.buzzedTeam = null;
       render();
     });
@@ -1372,7 +1439,7 @@ function bindEvents() {
         confettiCleanup();
         confettiCleanup = null;
       }
-      state.phase = 'LANDING';
+      state.phase = 'WELCOME';
       render();
     });
   }
@@ -1510,7 +1577,9 @@ function render() {
   if (!root) return;
 
   let mainContent = '';
-  if (state.phase === 'LANDING') {
+  if (state.phase === 'WELCOME') {
+    mainContent = renderWelcomeHTML();
+  } else if (state.phase === 'SETUP' || state.phase === 'LANDING') {
     mainContent = renderLandingHTML();
   } else if (state.phase === 'VICTORY') {
     mainContent = renderVictoryHTML();

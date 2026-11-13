@@ -156,11 +156,16 @@ def test_frontend_service():
 
     public_dir = ROOT_DIR / "frontend-service" / "public"
     index_text = (public_dir / "index.html").read_text(encoding="utf-8")
-    assert "Đấu Trường Pháp Luật Đấu Thầu" in index_text
+    assert "Sàn Đấu Tranh Biện" in index_text
 
     app_text = (public_dir / "app.js").read_text(encoding="utf-8")
     assert "Một sản phẩm của Nguyễn Quốc Đạt, Đỗ Hoàng Gia Bảo, Trần Võ Đăng Khoa" in app_text
+    assert "VÀO CHƠI NGAY" in app_text
+    assert "Sàn Đấu Tranh Biện" in app_text
     assert "#0B132B" in app_text and "#F4D35E" in app_text
+
+    sfx_text = (public_dir / "soundEffects.js").read_text(encoding="utf-8")
+    assert "startBGM" in sfx_text and "playEnterGame" in sfx_text
 
     css_text = (public_dir / "styles.css").read_text(encoding="utf-8")
     assert "--bg-deep: #0B132B" in css_text

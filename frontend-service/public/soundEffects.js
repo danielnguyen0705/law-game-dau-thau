@@ -1,5 +1,6 @@
 /**
- * Web Audio API Sound Effects Synthesizer for LawGame Debate Arena
+ * Web Audio API Sound Effects & Background Music (BGM) Synthesizer for LawGame Debate Arena
+ * - Continuous "Starry Night Debate Theme" Ambient/Game BGM Loop (starts from the moment the user enters/interacts)
  * - Distinct Buzzer Sounds for Team A (Key F) and Team B (Key J)
  * - Dramatic Round Transition Chime
  * - Last 5 Seconds Countdown Tick-Tock
@@ -10,6 +11,23 @@ class SoundEffectsManager {
   constructor() {
     this.ctx = null;
     this.enabled = true;
+    this.bgmPlaying = false;
+    this.bgmTimer = null;
+    this.bgmStep = 0;
+    this._bindAutoUnlock();
+  }
+
+  _bindAutoUnlock() {
+    if (typeof window === "undefined") return;
+    const unlock = () => {
+      if (!this.enabled) return;
+      this.getContext();
+      if (!this.bgmPlaying) {
+        this.startBGM();
+      }
+    };
+    window.addEventListener("pointerdown", unlock, { passive: true });
+    window.addEventListener("keydown", unlock, { passive: true });
   }
 
   getContext() {
@@ -28,6 +46,106 @@ class SoundEffectsManager {
 
   setEnabled(val) {
     this.enabled = Boolean(val);
+    if (!this.enabled) {
+      this.stopBGM();
+    } else {
+      this.startBGM();
+    }
+  }
+
+  // Continuous Starry Night Game BGM (Celestial Arpeggio + Warm Bass Pad)
+  startBGM() {
+    if (!this.enabled || this.bgmPlaying) return;
+    const ctx = this.getContext();
+    if (!ctx) return;
+
+    this.bgmPlaying = true;
+    // Starry Night A-minor / F-major / C-major / G-major arpeggio progression
+    const progression = [
+      // Am9
+      { bass: 110.0, notes: [220.0, 261.63, 329.63, 392.0, 493.88, 392.0, 329.63, 261.63] },
+      // Fmaj7
+      { bass: 87.31, notes: [174.61, 220.0, 261.63, 329.63, 392.0, 329.63, 261.63, 220.0] },
+      // Cmaj7
+      { bass: 130.81, notes: [261.63, 329.63, 392.0, 493.88, 523.25, 493.88, 392.0, 329.63] },
+      // G6 / E7
+      { bass: 98.0, notes: [196.0, 246.94, 293.66, 392.0, 440.0, 392.0, 293.66, 246.94] }
+    ];
+
+    const stepMs = 360;
+    const tickStep = () => {
+      if (!this.enabled || !this.bgmPlaying) return;
+      const c = this.getContext();
+      if (!c || c.state !== "running") return;
+
+      const now = c.currentTime;
+      const barIdx = Math.floor(this.bgmStep / 8) % progression.length;
+      const noteIdx = this.bgmStep % 8;
+      const bar = progression[barIdx];
+      const freq = bar.notes[noteIdx];
+
+      // Warm bass pad on beat 0 of each bar
+      if (noteIdx === 0) {
+        const bassOsc = c.createOscillator();
+        const bassGain = c.createGain();
+        bassOsc.type = "sine";
+        bassOsc.frequency.setValueAtTime(bar.bass, now);
+        bassGain.gain.setValueAtTime(0.001, now);
+        bassGain.gain.linearRampToValueAtTime(0.045, now + 0.18);
+        bassGain.gain.exponentialRampToValueAtTime(0.001, now + 2.6);
+        bassOsc.connect(bassGain);
+        bassGain.connect(c.destination);
+        bassOsc.start(now);
+        bassOsc.stop(now + 2.65);
+      }
+
+      // Celestial harp/bell arpeggio note
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.type = "triangle";
+      osc.frequency.setValueAtTime(freq, now);
+      gain.gain.setValueAtTime(0.001, now);
+      gain.gain.exponentialRampToValueAtTime(0.032, now + 0.03);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.62);
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.start(now);
+      osc.stop(now + 0.65);
+
+      this.bgmStep += 1;
+    };
+
+    tickStep();
+    this.bgmTimer = setInterval(tickStep, stepMs);
+  }
+
+  stopBGM() {
+    this.bgmPlaying = false;
+    if (this.bgmTimer) {
+      clearInterval(this.bgmTimer);
+      this.bgmTimer = null;
+    }
+  }
+
+  // UI Button Click / Enter Game Chime
+  playEnterGame() {
+    const ctx = this.getContext();
+    if (!ctx) return;
+    this.startBGM();
+    const now = ctx.currentTime;
+    [440.0, 554.37, 659.25, 880.0].forEach((f, idx) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = "triangle";
+      osc.frequency.setValueAtTime(f, now + idx * 0.06);
+      gain.gain.setValueAtTime(0.001, now + idx * 0.06);
+      gain.gain.exponentialRampToValueAtTime(0.22, now + idx * 0.06 + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.06 + 0.45);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(now + idx * 0.06);
+      osc.stop(now + idx * 0.06 + 0.48);
+    });
   }
 
   // Team A Buzzer (Key F): Bright Golden Starry Chime (C5 - E5 - G5 - C6)
