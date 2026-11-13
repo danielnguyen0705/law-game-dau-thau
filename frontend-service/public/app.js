@@ -13,8 +13,9 @@ const DEFAULT_SETTINGS = {
   teamAKey: 'F',
   teamBKey: 'J',
   questionCount: 10,
+  defaultAnswerMode: 'VOICE', // 'VOICE' (cố định 30s) | 'TEXT' (tùy chỉnh, mặc định 120s)
   voiceTimeLimit: 30,
-  textTimeLimit: 120, // 0 = Không giới hạn
+  textTimeLimit: 120, // Mặc định 120s khi chọn nhập văn bản (0 = Không giới hạn)
   soundEnabled: true,
   difficultyFilter: 'ALL'
 };
@@ -232,31 +233,37 @@ function startAnsweringTimer(seconds) {
   }, 1000);
 }
 
+function getActiveModeTimeLimit(mode) {
+  const m = mode || state.settings.defaultAnswerMode || 'VOICE';
+  if (m === 'VOICE') return 30;
+  return state.settings.textTimeLimit !== undefined ? Number(state.settings.textTimeLimit) : 120;
+}
+
 function renderTimerMarkup() {
-  const isUnlimited = state.phase === 'ANSWERING' && state.answerMode === 'TEXT' && state.settings.textTimeLimit === 0;
+  const isUnlimited = state.phase === 'ANSWERING' && state.answerMode === 'TEXT' && Number(state.settings.textTimeLimit) === 0;
   const isCritical = !isUnlimited && state.timeLeft <= 5 && state.timeLeft > 0 && (state.phase === 'ANSWERING' || state.phase === 'BUZZER_OPEN');
   const pct = isUnlimited ? 100 : Math.max(0, Math.min(100, Math.round((state.timeLeft / Math.max(1, state.totalTime)) * 100)));
-  const radius = 24;
+  const radius = 36;
   const circumference = 2 * Math.PI * radius;
   const dashOffset = circumference - (pct / 100) * circumference;
   const phaseLabel = state.phase === 'BUZZER_OPEN'
     ? '⏳ Đếm ngược bấm chuông'
     : state.phase === 'ANSWERING'
-      ? (state.answerMode === 'VOICE' ? '🎙️ Đếm ngược trả lời (Voice)' : '⌨️ Đếm ngược trả lời (Phím)')
+      ? (state.answerMode === 'VOICE' ? '🎙️ Trả lời Voice (30s)' : `⌨️ Nhập văn bản (${isUnlimited ? '∞' : state.totalTime + 's'})`)
       : '⏱️ Đồng hồ trận đấu';
 
   return `
     <div class="countdown-widget ${isCritical ? 'timer-critical' : ''}">
       <div class="countdown-ring-wrap">
-        <svg class="countdown-svg" width="60" height="60" viewBox="0 0 60 60">
-          <circle class="countdown-track" cx="30" cy="30" r="${radius}" fill="none" stroke-width="5"></circle>
+        <svg class="countdown-svg" width="88" height="88" viewBox="0 0 88 88">
+          <circle class="countdown-track" cx="44" cy="44" r="${radius}" fill="none" stroke-width="6"></circle>
           <circle
             class="countdown-progress"
-            cx="30"
-            cy="30"
+            cx="44"
+            cy="44"
             r="${radius}"
             fill="none"
-            stroke-width="5"
+            stroke-width="6"
             stroke-dasharray="${circumference.toFixed(1)}"
             stroke-dashoffset="${dashOffset.toFixed(1)}"
           ></circle>
@@ -265,11 +272,9 @@ function renderTimerMarkup() {
           ${isUnlimited ? '∞' : `${state.timeLeft}s`}
         </div>
       </div>
-      <div class="countdown-meta">
-        <div class="countdown-phase-label">${phaseLabel}</div>
-        <div class="countdown-bar-outer">
-          <div class="countdown-bar-inner" style="width:${pct}%"></div>
-        </div>
+      <div class="countdown-phase-label">${phaseLabel}</div>
+      <div class="countdown-bar-outer">
+        <div class="countdown-bar-inner" style="width:${pct}%"></div>
       </div>
     </div>
   `;
@@ -279,15 +284,6 @@ function updateTimerDOM() {
   const timerEl = document.getElementById('live-timer-box');
   if (timerEl) {
     timerEl.innerHTML = renderTimerMarkup();
-  }
-  const inlineTimerEl = document.getElementById('inline-stage-timer');
-  if (inlineTimerEl) {
-    const isUnlimited = state.phase === 'ANSWERING' && state.answerMode === 'TEXT' && state.settings.textTimeLimit === 0;
-    const isCritical = !isUnlimited && state.timeLeft <= 5 && state.timeLeft > 0;
-    inlineTimerEl.className = `inline-stage-timer ${isCritical ? 'timer-critical' : ''}`;
-    inlineTimerEl.innerHTML = isUnlimited
-      ? `⏱️ Thời gian: <strong>∞ Không giới hạn</strong>`
-      : `⏱️ Đồng hồ đếm ngược: <strong>${state.timeLeft} giây</strong>`;
   }
 }
 
@@ -351,7 +347,7 @@ async function startMatch() {
   transitionTimeout = setTimeout(() => {
     state.phase = 'BUZZER_OPEN';
     render();
-    startAnsweringTimer(state.settings.voiceTimeLimit || 30);
+    startAnsweringTimer(30);
   }, 1300);
 }
 
@@ -365,21 +361,22 @@ function triggerBuzzer(team) {
     soundFX.playBuzzerB();
   }
 
+  const chosenMode = state.settings.defaultAnswerMode === 'TEXT' ? 'TEXT' : 'VOICE';
   state.buzzedTeam = team;
   state.phase = 'ANSWERING';
   state.answerText = '';
   state.interimTranscript = '';
   state.voiceError = '';
-  state.answerMode = 'VOICE';
+  state.answerMode = chosenMode;
   render();
-  startAnsweringTimer(state.settings.voiceTimeLimit);
+  startAnsweringTimer(getActiveModeTimeLimit(chosenMode));
 }
 
 function switchAnswerMode(mode) {
   stopVoiceRecognition();
   state.answerMode = mode;
   state.voiceError = '';
-  const limit = mode === 'VOICE' ? state.settings.voiceTimeLimit : state.settings.textTimeLimit;
+  const limit = getActiveModeTimeLimit(mode);
   render();
   startAnsweringTimer(limit);
 }
@@ -736,10 +733,11 @@ function renderLandingHTML() {
           </div>
 
           <div class="quick-option">
-            <span>Thời gian:</span>
-            <span class="config-summary-pill">
-              🎙️ Voice: <strong>${s.voiceTimeLimit}s</strong> • ⌨️ Phím: <strong>${s.textTimeLimit === 0 ? 'Không giới hạn' : `${s.textTimeLimit}s`}</strong>
-            </span>
+            <span>Hình thức trả lời:</span>
+            <div class="segmented-control">
+              <button type="button" class="seg-btn ${(s.defaultAnswerMode || 'VOICE') === 'VOICE' ? 'seg-active' : ''}" data-ansmode="VOICE">🎙️ Voice (Mặc định 30s)</button>
+              <button type="button" class="seg-btn ${s.defaultAnswerMode === 'TEXT' ? 'seg-active' : ''}" data-ansmode="TEXT">⌨️ Nhập văn bản (${s.textTimeLimit === 0 ? '∞' : `${s.textTimeLimit || 120}s`})</button>
+            </div>
           </div>
         </div>
 
@@ -790,10 +788,10 @@ function renderAnsweringBoxHTML() {
 
         <div class="mode-switcher">
           <button type="button" class="mode-btn ${state.answerMode === 'VOICE' ? 'mode-active' : ''}" id="btn-mode-voice">
-            🎙️ Giọng nói (${s.voiceTimeLimit}s)
+            🎙️ Giọng nói (30s)
           </button>
           <button type="button" class="mode-btn ${state.answerMode === 'TEXT' ? 'mode-active' : ''}" id="btn-mode-text">
-            ⌨️ Bàn phím (${s.textTimeLimit === 0 ? '∞' : `${s.textTimeLimit}s`})
+            ⌨️ Nhập văn bản (${s.textTimeLimit === 0 ? '∞' : `${s.textTimeLimit || 120}s`})
           </button>
         </div>
       </div>
@@ -852,13 +850,6 @@ function renderArenaHTML() {
           <div id="live-timer-box" class="timer-box">
             ${renderTimerMarkup()}
           </div>
-          <div class="arena-status-pill">
-            ${state.phase === 'BUZZER_OPEN' ? '⚡ Nhấn phím F (Đội A) hoặc J (Đội B) giành quyền!' : ''}
-            ${state.phase === 'ANSWERING' ? '🎙️ Đang trong thời gian trả lời' : ''}
-            ${state.phase === 'TRANSITION' ? '🌀 Đang chuyển chặng...' : ''}
-            ${state.phase === 'GRADING' ? '🤖 AI đang chấm IRAC...' : ''}
-            ${state.phase === 'ROUND_RESULT' ? '📊 Kết quả đối chiếu IRAC' : ''}
-          </div>
           <button type="button" class="btn-quit-match" id="btn-quit-match">✕ Kết thúc sớm</button>
         </div>
 
@@ -886,11 +877,6 @@ function renderArenaHTML() {
         <section class="question-arena-card">
           <div class="question-card-header">
             <span class="q-number-badge">Câu số ${currentQuestion.questionNumber} (Bộ đề gốc)</span>
-            <div id="inline-stage-timer" class="inline-stage-timer ${state.timeLeft <= 5 && state.timeLeft > 0 ? 'timer-critical' : ''}">
-              ${state.phase === 'ANSWERING' && state.answerMode === 'TEXT' && s.textTimeLimit === 0
-                ? '⏱️ Thời gian: <strong>∞ Không giới hạn</strong>'
-                : `⏱️ Đồng hồ đếm ngược: <strong>${state.timeLeft} giây</strong>`}
-            </div>
             <span class="q-diff-badge diff-${currentQuestion.difficulty.toLowerCase()}">
               ${escapeHtml(currentQuestion.difficultyLabel)} • ${currentQuestion.points} điểm
             </span>
@@ -1106,23 +1092,50 @@ function renderSettingsModalHTML() {
           </div>
 
           <div class="settings-row">
-            <label>Thời gian trả lời bằng Giọng nói (Voice)</label>
-            <select id="select-voice-time">
-              <option value="20" ${s.voiceTimeLimit === 20 ? 'selected' : ''}>20 giây</option>
-              <option value="30" ${s.voiceTimeLimit === 30 ? 'selected' : ''}>30 giây (Mặc định)</option>
-              <option value="45" ${s.voiceTimeLimit === 45 ? 'selected' : ''}>45 giây</option>
-              <option value="60" ${s.voiceTimeLimit === 60 ? 'selected' : ''}>60 giây</option>
-            </select>
+            <label>Hình thức trả lời khi bấm chuông</label>
+            <div class="segmented-control">
+              <button type="button" class="seg-btn ${(s.defaultAnswerMode || 'VOICE') === 'VOICE' ? 'seg-active' : ''}" id="btn-setting-mode-voice">
+                🎙️ Giọng nói (Voice)
+              </button>
+              <button type="button" class="seg-btn ${s.defaultAnswerMode === 'TEXT' ? 'seg-active' : ''}" id="btn-setting-mode-text">
+                ⌨️ Nhập văn bản
+              </button>
+            </div>
           </div>
 
-          <div class="settings-row">
-            <label>Thời gian nhập từ Bàn phím (Dự phòng)</label>
-            <select id="select-text-time">
-              <option value="60" ${s.textTimeLimit === 60 ? 'selected' : ''}>60 giây (1 phút)</option>
-              <option value="120" ${s.textTimeLimit === 120 ? 'selected' : ''}>120 giây (2 phút - Mặc định)</option>
-              <option value="0" ${s.textTimeLimit === 0 ? 'selected' : ''}>Không giới hạn thời gian (∞)</option>
-            </select>
-          </div>
+          ${(s.defaultAnswerMode || 'VOICE') === 'VOICE' ? `
+            <div class="settings-row">
+              <label>Thời gian trả lời Giọng nói (Voice)</label>
+              <span class="config-summary-pill">🎙️ Mặc định cố định: <strong>30 giây (30s)</strong></span>
+            </div>
+          ` : `
+            <div class="settings-row">
+              <label>Thời gian Nhập văn bản (Mặc định: 120s)</label>
+              <div class="text-time-customizer">
+                <select id="select-text-time">
+                  <option value="60" ${Number(s.textTimeLimit) === 60 ? 'selected' : ''}>60 giây (1 phút)</option>
+                  <option value="90" ${Number(s.textTimeLimit) === 90 ? 'selected' : ''}>90 giây (1.5 phút)</option>
+                  <option value="120" ${Number(s.textTimeLimit) === 120 ? 'selected' : ''}>120 giây (2 phút - Mặc định)</option>
+                  <option value="180" ${Number(s.textTimeLimit) === 180 ? 'selected' : ''}>180 giây (3 phút)</option>
+                  <option value="240" ${Number(s.textTimeLimit) === 240 ? 'selected' : ''}>240 giây (4 phút)</option>
+                  <option value="0" ${Number(s.textTimeLimit) === 0 ? 'selected' : ''}>Không giới hạn thời gian (∞)</option>
+                </select>
+                <div class="custom-seconds-wrap" title="Hoặc tự nhập số giây tùy ý (0 = Không giới hạn)">
+                  <input
+                    type="number"
+                    id="input-custom-text-seconds"
+                    class="key-input"
+                    style="width:82px"
+                    min="0"
+                    max="600"
+                    step="5"
+                    value="${Number(s.textTimeLimit ?? 120)}"
+                  />
+                  <small>giây</small>
+                </div>
+              </div>
+            </div>
+          `}
 
           <div class="settings-row">
             <label>Hiệu ứng âm thanh (Web Audio Synthesizer)</label>
@@ -1294,6 +1307,22 @@ function bindEvents() {
       });
     });
 
+    document.querySelectorAll('[data-ansmode]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mode = btn.getAttribute('data-ansmode');
+        state.settings.defaultAnswerMode = mode;
+        state.settings.voiceTimeLimit = 30;
+        if (mode === 'TEXT' && state.settings.textTimeLimit === undefined) {
+          state.settings.textTimeLimit = 120;
+        }
+        saveSettings();
+        if (mode === 'TEXT') {
+          state.showSettingsModal = true;
+        }
+        render();
+      });
+    });
+
     document.getElementById('btn-start-match')?.addEventListener('click', startMatch);
   }
 
@@ -1347,12 +1376,29 @@ function bindEvents() {
       state.settings.teamBKey = (e.target.value || 'J').toUpperCase();
       saveSettings();
     });
-    document.getElementById('select-voice-time')?.addEventListener('change', (e) => {
-      state.settings.voiceTimeLimit = Number(e.target.value);
+    document.getElementById('btn-setting-mode-voice')?.addEventListener('click', () => {
+      state.settings.defaultAnswerMode = 'VOICE';
+      state.settings.voiceTimeLimit = 30;
       saveSettings();
+      render();
+    });
+    document.getElementById('btn-setting-mode-text')?.addEventListener('click', () => {
+      state.settings.defaultAnswerMode = 'TEXT';
+      if (state.settings.textTimeLimit === undefined) {
+        state.settings.textTimeLimit = 120;
+      }
+      saveSettings();
+      render();
     });
     document.getElementById('select-text-time')?.addEventListener('change', (e) => {
       state.settings.textTimeLimit = Number(e.target.value);
+      saveSettings();
+      const customInp = document.getElementById('input-custom-text-seconds');
+      if (customInp) customInp.value = String(state.settings.textTimeLimit);
+    });
+    document.getElementById('input-custom-text-seconds')?.addEventListener('input', (e) => {
+      const val = Math.max(0, Math.min(600, Number(e.target.value) || 0));
+      state.settings.textTimeLimit = val;
       saveSettings();
     });
     document.getElementById('check-sound')?.addEventListener('change', (e) => {
