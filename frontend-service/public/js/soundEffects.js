@@ -39,9 +39,13 @@ class SoundEffectsManager {
   getContext() {
     if (!this.enabled) return null;
     if (!this.ctx && typeof window !== 'undefined') {
-      const AudioCtx = window.AudioContext || window.webkitAudioContext;
-      if (AudioCtx) {
-        this.ctx = new AudioCtx();
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (AudioCtx) {
+          this.ctx = new AudioCtx();
+        }
+      } catch {
+        return null;
       }
     }
     if (this.ctx && this.ctx.state === 'suspended') {

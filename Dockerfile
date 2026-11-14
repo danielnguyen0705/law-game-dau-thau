@@ -14,3 +14,4 @@ ENV SERVICE_DIR=frontend-service
 ENV PORT=3000
 
 CMD ["sh", "-c", "python /app/${SERVICE_DIR}/main.py"]
+

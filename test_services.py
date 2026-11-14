@@ -190,7 +190,7 @@ def test_frontend_service_and_olympia_v9_features():
     assert "--bg-deep: #0B132B" in css_text
     assert "--star-yellow: #F4D35E" in css_text
     assert ".gameshow-led-strip" in css_text
-    assert ".olympia-victory-card" in css_text
+    assert ".olympia-victory-stage" in css_text
     assert "100dvh" in css_text
 
 

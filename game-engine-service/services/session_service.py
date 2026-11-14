@@ -177,3 +177,4 @@ def advance_to_next_question(session_id: str) -> Dict[str, Any]:
     else:
         session["status"] = "completed"
     return session
+

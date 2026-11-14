@@ -82,3 +82,4 @@ async def submit_answer(session_id: str, req: SubmitAnswerRequest):
 @router.post("/api/game/{session_id}/next")
 def next_question(session_id: str):
     return advance_to_next_question(session_id)
+

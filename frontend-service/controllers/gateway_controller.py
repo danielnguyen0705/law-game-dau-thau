@@ -3,11 +3,21 @@ Controller Layer (API Gateway Proxy Routes) for Frontend Service
 """
 import httpx
 from fastapi import APIRouter, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, RedirectResponse
 
 from config import AI_GRADING_URL, GAME_ENGINE_URL
 
 router = APIRouter()
+
+
+@router.get("/app.js")
+def legacy_app_js():
+    return RedirectResponse(url="/js/app.js?v=9.1")
+
+
+@router.get("/styles.css")
+def legacy_styles_css():
+    return RedirectResponse(url="/css/styles.css?v=9.1")
 
 
 @router.get("/health")
@@ -63,3 +73,4 @@ async def proxy_history(path: str, request: Request):
         else:
             resp = await client.post(url)
         return JSONResponse(status_code=resp.status_code, content=resp.json())
+

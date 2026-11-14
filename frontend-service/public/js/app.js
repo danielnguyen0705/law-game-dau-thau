@@ -119,7 +119,8 @@ const state = {
   askedHistory: (() => {
     try {
       const saved = localStorage.getItem(HISTORY_STORAGE_KEY);
-      return saved ? JSON.parse(saved) : [];
+      const parsed = saved ? JSON.parse(saved) : [];
+      return Array.isArray(parsed) ? parsed : [];
     } catch {
       return [];
     }

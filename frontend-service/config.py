@@ -11,3 +11,4 @@ DATA_DIR = ROOT_DIR / "data" if (ROOT_DIR / "data").exists() else PUBLIC_DIR / "
 AI_GRADING_URL = os.environ.get("AI_GRADING_URL", "http://localhost:4002")
 GAME_ENGINE_URL = os.environ.get("GAME_ENGINE_URL", "http://localhost:4001")
 PORT = int(os.environ.get("PORT", 3000))
+

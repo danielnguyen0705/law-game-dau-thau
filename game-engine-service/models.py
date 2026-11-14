@@ -74,3 +74,4 @@ def save_asked_history(asked_ids: List[int]) -> None:
             ensure_ascii=False,
             indent=2,
         )
+
