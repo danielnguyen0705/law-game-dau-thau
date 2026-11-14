@@ -1,0 +1,25 @@
+{
+  "id": 98,
+  "file": "q098.json",
+  "questionNumber": 98,
+  "question_number": "Câu 98",
+  "question": "Đơn vị mua sắm tập trung tổ chức lựa chọn nhà thầu dựa trên những căn cứ giao nhiệm vụ hoặc thỏa thuận nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Mua sắm tập trung",
+  "irac": {
+    "issue": "Xác định căn cứ giao nhiệm vụ hoặc thỏa thuận để đơn vị mua sắm tập trung tổ chức lựa chọn nhà thầu.",
+    "rule": "Khoản 6 Điều 53 Luật Đấu thầu số 22/2023/QH15; Khoản 1 Điều 89 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 6 Điều 53 Luật Đấu thầu số 22/2023/QH15 và Khoản 1 Điều 89 Nghị định số 214/2025/NĐ-CP, đơn vị mua sắm tập trung thực hiện việc lựa chọn nhà thầu trên cơ sở một trong hai căn cứ pháp lý sau: (1) Nhiệm vụ được người có thẩm quyền giao (quyết định/văn bản giao nhiệm vụ mua sắm tập trung của cơ quan có thẩm quyền); hoặc (2) Hợp đồng ký với các đơn vị có nhu cầu mua sắm (trong trường hợp các đơn vị có nhu cầu thuê đơn vị mua sắm tập trung thực hiện).",
+    "conclusion": "Đơn vị mua sắm tập trung tổ chức lựa chọn nhà thầu trên cơ sở nhiệm vụ được giao hoặc hợp đồng ký với các đơn vị có nhu cầu mua sắm (Khoản 6 Điều 53 Luật Đấu thầu)."
+  },
+  "keywords": [
+    "Khoản 6 Điều 53",
+    "Khoản 1 Điều 89 Nghị định 214/2025/NĐ-CP",
+    "đơn vị mua sắm tập trung",
+    "nhiệm vụ được giao",
+    "hợp đồng ký với các đơn vị có nhu cầu"
+  ]
+}

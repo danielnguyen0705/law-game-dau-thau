@@ -1,0 +1,25 @@
+{
+  "id": 168,
+  "file": "q168.json",
+  "questionNumber": 168,
+  "question_number": "Câu 168",
+  "question": "Đối với gói thầu mua sắm hàng hóa, xây lắp, phi tư vấn, hỗn hợp, phương pháp giá đánh giá được áp dụng cho các hình thức lựa chọn nhà thầu nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Phương pháp đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định các hình thức lựa chọn nhà thầu được áp dụng phương pháp giá đánh giá đối với gói thầu mua sắm hàng hóa, xây lắp, phi tư vấn, hỗn hợp.",
+    "rule": "Điểm a Khoản 2 Điều 58 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Điểm a Khoản 2 Điều 58 Luật Đấu thầu số 22/2023/QH15, phương pháp giá đánh giá được áp dụng đối với gói thầu mà các chi phí quy đổi được trên cùng một mặt bằng về các yếu tố kỹ thuật, tài chính, thương mại cho cả vòng đời sử dụng của hàng hóa, công trình, dịch vụ phi tư vấn áp dụng hình thức đấu thầu rộng rãi, đấu thầu hạn chế hoặc chào hàng cạnh tranh.",
+    "conclusion": "Phương pháp giá đánh giá được áp dụng cho các hình thức: đấu thầu rộng rãi, đấu thầu hạn chế hoặc chào hàng cạnh tranh."
+  },
+  "keywords": [
+    "Khoản 2 Điều 58",
+    "phương pháp giá đánh giá",
+    "đấu thầu rộng rãi",
+    "đấu thầu hạn chế",
+    "chào hàng cạnh tranh"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": 105,
+  "file": "q105.json",
+  "questionNumber": 105,
+  "question_number": "Câu 105",
+  "question": "Danh sách phê duyệt nhà thầu trúng thầu trong mua sắm tập trung căn cứ khối lượng mời thầu gồm những thông tin gì?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Mua sắm tập trung",
+  "irac": {
+    "issue": "Xác định các thông tin bắt buộc trong danh sách phê duyệt nhà thầu trúng thầu đối với mua sắm tập trung căn cứ theo khối lượng mời thầu.",
+    "rule": "Khoản 3 Điều 33 và Khoản 1 Điều 91 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 1 Điều 91 Nghị định số 214/2025/NĐ-CP, đối với mua sắm tập trung áp dụng lựa chọn nhà thầu căn cứ theo khối lượng mời thầu (nhiều nhà thầu trúng thầu hoặc có danh sách nhà thầu trúng thầu để các đơn vị lựa chọn/phân bổ khối lượng), danh sách phê duyệt nhà thầu trúng thầu bao gồm các thông tin chủ yếu: (1) Tên các nhà thầu trúng thầu và thứ tự xếp hạng của từng nhà thầu; (2) Danh mục hàng hóa, dịch vụ trúng thầu (tên hàng hóa, ký mã hiệu, nhãn hiệu, hãng sản xuất, xuất xứ, thông số kỹ thuật); (3) Số lượng, khối lượng hàng hóa, dịch vụ trúng thầu được phân bổ cho từng nhà thầu (bao gồm nhà thầu xếp hạng thứ nhất và nhà thầu xếp hạng tiếp theo theo tỷ lệ quy định trong HSMT); (4) Đơn giá trúng thầu và tổng giá trúng thầu của từng nhà thầu; (5) Loại hợp đồng, thời hạn có hiệu lực của thỏa thuận khung và thời gian thực hiện hợp đồng.",
+    "conclusion": "Danh sách phê duyệt nhà thầu trúng thầu trong mua sắm tập trung căn cứ khối lượng mời thầu gồm: Tên và thứ tự xếp hạng của các nhà thầu trúng thầu; danh mục, thông số kỹ thuật, xuất xứ hàng hóa; khối lượng phân bổ cho từng nhà thầu; đơn giá và giá trúng thầu của từng nhà thầu; loại hợp đồng, thời hạn áp dụng thỏa thuận khung và thời gian thực hiện."
+  },
+  "keywords": [
+    "Khoản 1 Điều 91 Nghị định 214/2025/NĐ-CP",
+    "danh sách phê duyệt nhà thầu trúng thầu",
+    "mua sắm tập trung",
+    "căn cứ khối lượng mời thầu",
+    "thứ tự xếp hạng",
+    "khối lượng phân bổ",
+    "đơn giá trúng thầu"
+  ]
+}

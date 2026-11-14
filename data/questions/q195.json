@@ -1,0 +1,26 @@
+{
+  "id": 195,
+  "file": "q195.json",
+  "questionNumber": 195,
+  "question_number": "Câu 195",
+  "question": "Sau khi phê duyệt kết quả lựa chọn nhà thầu, chủ đầu tư phải công khai, thông báo kết quả và giải thích lý do không trúng thầu theo trình tự, thời hạn nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Công khai kết quả lựa chọn nhà thầu",
+  "irac": {
+    "issue": "Trình bày trình tự, thời hạn công khai, thông báo kết quả lựa chọn nhà thầu và giải thích lý do không trúng thầu sau khi phê duyệt kết quả lựa chọn nhà thầu.",
+    "rule": "Điểm a Khoản 1 Điều 8 và Khoản 4 Điều 43 Luật Đấu thầu số 22/2023/QH15; Khoản 4 Điều 10 và Khoản 5 Điều 33 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 4 Điều 10 và Khoản 5 Điều 33 Nghị định số 214/2025/NĐ-CP: (1) Trong thời hạn 05 ngày làm việc kể từ ngày phê duyệt kết quả lựa chọn nhà thầu, chủ đầu tư phải đăng tải kết quả lựa chọn nhà thầu trên Hệ thống mạng đấu thầu quốc gia và gửi văn bản thông báo kết quả lựa chọn nhà thầu cho các nhà thầu tham dự thầu (nêu rõ thông tin nhà thầu trúng thầu, giá trúng thầu, loại hợp đồng, thời gian thực hiện và danh sách nhà thầu không được lựa chọn kèm tóm tắt lý do không được lựa chọn); (2) Trường hợp nhà thầu không trúng thầu có văn bản yêu cầu giải thích lý do cụ thể không trúng thầu thì chủ đầu tư phải trả lời trong thời hạn 02 ngày làm việc kể từ ngày nhận được yêu cầu.",
+    "conclusion": "Chủ đầu tư phải đăng tải và gửi thông báo kết quả lựa chọn nhà thầu trong vòng 05 ngày làm việc kể từ ngày phê duyệt, và phải trả lời giải thích lý do cụ thể không trúng thầu trong vòng 02 ngày làm việc kể từ khi nhận được yêu cầu của nhà thầu."
+  },
+  "keywords": [
+    "05 ngày làm việc",
+    "02 ngày làm việc",
+    "Khoản 5 Điều 33",
+    "Nghị định 214/2025/NĐ-CP",
+    "thông báo kết quả lựa chọn nhà thầu",
+    "giải thích lý do không trúng thầu"
+  ]
+}

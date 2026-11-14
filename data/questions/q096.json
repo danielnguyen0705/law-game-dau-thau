@@ -1,0 +1,25 @@
+{
+  "id": 96,
+  "file": "q096.json",
+  "questionNumber": 96,
+  "question_number": "Câu 96",
+  "question": "Bộ trưởng Bộ Y tế có thẩm quyền ban hành những danh mục hàng hóa, dịch vụ mua sắm tập trung nào? Nêu phạm vi của từng danh mục.",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Mua sắm tập trung",
+  "irac": {
+    "issue": "Xác định thẩm quyền ban hành các danh mục hàng hóa, dịch vụ mua sắm tập trung của Bộ trưởng Bộ Y tế và phạm vi áp dụng của từng danh mục.",
+    "rule": "Điểm a, Điểm b Khoản 2 Điều 53 Luật Đấu thầu số 22/2023/QH15; Điều 95 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 2 Điều 53 Luật Đấu thầu số 22/2023/QH15, Bộ trưởng Bộ Y tế có thẩm quyền ban hành 02 nhóm danh mục mua sắm tập trung với phạm vi áp dụng tương ứng như sau: (1) Theo Điểm a Khoản 2 Điều 53: Bộ trưởng Bộ Y tế ban hành Danh mục mua sắm tập trung cấp quốc gia đối với thuốc; danh mục mua sắm tập trung cấp quốc gia đối với thiết bị y tế, vật tư xét nghiệm trong trường hợp cần thiết -> Phạm vi áp dụng: áp dụng thống nhất trên phạm vi toàn quốc cho các bộ, ngành, địa phương và cơ sở y tế công lập; (2) Theo Điểm b Khoản 2 Điều 53: Với tư cách là Bộ trưởng quản lý ngành, Bộ trưởng Bộ Y tế còn có thẩm quyền ban hành Danh mục hàng hóa, dịch vụ mua sắm tập trung cấp bộ (bao gồm thuốc, thiết bị y tế, vật tư xét nghiệm và hàng hóa, dịch vụ khác không thuộc danh mục cấp quốc gia) -> Phạm vi áp dụng: áp dụng cho các cơ quan, tổ chức, đơn vị thuộc phạm vi quản lý của Bộ Y tế.",
+    "conclusion": "Bộ trưởng Bộ Y tế có thẩm quyền ban hành: (1) Danh mục mua sắm tập trung cấp quốc gia đối với thuốc, và đối với thiết bị y tế, vật tư xét nghiệm trong trường hợp cần thiết (phạm vi áp dụng trên toàn quốc); (2) Danh mục mua sắm tập trung cấp bộ đối với hàng hóa, dịch vụ, thuốc, thiết bị y tế, vật tư xét nghiệm thuộc phạm vi quản lý của Bộ Y tế (phạm vi áp dụng cho các đơn vị trực thuộc Bộ Y tế)."
+  },
+  "keywords": [
+    "Khoản 2 Điều 53",
+    "Bộ trưởng Bộ Y tế",
+    "danh mục mua sắm tập trung cấp quốc gia",
+    "thuốc thiết bị y tế vật tư xét nghiệm",
+    "danh mục mua sắm tập trung cấp bộ"
+  ]
+}

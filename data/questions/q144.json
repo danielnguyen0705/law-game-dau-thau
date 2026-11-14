@@ -1,0 +1,24 @@
+{
+  "id": 144,
+  "file": "q144.json",
+  "questionNumber": 144,
+  "question_number": "Câu 144",
+  "question": "Đơn vị nào có trách nhiệm tiếp nhận và quản lý chi phí do nhà thầu có kiến nghị nộp?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Xác định đơn vị có trách nhiệm tiếp nhận và quản lý chi phí do nhà thầu có kiến nghị nộp.",
+    "rule": "Điểm c Khoản 2 Điều 93 Luật Đấu thầu số 22/2023/QH15; Điểm c Khoản 2 Điều 139 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm c Khoản 2 Điều 93 Luật Đấu thầu số 22/2023/QH15 và Điểm c Khoản 2 Điều 139 Nghị định số 214/2025/NĐ-CP, Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị có trách nhiệm tiếp nhận và quản lý chi phí do nhà thầu có kiến nghị nộp.",
+    "conclusion": "Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị có trách nhiệm tiếp nhận và quản lý chi phí do nhà thầu có kiến nghị nộp."
+  },
+  "keywords": [
+    "Điểm c Khoản 2 Điều 93",
+    "Điểm c Khoản 2 Điều 139",
+    "bộ phận thường trực",
+    "tiếp nhận và quản lý chi phí"
+  ]
+}

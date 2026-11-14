@@ -1,0 +1,23 @@
+{
+  "id": 178,
+  "file": "q178.json",
+  "questionNumber": 178,
+  "question_number": "Câu 178",
+  "question": "Loại hợp đồng nào được áp dụng khi tại thời điểm lựa chọn nhà thầu chưa đủ cơ sở xác định phạm vi công việc, nhu cầu cần thiết về các yếu tố, chi phí đầu vào để thực hiện các công việc dự kiến của hợp đồng?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hợp đồng đấu thầu",
+  "irac": {
+    "issue": "Xác định loại hợp đồng được áp dụng khi tại thời điểm lựa chọn nhà thầu chưa đủ cơ sở xác định phạm vi công việc và nhu cầu chi phí đầu vào.",
+    "rule": "Khoản 5 Điều 64 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo Khoản 5 Điều 64 Luật Đấu thầu số 22/2023/QH15, hợp đồng theo chi phí cộng phí được áp dụng đối với công việc, dịch vụ mà tại thời điểm lựa chọn nhà thầu chưa đủ cơ sở xác định phạm vi công việc, nhu cầu cần thiết về các yếu tố, chi phí đầu vào để thực hiện các công việc dự kiến của hợp đồng.",
+    "conclusion": "Áp dụng loại hợp đồng theo chi phí cộng phí."
+  },
+  "keywords": [
+    "Khoản 5 Điều 64",
+    "hợp đồng theo chi phí cộng phí",
+    "chưa đủ cơ sở xác định phạm vi công việc"
+  ]
+}

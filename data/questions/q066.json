@@ -1,0 +1,25 @@
+{
+  "id": 66,
+  "file": "q066.json",
+  "questionNumber": 66,
+  "question_number": "Câu 66",
+  "question": "Kinh nghiệm thực hiện hợp đồng xây lắp tương tự gói thầu chỉ bao gồm 01 công trình độc lập được xét trên cơ sở nào?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Xác định cơ sở xét kinh nghiệm thực hiện hợp đồng xây lắp tương tự đối với gói thầu chỉ bao gồm 01 công trình độc lập.",
+    "rule": "Điểm a Khoản 5 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định về tiêu chuẩn đánh giá kinh nghiệm thực hiện hợp đồng xây lắp tương tự (Điểm a Khoản 5 Điều 26 Nghị định số 214/2025/NĐ-CP và Mẫu HSMT xây lắp), đối với gói thầu xây lắp chỉ bao gồm 01 công trình độc lập, hợp đồng xây lắp tương tự được xét trên cơ sở nhà thầu đã hoàn thành (hoặc hoàn thành phần lớn) tối thiểu 01 công trình có: (1) Tương tự về bản chất và độ phức tạp: có cùng loại và cấp công trình bằng hoặc cao hơn cấp công trình của gói thầu đang xét theo quy định của pháp luật về xây dựng; và (2) Tương tự về quy mô công việc: có giá trị công việc xây lắp bằng hoặc lớn hơn mức yêu cầu của HSMT (thông thường tối thiểu bằng 50% giá trị công việc xây lắp của gói thầu đang xét).",
+    "conclusion": "Kinh nghiệm thực hiện hợp đồng xây lắp tương tự của gói thầu chỉ gồm 01 công trình độc lập được xét trên cơ sở công trình có cùng loại, cấp công trình bằng hoặc cao hơn cấp công trình của gói thầu đang xét và có quy mô giá trị đáp ứng yêu cầu của HSMT (thường tối thiểu 50% giá trị công việc xây lắp của gói thầu)."
+  },
+  "keywords": [
+    "Điểm a Khoản 5 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "hợp đồng xây lắp tương tự",
+    "01 công trình độc lập",
+    "loại và cấp công trình",
+    "quy mô giá trị công việc xây lắp"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 64,
+  "file": "q064.json",
+  "questionNumber": 64,
+  "question_number": "Câu 64",
+  "question": "Đối với gói thầu xây lắp áp dụng hình thức đấu thầu rộng rãi trong nước (không áp dụng sơ tuyển), trường hợp tại thời điểm đóng thầu chỉ có 01 nhà thầu nộp hồ sơ dự thầu thì xử lý như thế nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Xử lý tình huống trong đấu thầu",
+  "irac": {
+    "issue": "Xác định cách xử lý tình huống khi tại thời điểm đóng thầu gói thầu xây lắp đấu thầu rộng rãi trong nước (không sơ tuyển) chỉ có 01 nhà thầu nộp hồ sơ dự thầu.",
+    "rule": "Khoản 5 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Khoản 5 Điều 140 Nghị định số 214/2025/NĐ-CP, trường hợp tại thời điểm đóng thầu đối với gói thầu áp dụng hình thức đấu thầu rộng rãi, đấu thầu hạn chế, chào hàng cạnh tranh, chào giá trực tuyến theo quy trình thông thường mà chỉ có 01 nhà thầu nộp hồ sơ dự thầu, chủ đầu tư xem xét, quyết định xử lý theo một trong hai cách sau đây: (a) Mở thầu ngay để tiến hành đánh giá hồ sơ dự thầu của nhà thầu đã nộp; hoặc (b) Gia hạn thời điểm đóng thầu để cho phép có thêm nhà thầu nộp HSDT, trong đó đối với gói thầu đấu thầu rộng rãi xây lắp thì thời gian gia hạn thêm tối thiểu là 10 ngày (nhà thầu đã nộp HSDT được quyền sửa đổi, bổ sung hoặc thay thế HSDT đã nộp trong thời gian gia hạn).",
+    "conclusion": "Chủ đầu tư được quyền quyết định theo 01 trong 02 cách: (1) Mở thầu ngay để tiến hành đánh giá HSDT của nhà thầu duy nhất; hoặc (2) Gia hạn thời điểm đóng thầu tối thiểu là 10 ngày để thu hút thêm nhà thầu tham dự."
+  },
+  "keywords": [
+    "Khoản 5 Điều 140 Nghị định 214/2025/NĐ-CP",
+    "chỉ có 01 nhà thầu nộp HSDT",
+    "mở thầu ngay",
+    "gia hạn thời điểm đóng thầu",
+    "tối thiểu 10 ngày"
+  ]
+}

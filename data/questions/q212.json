@@ -1,0 +1,23 @@
+{
+  "id": 212,
+  "file": "q212.json",
+  "questionNumber": 212,
+  "question_number": "Câu 212",
+  "question": "Giá gói thầu được cập nhật trong thời hạn bao nhiêu ngày trước ngày mở thầu nếu cần thiết?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Kế hoạch lựa chọn nhà thầu & Giá gói thầu",
+  "irac": {
+    "issue": "Xác định thời hạn cập nhật giá gói thầu trước ngày mở thầu nếu cần thiết.",
+    "rule": "Điểm b Khoản 2 Điều 39 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo quy định tại Điểm b Khoản 2 Điều 39 Luật Đấu thầu số 22/2023/QH15, giá gói thầu được tính đúng, tính đủ toàn bộ chi phí để thực hiện gói thầu, kể cả chi phí dự phòng, phí, lệ phí và thuế. Giá gói thầu được cập nhật trong thời hạn 28 ngày trước ngày mở thầu nếu cần thiết.",
+    "conclusion": "Giá gói thầu được cập nhật trong thời hạn 28 ngày trước ngày mở thầu nếu cần thiết."
+  },
+  "keywords": [
+    "Điểm b Khoản 2 Điều 39",
+    "cập nhật giá gói thầu",
+    "28 ngày trước ngày mở thầu"
+  ]
+}

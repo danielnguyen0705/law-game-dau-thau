@@ -1,0 +1,25 @@
+{
+  "id": 147,
+  "file": "q147.json",
+  "questionNumber": 147,
+  "question_number": "Câu 147",
+  "question": "Trường hợp hồ sơ dự thầu có giá dự thầu sau sửa lỗi, hiệu chỉnh sai lệch, trừ đi giá trị giảm giá (nếu có) thấp khác thường thì chủ đầu tư có thể quy định giá trị bảo đảm thực hiện hợp đồng tối đa là bao nhiêu để đề phòng rủi ro?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Xử lý tình huống trong đấu thầu",
+  "irac": {
+    "issue": "Xác định mức giá trị bảo đảm thực hiện hợp đồng tối đa khi HSDT có giá dự thầu sau sửa lỗi, hiệu chỉnh sai lệch, trừ giảm giá thấp khác thường.",
+    "rule": "Điểm b Khoản 11 và Khoản 17 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm b Khoản 11 và Khoản 17 Điều 140 Nghị định số 214/2025/NĐ-CP, khi giá dự thầu sau sửa lỗi, hiệu chỉnh sai lệch, trừ đi giá trị giảm giá thấp khác thường, để đề phòng rủi ro, chủ đầu tư có thể quy định giá trị bảo đảm thực hiện hợp đồng lớn hơn 10% nhưng không quá 30% giá hợp đồng.",
+    "conclusion": "Chủ đầu tư có thể quy định giá trị bảo đảm thực hiện hợp đồng tối đa là 30% giá hợp đồng (lớn hơn 10% nhưng không quá 30% giá hợp đồng)."
+  },
+  "keywords": [
+    "Khoản 11 Điều 140",
+    "Khoản 17 Điều 140",
+    "thấp khác thường",
+    "bảo đảm thực hiện hợp đồng",
+    "30% giá hợp đồng"
+  ]
+}

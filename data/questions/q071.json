@@ -1,0 +1,28 @@
+{
+  "id": 71,
+  "file": "q071.json",
+  "questionNumber": 71,
+  "question_number": "Câu 71",
+  "question": "Phân tích các trường hợp nhà thầu không đáp ứng yêu cầu bảo đảm cạnh tranh khi tham dự gói thầu đấu thầu rộng rãi.",
+  "difficulty": "HARD",
+  "difficultyLabel": "Khó",
+  "difficultyVi": "Khó",
+  "points": 50,
+  "topic": "Bảo đảm cạnh tranh & Tư cách hợp lệ",
+  "irac": {
+    "issue": "Phân tích các trường hợp nhà thầu bị đánh giá là không đáp ứng yêu cầu bảo đảm cạnh tranh khi tham dự gói thầu tổ chức đấu thầu rộng rãi.",
+    "rule": "Khoản 2, Khoản 3, Khoản 4 Điều 6 Luật Đấu thầu số 22/2023/QH15 (sửa đổi, bổ sung bởi Luật số 90/2025/QH15); Điều 4 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Điều 6 Luật Đấu thầu và Điều 4 Nghị định số 214/2025/NĐ-CP, khi tham dự một gói thầu tổ chức theo hình thức đấu thầu rộng rãi, nhà thầu sẽ bị đánh giá là không đáp ứng yêu cầu bảo đảm cạnh tranh nếu thuộc một trong các trường hợp vi phạm tính độc lập về pháp lý và tài chính sau đây: (1) Nhà thầu là đơn vị sự nghiệp công lập cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với chủ đầu tư (trừ trường hợp ĐVSNCL thuộc cơ quan quản lý nhà nước có chức năng, nhiệm vụ được giao phù hợp với tính chất gói thầu của cơ quan đó); (2) Nhà thầu và chủ đầu tư, bên mời thầu có cổ phần hoặc phần vốn góp trên 30% của nhau; (3) Nhà thầu không độc lập với các nhà thầu tư vấn cho gói thầu đó (tư vấn lập, thẩm tra thiết kế, FEED, báo cáo nghiên cứu khả thi, dự toán; thẩm định giá; lập, thẩm định HSMT; đánh giá HSDT; thẩm định kết quả lựa chọn nhà thầu; tư vấn quản lý dự án, giám sát, kiểm định): tức là giữa nhà thầu dự thầu và nhà thầu tư vấn có cổ phần hoặc phần vốn góp của nhau (dù chỉ trên 0%), hoặc cùng có từ trên 20% cổ phần, phần vốn góp của cùng một tổ chức, cá nhân khác với từng bên (trừ ngoại lệ tại Khoản 4a Điều 6 đối với công ty mẹ, công ty con trong tập đoàn, tổng công ty nhà nước có ngành nghề chính phù hợp); (4) Cá nhân thuộc nhà thầu dự thầu có quan hệ gia đình (cha mẹ, vợ chồng, con, anh chị em ruột) với người đại diện theo pháp luật của chủ đầu tư, bên mời thầu, người đứng đầu tổ chuyên gia, tổ thẩm định hoặc người ký phê duyệt HSMT, KQLCNT theo quy định tại Điều 4 Nghị định 214/2025/NĐ-CP. Lưu ý: Vì là đấu thầu rộng rãi nên không xét tỷ lệ góp vốn trên 20% giữa các nhà thầu cùng tham dự thầu với nhau.",
+    "conclusion": "Nhà thầu dự gói thầu đấu thầu rộng rãi không đáp ứng bảo đảm cạnh tranh khi: cùng cơ quan trực tiếp quản lý với chủ đầu tư (đối với ĐVSNCL không thuộc ngoại lệ); có cổ phần/vốn góp trên 30% với chủ đầu tư; có cổ phần/vốn góp của nhau hoặc cùng có trên 20% vốn góp của bên thứ ba với nhà thầu tư vấn gói thầu đó; hoặc vi phạm quy định về quan hệ gia đình với cá nhân có thẩm quyền của bên mời thầu/chủ đầu tư."
+  },
+  "keywords": [
+    "Điều 6",
+    "Điều 4 Nghị định 214/2025/NĐ-CP",
+    "không đáp ứng bảo đảm cạnh tranh",
+    "đấu thầu rộng rãi",
+    "trên 30%",
+    "nhà thầu tư vấn",
+    "trên 20% bên thứ ba",
+    "quan hệ gia đình"
+  ]
+}

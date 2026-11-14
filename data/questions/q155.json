@@ -1,0 +1,26 @@
+{
+  "id": 155,
+  "file": "q155.json",
+  "questionNumber": 155,
+  "question_number": "Câu 155",
+  "question": "Sau khi hủy thầu, chủ đầu tư phải thực hiện các công việc tiếp theo nào?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hủy thầu & Trách nhiệm các bên",
+  "irac": {
+    "issue": "Xác định các công việc tiếp theo chủ đầu tư phải thực hiện sau khi hủy thầu.",
+    "rule": "Khoản 3, Khoản 4 Điều 17 và Khoản 8, Khoản 10 Điều 78 Luật Đấu thầu số 22/2023/QH15; Khoản 4, Khoản 6 Điều 140 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điều 17, Điều 78 Luật Đấu thầu số 22/2023/QH15 và Khoản 4, Khoản 6 Điều 140 Nghị định số 214/2025/NĐ-CP, sau khi hủy thầu, chủ đầu tư phải: đăng tải quyết định hủy thầu kèm lý do trên Hệ thống mạng đấu thầu quốc gia; hoàn trả/giải tỏa bảo đảm dự thầu cho các nhà thầu (trừ nhà thầu vi phạm); lưu trữ hồ sơ quá trình lựa chọn nhà thầu; và rà soát, sửa đổi HSMT, kế hoạch lựa chọn nhà thầu (nếu cần) để tổ chức đấu thầu lại.",
+    "conclusion": "Chủ đầu tư phải đăng tải quyết định và lý do hủy thầu trên Hệ thống mạng đấu thầu quốc gia, giải tỏa bảo đảm dự thầu, lưu trữ hồ sơ và rà soát, chỉnh sửa HSMT/KHLCNT để tổ chức lựa chọn lại nhà thầu."
+  },
+  "keywords": [
+    "Điều 17",
+    "Điều 78",
+    "Khoản 6 Điều 140",
+    "hủy thầu",
+    "đăng tải lý do hủy thầu",
+    "tổ chức đấu thầu lại"
+  ]
+}

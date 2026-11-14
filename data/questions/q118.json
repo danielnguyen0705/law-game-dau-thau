@@ -1,0 +1,24 @@
+{
+  "id": 118,
+  "file": "q118.json",
+  "questionNumber": 118,
+  "question_number": "Câu 118",
+  "question": "Người có thẩm quyền ban hành quyết định cấm tham gia hoạt động đấu thầu với thời gian cấm bao lâu đối với trường hợp tổ chức, cá nhân có từ 02 hành vi vi phạm trở lên thuộc cùng phạm vi quản lý của người có thẩm quyền và các hành vi này chưa bị cấm tham gia hoạt động đấu thầu?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Quản lý nhà nước & Xử lý vi phạm",
+  "irac": {
+    "issue": "Xác định thời gian cấm tham gia hoạt động đấu thầu đối với tổ chức, cá nhân có từ 02 hành vi vi phạm trở lên thuộc cùng phạm vi quản lý của người có thẩm quyền và các hành vi này chưa bị cấm.",
+    "rule": "Khoản 2 Điều 133 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo quy định tại Khoản 2 Điều 133 Nghị định số 214/2025/NĐ-CP: Trường hợp tổ chức, cá nhân có từ 02 hành vi vi phạm trở lên thuộc cùng phạm vi quản lý của người có thẩm quyền và các hành vi này chưa bị cấm tham gia hoạt động đấu thầu thì người có thẩm quyền ban hành quyết định cấm tham gia hoạt động đấu thầu với thời gian cấm được xác định bằng tổng thời gian cấm của các hành vi vi phạm nhưng tối đa không quá 05 năm.",
+    "conclusion": "Thời gian cấm tham gia hoạt động đấu thầu được xác định bằng tổng thời gian cấm của các hành vi vi phạm nhưng tối đa không quá 05 năm (Khoản 2 Điều 133 Nghị định số 214/2025/NĐ-CP)."
+  },
+  "keywords": [
+    "Khoản 2 Điều 133 Nghị định 214/2025/NĐ-CP",
+    "từ 02 hành vi vi phạm trở lên",
+    "tổng thời gian cấm",
+    "tối đa không quá 05 năm"
+  ]
+}

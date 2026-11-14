@@ -1,0 +1,24 @@
+{
+  "id": 143,
+  "file": "q143.json",
+  "questionNumber": 143,
+  "question_number": "Câu 143",
+  "question": "Ông A là người đại diện hợp pháp của nhà thầu B ký đơn kiến nghị về kết quả lựa chọn nhà thầu. Trong trường hợp này, anh C là con đẻ của ông A có được tham gia là thành viên Hội đồng giải quyết kiến nghị hay không?",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Giải quyết kiến nghị",
+  "irac": {
+    "issue": "Xác định con đẻ của người ký đơn kiến nghị có được phép tham gia làm thành viên Hội đồng giải quyết kiến nghị hay không.",
+    "rule": "Điểm a Khoản 2 Điều 93 Luật Đấu thầu số 22/2023/QH15; Điểm a Khoản 2 Điều 139 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm a Khoản 2 Điều 93 Luật Đấu thầu số 22/2023/QH15 và Điểm a Khoản 2 Điều 139 Nghị định số 214/2025/NĐ-CP, thành viên Hội đồng giải quyết kiến nghị không được là người có quan hệ gia đình theo quy định của Luật Doanh nghiệp với người ký đơn kiến nghị. Anh C là con đẻ của ông A (người ký đơn kiến nghị) nên không được tham gia là thành viên Hội đồng giải quyết kiến nghị.",
+    "conclusion": "Không. Anh C là con đẻ của ông A (người ký đơn kiến nghị) nên không được tham gia là thành viên Hội đồng giải quyết kiến nghị."
+  },
+  "keywords": [
+    "Điểm a Khoản 2 Điều 93",
+    "Điểm a Khoản 2 Điều 139",
+    "quan hệ gia đình",
+    "thành viên Hội đồng giải quyết kiến nghị"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": 49,
+  "file": "q049.json",
+  "questionNumber": 49,
+  "question_number": "Câu 49",
+  "question": "Trình bày các thành phần của hồ sơ mời thầu và phân biệt với tài liệu không thuộc hồ sơ mời thầu.",
+  "difficulty": "MEDIUM",
+  "difficultyLabel": "Trung bình",
+  "difficultyVi": "Trung bình",
+  "points": 30,
+  "topic": "Hồ sơ mời thầu & Đánh giá HSDT",
+  "irac": {
+    "issue": "Trình bày các thành phần cấu thành của hồ sơ mời thầu (HSMT) và phân biệt với các tài liệu không thuộc HSMT.",
+    "rule": "Khoản 1 Điều 44 Luật Đấu thầu số 22/2023/QH15; Khoản 2 Điều 26 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Căn cứ Khoản 1 Điều 44 Luật Đấu thầu và Khoản 2 Điều 26 Nghị định số 214/2025/NĐ-CP, hồ sơ mời thầu phát hành cho các nhà thầu bao gồm các thành phần chính sau đây: (1) Chỉ dẫn nhà thầu, quy định tùy chọn mua thêm (nếu có); (2) Bảng dữ liệu đấu thầu; (3) Tiêu chuẩn đánh giá về tính hợp lệ của HSDT; năng lực, kinh nghiệm của nhà thầu; kỹ thuật; tài chính, thương mại; uy tín của nhà thầu thông qua việc tham dự thầu, kết quả thực hiện các hợp đồng tương tự trước đó và chất lượng hàng hóa tương tự đã sử dụng; (4) Biểu mẫu mời thầu và dự thầu; (5) Phạm vi cung cấp, yêu cầu về kỹ thuật, điều khoản tham chiếu; (6) Điều kiện và biểu mẫu hợp đồng (điều kiện chung, điều kiện cụ thể của hợp đồng); (7) Các hồ sơ, bản vẽ và nội dung khác (nếu có). Phân biệt với tài liệu không thuộc HSMT: Các tài liệu hành chính nội bộ phục vụ quá trình lập, kiểm tra, phê duyệt như Tờ trình phê duyệt HSMT, Báo cáo thẩm định HSMT, Quyết định phê duyệt HSMT, dự toán gói thầu chi tiết nội bộ hoặc biên bản họp tổ chuyên gia không phải là thành phần của HSMT gửi cho nhà thầu.",
+    "conclusion": "Thành phần HSMT gồm: Chỉ dẫn nhà thầu (kèm tùy chọn mua thêm nếu có); Bảng dữ liệu đấu thầu; Tiêu chuẩn đánh giá HSDT; Biểu mẫu mời thầu và dự thầu; Phạm vi cung cấp, yêu cầu kỹ thuật; Điều kiện và biểu mẫu hợp đồng; Hồ sơ, bản vẽ liên quan. Các văn bản nội bộ như Tờ trình phê duyệt, Báo cáo thẩm định HSMT, Quyết định phê duyệt HSMT không thuộc thành phần của HSMT."
+  },
+  "keywords": [
+    "Khoản 1 Điều 44",
+    "Khoản 2 Điều 26 Nghị định 214/2025/NĐ-CP",
+    "thành phần hồ sơ mời thầu",
+    "chỉ dẫn nhà thầu",
+    "bảng dữ liệu đấu thầu",
+    "tiêu chuẩn đánh giá",
+    "điều kiện hợp đồng",
+    "báo cáo thẩm định HSMT"
+  ]
+}

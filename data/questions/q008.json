@@ -1,0 +1,27 @@
+{
+  "id": 8,
+  "file": "q008.json",
+  "questionNumber": 8,
+  "question_number": "Câu 8",
+  "question": "Theo quy định pháp luật về đấu thầu, hàng hóa bao gồm những gì?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Khái niệm cơ bản & Phân loại gói thầu",
+  "irac": {
+    "issue": "Xác định phạm vi các đối tượng thuộc khái niệm 'hàng hóa' trong Luật Đấu thầu.",
+    "rule": "Khoản 17 Điều 4 Luật Đấu thầu số 22/2023/QH15.",
+    "application": "Theo quy định tại Khoản 17 Điều 4 Luật Đấu thầu số 22/2023/QH15, hàng hóa gồm: máy móc, thiết bị, nguyên liệu, nhiên liệu, vật liệu, vật tư, phụ tùng; sản phẩm; phương tiện; hàng tiêu dùng; thuốc, hóa chất, vật tư xét nghiệm, thiết bị y tế; phần mềm thương mại.",
+    "conclusion": "Hàng hóa trong đấu thầu bao gồm: máy móc, thiết bị, nguyên liệu, nhiên liệu, vật liệu, vật tư, phụ tùng; sản phẩm; phương tiện; hàng tiêu dùng; thuốc, hóa chất, vật tư xét nghiệm, thiết bị y tế và phần mềm thương mại (Khoản 17 Điều 4)."
+  },
+  "keywords": [
+    "Khoản 17 Điều 4",
+    "máy móc thiết bị",
+    "nguyên liệu nhiên liệu vật liệu vật tư phụ tùng",
+    "phương tiện",
+    "hàng tiêu dùng",
+    "thuốc hóa chất vật tư xét nghiệm thiết bị y tế",
+    "phần mềm thương mại"
+  ]
+}

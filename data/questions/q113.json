@@ -1,0 +1,25 @@
+{
+  "id": 113,
+  "file": "q113.json",
+  "questionNumber": 113,
+  "question_number": "Câu 113",
+  "question": "Việc chấp thuận hoặc không chấp thuận việc điều chuyển khối lượng, phạm vi công việc của nhà thầu phụ cho tổ chức, đơn vị khác khi cần đáp ứng yêu cầu về tiến độ, chất lượng gói thầu do nhà thầu đề xuất thuộc trách nhiệm của ai?",
+  "difficulty": "EASY",
+  "difficultyLabel": "Dễ",
+  "difficultyVi": "Dễ",
+  "points": 20,
+  "topic": "Chủ thể tham gia đấu thầu",
+  "irac": {
+    "issue": "Xác định chủ thể có trách nhiệm chấp thuận hoặc không chấp thuận việc điều chuyển khối lượng, phạm vi công việc của nhà thầu phụ cho tổ chức, đơn vị khác theo đề xuất của nhà thầu chính.",
+    "rule": "Điểm b, Điểm c Khoản 8 Điều 16 và Điều 78 Luật Đấu thầu số 22/2023/QH15; Khoản 2 Điều 141 Nghị định số 214/2025/NĐ-CP.",
+    "application": "Theo Điểm b, Điểm c Khoản 8 Điều 16 Luật Đấu thầu và Khoản 2 Điều 141 Nghị định số 214/2025/NĐ-CP, việc sử dụng nhà thầu phụ ngoài danh sách nhà thầu phụ đã nêu trong HSDT/HSĐX hoặc việc thay thế, bổ sung nhà thầu phụ, điều chuyển khối lượng, phạm vi công việc của nhà thầu phụ cho tổ chức, đơn vị khác khi cần đáp ứng yêu cầu về tiến độ, chất lượng gói thầu do nhà thầu chính đề xuất phải được Chủ đầu tư xem xét, chấp thuận. Do đó, thẩm quyền và trách nhiệm chấp thuận hoặc không chấp thuận thuộc về Chủ đầu tư.",
+    "conclusion": "Việc chấp thuận hoặc không chấp thuận điều chuyển khối lượng, phạm vi công việc của nhà thầu phụ cho tổ chức, đơn vị khác theo đề xuất của nhà thầu chính thuộc trách nhiệm của Chủ đầu tư."
+  },
+  "keywords": [
+    "Khoản 8 Điều 16",
+    "Khoản 2 Điều 141 Nghị định 214/2025/NĐ-CP",
+    "điều chuyển khối lượng nhà thầu phụ",
+    "thay thế bổ sung nhà thầu phụ",
+    "trách nhiệm của Chủ đầu tư"
+  ]
+}
