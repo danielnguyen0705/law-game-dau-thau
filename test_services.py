@@ -196,6 +196,10 @@ def test_frontend_service_and_olympia_v9_features():
     assert "feud-lockout-banner" in app_text
     assert "feud-strike-x-banner" in app_text
     assert "weakest-link-critical-stage" in app_text
+    assert "gameshow-mic-orb" in app_text
+    assert "centered-submit-row" in app_text
+    assert "combat-power-bar-wrap" not in app_text
+    assert "voice-live-transcript-card" not in app_text
 
     sfx_text = (public_dir / "js" / "soundEffects.js").read_text(encoding="utf-8")
     assert "stopAllSFX" in sfx_text and "startBGM" in sfx_text and "setScene" in sfx_text and "playStrikeX" in sfx_text

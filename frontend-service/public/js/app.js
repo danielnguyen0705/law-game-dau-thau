@@ -273,13 +273,6 @@ function renderTimerMarkup() {
   const radius = 36;
   const circumference = 2 * Math.PI * radius;
   const dashOffset = circumference - (pct / 100) * circumference;
-  const phaseLabel = state.phase === 'BUZZER_OPEN'
-    ? '⏳ Đếm ngược bấm chuông'
-    : state.phase === 'ANSWERING'
-      ? (state.answerMode === 'VOICE'
-          ? `🎙️ Trả lời Voice (${isUnlimited ? '∞' : state.totalTime + 's'})`
-          : `⌨️ Nhập văn bản (${isUnlimited ? '∞' : state.totalTime + 's'})`)
-      : '⏱️ Đồng hồ trận đấu';
 
   return `
     <div class="countdown-widget ${isCritical ? 'timer-critical' : ''}">
@@ -300,10 +293,6 @@ function renderTimerMarkup() {
         <div class="countdown-center-text">
           ${isUnlimited ? '∞' : `${state.timeLeft}s`}
         </div>
-      </div>
-      <div class="countdown-phase-label">${phaseLabel}</div>
-      <div class="countdown-bar-outer">
-        <div class="countdown-bar-inner" style="width:${pct}%"></div>
       </div>
     </div>
   `;
@@ -500,18 +489,7 @@ function toggleVoiceRecording() {
         state.answerText = (state.answerText ? state.answerText.trim() + ' ' : '') + finalChunk.trim();
       }
       state.interimTranscript = interimChunk;
-
-      const liveTranscriptEl = document.getElementById('voice-live-transcript-text');
-      if (liveTranscriptEl) {
-        const displayStr = `${state.answerText} ${state.interimTranscript}`.trim();
-        liveTranscriptEl.textContent = displayStr || '🎙️ Hãy nói câu trả lời của đội bạn vào Micro...';
-        liveTranscriptEl.classList.toggle('has-spoken-text', Boolean(displayStr));
-      }
-      const interimEl = document.getElementById('voice-interim-box');
-      if (interimEl) {
-        interimEl.textContent = state.interimTranscript ? `Đang nhận diện: "${state.interimTranscript}"` : '';
-        interimEl.style.display = state.interimTranscript ? 'block' : 'none';
-      }
+      // Silently cache spoken text in state and trigger auto-submit after 2s of silence
       scheduleVoiceAutoSubmit();
     };
 
@@ -905,74 +883,70 @@ function renderAnsweringBoxHTML() {
   const s = state.settings;
   const activeTeamName = state.buzzedTeam === 'A' ? s.teamAName : s.teamBName;
   const activeAvatar = state.buzzedTeam === 'A' ? s.teamAAvatar : s.teamBAvatar;
-  const spokenPreview = `${state.answerText} ${state.interimTranscript}`.trim();
-  const waveBars = Array.from({ length: 12 }, (_, i) =>
+  const waveBars = Array.from({ length: 8 }, (_, i) =>
     `<span class="wave-bar" style="animation-delay:${(i * 0.08).toFixed(2)}s"></span>`
   ).join('');
 
   return `
     <div class="answering-panel combat-answering-pod" id="answering-panel-container">
-      <!-- Family Feud Face-Off Lockout Banner -->
+      <!-- Family Feud Face-Off Lockout Banner (Centered, Minimalist) -->
       <div class="feud-lockout-banner ${state.buzzedTeam === 'A' ? 'lockout-team-a' : 'lockout-team-b'}">
         <span class="feud-bell-icon">🔔 DING! DING!</span>
         <span class="feud-lockout-text">
-          ${escapeHtml(activeAvatar)} <strong>${escapeHtml(activeTeamName)}</strong> ĐÃ BẤM CHUÔNG NHANH NHẤT &amp; KHÓA QUYỀN TRẢ LỜI!
-        </span>
-        <span class="config-summary-pill">
-          ${state.answerMode === 'VOICE'
-            ? `🎙️ Voice (${Number(s.voiceTimeLimit) === 0 ? '∞' : `${s.voiceTimeLimit ?? 30}s`})`
-            : `⌨️ Văn bản (${Number(s.textTimeLimit) === 0 ? '∞' : `${s.textTimeLimit ?? 120}s`})`}
+          ${escapeHtml(activeAvatar)} <strong>${escapeHtml(activeTeamName)}</strong> ĐANG NẮM QUYỀN TRẢ LỜI
         </span>
       </div>
 
       ${state.answerMode === 'VOICE' ? `
-        <div class="voice-combat-stage">
-          <div class="voice-live-transcript-card">
-            <div class="voice-transcript-header">
-              <span class="voice-status-dot ${state.isRecording ? 'dot-live' : ''}"></span>
-              <span id="voice-autodetect-status">
-                ${state.isRecording
-                  ? '🔴 Đang nhận diện giọng nói trực tiếp — Ngừng nói 2 giây hệ thống tự động chấm điểm!'
-                  : '🎙️ Chế độ Giọng nói (Không cần gõ phím)'}
-              </span>
-              <div class="voice-wave-bars ${state.isRecording ? 'wave-active' : ''}">
-                ${waveBars}
-              </div>
+        <div class="voice-combat-stage gameshow-mic-stage">
+          <div class="gameshow-mic-centerpiece">
+            <div class="voice-wave-bars ${state.isRecording ? 'wave-active' : ''}" aria-hidden="true">
+              ${waveBars}
             </div>
-            <div id="voice-live-transcript-text" class="voice-live-transcript-text ${spokenPreview ? 'has-spoken-text' : ''}">
-              ${spokenPreview
-                ? escapeHtml(spokenPreview)
-                : '🎙️ Hãy nói trực tiếp câu trả lời của đội bạn vào Micro... Nội dung giọng nói sẽ hiển thị trực tiếp tại đây và tự động chấm điểm khi bạn nói xong!'}
+
+            <button
+              type="button"
+              class="gameshow-mic-orb ${state.isRecording ? 'mic-orb-live' : 'mic-orb-idle'}"
+              id="btn-toggle-mic"
+              title="${state.isRecording ? 'Đang thu âm trực tiếp' : 'Nhấn để bật Micro'}"
+            >
+              <span class="mic-pulse-ring ring-a" aria-hidden="true"></span>
+              <span class="mic-pulse-ring ring-b" aria-hidden="true"></span>
+              <span class="mic-orb-icon">🎙️</span>
+            </button>
+
+            <div class="voice-wave-bars ${state.isRecording ? 'wave-active' : ''}" aria-hidden="true">
+              ${waveBars}
             </div>
-            <div id="voice-interim-box" class="interim-transcript" style="display:${state.interimTranscript ? 'block' : 'none'}">
-              ${state.interimTranscript ? `Đang nhận diện: "${escapeHtml(state.interimTranscript)}"` : ''}
-            </div>
+          </div>
+
+          <div class="voice-minimal-status" id="voice-autodetect-status">
+            ${state.isRecording
+              ? '🔴 Đang thu âm câu trả lời... (Ngừng nói 2 giây tự động chấm hoặc nhấn Nộp bài)'
+              : '🎙️ Nhấn vào biểu tượng Micro ở giữa để bắt đầu nói'}
           </div>
 
           ${state.voiceError ? `<div class="voice-error-msg">⚠️ ${escapeHtml(state.voiceError)}</div>` : ''}
 
-          <div class="answering-actions">
-            ${!state.isRecording ? `
-              <button type="button" class="btn-secondary" id="btn-toggle-mic">
-                🎙️ Bật Micro nói tiếp
-              </button>
-            ` : ''}
-            <button type="button" class="btn-primary-gold" id="btn-submit-answer">
-              ${state.isRecording ? '⏹️ NÓI XONG — NỘP &amp; CHẤM ĐIỂM NGAY' : '⚖️ NỘP BÀI &amp; CHẤM ĐIỂM NGAY'}
+          <div class="answering-actions centered-submit-row">
+            <button type="button" class="btn-primary-gold btn-submit-center" id="btn-submit-answer">
+              ⚖️ NỘP CÂU TRẢ LỜI &amp; CHẤM ĐIỂM
             </button>
           </div>
         </div>
       ` : `
-        <textarea
-          id="answer-textarea"
-          class="answer-textarea"
-          rows="3"
-          placeholder="Nhập câu trả lời từ bàn phím tại đây... (Gợi ý: Nêu rõ Điều/Khoản của Luật Đấu thầu 2023 hoặc Nghị định 214/2025/NĐ-CP và kết luận rõ ràng)"
-        >${escapeHtml(state.answerText)}</textarea>
-        <div class="answering-actions">
-          <button type="button" class="btn-primary-gold" id="btn-submit-answer">
-            ⚖️ NỘP CÂU TRẢ LỜI &amp; CHẤM ĐIỂM AI
-          </button>
+        <div class="text-combat-stage">
+          <textarea
+            id="answer-textarea"
+            class="answer-textarea centered-textarea"
+            rows="3"
+            placeholder="Nhập câu trả lời của đội bạn tại đây..."
+          >${escapeHtml(state.answerText)}</textarea>
+          <div class="answering-actions centered-submit-row">
+            <button type="button" class="btn-primary-gold btn-submit-center" id="btn-submit-answer">
+              ⚖️ NỘP CÂU TRẢ LỜI &amp; CHẤM ĐIỂM
+            </button>
+          </div>
         </div>
       `}
     </div>
@@ -984,11 +958,6 @@ function renderArenaHTML() {
   const currentQuestion = getCurrentQuestion();
   if (!currentQuestion) return '';
 
-  const totalScore = state.teamAScore + state.teamBScore;
-  const powerPctA = totalScore > 0
-    ? Math.max(15, Math.min(85, Math.round((state.teamAScore / totalScore) * 100)))
-    : 50;
-  const powerPctB = 100 - powerPctA;
   const roundNum = state.currentIndex + 1;
   const totalRounds = state.matchQuestions.length;
   const ledSegments = Array.from({ length: 14 }, (_, i) =>
@@ -1020,9 +989,6 @@ function renderArenaHTML() {
         </div>
 
         <div class="hud-center ${state.buzzedTeam ? 'timer-olympia-pop' : ''}">
-          <div class="round-pill">
-            ⚔️ CÂU ${roundNum} / ${totalRounds}
-          </div>
           <div id="live-timer-box" class="timer-box">
             ${renderTimerMarkup()}
           </div>
@@ -1041,17 +1007,6 @@ function renderArenaHTML() {
           </div>
         </div>
       </section>
-
-      <!-- 1v1 Combat Tug-of-War Power Bar -->
-      <div class="combat-power-bar-wrap" title="Thanh đối kháng điểm số 1v1">
-        <div class="combat-bar-side combat-bar-a" style="width:${powerPctA}%">
-          <span>${powerPctA}%</span>
-        </div>
-        <div class="combat-clash-spark" style="left:${powerPctA}%">⚡</div>
-        <div class="combat-bar-side combat-bar-b" style="width:${powerPctB}%">
-          <span>${powerPctB}%</span>
-        </div>
-      </div>
 
       ${state.phase === 'TRANSITION' ? `
         <div class="stage-transition-card olympia-transition-stage">
@@ -1548,6 +1503,8 @@ function renderAnsweringAreaOnly() {
 }
 
 function bindAnsweringEvents() {
+  document.getElementById('btn-toggle-mic')?.addEventListener('click', () => toggleVoiceRecording());
+
   const textarea = document.getElementById('answer-textarea');
   if (textarea) {
     textarea.addEventListener('input', (e) => {
