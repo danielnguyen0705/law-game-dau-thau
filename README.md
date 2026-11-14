@@ -1,59 +1,67 @@
-# ⚖️ Đấu Trường Pháp Luật Đấu Thầu — The Starry Night Debate Arena
+# ⚖️ Sàn Đấu Tranh Biện — Pháp Luật Đấu Thầu (The Starry Night Edition)
 
-Hệ thống trò chơi đối kháng (Debate Quiz) phục vụ sinh viên ôn tập học phần **Pháp luật Đấu thầu** theo cấu trúc lập luận pháp lý chuẩn **IRAC (Issue – Rule – Application – Conclusion)** và chấm điểm ngữ nghĩa tự động bằng AI.
+Hệ thống trò chơi đối kháng (1v1 Debate & Gameshow Quiz) phục vụ ôn tập học phần **Pháp luật Đấu thầu** theo cấu trúc lập luận pháp lý chuẩn **IRAC (Issue – Rule – Application – Conclusion)** và chấm điểm ngữ nghĩa tự động bằng AI.
 
 ---
 
-## 👥 Nhóm Thực Hiện Dự Án
+## 👥 Đội Ngũ Thực Hiện Dự Án
 - **Nguyễn Quốc Đạt**
 - **Đỗ Hoàng Gia Bảo**
 - **Trần Võ Đăng Khoa**
 
 ---
 
-## ✨ Điểm Nổi Bật
-1. **Ngân hàng 237 câu hỏi chuẩn hóa IRAC (`questions_irac.json`)**:
-   - Trích xuất nguyên bản 100% (237 câu hỏi từ Câu 1 đến Câu 237) từ `doc/Bo_cau_hoi_on_thi_Luat_Dau_thau.pdf`.
-   - Đối chiếu chính xác với Luật Đấu thầu số 22/2023/QH15 (sửa đổi bởi Luật số 57/2024/QH15 và Luật số 90/2025/QH15), Luật Đầu tư số 143/2025/QH15, Nghị định số 214/2025/NĐ-CP, Nghị định số 60/2021/NĐ-CP và `Handout_Luat_Dau_thau.pdf` (kết hợp truy xuất ngữ cảnh qua NotebookLM **"Bộ Câu Hỏi Ôn Thi Luật Đấu Thầu"**).
-   - Phân loại theo 3 mức độ: **Dễ (20đ) – Trung bình (30đ) – Khó (50đ)**.
-2. **Sàn đấu tranh biện 2 đội (Team A vs Team B)**:
-   - Bấm chuông giành quyền trả lời bằng phím tắt (`F` cho Đội A, `J` cho Đội B, tùy chỉnh được trong Cài đặt) kèm hiệu ứng âm thanh Web Audio riêng biệt và đèn Spotlight.
-   - Hỗ trợ song song **Nhận diện giọng nói tiếng Việt (Voice-to-Text `vi-VN`)** và **Nhập văn bản từ bàn phím** (có chế độ không giới hạn thời gian dự phòng).
-3. **Chấm điểm thông minh bằng AI (Semantic IRAC Grading)**:
-   - Đánh giá mức độ tương đồng ngữ nghĩa và căn cứ pháp lý trên 4 trụ cột `Issue`, `Rule`, `Application`, `Conclusion`.
-   - Công thức: `Điểm nhận được = Điểm tối đa của câu hỏi × (% độ chính xác)`.
-   - Hiển thị bảng đối chiếu trực quan giữa câu trả lời của đội chơi và đáp án chuẩn IRAC.
-4. **Chống trùng lặp câu hỏi giữa các ván đấu**:
-   - Lưu lịch sử các câu hỏi đã hỏi qua `localStorage` & `game-engine-service` để các ván sau không lặp lại câu hỏi cũ (hỗ trợ nút Reset lịch sử).
-5. **Giao diện nghệ thuật *The Starry Night* (Vincent van Gogh)**:
-   - Phối màu xanh đêm sâu thẳm (`#0B132B`, `#1C2541`), xanh cobalt (`#3A506B`) và vàng rực rỡ (`#F4D35E`, `#EE964B`).
+## 📂 Cấu Trúc Thư Mục Chuẩn Hóa (MVC Microservices + Single `data/` & Single `Dockerfile`)
+
+```text
+LawGame/
+├── data/                               # DUY NHẤT 1 thư mục dữ liệu dùng chung toàn hệ thống
+│   ├── questions_irac.json             # Ngân hàng 237 câu hỏi & đáp án chuẩn IRAC tổng hợp
+│   ├── asked_history.json              # Lịch sử các câu đã hỏi (chống lặp giữa các ván)
+│   └── questions/                      # 237 file JSON từng câu (q001.json..q237.json) + index.json
+├── ai-grading-service/                 # Microservice Chấm điểm Ngữ nghĩa AI (Port 4002) - Chuẩn MVC
+│   ├── config.py                       # Cấu hình đường dẫn dữ liệu & tham số
+│   ├── models.py                       # Pydantic Models & Data Access
+│   ├── services/grader_service.py      # Business Logic: Chấm điểm ngữ nghĩa IRAC (TF-IDF + Legal Citations)
+│   ├── controllers/grading_controller.py # API Routes (/health, /questions, /grade)
+│   ├── main.py                         # FastAPI Entry Point
+│   └── requirements.txt
+├── game-engine-service/                # Microservice Quản lý Phòng đấu & Buzzer (Port 4001) - Chuẩn MVC
+│   ├── config.py                       # Cấu hình đường dẫn & cổng
+│   ├── models.py                       # Pydantic Schemas & Question/History Repository
+│   ├── services/session_service.py     # Business Logic: Tạo ván đấu, khóa chuông (Buzzer Lock), tính điểm
+│   ├── controllers/game_controller.py  # API Routes (/game/start, /buzz, /submit-answer, /next-question)
+│   ├── main.py                         # FastAPI Entry Point
+│   └── requirements.txt
+├── frontend-service/                   # Microservice Giao diện & API Gateway (Port 3000) - Chuẩn MVC
+│   ├── config.py                       # Cấu hình Gateway & Static Mounts
+│   ├── controllers/gateway_controller.py # Reverse Proxy sang Game Engine & AI Grader + Offline Fallback
+│   ├── main.py                         # FastAPI Entry Point (mount /data và /)
+│   ├── requirements.txt
+│   └── public/                         # Frontend Web Game Assets
+│       ├── index.html
+│       ├── favicon.svg                 # Icon Cán cân Công lý
+│       ├── css/styles.css              # Giao diện Starry Night + Olympia Gameshow + Zero-Scroll 100dvh
+│       └── js/
+│           ├── app.js                  # Game State, Olympia Transitions, Side LED Strips, Voice-to-Text
+│           ├── soundEffects.js         # Web Audio API Synthesizer (BGM + SFX tách biệt, chống chồng âm)
+│           └── semanticGrader.js       # Bộ chấm điểm IRAC Client-side (dùng cho GitHub Pages)
+├── data-pipeline/                      # Công cụ chuẩn hóa & kiểm định 237 câu hỏi từ tài liệu gốc
+│   ├── build_question_bank.py
+│   └── raw_questions.txt
+├── Dockerfile                          # DUY NHẤT 1 Dockerfile chung ở thư mục gốc cho cả 3 Microservices
+├── docker-compose.yml                  # Điều phối 3 containers dùng chung `./Dockerfile` và `./data`
+└── test_services.py                    # Bộ kiểm thử tích hợp tự động (Pytest E2E Suite)
+```
 
 ---
 
-## 🏗️ Kiến Trúc Microservices
-
-Dự án được tổ chức tại `D:\UIT-HK7\LawGame` gồm 3 microservices độc lập và có thể khởi chạy bằng môi trường ảo `D:\UIT-HK7\.venv` hoặc `docker-compose.yml`:
-
-| Microservice | Port | Mô tả |
-|---|---|---|
-| `frontend-service` | `3000` | Giao diện người dùng (Debate Arena UI), âm thanh Web Audio, nhận diện giọng nói và API Gateway |
-| `game-engine-service` | `4001` | Quản lý phòng chơi, trạng thái ván đấu, bấm chuông (buzzer), tính điểm 2 đội và lịch sử câu hỏi không lặp |
-| `ai-grading-service` | `4002` | Chấm điểm ngữ nghĩa tự động theo cấu trúc IRAC (Scikit-Learn TF-IDF + Legal Citation Matcher) |
-
----
-
-## 🚀 Hướng Dẫn Chạy Bằng Môi Trường Ảo `D:\UIT-HK7\.venv`
+## 🚀 Hướng Dẫn Chạy & Kiểm Thử
 
 ```powershell
-# 1. Chạy kiểm thử tự động toàn bộ 3 Microservices & 237 câu hỏi IRAC
-D:\UIT-HK7\.venv\Scripts\python.exe D:\UIT-HK7\LawGame\test_services.py
+# 1. Chạy kiểm thử tự động toàn bộ kiến trúc MVC, dữ liệu 237 câu hỏi IRAC & 3 Microservices
+D:\UIT-HK7\.venv\Scripts\python.exe -m pytest D:\UIT-HK7\LawGame\test_services.py -v
 
-# 2. Khởi động đồng thời cả 3 Microservices (Ports 3000, 4001, 4002)
-powershell -ExecutionPolicy Bypass -File D:\UIT-HK7\LawGame\start_all_venv.ps1
-```
-
-Hoặc sử dụng Docker Compose:
-```bash
+# 2. Khởi chạy bằng Docker Compose (sử dụng 1 Dockerfile duy nhất)
 docker-compose up --build
 ```
-

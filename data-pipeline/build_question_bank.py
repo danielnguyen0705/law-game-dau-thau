@@ -1,8 +1,7 @@
 r"""
 Data Pipeline: Build & Validate the 237 LawGame IRAC Question Bank
-Supports BOTH:
-  1. Per-Question Individual JSON Architecture: `data/questions/q001.json` .. `data/questions/q237.json` + `data/questions/index.json`
-     (Allows ultra-fast random question picking and on-demand loading without parsing a huge file)
+Single Shared Data Folder Architecture (`LawGame/data/`):
+  1. Per-Question Individual JSONs: `data/questions/q001.json` .. `data/questions/q237.json` + `data/questions/index.json`
   2. Consolidated Bank: `data/questions_irac.json`
 """
 import json
@@ -11,6 +10,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
+DATA_DIR = PROJECT_ROOT / "data"
 
 
 def load_raw_questions():
@@ -34,7 +34,7 @@ def build_and_validate():
     assert len(raw_questions) == 237, f"Expected 237 raw questions, got {len(raw_questions)}"
 
     merged_by_id = {}
-    q_source_dir = BASE_DIR / "questions"
+    q_source_dir = DATA_DIR / "questions"
     if q_source_dir.exists():
         for qid in range(1, 238):
             qf = q_source_dir / f"q{qid:03d}.json"
@@ -42,8 +42,8 @@ def build_and_validate():
                 with open(qf, "r", encoding="utf-8") as f:
                     merged_by_id[qid] = json.load(f)
 
-    if len(merged_by_id) < 237 and (BASE_DIR / "questions_irac.json").exists():
-        with open(BASE_DIR / "questions_irac.json", "r", encoding="utf-8") as f:
+    if len(merged_by_id) < 237 and (DATA_DIR / "questions_irac.json").exists():
+        with open(DATA_DIR / "questions_irac.json", "r", encoding="utf-8") as f:
             data = json.load(f)
             items = data["questions"] if isinstance(data, dict) and "questions" in data else data
             for item in items:
@@ -127,34 +127,20 @@ def build_and_validate():
         "distribution": stats,
     }
 
-    per_question_dirs = [
-        BASE_DIR / "questions",
-        PROJECT_ROOT / "frontend-service" / "public" / "data" / "questions",
-        PROJECT_ROOT / "game-engine-service" / "data" / "questions",
-        PROJECT_ROOT / "ai-grading-service" / "data" / "questions",
-    ]
-    for qdir in per_question_dirs:
-        qdir.mkdir(parents=True, exist_ok=True)
-        with open(qdir / "index.json", "w", encoding="utf-8") as f:
-            json.dump({"metadata": metadata, "index": manifest_items}, f, ensure_ascii=False, indent=2)
-        for q_obj in final_bank:
-            with open(qdir / q_obj["file"], "w", encoding="utf-8") as f:
-                json.dump(q_obj, f, ensure_ascii=False, indent=2)
-        print(f"Wrote 237 individual JSON files (q001.json..q237.json) + index.json to {qdir}")
+    qdir = DATA_DIR / "questions"
+    qdir.mkdir(parents=True, exist_ok=True)
+    with open(qdir / "index.json", "w", encoding="utf-8") as f:
+        json.dump({"metadata": metadata, "index": manifest_items}, f, ensure_ascii=False, indent=2)
+    for q_obj in final_bank:
+        with open(qdir / q_obj["file"], "w", encoding="utf-8") as f:
+            json.dump(q_obj, f, ensure_ascii=False, indent=2)
+    print(f"Wrote 237 individual JSON files (q001.json..q237.json) + index.json to {qdir}")
 
     payload = {"metadata": metadata, "questions": final_bank}
-    output_targets = [
-        BASE_DIR / "questions_irac.json",
-        PROJECT_ROOT / "ai-grading-service" / "data" / "questions_irac.json",
-        PROJECT_ROOT / "game-engine-service" / "data" / "questions_irac.json",
-        PROJECT_ROOT / "frontend-service" / "public" / "data" / "questions_irac.json",
-    ]
-    for target in output_targets:
-        target.parent.mkdir(parents=True, exist_ok=True)
-        with open(target, "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
-        print(f"Wrote consolidated {len(final_bank)} questions to {target}")
-
+    target = DATA_DIR / "questions_irac.json"
+    with open(target, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"Wrote consolidated {len(final_bank)} questions to {target}")
     print(f"Validation successful! Total: {len(final_bank)} questions. Distribution: {stats}")
 
 
