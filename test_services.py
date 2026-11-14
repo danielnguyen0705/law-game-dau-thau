@@ -155,8 +155,10 @@ def test_frontend_service():
     assert h_fe["status"] == "ok"
 
     public_dir = ROOT_DIR / "frontend-service" / "public"
+    assert (public_dir / "favicon.svg").exists()
     index_text = (public_dir / "index.html").read_text(encoding="utf-8")
     assert "Sàn Đấu Tranh Biện" in index_text
+    assert "favicon.svg" in index_text
 
     app_text = (public_dir / "app.js").read_text(encoding="utf-8")
     assert "Một sản phẩm của Nguyễn Quốc Đạt, Đỗ Hoàng Gia Bảo, Trần Võ Đăng Khoa" in app_text
@@ -164,10 +166,14 @@ def test_frontend_service():
     assert "Sàn Đấu Tranh Biện" in app_text
     assert "btn-voice-preset-default" in app_text and "btn-voice-preset-custom" in app_text
     assert "btn-text-preset-default" in app_text and "btn-text-preset-custom" in app_text
+    assert "voice-combat-stage" in app_text
+    assert "combat-power-bar-wrap" in app_text
+    assert "result-overlay-backdrop" in app_text
+    assert "(Bộ đề gốc)" not in app_text
     assert "#0B132B" in app_text and "#F4D35E" in app_text
 
     sfx_text = (public_dir / "soundEffects.js").read_text(encoding="utf-8")
-    assert "startBGM" in sfx_text and "playEnterGame" in sfx_text
+    assert "startBGM" in sfx_text and "playEnterGame" in sfx_text and "setScene" in sfx_text
 
     css_text = (public_dir / "styles.css").read_text(encoding="utf-8")
     assert "--bg-deep: #0B132B" in css_text

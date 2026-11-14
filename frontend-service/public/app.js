@@ -153,6 +153,7 @@ const state = {
 
 let timerInterval = null;
 let transitionTimeout = null;
+let voiceSilenceTimeout = null;
 let recognitionInstance = null;
 let confettiCleanup = null;
 
@@ -197,11 +198,20 @@ function clearTimers() {
     clearTimeout(transitionTimeout);
     transitionTimeout = null;
   }
+  if (voiceSilenceTimeout) {
+    clearTimeout(voiceSilenceTimeout);
+    voiceSilenceTimeout = null;
+  }
 }
 
 function stopVoiceRecognition() {
+  if (voiceSilenceTimeout) {
+    clearTimeout(voiceSilenceTimeout);
+    voiceSilenceTimeout = null;
+  }
   if (recognitionInstance) {
     try {
+      recognitionInstance.onend = null;
       recognitionInstance.stop();
     } catch {}
     recognitionInstance = null;
@@ -212,11 +222,16 @@ function stopVoiceRecognition() {
 
 function startAnsweringTimer(seconds) {
   clearTimers();
+  // During active question/answering, strictly silence BGM and only play countdown clock ticks
+  soundFX.setScene('COMBAT_QUIZ');
   const total = seconds > 0 ? seconds : 0;
   state.timeLeft = total;
   state.totalTime = total > 0 ? total : 1;
   updateTimerDOM();
   if (total <= 0) return; // Unlimited
+
+  // Play initial clock tick immediately when countdown begins
+  soundFX.playCountdownTick(state.timeLeft);
 
   timerInterval = setInterval(() => {
     if (state.phase !== 'ANSWERING' && state.phase !== 'BUZZER_OPEN') {
@@ -232,8 +247,8 @@ function startAnsweringTimer(seconds) {
       return;
     }
     state.timeLeft -= 1;
-    if (state.timeLeft <= 5 && state.timeLeft > 0) {
-      soundFX.playTick(state.timeLeft <= 2);
+    if (state.timeLeft > 0) {
+      soundFX.playCountdownTick(state.timeLeft);
     }
     updateTimerDOM();
   }, 1000);
@@ -383,6 +398,13 @@ function triggerBuzzer(team) {
   state.answerMode = chosenMode;
   render();
   startAnsweringTimer(getActiveModeTimeLimit(chosenMode));
+  if (chosenMode === 'VOICE') {
+    setTimeout(() => {
+      if (state.phase === 'ANSWERING' && state.answerMode === 'VOICE' && !state.isRecording) {
+        toggleVoiceRecording();
+      }
+    }, 120);
+  }
 }
 
 function switchAnswerMode(mode) {
@@ -392,11 +414,44 @@ function switchAnswerMode(mode) {
   const limit = getActiveModeTimeLimit(mode);
   render();
   startAnsweringTimer(limit);
+  if (mode === 'VOICE') {
+    setTimeout(() => {
+      if (state.phase === 'ANSWERING' && state.answerMode === 'VOICE' && !state.isRecording) {
+        toggleVoiceRecording();
+      }
+    }, 120);
+  }
+}
+
+function scheduleVoiceAutoSubmit() {
+  if (voiceSilenceTimeout) {
+    clearTimeout(voiceSilenceTimeout);
+    voiceSilenceTimeout = null;
+  }
+  const combined = `${state.answerText} ${state.interimTranscript}`.trim();
+  if (combined.length < 10) return;
+  const statusEl = document.getElementById('voice-autodetect-status');
+  if (statusEl) {
+    statusEl.textContent = '✨ Đang lắng nghe... (Ngừng nói 2 giây sẽ tự động nộp & chấm điểm)';
+  }
+  voiceSilenceTimeout = setTimeout(() => {
+    if (state.phase === 'ANSWERING' && state.answerMode === 'VOICE') {
+      const fullSpoken = `${state.answerText} ${state.interimTranscript}`.trim();
+      if (fullSpoken.length >= 10) {
+        submitAnswer(fullSpoken);
+      }
+    }
+  }, 2200);
 }
 
 function toggleVoiceRecording() {
   if (state.isRecording) {
+    const fullSpoken = `${state.answerText} ${state.interimTranscript}`.trim();
     stopVoiceRecognition();
+    if (fullSpoken.length >= 4) {
+      submitAnswer(fullSpoken);
+      return;
+    }
     renderAnsweringAreaOnly();
     return;
   }
@@ -433,33 +488,47 @@ function toggleVoiceRecording() {
       }
       if (finalChunk) {
         state.answerText = (state.answerText ? state.answerText.trim() + ' ' : '') + finalChunk.trim();
-        const textarea = document.getElementById('answer-textarea');
-        if (textarea) textarea.value = state.answerText;
       }
       state.interimTranscript = interimChunk;
+
+      const liveTranscriptEl = document.getElementById('voice-live-transcript-text');
+      if (liveTranscriptEl) {
+        const displayStr = `${state.answerText} ${state.interimTranscript}`.trim();
+        liveTranscriptEl.textContent = displayStr || '🎙️ Hãy nói câu trả lời của đội bạn vào Micro...';
+        liveTranscriptEl.classList.toggle('has-spoken-text', Boolean(displayStr));
+      }
       const interimEl = document.getElementById('voice-interim-box');
       if (interimEl) {
-        interimEl.textContent = state.interimTranscript ? `Đang nghe: "${state.interimTranscript}"` : '';
+        interimEl.textContent = state.interimTranscript ? `Đang nhận diện: "${state.interimTranscript}"` : '';
         interimEl.style.display = state.interimTranscript ? 'block' : 'none';
       }
+      scheduleVoiceAutoSubmit();
     };
 
     recognition.onerror = (err) => {
       state.isRecording = false;
-      state.voiceError = `Lỗi Micro (${err.error}). Bạn có thể nhập trực tiếp bằng bàn phím bên dưới hoặc chuyển sang Chế độ Bàn phím.`;
+      if (err.error !== 'no-speech' && err.error !== 'aborted') {
+        state.voiceError = `Lỗi Micro (${err.error}). Bạn có thể nhấn Thu âm lại hoặc chuyển sang Chế độ Bàn phím.`;
+      }
       renderAnsweringAreaOnly();
     };
 
     recognition.onend = () => {
+      const wasRecording = state.isRecording;
       state.isRecording = false;
+      const fullSpoken = `${state.answerText} ${state.interimTranscript}`.trim();
       state.interimTranscript = '';
+      if (wasRecording && state.phase === 'ANSWERING' && state.answerMode === 'VOICE' && fullSpoken.length >= 10) {
+        submitAnswer(fullSpoken);
+        return;
+      }
       renderAnsweringAreaOnly();
     };
 
     recognitionInstance = recognition;
     recognition.start();
   } catch {
-    state.voiceError = 'Không thể khởi động Micro. Vui lòng sử dụng bàn phím.';
+    state.voiceError = 'Không thể khởi động Micro. Vui lòng chuyển sang chế độ Bàn phím.';
     renderAnsweringAreaOnly();
   }
 }
@@ -826,15 +895,19 @@ function renderAnsweringBoxHTML() {
   const s = state.settings;
   const activeTeamName = state.buzzedTeam === 'A' ? s.teamAName : s.teamBName;
   const activeAvatar = state.buzzedTeam === 'A' ? s.teamAAvatar : s.teamBAvatar;
+  const spokenPreview = `${state.answerText} ${state.interimTranscript}`.trim();
+  const waveBars = Array.from({ length: 12 }, (_, i) =>
+    `<span class="wave-bar" style="animation-delay:${(i * 0.08).toFixed(2)}s"></span>`
+  ).join('');
 
   return `
-    <div class="answering-panel" id="answering-panel-container">
+    <div class="answering-panel combat-answering-pod" id="answering-panel-container">
       <div class="answering-banner">
         <div class="answering-team-info">
-          <span class="spotlight-icon">🌟</span>
+          <span class="spotlight-icon">⚡</span>
           <div>
-            <strong>${escapeHtml(activeAvatar)} ${escapeHtml(activeTeamName)} đang nắm quyền trả lời!</strong>
-            <p>Hãy trình bày theo cấu trúc IRAC (Vấn đề pháp lý - Căn cứ Điều/Khoản - Phân tích - Kết luận)</p>
+            <strong>${escapeHtml(activeAvatar)} ${escapeHtml(activeTeamName)} ĐANG NẮM QUYỀN TRẢ LỜI!</strong>
+            <p>Trình bày theo cấu trúc IRAC: Vấn đề pháp lý • Căn cứ Điều/Khoản • Phân tích • Kết luận</p>
           </div>
         </div>
 
@@ -849,27 +922,54 @@ function renderAnsweringBoxHTML() {
       </div>
 
       ${state.answerMode === 'VOICE' ? `
-        <div class="voice-controls-box">
-          <button type="button" class="btn-mic ${state.isRecording ? 'mic-recording' : ''}" id="btn-toggle-mic">
-            ${state.isRecording ? '⏹️ Đang thu âm tiếng Việt... (Nhấn để dừng)' : '🎙️ Nhấn để bắt đầu nói (Voice-to-Text Tiếng Việt)'}
-          </button>
-          <div id="voice-interim-box" class="interim-transcript" style="display:${state.interimTranscript ? 'block' : 'none'}">
-            ${state.interimTranscript ? `Đang nghe: "${escapeHtml(state.interimTranscript)}"` : ''}
+        <div class="voice-combat-stage">
+          <div class="voice-visualizer-row">
+            <div class="voice-wave-bars ${state.isRecording ? 'wave-active' : ''}">
+              ${waveBars}
+            </div>
+            <button type="button" class="btn-mic ${state.isRecording ? 'mic-recording' : ''}" id="btn-toggle-mic">
+              ${state.isRecording
+                ? '⏹️ NÓI XONG — CHẤM ĐIỂM NGAY'
+                : '🎙️ NHẤN ĐỂ BẮT ĐẦU NÓI TIẾNG VIỆT'}
+            </button>
+            <div class="voice-wave-bars ${state.isRecording ? 'wave-active' : ''}">
+              ${waveBars}
+            </div>
           </div>
+
+          <div class="voice-live-transcript-card">
+            <div class="voice-transcript-header">
+              <span class="voice-status-dot ${state.isRecording ? 'dot-live' : ''}"></span>
+              <span id="voice-autodetect-status">
+                ${state.isRecording
+                  ? '🔴 Đang nhận diện giọng nói trực tiếp — Ngừng nói 2 giây hệ thống tự động chấm điểm!'
+                  : '🎙️ Chế độ Giọng nói (Không cần gõ phím)'}
+              </span>
+            </div>
+            <div id="voice-live-transcript-text" class="voice-live-transcript-text ${spokenPreview ? 'has-spoken-text' : ''}">
+              ${spokenPreview
+                ? escapeHtml(spokenPreview)
+                : '🎙️ Hãy nói trực tiếp câu trả lời của đội bạn vào Micro... Nội dung giọng nói sẽ hiển thị trực tiếp tại đây và tự động chấm điểm khi bạn nói xong!'}
+            </div>
+            <div id="voice-interim-box" class="interim-transcript" style="display:${state.interimTranscript ? 'block' : 'none'}">
+              ${state.interimTranscript ? `Đang nhận diện: "${escapeHtml(state.interimTranscript)}"` : ''}
+            </div>
+          </div>
+
           ${state.voiceError ? `<div class="voice-error-msg">⚠️ ${escapeHtml(state.voiceError)}</div>` : ''}
         </div>
-      ` : ''}
-
-      <textarea
-        id="answer-textarea"
-        class="answer-textarea"
-        rows="5"
-        placeholder="Nhập hoặc chỉnh sửa câu trả lời tại đây... (Gợi ý: Nêu rõ Điều/Khoản của Luật Đấu thầu 2023 hoặc Nghị định 214/2025/NĐ-CP và kết luận rõ ràng)"
-      >${escapeHtml(state.answerText)}</textarea>
+      ` : `
+        <textarea
+          id="answer-textarea"
+          class="answer-textarea"
+          rows="4"
+          placeholder="Nhập câu trả lời từ bàn phím tại đây... (Gợi ý: Nêu rõ Điều/Khoản của Luật Đấu thầu 2023 hoặc Nghị định 214/2025/NĐ-CP và kết luận rõ ràng)"
+        >${escapeHtml(state.answerText)}</textarea>
+      `}
 
       <div class="answering-actions">
         <button type="button" class="btn-primary-gold" id="btn-submit-answer">
-          ⚖️ NỘP CÂU TRẢ LỜI &amp; CHẤM ĐIỂM AI
+          ⚖️ NỘP BÀI &amp; CHẤM ĐIỂM NGAY
         </button>
       </div>
     </div>
@@ -881,15 +981,24 @@ function renderArenaHTML() {
   const currentQuestion = getCurrentQuestion();
   if (!currentQuestion) return '';
 
+  const totalScore = state.teamAScore + state.teamBScore;
+  const powerPctA = totalScore > 0
+    ? Math.max(15, Math.min(85, Math.round((state.teamAScore / totalScore) * 100)))
+    : 50;
+  const powerPctB = 100 - powerPctA;
+  const roundNum = state.currentIndex + 1;
+  const totalRounds = state.matchQuestions.length;
+
   return `
-    <main class="arena-container">
+    <main class="arena-container ${state.buzzedTeam ? 'arena-buzz-impact' : ''}">
       <section class="arena-hud">
         <div class="hud-team hud-team-a ${state.buzzedTeam === 'A' ? 'hud-active-spotlight' : ''}">
           <div class="hud-team-meta">
             <span class="hud-avatar">${escapeHtml(s.teamAAvatar)}</span>
             <div>
+              <div class="hud-fighter-tag">P1 // CHIẾN TUYẾN A</div>
               <div class="hud-name">${escapeHtml(s.teamAName)}</div>
-              <div class="hud-key-hint">Phím chuông: <kbd>${escapeHtml(s.teamAKey)}</kbd></div>
+              <div class="hud-key-hint">Chuông: <kbd>${escapeHtml(s.teamAKey)}</kbd></div>
             </div>
           </div>
           <div class="hud-score">${state.teamAScore} <small>đ</small></div>
@@ -897,7 +1006,7 @@ function renderArenaHTML() {
 
         <div class="hud-center">
           <div class="round-pill">
-            CÂU HỎI ${state.currentIndex + 1} / ${state.matchQuestions.length}
+            ⚔️ CÂU ${roundNum} / ${totalRounds}
           </div>
           <div id="live-timer-box" class="timer-box">
             ${renderTimerMarkup()}
@@ -909,26 +1018,39 @@ function renderArenaHTML() {
           <div class="hud-score">${state.teamBScore} <small>đ</small></div>
           <div class="hud-team-meta hud-right">
             <div>
+              <div class="hud-fighter-tag">P2 // CHIẾN TUYẾN B</div>
               <div class="hud-name">${escapeHtml(s.teamBName)}</div>
-              <div class="hud-key-hint">Phím chuông: <kbd>${escapeHtml(s.teamBKey)}</kbd></div>
+              <div class="hud-key-hint">Chuông: <kbd>${escapeHtml(s.teamBKey)}</kbd></div>
             </div>
             <span class="hud-avatar">${escapeHtml(s.teamBAvatar)}</span>
           </div>
         </div>
       </section>
 
+      <!-- 1v1 Combat Tug-of-War Power Bar -->
+      <div class="combat-power-bar-wrap" title="Thanh đối kháng điểm số 1v1">
+        <div class="combat-bar-side combat-bar-a" style="width:${powerPctA}%">
+          <span>${powerPctA}%</span>
+        </div>
+        <div class="combat-clash-spark" style="left:${powerPctA}%">⚡</div>
+        <div class="combat-bar-side combat-bar-b" style="width:${powerPctB}%">
+          <span>${powerPctB}%</span>
+        </div>
+      </div>
+
       ${state.phase === 'TRANSITION' ? `
-        <div class="stage-transition-card">
-          <div class="swirl-spinner"></div>
-          <h2>CHẶNG ${state.currentIndex + 1} / ${state.matchQuestions.length}</h2>
+        <div class="stage-transition-card combat-round-splash">
+          <div class="combat-round-badge">ROUND ${roundNum}</div>
+          <h2>CÂU HỎI ${roundNum} / ${totalRounds}</h2>
           <p class="transition-diff">
-            Mức độ: <strong>${escapeHtml(currentQuestion.difficultyLabel)}</strong> • Điểm tối đa: <strong>${currentQuestion.points} điểm</strong>
+            Độ khó: <strong>${escapeHtml(currentQuestion.difficultyLabel)}</strong> • Điểm tối đa: <strong>${currentQuestion.points} điểm</strong>
           </p>
+          <div class="combat-fight-call">⚡ SẴN SÀNG BẤM CHUÔNG TRANH BIỆN! ⚡</div>
         </div>
       ` : `
         <section class="question-arena-card">
           <div class="question-card-header">
-            <span class="q-number-badge">Câu số ${currentQuestion.questionNumber} (Bộ đề gốc)</span>
+            <span class="q-number-badge">⚔️ CÂU HỎI ${roundNum} / ${totalRounds}</span>
             <span class="q-diff-badge diff-${currentQuestion.difficulty.toLowerCase()}">
               ${escapeHtml(currentQuestion.difficultyLabel)} • ${currentQuestion.points} điểm
             </span>
@@ -940,7 +1062,7 @@ function renderArenaHTML() {
             <div class="buzzer-arena-zone">
               ${state.failedTeamInRound ? `
                 <div class="steal-alert">
-                  ⚠️ Đội ${state.failedTeamInRound === 'A' ? escapeHtml(s.teamAName) : escapeHtml(s.teamBName)} đã hết giờ! Cơ hội giành quyền trả lời thuộc về đội còn lại!
+                  ⚠️ Đội ${state.failedTeamInRound === 'A' ? escapeHtml(s.teamAName) : escapeHtml(s.teamBName)} đã hết giờ! Cơ hội PHẢN CÔNG giành quyền trả lời thuộc về đội còn lại!
                 </div>
               ` : ''}
               <div class="buzzer-buttons-row">
@@ -954,6 +1076,8 @@ function renderArenaHTML() {
                   <span class="buzzer-team-title">${escapeHtml(s.teamAName)}</span>
                   <span class="buzzer-key-Prompt">Nhấn phím <kbd>${escapeHtml(s.teamAKey)}</kbd> hoặc Click</span>
                 </button>
+
+                <div class="buzzer-vs-emblem">⚡ VS ⚡</div>
 
                 <button
                   type="button"
@@ -974,80 +1098,94 @@ function renderArenaHTML() {
           ${state.phase === 'GRADING' ? `
             <div class="grading-loading-box">
               <div class="swirl-spinner"></div>
-              <p>Hệ thống AI đang phân tích ngữ nghĩa &amp; căn cứ pháp lý theo cấu trúc IRAC...</p>
-            </div>
-          ` : ''}
-
-          ${state.phase === 'ROUND_RESULT' && state.currentGrade ? `
-            <div class="round-result-panel">
-              <div class="score-summary-banner">
-                <div class="score-circle">
-                  <span class="accuracy-big">${state.currentGrade.accuracyPercent}%</span>
-                  <span class="accuracy-label">Độ chính xác</span>
-                </div>
-
-                <div class="score-formula-box">
-                  <div class="formula-title">
-                    ${state.currentGrade.team === 'A' ? `${escapeHtml(s.teamAAvatar)} ${escapeHtml(s.teamAName)}` : `${escapeHtml(s.teamBAvatar)} ${escapeHtml(s.teamBName)}`} nhận được:
-                    <strong class="earned-points-highlight"> +${state.currentGrade.earnedPoints} / ${state.currentGrade.maxPoints} điểm</strong>
-                  </div>
-                  <div class="formula-math">
-                    Công thức: <code>${state.currentGrade.maxPoints}đ × ${state.currentGrade.accuracyPercent}% = ${state.currentGrade.earnedPoints} điểm</code>
-                  </div>
-                  <p class="ai-feedback-text">${escapeHtml(state.currentGrade.feedback)}</p>
-                </div>
-
-                <div class="irac-pillar-bars">
-                  <div class="pillar-item"><span>Issue:</span> <strong>${state.currentGrade.breakdown?.issueScore ?? 0}%</strong></div>
-                  <div class="pillar-item"><span>Rule:</span> <strong>${state.currentGrade.breakdown?.ruleScore ?? 0}%</strong></div>
-                  <div class="pillar-item"><span>Application:</span> <strong>${state.currentGrade.breakdown?.applicationScore ?? 0}%</strong></div>
-                  <div class="pillar-item"><span>Conclusion:</span> <strong>${state.currentGrade.breakdown?.conclusionScore ?? 0}%</strong></div>
-                </div>
-              </div>
-
-              <div class="comparison-table-wrapper">
-                <h3 class="comparison-heading">📋 BẢNG ĐỐI CHIẾU CÂU TRẢ LỜI &amp; ĐÁP ÁN CHUẨN IRAC</h3>
-                <div class="comparison-grid">
-                  <div class="player-answer-col">
-                    <h4>💬 Câu trả lời của đội chơi</h4>
-                    <div class="player-answer-box">${escapeHtml(state.currentGrade.playerAnswer)}</div>
-                  </div>
-
-                  <div class="canonical-irac-col">
-                    <h4>⚖️ Đáp án chuẩn IRAC (Trích xuất từ tài liệu gốc)</h4>
-                    <div class="irac-blocks">
-                      <div class="irac-block">
-                        <span class="irac-tag tag-i">I — Issue (Vấn đề pháp lý)</span>
-                        <p>${escapeHtml(currentQuestion.irac.issue)}</p>
-                      </div>
-                      <div class="irac-block">
-                        <span class="irac-tag tag-r">R — Rule (Quy định pháp luật)</span>
-                        <p>${escapeHtml(currentQuestion.irac.rule)}</p>
-                      </div>
-                      <div class="irac-block">
-                        <span class="irac-tag tag-a">A — Application (Phân tích &amp; Áp dụng)</span>
-                        <p>${escapeHtml(currentQuestion.irac.application)}</p>
-                      </div>
-                      <div class="irac-block">
-                        <span class="irac-tag tag-c">C — Conclusion (Kết luận)</span>
-                        <p>${escapeHtml(currentQuestion.irac.conclusion)}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="next-round-row">
-                <button type="button" class="btn-primary-gold" id="btn-next-round">
-                  ${state.currentIndex + 1 >= state.matchQuestions.length
-                    ? '🏆 XEM KẾT QUẢ CHUNG CUỘC & VINH DANH'
-                    : '➡️ CÂU HỎI TIẾP THEO'}
-                </button>
-              </div>
+              <p>Hệ thống AI đang chấm điểm ngữ nghĩa &amp; đối chiếu căn cứ pháp lý IRAC...</p>
             </div>
           ` : ''}
         </section>
       `}
+
+      ${state.phase === 'ROUND_RESULT' && state.currentGrade ? `
+        <div class="result-overlay-backdrop" id="result-overlay-backdrop">
+          <div class="result-overlay-modal">
+            <div class="result-overlay-header">
+              <div class="result-overlay-title-group">
+                <span class="result-ko-badge">⚡ KẾT QUẢ CÂU ${roundNum} / ${totalRounds}</span>
+                <h3>
+                  ${state.currentGrade.team
+                    ? (state.currentGrade.team === 'A'
+                        ? `${escapeHtml(s.teamAAvatar)} ${escapeHtml(s.teamAName)}`
+                        : `${escapeHtml(s.teamBAvatar)} ${escapeHtml(s.teamBName)}`)
+                    : '⏱️ Hết thời gian'}
+                  ghi được <strong class="earned-points-highlight">+${state.currentGrade.earnedPoints} / ${state.currentGrade.maxPoints} điểm</strong>
+                </h3>
+              </div>
+              <button type="button" class="btn-primary-gold btn-next-compact" id="btn-next-round-top">
+                ${roundNum >= totalRounds ? '🏆 XEM ĐỘI CHIẾN THẮNG' : `➡️ SANG CÂU ${roundNum + 1}`}
+              </button>
+            </div>
+
+            <div class="score-summary-banner">
+              <div class="score-circle">
+                <span class="accuracy-big">${state.currentGrade.accuracyPercent}%</span>
+                <span class="accuracy-label">Độ chính xác</span>
+              </div>
+
+              <div class="score-formula-box">
+                <div class="formula-math">
+                  Công thức: <code>${state.currentGrade.maxPoints}đ × ${state.currentGrade.accuracyPercent}% = ${state.currentGrade.earnedPoints} điểm</code>
+                </div>
+                <p class="ai-feedback-text">${escapeHtml(state.currentGrade.feedback)}</p>
+              </div>
+
+              <div class="irac-pillar-bars">
+                <div class="pillar-item"><span>Issue:</span> <strong>${state.currentGrade.breakdown?.issueScore ?? 0}%</strong></div>
+                <div class="pillar-item"><span>Rule:</span> <strong>${state.currentGrade.breakdown?.ruleScore ?? 0}%</strong></div>
+                <div class="pillar-item"><span>Application:</span> <strong>${state.currentGrade.breakdown?.applicationScore ?? 0}%</strong></div>
+                <div class="pillar-item"><span>Conclusion:</span> <strong>${state.currentGrade.breakdown?.conclusionScore ?? 0}%</strong></div>
+              </div>
+            </div>
+
+            <div class="result-overlay-scroll-body">
+              <div class="comparison-grid">
+                <div class="player-answer-col">
+                  <h4>💬 Câu trả lời đã ghi nhận (${ escapeHtml(currentQuestion.question) })</h4>
+                  <div class="player-answer-box">${escapeHtml(state.currentGrade.playerAnswer)}</div>
+                </div>
+
+                <div class="canonical-irac-col">
+                  <h4>⚖️ Đáp án chuẩn IRAC (Trích xuất từ tài liệu gốc)</h4>
+                  <div class="irac-blocks">
+                    <div class="irac-block">
+                      <span class="irac-tag tag-i">I — Issue (Vấn đề pháp lý)</span>
+                      <p>${escapeHtml(currentQuestion.irac.issue)}</p>
+                    </div>
+                    <div class="irac-block">
+                      <span class="irac-tag tag-r">R — Rule (Quy định pháp luật)</span>
+                      <p>${escapeHtml(currentQuestion.irac.rule)}</p>
+                    </div>
+                    <div class="irac-block">
+                      <span class="irac-tag tag-a">A — Application (Phân tích &amp; Áp dụng)</span>
+                      <p>${escapeHtml(currentQuestion.irac.application)}</p>
+                    </div>
+                    <div class="irac-block">
+                      <span class="irac-tag tag-c">C — Conclusion (Kết luận)</span>
+                      <p>${escapeHtml(currentQuestion.irac.conclusion)}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-overlay-footer">
+              <button type="button" class="btn-primary-gold" id="btn-next-round">
+                ${roundNum >= totalRounds
+                  ? '🏆 XEM KẾT QUẢ CHUNG CUỘC & VINH DANH'
+                  : `➡️ CÂU HỎI TIẾP THEO (CÂU ${roundNum + 1} / ${totalRounds})`}
+              </button>
+            </div>
+          </div>
+        </div>
+      ` : ''}
     </main>
   `;
 }
@@ -1483,6 +1621,7 @@ function bindEvents() {
     document.getElementById('btn-buzz-b')?.addEventListener('click', () => triggerBuzzer('B'));
     bindAnsweringEvents();
     document.getElementById('btn-next-round')?.addEventListener('click', nextQuestionOrFinish);
+    document.getElementById('btn-next-round-top')?.addEventListener('click', nextQuestionOrFinish);
   }
 
   if (state.phase === 'VICTORY') {
@@ -1670,12 +1809,20 @@ function render() {
 
   let mainContent = '';
   if (state.phase === 'WELCOME') {
+    soundFX.setScene('WELCOME');
     mainContent = renderWelcomeHTML();
   } else if (state.phase === 'SETUP' || state.phase === 'LANDING') {
+    soundFX.setScene('SETUP');
     mainContent = renderLandingHTML();
   } else if (state.phase === 'VICTORY') {
+    soundFX.setScene('VICTORY');
     mainContent = renderVictoryHTML();
   } else {
+    if (state.phase === 'ROUND_RESULT') {
+      soundFX.setScene('RESULT_OVERLAY');
+    } else {
+      soundFX.setScene('COMBAT_QUIZ');
+    }
     mainContent = renderArenaHTML();
   }
 
