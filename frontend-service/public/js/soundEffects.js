@@ -276,26 +276,33 @@ class SoundEffectsManager {
     });
   }
 
-  // Team A (Left Side) Olympia Buzzer Lock + Golden LED Surge
+  // Team A (Left Side) Family Feud Face-Off Double-Ding Bell + Golden LED Surge
   playBuzzerTeamA() {
+    this.stopAllSFX();
     const ctx = this.getContext();
     if (!ctx) return;
     const now = ctx.currentTime;
-    this._playKick(180, 42, 0.28, 0.28);
-    const notes = [523.25, 659.25, 783.99, 1046.5, 1318.5];
-    notes.forEach((freq, idx) => {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(freq, now + idx * 0.035);
-      gain.gain.setValueAtTime(0.001, now + idx * 0.035);
-      gain.gain.exponentialRampToValueAtTime(0.24, now + idx * 0.035 + 0.015);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.035 + 0.38);
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-      this._registerNode(osc);
-      osc.start(now + idx * 0.035);
-      osc.stop(now + idx * 0.035 + 0.4);
+    this._playKick(210, 45, 0.25, 0.3);
+    // Iconic Family Feud Face-Off Double-Ding Bell (C6 -> G6 crystal bell harmonics)
+    const bellHits = [
+      { f1: 1046.5, f2: 2093.0, t: 0.0, d: 0.36 },
+      { f1: 1567.98, f2: 3135.96, t: 0.09, d: 0.55 }
+    ];
+    bellHits.forEach((h) => {
+      [h.f1, h.f2].forEach((freq, idx) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = idx === 0 ? 'triangle' : 'sine';
+        osc.frequency.setValueAtTime(freq, now + h.t);
+        gain.gain.setValueAtTime(0.001, now + h.t);
+        gain.gain.exponentialRampToValueAtTime(idx === 0 ? 0.28 : 0.14, now + h.t + 0.01);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + h.t + h.d);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        this._registerNode(osc);
+        osc.start(now + h.t);
+        osc.stop(now + h.t + h.d + 0.02);
+      });
     });
   }
 
@@ -303,26 +310,33 @@ class SoundEffectsManager {
     this.playBuzzerTeamA();
   }
 
-  // Team B (Right Side) Olympia Buzzer Lock + Electric Cobalt LED Surge
+  // Team B (Right Side) Family Feud Face-Off Electric Double-Chime + Cobalt LED Surge
   playBuzzerTeamB() {
+    this.stopAllSFX();
     const ctx = this.getContext();
     if (!ctx) return;
     const now = ctx.currentTime;
-    this._playKick(150, 35, 0.3, 0.28);
-    const freqs = [349.23, 440.0, 587.33, 698.46, 880.0];
-    freqs.forEach((freq, idx) => {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = 'sawtooth';
-      osc.frequency.setValueAtTime(freq, now + idx * 0.035);
-      gain.gain.setValueAtTime(0.001, now + idx * 0.035);
-      gain.gain.exponentialRampToValueAtTime(0.18, now + idx * 0.035 + 0.015);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.035 + 0.4);
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-      this._registerNode(osc);
-      osc.start(now + idx * 0.035);
-      osc.stop(now + idx * 0.035 + 0.42);
+    this._playKick(190, 40, 0.26, 0.3);
+    // Distinct Face-Off Electric Double-Chime (A5 -> E6 -> A6)
+    const bellHits = [
+      { f1: 880.0, f2: 1760.0, t: 0.0, d: 0.34 },
+      { f1: 1318.51, f2: 2637.02, t: 0.09, d: 0.55 }
+    ];
+    bellHits.forEach((h) => {
+      [h.f1, h.f2].forEach((freq, idx) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = idx === 0 ? 'sawtooth' : 'triangle';
+        osc.frequency.setValueAtTime(freq, now + h.t);
+        gain.gain.setValueAtTime(0.001, now + h.t);
+        gain.gain.exponentialRampToValueAtTime(idx === 0 ? 0.22 : 0.14, now + h.t + 0.01);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + h.t + h.d);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        this._registerNode(osc);
+        osc.start(now + h.t);
+        osc.stop(now + h.t + h.d + 0.02);
+      });
     });
   }
 
@@ -415,54 +429,64 @@ class SoundEffectsManager {
     this.playCountdownTick(secondsLeft);
   }
 
-  playTimeUp() {
+  // Family Feud Giant Red [ X ] Strike Horn ("ERRR-UH!")
+  playStrikeX() {
     this.stopAllSFX();
     const ctx = this.getContext();
     if (!ctx) return;
     const now = ctx.currentTime;
-    this._playKick(150, 25, 0.45, 0.3);
-    [349.23, 311.13, 261.63, 196.0].forEach((f, idx) => {
+    this._playKick(140, 28, 0.55, 0.32);
+    // Detuned low sawtooth brass cluster for classic Family Feud Strike X horn
+    [110.0, 116.54, 164.81, 220.0].forEach((f, idx) => {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.type = 'sawtooth';
-      osc.frequency.setValueAtTime(f, now + idx * 0.1);
-      gain.gain.setValueAtTime(0.001, now + idx * 0.1);
-      gain.gain.exponentialRampToValueAtTime(0.2, now + idx * 0.1 + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.1 + 0.35);
+      osc.frequency.setValueAtTime(f, now);
+      osc.frequency.linearRampToValueAtTime(f * 0.96, now + 0.58);
+      gain.gain.setValueAtTime(0.001, now);
+      gain.gain.exponentialRampToValueAtTime(idx < 2 ? 0.18 : 0.12, now + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.62);
       osc.connect(gain);
       gain.connect(ctx.destination);
       this._registerNode(osc);
-      osc.start(now + idx * 0.1);
-      osc.stop(now + idx * 0.1 + 0.36);
+      osc.start(now);
+      osc.stop(now + 0.64);
     });
+  }
+
+  playTimeUp() {
+    this.playStrikeX();
   }
 
   playGradeReveal(accuracy = 75) {
     this.stopBGM();
     this.stopAllSFX();
+    if (accuracy < 35) {
+      this.playStrikeX();
+      return;
+    }
     const ctx = this.getContext();
     if (!ctx) return;
     const now = ctx.currentTime;
-    this._playKick(170, 35, 0.35, 0.26);
+    this._playKick(180, 38, 0.35, 0.26);
+    // Family Feud "Survey Says! — DING!" Board Flip Chime + Celebration Chord
     const chord =
       accuracy >= 70
-        ? [523.25, 659.25, 783.99, 1046.5]
-        : accuracy >= 40
-        ? [440, 554.37, 659.25]
-        : [349.23, 329.63, 293.66];
+        ? [987.77, 1318.51, 1567.98, 2093.0]
+        : [659.25, 880.0, 1046.5, 1318.51];
     chord.forEach((f, idx) => {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.type = 'triangle';
-      osc.frequency.setValueAtTime(f, now + idx * 0.06);
-      gain.gain.setValueAtTime(0.001, now + idx * 0.06);
-      gain.gain.exponentialRampToValueAtTime(0.2, now + idx * 0.06 + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.06 + 0.45);
+      osc.frequency.setValueAtTime(f, now + idx * 0.055);
+      gain.gain.setValueAtTime(0.001, now + idx * 0.055);
+      gain.gain.exponentialRampToValueAtTime(0.22, now + idx * 0.055 + 0.015);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.055 + 0.5);
       osc.connect(gain);
       gain.connect(ctx.destination);
       this._registerNode(osc);
-      osc.start(now + idx * 0.06);
-      osc.stop(now + idx * 0.06 + 0.48);
+      osc.start(now + idx * 0.055);
+      osc.stop(now + idx * 0.055 + 0.52);
     });
   }
 

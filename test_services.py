@@ -173,6 +173,16 @@ def test_frontend_service_and_olympia_v9_features():
     assert "./css/styles.css" in index_text
     assert "./js/app.js" in index_text
 
+    # Verify every relative ES module import inside public/js/*.js resolves to an existing file!
+    import re
+    js_dir = public_dir / "js"
+    for js_file in js_dir.glob("*.js"):
+        src = js_file.read_text(encoding="utf-8")
+        for m in re.finditer(r"""from\s+['"](\./[^'"]+)['"]""", src):
+            rel_target = m.group(1).split("?")[0]
+            resolved = (js_file.parent / rel_target).resolve()
+            assert resolved.exists(), f"Broken ES module import {rel_target} in {js_file.name}"
+
     app_text = (public_dir / "js" / "app.js").read_text(encoding="utf-8")
     assert "Một sản phẩm của Nguyễn Quốc Đạt, Đỗ Hoàng Gia Bảo, Trần Võ Đăng Khoa" in app_text
     assert "Môn học: Pháp luật Đấu thầu • Đại học Công nghệ Thông tin (UIT - ĐHQG TP.HCM)" not in app_text
@@ -182,9 +192,13 @@ def test_frontend_service_and_olympia_v9_features():
     assert "olympia-transition-stage" in app_text
     assert "olympia-victory-stage" in app_text
     assert "laurel-wreath-crest" in app_text
+    assert "feud-mushroom-buzzer" in app_text
+    assert "feud-lockout-banner" in app_text
+    assert "feud-strike-x-banner" in app_text
+    assert "weakest-link-critical-stage" in app_text
 
     sfx_text = (public_dir / "js" / "soundEffects.js").read_text(encoding="utf-8")
-    assert "stopAllSFX" in sfx_text and "startBGM" in sfx_text and "setScene" in sfx_text
+    assert "stopAllSFX" in sfx_text and "startBGM" in sfx_text and "setScene" in sfx_text and "playStrikeX" in sfx_text
 
     css_text = (public_dir / "css" / "styles.css").read_text(encoding="utf-8")
     assert "--bg-deep: #0B132B" in css_text

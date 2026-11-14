@@ -314,6 +314,15 @@ function updateTimerDOM() {
   if (timerEl) {
     timerEl.innerHTML = renderTimerMarkup();
   }
+  const arenaEl = document.querySelector('.arena-container');
+  if (arenaEl) {
+    const isUnlimited = state.phase === 'ANSWERING' && (
+      (state.answerMode === 'VOICE' && Number(state.settings.voiceTimeLimit) === 0) ||
+      (state.answerMode === 'TEXT' && Number(state.settings.textTimeLimit) === 0)
+    );
+    const isCritical = !isUnlimited && state.timeLeft <= 5 && state.timeLeft > 0 && (state.phase === 'ANSWERING' || state.phase === 'BUZZER_OPEN');
+    arenaEl.classList.toggle('weakest-link-critical-stage', isCritical);
+  }
 }
 
 async function startMatch() {
@@ -596,7 +605,7 @@ async function submitAnswer(overrideText) {
 
   state.matchHistory.push(gradeRecord);
   state.currentGrade = gradeRecord;
-  soundFX.playScoreReveal();
+  soundFX.playScoreReveal(result.accuracyPercent);
   state.phase = 'ROUND_RESULT';
   render();
 }
@@ -903,18 +912,16 @@ function renderAnsweringBoxHTML() {
 
   return `
     <div class="answering-panel combat-answering-pod" id="answering-panel-container">
-      <div class="answering-banner">
-        <div class="answering-team-info">
-          <span class="spotlight-icon">⚡</span>
-          <div>
-            <strong>${escapeHtml(activeAvatar)} ${escapeHtml(activeTeamName)} ĐANG NẮM QUYỀN TRẢ LỜI!</strong>
-            <p>Trình bày theo cấu trúc IRAC: Vấn đề pháp lý • Căn cứ Điều/Khoản • Phân tích • Kết luận</p>
-          </div>
-        </div>
+      <!-- Family Feud Face-Off Lockout Banner -->
+      <div class="feud-lockout-banner ${state.buzzedTeam === 'A' ? 'lockout-team-a' : 'lockout-team-b'}">
+        <span class="feud-bell-icon">🔔 DING! DING!</span>
+        <span class="feud-lockout-text">
+          ${escapeHtml(activeAvatar)} <strong>${escapeHtml(activeTeamName)}</strong> ĐÃ BẤM CHUÔNG NHANH NHẤT &amp; KHÓA QUYỀN TRẢ LỜI!
+        </span>
         <span class="config-summary-pill">
           ${state.answerMode === 'VOICE'
-            ? `🎙️ Chế độ Voice (${Number(s.voiceTimeLimit) === 0 ? '∞' : `${s.voiceTimeLimit ?? 30}s`})`
-            : `⌨️ Nhập văn bản (${Number(s.textTimeLimit) === 0 ? '∞' : `${s.textTimeLimit ?? 120}s`})`}
+            ? `🎙️ Voice (${Number(s.voiceTimeLimit) === 0 ? '∞' : `${s.voiceTimeLimit ?? 30}s`})`
+            : `⌨️ Văn bản (${Number(s.textTimeLimit) === 0 ? '∞' : `${s.textTimeLimit ?? 120}s`})`}
         </span>
       </div>
 
@@ -990,6 +997,7 @@ function renderArenaHTML() {
 
   return `
     <main class="arena-container ${state.buzzedTeam ? `arena-buzz-impact buzz-winner-${state.buzzedTeam.toLowerCase()}` : ''}">
+      ${state.buzzedTeam ? `<div class="buzzer-strobe-flash flash-team-${state.buzzedTeam.toLowerCase()}" aria-hidden="true"></div>` : ''}
       <!-- Gameshow Side LED Strips (Ignite Left for Team A, Right for Team B on Buzzer!) -->
       <div class="gameshow-led-strip led-left ${state.buzzedTeam === 'A' ? 'led-strip-active-a' : ''}" aria-hidden="true">
         ${ledSegments}
@@ -1071,35 +1079,51 @@ function renderArenaHTML() {
           <h2 class="question-verbatim-text">${escapeHtml(currentQuestion.question)}</h2>
 
           ${state.phase === 'BUZZER_OPEN' ? `
-            <div class="buzzer-arena-zone">
+            <div class="buzzer-arena-zone family-feud-buzzer-stage">
               ${state.failedTeamInRound ? `
-                <div class="steal-alert">
-                  ⚠️ Đội ${state.failedTeamInRound === 'A' ? escapeHtml(s.teamAName) : escapeHtml(s.teamBName)} đã hết giờ! Cơ hội PHẢN CÔNG giành quyền trả lời thuộc về đội còn lại!
+                <div class="steal-alert feud-strike-x-banner">
+                  <span class="feud-strike-x-box">✖</span>
+                  <div>
+                    <strong>STEAL! CƠ HỘI CƯỚP ĐIỂM (PHẢN CÔNG)!</strong>
+                    <div>Đội ${state.failedTeamInRound === 'A' ? escapeHtml(s.teamAName) : escapeHtml(s.teamBName)} đã hết giờ — Quyền bấm chuông thuộc về đội còn lại!</div>
+                  </div>
+                  <span class="feud-strike-x-box">✖</span>
                 </div>
               ` : ''}
               <div class="buzzer-buttons-row">
                 <button
                   type="button"
-                  class="buzzer-big-btn buzzer-a ${state.failedTeamInRound === 'A' ? 'buzzer-disabled' : ''}"
+                  class="buzzer-big-btn feud-mushroom-buzzer buzzer-a ${state.failedTeamInRound === 'A' ? 'buzzer-disabled' : ''}"
                   id="btn-buzz-a"
                   ${state.failedTeamInRound === 'A' ? 'disabled' : ''}
                 >
-                  <span class="buzzer-icon">${escapeHtml(s.teamAAvatar)}</span>
+                  <div class="feud-led-chase" aria-hidden="true"></div>
+                  <div class="buzzer-dome-cap dome-gold">
+                    <span class="buzzer-icon">${escapeHtml(s.teamAAvatar)}</span>
+                    <span class="dome-glare"></span>
+                  </div>
                   <span class="buzzer-team-title">${escapeHtml(s.teamAName)}</span>
-                  <span class="buzzer-key-Prompt">Nhấn phím <kbd>${escapeHtml(s.teamAKey)}</kbd> hoặc Click</span>
+                  <span class="buzzer-key-Prompt">BẤM CHUÔNG: PHÍM <kbd>${escapeHtml(s.teamAKey)}</kbd> / CLICK</span>
                 </button>
 
-                <div class="buzzer-vs-emblem">⚡ VS ⚡</div>
+                <div class="buzzer-vs-emblem feud-faceoff-center">
+                  <div class="faceoff-ring"></div>
+                  <span>⚡ FACE-OFF ⚡</span>
+                </div>
 
                 <button
                   type="button"
-                  class="buzzer-big-btn buzzer-b ${state.failedTeamInRound === 'B' ? 'buzzer-disabled' : ''}"
+                  class="buzzer-big-btn feud-mushroom-buzzer buzzer-b ${state.failedTeamInRound === 'B' ? 'buzzer-disabled' : ''}"
                   id="btn-buzz-b"
                   ${state.failedTeamInRound === 'B' ? 'disabled' : ''}
                 >
-                  <span class="buzzer-icon">${escapeHtml(s.teamBAvatar)}</span>
+                  <div class="feud-led-chase" aria-hidden="true"></div>
+                  <div class="buzzer-dome-cap dome-cobalt">
+                    <span class="buzzer-icon">${escapeHtml(s.teamBAvatar)}</span>
+                    <span class="dome-glare"></span>
+                  </div>
                   <span class="buzzer-team-title">${escapeHtml(s.teamBName)}</span>
-                  <span class="buzzer-key-Prompt">Nhấn phím <kbd>${escapeHtml(s.teamBKey)}</kbd> hoặc Click</span>
+                  <span class="buzzer-key-Prompt">BẤM CHUÔNG: PHÍM <kbd>${escapeHtml(s.teamBKey)}</kbd> / CLICK</span>
                 </button>
               </div>
             </div>
