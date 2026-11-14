@@ -910,33 +910,15 @@ function renderAnsweringBoxHTML() {
             <p>Trình bày theo cấu trúc IRAC: Vấn đề pháp lý • Căn cứ Điều/Khoản • Phân tích • Kết luận</p>
           </div>
         </div>
-
-        <div class="mode-switcher">
-          <button type="button" class="mode-btn ${state.answerMode === 'VOICE' ? 'mode-active' : ''}" id="btn-mode-voice">
-            🎙️ Giọng nói (${Number(s.voiceTimeLimit) === 0 ? '∞' : `${s.voiceTimeLimit ?? 30}s`})
-          </button>
-          <button type="button" class="mode-btn ${state.answerMode === 'TEXT' ? 'mode-active' : ''}" id="btn-mode-text">
-            ⌨️ Nhập văn bản (${Number(s.textTimeLimit) === 0 ? '∞' : `${s.textTimeLimit ?? 120}s`})
-          </button>
-        </div>
+        <span class="config-summary-pill">
+          ${state.answerMode === 'VOICE'
+            ? `🎙️ Chế độ Voice (${Number(s.voiceTimeLimit) === 0 ? '∞' : `${s.voiceTimeLimit ?? 30}s`})`
+            : `⌨️ Nhập văn bản (${Number(s.textTimeLimit) === 0 ? '∞' : `${s.textTimeLimit ?? 120}s`})`}
+        </span>
       </div>
 
       ${state.answerMode === 'VOICE' ? `
         <div class="voice-combat-stage">
-          <div class="voice-visualizer-row">
-            <div class="voice-wave-bars ${state.isRecording ? 'wave-active' : ''}">
-              ${waveBars}
-            </div>
-            <button type="button" class="btn-mic ${state.isRecording ? 'mic-recording' : ''}" id="btn-toggle-mic">
-              ${state.isRecording
-                ? '⏹️ NÓI XONG — CHẤM ĐIỂM NGAY'
-                : '🎙️ NHẤN ĐỂ BẮT ĐẦU NÓI TIẾNG VIỆT'}
-            </button>
-            <div class="voice-wave-bars ${state.isRecording ? 'wave-active' : ''}">
-              ${waveBars}
-            </div>
-          </div>
-
           <div class="voice-live-transcript-card">
             <div class="voice-transcript-header">
               <span class="voice-status-dot ${state.isRecording ? 'dot-live' : ''}"></span>
@@ -945,6 +927,9 @@ function renderAnsweringBoxHTML() {
                   ? '🔴 Đang nhận diện giọng nói trực tiếp — Ngừng nói 2 giây hệ thống tự động chấm điểm!'
                   : '🎙️ Chế độ Giọng nói (Không cần gõ phím)'}
               </span>
+              <div class="voice-wave-bars ${state.isRecording ? 'wave-active' : ''}">
+                ${waveBars}
+              </div>
             </div>
             <div id="voice-live-transcript-text" class="voice-live-transcript-text ${spokenPreview ? 'has-spoken-text' : ''}">
               ${spokenPreview
@@ -957,21 +942,31 @@ function renderAnsweringBoxHTML() {
           </div>
 
           ${state.voiceError ? `<div class="voice-error-msg">⚠️ ${escapeHtml(state.voiceError)}</div>` : ''}
+
+          <div class="answering-actions">
+            ${!state.isRecording ? `
+              <button type="button" class="btn-secondary" id="btn-toggle-mic">
+                🎙️ Bật Micro nói tiếp
+              </button>
+            ` : ''}
+            <button type="button" class="btn-primary-gold" id="btn-submit-answer">
+              ${state.isRecording ? '⏹️ NÓI XONG — NỘP &amp; CHẤM ĐIỂM NGAY' : '⚖️ NỘP BÀI &amp; CHẤM ĐIỂM NGAY'}
+            </button>
+          </div>
         </div>
       ` : `
         <textarea
           id="answer-textarea"
           class="answer-textarea"
-          rows="4"
+          rows="3"
           placeholder="Nhập câu trả lời từ bàn phím tại đây... (Gợi ý: Nêu rõ Điều/Khoản của Luật Đấu thầu 2023 hoặc Nghị định 214/2025/NĐ-CP và kết luận rõ ràng)"
         >${escapeHtml(state.answerText)}</textarea>
+        <div class="answering-actions">
+          <button type="button" class="btn-primary-gold" id="btn-submit-answer">
+            ⚖️ NỘP CÂU TRẢ LỜI &amp; CHẤM ĐIỂM AI
+          </button>
+        </div>
       `}
-
-      <div class="answering-actions">
-        <button type="button" class="btn-primary-gold" id="btn-submit-answer">
-          ⚖️ NỘP BÀI &amp; CHẤM ĐIỂM NGAY
-        </button>
-      </div>
     </div>
   `;
 }
@@ -988,9 +983,20 @@ function renderArenaHTML() {
   const powerPctB = 100 - powerPctA;
   const roundNum = state.currentIndex + 1;
   const totalRounds = state.matchQuestions.length;
+  const ledSegments = Array.from({ length: 14 }, (_, i) =>
+    `<span class="led-seg" style="animation-delay:${(i * 0.05).toFixed(2)}s"></span>`
+  ).join('');
 
   return `
-    <main class="arena-container ${state.buzzedTeam ? 'arena-buzz-impact' : ''}">
+    <main class="arena-container ${state.buzzedTeam ? `arena-buzz-impact buzz-winner-${state.buzzedTeam.toLowerCase()}` : ''}">
+      <!-- Gameshow Side LED Strips (Ignite Left for Team A, Right for Team B on Buzzer!) -->
+      <div class="gameshow-led-strip led-left ${state.buzzedTeam === 'A' ? 'led-strip-active-a' : ''}" aria-hidden="true">
+        ${ledSegments}
+      </div>
+      <div class="gameshow-led-strip led-right ${state.buzzedTeam === 'B' ? 'led-strip-active-b' : ''}" aria-hidden="true">
+        ${ledSegments}
+      </div>
+
       <section class="arena-hud">
         <div class="hud-team hud-team-a ${state.buzzedTeam === 'A' ? 'hud-active-spotlight' : ''}">
           <div class="hud-team-meta">
@@ -1004,7 +1010,7 @@ function renderArenaHTML() {
           <div class="hud-score">${state.teamAScore} <small>đ</small></div>
         </div>
 
-        <div class="hud-center">
+        <div class="hud-center ${state.buzzedTeam ? 'timer-olympia-pop' : ''}">
           <div class="round-pill">
             ⚔️ CÂU ${roundNum} / ${totalRounds}
           </div>
@@ -1039,18 +1045,23 @@ function renderArenaHTML() {
       </div>
 
       ${state.phase === 'TRANSITION' ? `
-        <div class="stage-transition-card combat-round-splash">
-          <div class="combat-round-badge">ROUND ${roundNum}</div>
-          <h2>CÂU HỎI ${roundNum} / ${totalRounds}</h2>
-          <p class="transition-diff">
-            Độ khó: <strong>${escapeHtml(currentQuestion.difficultyLabel)}</strong> • Điểm tối đa: <strong>${currentQuestion.points} điểm</strong>
-          </p>
-          <div class="combat-fight-call">⚡ SẴN SÀNG BẤM CHUÔNG TRANH BIỆN! ⚡</div>
+        <div class="stage-transition-card olympia-transition-stage">
+          <div class="olympia-rings-wrap" aria-hidden="true">
+            <div class="olympia-ring ring-outer"></div>
+            <div class="olympia-ring ring-inner"></div>
+          </div>
+          <div class="olympia-zoom-banner">
+            <span class="combat-round-badge">VÒNG TRANH BIỆN</span>
+            <h2 class="olympia-zoom-title">CÂU HỎI ${roundNum}</h2>
+            <p class="transition-diff">
+              Độ khó: <strong>${escapeHtml(currentQuestion.difficultyLabel)}</strong> • Điểm tối đa: <strong>${currentQuestion.points} điểm</strong>
+            </p>
+          </div>
         </div>
       ` : `
-        <section class="question-arena-card">
+        <section class="question-arena-card olympia-card-unfold">
           <div class="question-card-header">
-            <span class="q-number-badge">⚔️ CÂU HỎI ${roundNum} / ${totalRounds}</span>
+            <span class="q-number-badge olympia-header-docked">⚔️ CÂU HỎI ${roundNum} / ${totalRounds}</span>
             <span class="q-diff-badge diff-${currentQuestion.difficulty.toLowerCase()}">
               ${escapeHtml(currentQuestion.difficultyLabel)} • ${currentQuestion.points} điểm
             </span>
@@ -1119,9 +1130,6 @@ function renderArenaHTML() {
                   ghi được <strong class="earned-points-highlight">+${state.currentGrade.earnedPoints} / ${state.currentGrade.maxPoints} điểm</strong>
                 </h3>
               </div>
-              <button type="button" class="btn-primary-gold btn-next-compact" id="btn-next-round-top">
-                ${roundNum >= totalRounds ? '🏆 XEM ĐỘI CHIẾN THẮNG' : `➡️ SANG CÂU ${roundNum + 1}`}
-              </button>
             </div>
 
             <div class="score-summary-banner">
@@ -1148,7 +1156,7 @@ function renderArenaHTML() {
             <div class="result-overlay-scroll-body">
               <div class="comparison-grid">
                 <div class="player-answer-col">
-                  <h4>💬 Câu trả lời đã ghi nhận (${ escapeHtml(currentQuestion.question) })</h4>
+                  <h4>💬 Câu trả lời của đội chơi</h4>
                   <div class="player-answer-box">${escapeHtml(state.currentGrade.playerAnswer)}</div>
                 </div>
 
@@ -1194,34 +1202,67 @@ function renderVictoryHTML() {
   const s = state.settings;
   const isTie = Math.abs(state.teamAScore - state.teamBScore) < 0.01;
   const winnerIsA = state.teamAScore > state.teamBScore;
+  const scoreDiff = Math.abs(state.teamAScore - state.teamBScore).toFixed(1);
+
+  const roundsA = state.matchHistory.filter(r => r.team === 'A');
+  const roundsB = state.matchHistory.filter(r => r.team === 'B');
+  const avgAccA = roundsA.length
+    ? Math.round(roundsA.reduce((acc, r) => acc + (r.accuracyPercent || 0), 0) / roundsA.length)
+    : 0;
+  const avgAccB = roundsB.length
+    ? Math.round(roundsB.reduce((acc, r) => acc + (r.accuracyPercent || 0), 0) / roundsB.length)
+    : 0;
 
   return `
     <main class="victory-container">
       <canvas id="victory-confetti-canvas" class="confetti-canvas"></canvas>
-      <section class="victory-card">
-        <div class="victory-crown">👑</div>
-        <div class="victory-subtitle">KẾT THÚC TRẬN ĐẤU TRANH BIỆN PHÁP LUẬT ĐẤU THẦU</div>
+      <section class="victory-card olympia-victory-stage">
+        <div class="victory-god-rays" aria-hidden="true"></div>
+
+        <div class="laurel-wreath-crest">
+          <span class="laurel-branch">🌿</span>
+          <span class="victory-crown">👑</span>
+          <span class="laurel-branch laurel-right">🌿</span>
+        </div>
+
+        <div class="victory-subtitle">✨ ĐƯỜNG LÊN ĐỈNH TRANH BIỆN PHÁP LUẬT ĐẤU THẦU ✨</div>
         <h2 class="victory-title">
           ${isTie
-            ? '🤝 HAI ĐỘI HÒA NHAU XUẤT SẮC!'
+            ? '🤝 ĐỒNG QUÁN QUÂN — HAI ĐỘI BẤT PHÂN THẮNG BẠI!'
             : winnerIsA
-              ? `🏆 VINH DANH ĐỘI CHIẾN THẮNG: ${escapeHtml(s.teamAName.toUpperCase())}!`
-              : `🏆 VINH DANH ĐỘI CHIẾN THẮNG: ${escapeHtml(s.teamBName.toUpperCase())}!`}
+              ? `🏆 QUÁN QUÂN VÒNG NGUYỆT QUẾ: ${escapeHtml(s.teamAName.toUpperCase())}!`
+              : `🏆 QUÁN QUÂN VÒNG NGUYỆT QUẾ: ${escapeHtml(s.teamBName.toUpperCase())}!`}
         </h2>
 
-        <div class="final-scoreboard">
-          <div class="final-team-card ${winnerIsA || isTie ? 'winner-glow' : ''}">
+        ${!isTie ? `
+          <div class="victory-margin-pill">
+            ⚡ Chiến thắng thuyết phục với cách biệt <strong>+${scoreDiff} điểm</strong> sau ${state.matchQuestions.length} câu hỏi!
+          </div>
+        ` : ''}
+
+        <div class="final-scoreboard olympia-podium-grid">
+          <div class="final-team-card ${winnerIsA || isTie ? 'winner-glow podium-champion' : 'podium-runnerup'}">
+            <div class="podium-rank-tag">${winnerIsA || isTie ? '🥇 QUÁN QUÂN' : '🥈 Á QUÂN'}</div>
             <span class="final-avatar">${escapeHtml(s.teamAAvatar)}</span>
             <h3>${escapeHtml(s.teamAName)}</h3>
-            <div class="final-points">${state.teamAScore} điểm</div>
+            <div class="final-points">${state.teamAScore} <small>điểm</small></div>
+            <div class="podium-stats-row">
+              <span>🔔 Giành quyền: <strong>${roundsA.length} câu</strong></span>
+              <span>🎯 Chính xác TB: <strong>${avgAccA}%</strong></span>
+            </div>
           </div>
 
-          <div class="final-vs">VS</div>
+          <div class="final-vs-bolt">⚡ VS ⚡</div>
 
-          <div class="final-team-card ${!winnerIsA || isTie ? 'winner-glow' : ''}">
+          <div class="final-team-card ${!winnerIsA || isTie ? 'winner-glow podium-champion' : 'podium-runnerup'}">
+            <div class="podium-rank-tag">${!winnerIsA || isTie ? '🥇 QUÁN QUÂN' : '🥈 Á QUÂN'}</div>
             <span class="final-avatar">${escapeHtml(s.teamBAvatar)}</span>
             <h3>${escapeHtml(s.teamBName)}</h3>
-            <div class="final-points">${state.teamBScore} điểm</div>
+            <div class="final-points">${state.teamBScore} <small>điểm</small></div>
+            <div class="podium-stats-row">
+              <span>🔔 Giành quyền: <strong>${roundsB.length} câu</strong></span>
+              <span>🎯 Chính xác TB: <strong>${avgAccB}%</strong></span>
+            </div>
           </div>
         </div>
 
@@ -1234,7 +1275,6 @@ function renderVictoryHTML() {
             <span class="author-dot">•</span>
             <span>Trần Võ Đăng Khoa</span>
           </div>
-          <p class="plaque-sub">Môn học: Pháp luật Đấu thầu • Đại học Công nghệ Thông tin (UIT - ĐHQG TP.HCM)</p>
         </div>
 
         <div class="victory-actions">
@@ -1483,10 +1523,6 @@ function renderAnsweringAreaOnly() {
 }
 
 function bindAnsweringEvents() {
-  document.getElementById('btn-mode-voice')?.addEventListener('click', () => switchAnswerMode('VOICE'));
-  document.getElementById('btn-mode-text')?.addEventListener('click', () => switchAnswerMode('TEXT'));
-  document.getElementById('btn-toggle-mic')?.addEventListener('click', () => toggleVoiceRecording());
-
   const textarea = document.getElementById('answer-textarea');
   if (textarea) {
     textarea.addEventListener('input', (e) => {
@@ -1621,7 +1657,6 @@ function bindEvents() {
     document.getElementById('btn-buzz-b')?.addEventListener('click', () => triggerBuzzer('B'));
     bindAnsweringEvents();
     document.getElementById('btn-next-round')?.addEventListener('click', nextQuestionOrFinish);
-    document.getElementById('btn-next-round-top')?.addEventListener('click', nextQuestionOrFinish);
   }
 
   if (state.phase === 'VICTORY') {
