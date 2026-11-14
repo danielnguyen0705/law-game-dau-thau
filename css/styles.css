@@ -2976,3 +2976,125 @@ body {
   border-color: #EF4444 !important;
   box-shadow: 0 0 32px rgba(239, 68, 68, 0.65) !important;
 }
+
+
+/* =========================================================
+   12. MINIMALIST CENTERED GAMESHOW MIC ORB, TEXT INPUT & SUBMIT (v9.3)
+   ========================================================= */
+.feud-lockout-banner {
+  justify-content: center !important;
+  text-align: center;
+}
+
+.gameshow-mic-stage,
+.text-combat-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.55rem, 1.4vh, 1rem);
+  padding: 0.35rem 0;
+}
+
+.gameshow-mic-centerpiece {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.gameshow-mic-orb {
+  position: relative;
+  width: clamp(82px, 11.5vh, 108px);
+  height: clamp(82px, 11.5vh, 108px);
+  border-radius: 50%;
+  border: 3px solid var(--star-yellow);
+  background: radial-gradient(circle at 35% 30%, #2B3A67 0%, #0B132B 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 32px rgba(244, 211, 94, 0.45), inset 0 0 18px rgba(244, 211, 94, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gameshow-mic-orb.mic-orb-live {
+  border-color: #F87171;
+  background: radial-gradient(circle at 35% 30%, rgba(239, 68, 68, 0.45) 0%, #0B132B 82%);
+  box-shadow: 0 0 42px rgba(239, 68, 68, 0.75), 0 0 70px rgba(244, 211, 94, 0.35);
+  animation: micOrbBreath 1.1s ease-in-out infinite alternate;
+}
+
+@keyframes micOrbBreath {
+  from { transform: scale(0.97); }
+  to { transform: scale(1.06); }
+}
+
+.mic-orb-icon {
+  position: relative;
+  z-index: 3;
+  font-size: clamp(2.1rem, 4.2vh, 2.85rem);
+  filter: drop-shadow(0 0 12px rgba(244, 211, 94, 0.75));
+}
+
+.mic-pulse-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid rgba(244, 211, 94, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mic-orb-live .mic-pulse-ring.ring-a {
+  border-color: rgba(248, 113, 113, 0.75);
+  animation: micSonarWave 1.6s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.mic-orb-live .mic-pulse-ring.ring-b {
+  border-color: rgba(244, 211, 94, 0.65);
+  animation: micSonarWave 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.8s infinite;
+}
+
+@keyframes micSonarWave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.65);
+    opacity: 0;
+  }
+}
+
+.voice-minimal-status {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.centered-textarea {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.02rem;
+}
+
+.centered-submit-row {
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  margin-top: 0.15rem;
+}
+
+.btn-submit-center {
+  min-width: 310px;
+  padding: clamp(0.65rem, 1.4vh, 0.95rem) 2.2rem;
+  border-radius: 999px;
+}
